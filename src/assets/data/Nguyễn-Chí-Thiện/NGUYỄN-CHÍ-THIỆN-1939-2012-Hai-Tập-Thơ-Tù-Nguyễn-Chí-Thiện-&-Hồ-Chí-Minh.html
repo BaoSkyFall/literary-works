@@ -1,0 +1,915 @@
+<head> <script type="text/javascript"> document.domain = 'gio-o.com'; (()=>{"use strict";const e=window.Cypress=parent.Cypress;if(!e)throw new Error("Something went terribly wrong and we cannot proceed. We expected to find the global Cypress in the parent window but it is missing. This should never happen and likely is a bug. Please open an issue.");const t=(()=>{let e,t,n,r;const i=()=>{e=!1,t=!1,n=[],r={}},o=(e,t=[])=>"function"==typeof e?e.apply(window,t):window.eval(e);return i(),{wrap:()=>{const i={setTimeout:window.setTimeout,setInterval:window.setInterval,requestAnimationFrame:window.requestAnimationFrame,clearTimeout:window.clearTimeout,clearInterval:window.clearInterval},a=(e,t)=>i[e].apply(window,t),s=e=>n=>(t&&(r[n]=!0),a(e,[n])),w=t=>(...r)=>{let i,[s,w,...p]=r;return i=a(t,[(...r)=>{if(!e)return o(s,r);n.push({timerId:i,fnOrCode:s,params:r,type:t})},w,...p]),i};window.setTimeout=w("setTimeout"),window.setInterval=w("setInterval"),window.requestAnimationFrame=w("requestAnimationFrame"),window.clearTimeout=s("clearTimeout"),window.clearInterval=s("clearInterval")},reset:i,pause:a=>{e=Boolean(a),e||(t=!0,n.forEach((e=>{const{timerId:t,type:n,fnOrCode:i,params:a}=e;"setInterval"===n&&r[t]||o(i,a)})),i())}}})();e.removeAllListeners("app:timers:reset"),e.removeAllListeners("app:timers:pause"),e.on("app:timers:reset",t.reset),e.on("app:timers:pause",t.pause),t.wrap(),e.action("app:window:before:load",window)})(); </script>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="Generator" content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma",sans-serif;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+p.listparagraph, li.listparagraph, div.listparagraph
+	{mso-style-name:listparagraph;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma",sans-serif;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang="EN-US" link="blue" vlink="purple">
+
+<div class="WordSection1">
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:.8in;
+margin-bottom:6.0pt;margin-left:1.2in;text-align:center;line-height:normal"><b><span style="font-size:22.0pt;font-family:&quot;Times New Roman&quot;,serif;color:gray">&nbsp;</span></b></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:.8in;
+margin-bottom:6.0pt;margin-left:1.2in;text-align:center;line-height:normal"><b><span style="font-size:22.0pt;font-family:&quot;Times New Roman&quot;,serif;color:gray">Phan
+Thanh Tâm<br>
+<br>
+</span></b></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:.8in;
+margin-bottom:6.0pt;margin-left:1.2in;text-align:center;line-height:normal"><b><span style="font-size:22.0pt;font-family:&quot;Times New Roman&quot;,serif;color:gray">Hai
+Tập Thơ Tù</span></b></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:.8in;
+margin-bottom:6.0pt;margin-left:1.2in;text-align:center;line-height:normal"><b><span style="font-size:22.0pt;font-family:&quot;Times New Roman&quot;,serif;color:gray">Nguyễn
+Chí Thiện &amp; Hồ Chí Minh</span></b></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:.8in;
+margin-bottom:6.0pt;margin-left:1.2in;text-align:center;line-height:normal"><b><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;color:gray">&nbsp;</span></b></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:.8in;
+margin-bottom:6.0pt;margin-left:1.2in;text-align:center;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">tản mạn</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:6.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:black">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:6.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Từ
+tù lớn đến tù nhỏ, từ tù thời Tây cho
+đến tù thời nay,Việt&nbsp;Nam&nbsp;là nước có
+số lượng văn thơ tù ngục nhiều
+nhất thế giới. Đố ai đếm
+được nước mình có bao nhiêu thơ tù thì
+cũng như đố ai biết lúa mấy cây, biết
+mây mấy từng hay đố ai nằm ngủ mà không
+mơ vậy.Tuy thế, hầu như mọi người
+trong chúng ta đều nghe nói tới hai tập thơ&nbsp;<b>Hoa
+Địa Ngục</b>của&nbsp;<b><i>Nguyễn Chí
+Thiện&nbsp;</i></b>và&nbsp;<b>Nhật Ký Trong Tù&nbsp;</b>của&nbsp;<b><i>Hồ
+Chí Minh.</i></b></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:6.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Hoa
+Địa Ngục với “<i>những vần thơ từ
+đau khổ bao la”</i>&nbsp;xuất hiện lần
+đầu tiên hồi tháng 9/80 một cách khá ly kì, do
+Thời Tập ở Virginia in ra, không tên tác giả, không
+đầu đề , “<i>song sức phá vạn lần
+hơn trái phá”</i>&nbsp;của tập thơ đã gây xôn xao
+trong dư luận. Gần hai năm sau, người ta
+mới biết tác giả là Nguyển Chí Thiện, một
+cái tên lạ hoắc, bị chế độ của
+Hồ Chí Minh, chủ tịch nước Việt Nam Dân
+Chủ Cọng Hoà, tác giả tập thơ Nhật Ký Trong
+Tù, đày đến tầng cuối địa ngục
+trần gian, khiến ông phải than rằng: “<i>Tôi sợ
+bác Hồ vạn lần hơn bác Hổ.”</i></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Nhật
+Ký Trong Tù được công bố đầu tiên năm
+1960, sau vụ Nhân văn Giai Phẩm; năm 1990 mới cho
+xuất bản toàn bộ gồm 133 bài. Các bộ máy công
+quyền Việt&nbsp;Nam&nbsp;đã vận dụng mọi
+phương tiện để năm châu biết Hồ Chí
+Minh, chẳng những là một nhà cách mạng mà còn là
+một nhà thơ, một nhà văn hóa nữa. Khác với
+Hoa Địa Ngục, tập thơ của họ Hồ
+viết bằng chữ Hán về tù ngục&nbsp;<i>bên Tàu</i>,
+từ&nbsp;<b>29-8-1943</b>&nbsp;đến&nbsp;<b>10-9-1943,</b>&nbsp;thời
+Tưởng Giới Thạch, được dịch ra
+tiếng Việt để giảng dạy ở các
+trường trong nước.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Có
+thề nói sách nào viết về Hồ Chi Minh cũng
+đề cập tới Nhật Ký Trong Tù không nhiều thì
+ít.Viện Văn Học trong cuốn&nbsp;<i>Suy Nghĩ
+Mới Về Nhật Ký Trong Tù</i>, với sự cọng
+tác của 21 Giáo sư và nhà nghiên cứu chuyên ngành cho
+biết “<i>Nhật Ký Trong Tù của Hồ Chí Minh đã
+được tìm hiểu, nghiên cứu hầu như
+về tất cả mọi phương diện và công
+bố dưới nhiều hình thức khác nhau: khảo
+luận, giảng dạy, bình thơ..”&nbsp;</i>Tác phẩm này
+được dịch in ở nhiều nước trên
+thế giới như Liên sô (cũ), Pháp, Balan (cũ), Hungari
+(cũ), Trung Quốc, Tiệp Khắc (cũ), Mỹ..</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Nhật
+Ký Trong Tù như đứa con cưng của vua
+được cung phụng đủ điều. Trái
+lại, Hoa Địa Ngục “<i>tưới bằng
+xương</i>&nbsp;<i>máu thịt”</i>&nbsp;trong các nhà tù
+miền Bắc thì lại là một tai họa, lại có
+cơ bị chôn vùi theo người cưu mang ra nó.
+Nguyển Chí Thiện đã phải mất ba ngày moi trong
+bộ nhớ ở đầu mình, viết lên giấy 400
+bài thơ để đưa đứa con tinh thần
+đào thoát. Ngày&nbsp;16/7/1979, ông dứt khoát xộc vào Toà
+Đại Sứ Anh, xin tị nạn nhưng bị
+từ chối. Ông trao cho ho tập thơ và ba tấm hình.
+Ông khẩn khoản mong họ cho Hoa Địa Ngục
+phổ biến ở các nước tự do.</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:.8in;
+margin-bottom:10.0pt;margin-left:1.2in;text-align:center;line-height:150%"><span style="font-size:14.0pt;line-height:150%"><a href="http://www.ykien.net/HoaDiaNguc.doc"><span style="font-family:&quot;Times New Roman&quot;,serif;
+text-decoration:none"><img border="0" width="32" height="32" src="PhanThanhTamHaiTapThoTu_files/image001.gif"></span></a></span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:.8in;
+margin-bottom:10.0pt;margin-left:1.2in;text-align:center;line-height:150%"><span style="font-size:14.0pt;line-height:150%"><a href="http://www.ykien.net/HoaDiaNguc.doc"><b><span style="font-family:&quot;Times New Roman&quot;,serif;
+color:navy">Vào Tù Vì Sự Thật</span></b></a></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Bước
+ra ông bị Cảnh sát bắt đưa thẳng vô Hoả
+Lò, được gọi là “Hanoi Hilton”, nơi giam giữ
+phi công Mỹ bị hỏa tiển Nga bắn hạ.
+Đây là lần thứ ba ông sống với “<i>rận,
+chấy, kẹp cùm, thối khai, dớt dãi</i>”. Lần
+thứ nhất ông bị bắt năm 1961 sau khi dạy
+Sử thế cho một người bạn; vì lời nói
+“nước Nhật đầu hàng bởi Mỹ thả
+hai quả bom nguyên tử ở Hiroshima và Nagasaki” chớ
+không như cuốn Cách Mạng Tháng Tám năm 1945 của nhà
+sách Sự Thật viết “quân Nhật đầu hàng vì
+thua quân Nga ở Manchuria.”</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Lần
+thứ hai bị tù, năm 1966, vì công an gán ông là tác giả
+các bài thơ phản động, truyền miệng trong dân
+chúng ở Hải Phòng và Hà Nội. Ông hay nhẩm thơ
+trong đầu vì ở tù, giấy bút không có và bị khám
+trại thường xuyên. &nbsp;Qua lời tựa tập
+thơ Hoa Địa Ngục do Tổ Hợp Xuất
+Bản Miền Đông Hoa Kỳ in năm 2006, Nguyễn Chí
+Thiện thố lộ, “<i>Có những ngày mưa rét, vừa
+nhẩm đọc, vừa ứa nước mắt,</i>&nbsp;<i>lưng
+tựa vào tường, người run rẩy.</i>”.
+Để nhớ, ngày nào ông cũng đọc thơ đã
+làm, “<i>làu làu như một cuộn băng.</i>”</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Còn
+Hồ Chí Minh nếm mùi tù mấy lần? Lần
+đầu gần hai năm từ 6/1931 đến 1/1933
+ở nhà tù Trung Ương Hồng Kông và nhà tù Victoria vì
+Tống Văn Sơ - tên Hồ Chí Minh bấy giờ -
+hoạt động cho Cọng Sản quốc tế,
+bị giam chung với ông già họ Lý “<i>độ 60
+tuổi, hòa nhã, mưu trí, và gan góc, giỏi chữ Trung
+Quốc, làm được thơ.” &nbsp;</i>Lần thứ
+hai ở huyện Đức Bảo tỉnh Quảng Tây
+ngày&nbsp;27/8/1942. Ông rời hang Pác Bó – mà Nguyễn Chí
+Thiện gọi là hang Ác Thú – ngày&nbsp;13/8/1942&nbsp;trở
+lại Trung Quốc nhằm tìm sự hỗ trợ cho
+lực lượng của ông từ các nước
+đồng minh chống phát xít với cái tên mới là
+Hồ Chí Minh.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Theo
+sách báo Cọng sản, sau nửa tháng băng rừng,
+Hồ Chí Minh bị bắt ở Túc Vinh ngày&nbsp;27/8/1942;
+bị giải giam qua 30 nhà tù thuộc13 huyện tỉnh
+Quảng Tây. Nhờ sự can thiệp, vận động
+từ đảng bộ Cọng sản và Liên sô cùng các nhân
+vật trong chính giới Trung quốc ông được
+thả ngày&nbsp;10/9/1943. Hồi ký của nhà phê bình văn
+học Nguyễn Đăng Mạnh cho biết, “<i>Hồ
+Chí Minh bị bắt vì khám trong người, cảnh sát
+Tầu phát hiện có rất nhiều đôla. Nghe nói
+hồi ở Pác Bó, có người đã thấy ông phơi
+đôla cho khỏi ẩm mốc.”</i></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Con vua
+thì được làm vua. Thơ vua thì buộc cả
+nước vỗ tay reo hò khen hay. Đó là thơ tù của
+Chủ tịch nhà nước dù sinh ở Tàu, viết
+tiếng Hán. Thơ tù “<i>của người dân đen,
+của lớp người</i>&nbsp;<i>sống cực
+nhọc nhất, thê thảm nhất</i>” ở trong
+nước phải trốn chui trốn nhủi, phải
+cao chạy xa bay. Hoa Địa Ngục ra khỏi
+Việt&nbsp;Nam, vọt xa và cao như rồng gặp mây. Nó<i>ghi
+chép cảnh thực, tình thực, của một giai đoạn
+lịch sử đớn đau tột độ, không
+cường điệu, khuếch đại, bôi đen;
+lấy chất liệu từ muôn ngàn cuộc đời
+bị tan nát, chôn vùi</i>.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Uy danh
+của Hồ Chí Minh đã tỏa sáng cho Nhật Ký Trong Tù.
+Trái lại, Hoa Địa Ngục thì mang tác giả ra
+khỏi cuộc đời đen thui. Giờ đây
+Nguyễn Chí Thiện là một trong những tên tuổi
+Việt Nam lẫy lừng nhất thế
+giới.Trước đó, tuy chưa biết của cha
+căn chú kiết nào nhưng báo nói, báo in các nơi đã
+đua nhau phổ biến “<i>tiếng của cuộc
+đời nức nở”</i>&nbsp;trong tập thơ. Hơn
+hẳn Nhật Ký Trong Tù, chưa có nhạc sĩ
+người Việt nào phổ nhạc; nhiều bài trong Hoa
+Đia Ngục đã được nhạc sĩ Phạm
+Duy,&nbsp; Phan văn Hưng, Trần Lãng Minh, Nguyễn Văn
+Thành (Dân Chủ Ca) đưa vào âm nhạc. Một số
+bài có cả lời Anh nữa.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:.8in;
+margin-bottom:10.0pt;margin-left:1.2in;text-align:center;line-height:150%"><b><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">Giải Nobel Về Văn Chương</span></b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Ba
+lần được đề cử lãnh giải Nobel
+về Văn chương; vào tự điển Who’s Who in
+Twentieth-century World Poetry; hội viên danh dự của
+nhiều trung tâm văn bút Pháp, Hoà Lan…; được
+nhiều giải thưởng: Gỉai thưởng thơ
+Rotterdam (1984), Freedom to Write Prize của Trung tâm văn bút Hoa
+kỳ,và ba năm làm khách danh dự của International
+Parliament of Writers; dịch ra tiếng Anh, Pháp, Đức,
+Tiệp, Hòa lan, Trung Hoa, Đại hàn … bởi các dịch
+gỉa nổi tiếng như: Huỳnh Sanh Thông, Nguyễn
+Ngọc Bích, Ỷ Lan, Võ văn Ái, Nguyễn Hữu
+Hiệu, Nguyễn thị Hằng, Nguyễn Ngọc Phách,
+Bùi Hạnh Nghi, Bùi Xuân Quang, Nguyễn Ngọc Quỳ, Jachym
+Topol, Dominique Delaunay…</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Ngoài
+ra, nhân Nghị Hội Quốc tế các Nhà văn (Parlement
+des Ecrivains) ở Âu Châu bảo trợ để giúp ông
+phục hồi sức khỏe ở St-Lô gần Normandie
+(Pháp) và&nbsp; nghiên cứu, diễn thuyết từ 1999
+đến đầu tháng 6/2001, ông đã hoàn thành tập
+truyện Hỏa Lò, gồm sáu truyện ngắn, một
+truyện vừa. Đôi khi trong cái rủi nằm phục
+một điều hay. Nhờ bị tống vào “<i>Hỏa
+Lò gần Trung Ương nhất”</i>&nbsp;nơi “<i>con
+người gần con vật nhất,</i>” nền văn
+học Việt Nam có thêm một tác phẩm văn xuôi nói
+về một địa ngục có thật. Sống
+tổng cọng 27 năm trong tù, Nguyễn Chí Thiện&nbsp;
+đích thực là một chứng nhân của thời
+đại&nbsp;<i>mả tù và mả lính.</i>&nbsp;<i>&nbsp;</i></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Trong&nbsp;</span><span style="font-size:14.0pt;line-height:150%"><a href="http://www.vietnamlit.org/"><span style="font-family:&quot;Times New Roman&quot;,serif;color:navy">www.vietnamlit.org</span></a></span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">&nbsp;của G.S Dan Duffy bằng tiếng Anh, mục
+tự truyện (autobiography), với sự nhuận bút
+của Jean Libby, một nhà hoạt động xã hội,
+tác giả Hoa Địa Ngục kể rõ việc xộc
+vào toà Đại sứ Anh và các lần bị tù cùng thân
+thế của mình. Nguyễn Chí Thiện sinh ở Hà
+nội ngày&nbsp;27/2/39, thành công dân Mỹ &nbsp;ngày&nbsp;20/10/04.
+Qua Mỹ nhờ sự vận động của
+Đại tá Noboru Masuoka và các tổ chức nhân
+đạo. Ông có người anh, ông Nguyễn Công Giân, cựu
+trung tá trong QLVNCH. Ông viết, quả là nhờ số
+mệnh và sống được là một phép lạ.&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:6.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Đứa
+con tinh thần mà ông đưa đào thoát ra nước
+ngoài ở Toà Đại sứ Anh, gần 30 năm sau
+đã về lại với người viết ra nó. Trên
+nhật báo Người Việt, Nguyễn Chí Thiện cho
+biết khoảng tháng Sáu năm 2008, ông có nhận từ
+Giáo Sư Lê Mạnh Hùng nguyên bản tập thơ Hoa
+Ðịa Ngục mà Bà vợ của Giáo Sư Patrick Honey (Phòng
+Nghiên Cứu Phi Châu và Phương Ðông tại Luân Ðôn) đã
+cho Giáo Sư họ Lê giữ bản này sau khi Giáo Sư Honey
+mất (2005). Bản ông viết hai mặt giấy, có
+nhiều trang bằng mực đỏ. Dưới lá
+thư viết bằng tiếng Pháp, có ghi tên ông và
+địa chỉ “136 Rue de La Gare, Hải Phong.”</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:6.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:6.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Theo
+Ông, “để giữ an ninh cho tôi, Bộ Ngoại Giao Anh
+đã cắt bỏ phần này.” Bản&nbsp; Văn Nghệ
+Tiền Phong thì do ông Châu Kim Nhân giao cho từ ông Ðỗ
+Văn. Ông Hùng và ông Văn đều từng làm cho&nbsp;BBC.
+Hoa Địa Ngục xuất hiện đầu thập
+niên 80; có lẽ vì vô đề nên Thời Tập lấy câu
+thơ Tiếng Vọng Từ Đáy Vực làm tựa và
+Văn Nghệ Tiền Phong thì đặt tên là Chúc Thư
+Của Một Người Việt&nbsp;Nam. Nhà Xuất
+Bản&nbsp;Tổ Hợp Miền Đông Hoa Kỳ cho hay,
+tập tuyển dịch sang tiếng Anh năm 1984 của
+Huỳnh Sanh Thông (Flowers from Hell) đã khẳng định
+tựa đề là Hoa Địa Ngục và tên tác giả
+chính xác là Nguyễn Chí Thiện, dựa trên một bức
+thư của Giáo sư Honey.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:6.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:.8in;
+margin-bottom:6.0pt;margin-left:1.2in;text-align:center;line-height:150%"><b><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">Tác Giả Dởm</span></b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:6.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Nguyễn
+Chí Thiện họp báo ngày 25/10/08 ở Quận Cam Cali
+để phản bác lại chuyện có người
+nghi&nbsp;ông&nbsp;là Thiện “dởm”; tác giả Hoa Địa
+Ngục đã chết; Lý Ðông A mới là tác giả thực.
+Ông thách người tố giác $200,000, nếu chứng minh
+ông là người giả mạo.&nbsp;Nguyễn Chí Thiện
+còn trưng dẫn tài liệu&nbsp;việc&nbsp;giảo
+nghiệm chữ viết, hình ảnh để xác nhận:
+“Tôi là tác giả tập thơ Hoa Ðịa Ngục”. Một
+số tên bạn tù&nbsp;hiện ở quận&nbsp;Cam, Hà
+Nội, Pháp và ngay cả còn trong tù cọng sản cũng
+được ông nêu ra. Nguyễn Chí Thiện quả
+quyết nói, “tôi thường đọc thơ cho họ
+nghe trong tù.”&nbsp;&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:6.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:6.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Thật
+ra,&nbsp;nếu trường Ecole Coloniale của Pháp năm
+1911 cho Hồ Chí Minh xin vào học làm quan, lúc đó tên là
+Nguyễn Tất Thành thì Việt Nam chắc sẽ không có
+Việt Gian, Việt Cộng, Việt kiều, không có
+Đấu tố, Mậu Thân, Mỹ Lai, Chất
+độc da cam; không thuyền nhân vượt biển,
+không trại cải tạo; không có Nhật Ký Trong Tù, Hoa
+Địa Ngục; không có thơ:Yêu biết mấy con nghe
+tập nói, Tiếng đầu lòng, con gọi Xít ta lin; hay
+bài hát: 1-2-3, ta là cha thằng Mỹ, 4-5-6, ta là cháu bác Hồ,
+7-8-9, ta là lính thủ đô, 10-20, ta là người Xô
+viết; hoặc câu ca dao: Chiều chiều trên bến Ninh
+Kiều, Dưới chân tượng bác, đĩ nhiều
+hơn dân; và tuyệt nhiên không có dịnh nghĩa
+đầy tính Việt gian: yêu nước là yêu xã hội
+chủ nghĩa.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:6.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:6.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Theo
+dòng đời, ông thành đảng viên Cọng sản
+năm 1920, được huấn luyện tại
+Đại học Phương Đông (1923) và Đại
+học Lénine (1934). Hồ Chí Minh chọn chủ nghĩa Mác
+Lê làm “cẩm nang thần kỳ” vì ông có một Tổ
+quốc Cách Mạng Nga để phục vụ; có một
+sứ mệnh xây dựng phong trào vô sản ở Châu Á
+để hoàn thành; và có một “người cha, thầy
+học, đồng chí và cố vấn” là Lénine để
+tuân phục. Trước đó, năm 1919 ông đã
+đạo danh Nguyễn Ái Quốc, tên chung của Hội
+Những Người An Nam Yêu Nước do Phan Châu Trinh
+đứng đầu, để làm tên của mình.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:6.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:6.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Tập
+thơ Hoa Địa Ngục và tập truyện Hỏa Lò
+của Nguyễn Chí Thiện gây ấn tượng mạnh
+hơn Nhật Ký Trong Tù và Những Mẩu Chuyện Về
+Đời Hoạt Động của Hồ Chủ
+Tịch do Trần Dân Tiên - tức Hồ Chí Minh - viết.
+Những cảnh bị trói cánh khuỷu, cổ mang vòng xích,
+ăn không đủ hay ở chung với tù bệnh giang mai
+cùng tháng ngày tù ngục ở bên Tàu mà họ Hồ tả
+chẳng thấm vào đâu nếu so với những
+thống khổ mà Nguyễn Chí Thiện phải chịu
+trong chế độ lao tù Miền Bắc. Hơn nữa,
+đảng Cọng sản có cả một mạng
+lưới bảo vệ Hồ Chí Minh. Thời gian tù
+Hồng Kông, hai luật sư người Anh bào chữa cho
+ông và ông còn được ăn cơm Tây, ngủ
+giường tốt.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:6.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:6.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Phần
+Nguyễn Chí Thiện thì đã “<i>sống bẩn thỉu,
+hôi hám như một con chuột cống, có điều thua</i>&nbsp;<i>con
+chuột cống ở chỗ đói, rét, ốm, đi không
+vững.</i>” Thân cô, thế cô, nhiều lúc quá tuyệt
+vọng, rũ rã, ông muốn chết. Nguyễn Chí Thiện
+tồn tại được là nhờ “<i>Thơ và Mơ”;</i>&nbsp;phải
+sống để đưa ra khỏi nước “<i>mầy
+vần thơ ai oán”.&nbsp;</i>Còn Nhật Ký Trong Tù tung ra
+chỉ để tuyên truyền, làm đẹp cuộc
+đời Hồ Chí Minh. Trong&nbsp; Những Mẩu
+Chuyện của Hồ Chủ Tịch, ông tự cho mình là
+cha già dân tộc. Danh xưng dân Ấn tôn vinh Mohandas Gandhi (1869-1948),
+người</span><span lang="VI" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;đã thuyết
+phục</span><span style="font-size:14.0pt;line-height:150%;font-family:
+&quot;Times New Roman&quot;,serif;color:navy">&nbsp;được&nbsp;</span><span lang="VI" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">Anh</span><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;Quốc</span><span lang="VI" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">&nbsp;trả độc lập cho Ấn bằng
+con đường hòa bình</span><span style="font-size:14.0pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;ngày
+15/8/1947. Hồ Chí Minh đã ăn cắp ý này.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:6.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:.8in;
+margin-bottom:10.0pt;margin-left:1.2in;text-align:center;line-height:150%"><b><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">Ai là tác giả Nhật Ký Trong Tù?</span></b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Sự
+nghiệp và cuộc đời hai tác giả khác hẳn
+nhau. Gần nửa đời người, Nguyễn Chí
+Thiện chỉ biết hết tù nhỏ đến từ
+lớn, không vợ con, chay tịnh.Tài sản của ông là
+Hoa Địa Ngục và Hỏa Lò, được kết
+nụ, nung nấu trong lòng chế độ mà Hồ Chí
+Minh đã xây dựng sau 30 năm bôn ba hải ngoại.
+Sự nghiệp Hồ Chí Minh là làm cách mạng chuyên
+nghiệp, cướp chánh quyền. Có cả trên trăm
+lần thay tên đổi họ. Chỉ Đệ tam
+quốc tế của Liên sô mới thấu rõ “con
+đường bác đi” vì tên ông có trong sổ lương.Vợ
+Tăng Tuyết&nbsp; Minh (1), con Nguyễn Tất Trung (2),
+nhưng vẫn sống lối độc thân tại
+chỗ, được tôn làm vua đạo dụ. Một
+điều giống nhau, cả hai ông đều bị
+tố: kẻ đạo thơ.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Ở
+Việt&nbsp;Nam, chẳng ai dám bàn nhiều về chuyện
+này. Trong bài “19/5 không phải là ngày sinh của Hồ Chí Minh”
+(3), Đinh Tiểu Nguyễn cho biết, “Ngày 15 tháng 10
+năm 1998, tại Ban Việt học của Đại
+Học Paris&nbsp;VII, Giáo sư người Nhật, ông Kenichi
+Kawaguchi, Hội viên Văn Bút Nhật bản, Giáo sư
+tại Đại học Tokyo, Ban Bang giao quốc tế,
+thuật chuyện ông về Hà Nội. Nghe nói tập thơ
+Tù của Hồ Chí Minh, ông đã đến Hà Nội tìm
+đọc và có thể sẽ dịch ra tiếng Nhật.
+Một giáo sư người Việt thấy vậy,
+vỗ vai ông vừa cười và bảo tập thơ
+ấy có phải của ông Hồ đâu mà ông mất công
+nghiên cứu.”</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Theo
+Wikipedia tiếng Việt,&nbsp;</span><span lang="VI" style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Nhật
+ký trong tù,<b>&nbsp;</b></span><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,serif;color:navy">n</span><span lang="VI" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">guyên gốc tập thơ chỉ là một
+quyển sổ tay nhỏ, bìa xanh đã bạc màu, ghi
+bốn chữ "Ngục trung nhật ký" (tức&nbsp;<i>Nhật
+ký trong tù</i>)</span><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,serif;color:navy">,&nbsp;</span><span lang="VI" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">kèm theo bốn câu thơ và một hình vẽ hai
+nắm tay bị xích; bên trong gồm hơn 100 bài
+thơ&nbsp;</span><span style="font-size:14.0pt;line-height:150%"><a href="http://vi.wikipedia.org/wiki/Ch%E1%BB%AF_H%C3%A1n" title="Chữ Hán"><span lang="VI" style="font-family:&quot;Times New Roman&quot;,serif;color:navy">chữ Hán</span></a></span><span lang="VI" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">&nbsp;và một số ghi chép</span><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">;&nbsp;</span><span lang="VI" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">ở trang đầu&nbsp;</span><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">ghi&nbsp;</span><span style="font-size:14.0pt;line-height:150%"><a href="http://vi.wikipedia.org/wiki/29_th%C3%A1ng_8" title="29 tháng 8"><b><span lang="VI" style="font-family:&quot;Times New Roman&quot;,serif;color:navy">29</span></b><b><span style="font-family:&quot;Times New Roman&quot;,serif;color:navy">.8.</span></b></a><a href="http://vi.wikipedia.org/wiki/1932" title="1932"><b><span lang="VI" style="font-family:&quot;Times New Roman&quot;,serif;color:navy">1932</span></b></a></span><span lang="VI" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">&nbsp;và ngày&nbsp;</span><span style="font-size:14.0pt;line-height:
+150%"><a href="http://vi.wikipedia.org/wiki/10_th%C3%A1ng_9" title="10 tháng 9"><b><span lang="VI" style="font-family:&quot;Times New Roman&quot;,serif;color:navy">10</span></b><b><span style="font-family:&quot;Times New Roman&quot;,serif;color:navy">.9.</span></b></a><a href="http://vi.wikipedia.org/wiki/1933" title="1933"><b><span lang="VI" style="font-family:&quot;Times New Roman&quot;,serif;color:navy">1933</span></b></a></span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">, trang sau ghi&nbsp;<b>29-8-1942</b>&nbsp;và&nbsp;<b>10-9-1943</b>&nbsp;là
+lúc Hồ Chí Minh bị bắt ở Quảng Tây.&nbsp;&nbsp;</span><span lang="VI" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">Điều này làm nảy sinh nh</span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">iều</span><span lang="VI" style="font-size:14.0pt;line-height:
+150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;nghi vấn
+về tác giả và thời điểm sáng tác của
+tập thơ</span><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,serif;color:navy">.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Verdana&quot;,sans-serif;color:navy"><img src="http://www.gio-o.com/Images/PTT2TT1.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://www.gio-o.com/Images/PTT2TT2.jpg">  </span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Verdana&quot;,sans-serif;
+color:navy">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Verdana&quot;,sans-serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Verdana&quot;,sans-serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Đã
+có nhiều bài báo bàn ra tán vào về nghi vấn ai là tác
+giả.Trước hết là con số bài thơ trồi
+sụt bất thường. Ngày tháng tù của ông Hồ
+ở bìa sách và lưng sách sai biệt 10 năm. Chữ
+viết có vẻ khác. Trang đầu dùng chấm, chữ
+nghiêng trái. Trang chót dùng gạch ngang, chữ hơi ngã
+phải. Hầu hết các bài báo cho là Hồ Chí Minh lấy
+thơ người khác rồi viết thêm thơ mình vào; nên
+Hồ Chí Minh không thể là tác giả của Ngục Trung
+Nhật Ký gốc được. Mặt khác, trong cuốn
+“Vừa Đi Đường Vừa Kể Chuyện,” tác
+giả T. Lan cũng là tên của Hồ Chí Minh cho biết:
+Ở Quảng Tây ông chỉ bị bắt “<b>giải
+đi&nbsp;suốt 18 nhà lao</b>”.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Giáo
+sư Lê Hữu Mục, dạy Triết trường
+Quốc Học Huế và các Đại Học Văn Khoa
+trước 1975, nhờ còn ở Việt Nam sau 30/4/75 nên ông
+đã “thọc sâu vào được cái bóng tối dày
+đặc bao bọc chung quanh tập thơ.”
+Qua&nbsp;Canada&nbsp;ông đã viết tập “Hồ Chí Minh không
+phải là tác giả Ngục Trung Nhật Ký.” Theo ông, ban
+tuyên giáo Cộng Sản đã rất công phu trong việc gán
+ép quyền tác giả tập thơ cho Hồ Chí Minh. Trong
+tương lai, vẫn theo giáo sư, “nó sẽ bị
+đánh bật ra khỏi tay Hồ Chí Minh, sẽ
+được trao trả cho tác giả đích thực
+của nó là già Lý.” Đó là ông lão hay làm thơ, cùng bị
+giam với Hồ Chí Minh ở Hồng Kông những năm
+1932-1933.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:.8in;
+margin-bottom:10.0pt;margin-left:1.2in;text-align:center;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
+color:navy"><img border="0" width="263" height="340" id="Picture 4" src="http://www.gio-o.com/Images/PTT2TT3.jpg"></span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:.8in;
+margin-bottom:10.0pt;margin-left:1.2in;text-align:center;line-height:150%"><b><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">Vụ Đạo Thơ lớn Nhất Trong
+Lịch Sử</span></b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Tập
+biên khảo, được xuất bản bởi Ủy
+Ban Tố Cáo Tội Ác Hồ Chí Minh năm 1990
+ở&nbsp;Paris&nbsp;còn cho biết, “quốc tịch Trung Hoa
+của con người trong tập thơ nổi bật lên
+một cách dễ dàng,” nếu đọc kỹ các bài
+thơ. Con người này là Ông già Lý, chúa một dãy núi,
+kể lại đời sống ở những vùng
+rừng núi khi còn trẻ qua nhiều bài thơ trong cuốn
+sổ tay đó. Ngoài ra, có những từ liên hệ
+trực tiếp với Hồng Kông hơn là ở Quảng
+Tây; phù hợp với con số 1932-1933 mà nhà văn
+Đặng Thái Mai đã nêu ra, mới đúng là năm
+viết Nhật Ký Trong Tù.<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><b><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Viện
+Văn Học trong cuốn&nbsp;<i>Suy Nghĩ Mới Về
+Nhật Ký Trong Tù</i>&nbsp;đã bác lập luận
+của&nbsp; Lê Hữu Mục bằng bài “Câu Chuyện Tác
+Giả Ngục Trung Nhật Ký” của Phó Giáo sư Phan
+Ngọc tức Nhữ Thành. Phó giáo sư này, khẳng
+định là tập thơ “viết cùng một thứ
+chữ; xuất xứ đâu có phải mơ hồ.”
+&nbsp;Tác giả Nhữ Thành còn cho rằng, “Quyển sách Lê
+Hữu Mục viết ra thực tế là hành động
+giơ dao.” &nbsp;Ông khuyên Giáo sư này, “Nên buông dao thì hơn.”
+Về dòng chữ đề ngày 29.8.1932 – 10.9.1933 ở ngoài
+bìa, Viện văn học biện minh là để “nguỵ
+trang.” &nbsp;&nbsp;&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Dù
+vậy, những phản biện của Viện Văn
+Học không đủ thuyết phục, không đánh tan
+được nghi vấn ăn cắp thơ của
+Hồ Chủ Tịch từ nửa thế kỷ nay.
+Đây là một vụ án đạo văn thơ lớn
+nhất trong lịch sử văn học Việt&nbsp;Nam, có
+sự hỗ trợ của quyền lực. Thời gian
+chỉ làm dịu vơi nỗi khổ, niềm đau;
+chớ không thể xóa bỏ sự hoài nghi hay gian ác
+được. Hồ Chí Minh đã đi vào lịch sử
+Việt Nam bằng con đường cách mạng vô
+sản, để lại nhiều mả tù, mả lính,
+xương trắng Trường sơn, và gây cảnh Nam
+Bắc phân ly, huynh đệ tương tàn.
+Đường vào văn học sử thì khác. Rất
+dễ nhưng rất khó. Nó đòi hỏi sự thật và
+nghệ thuật.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Tù nhân
+Nguyễn Chí Thiện, trước các làn sóng tố cáo
+“Thiện giả, ăn cắp thơ,” đã chấp
+nhận giảo nghiệm hình ảnh và chữ viết của
+mình để minh chứng tên tác giả thực của Hoa
+Địa Ngục. Đảng Cọng Sản Việt Nam
+thừa kế di sản Hồ Chí Minh tổ chức
+cuộc vận động học tập và làm theo tấm
+gương đạo đức Hồ Chí Minh
+từ&nbsp;3/2/2007&nbsp;đến&nbsp;3/2/2011&nbsp;thì không
+gì&nbsp;<b>cụ thể và ngay thẳng</b>&nbsp;hơn: cho công
+bố cuộc giảo nghiệm chữ viết và con
+số cùng bút tự chữ Hán trong các di cảo của ông
+Hồ với cuốn sổ gốc Nhật Ký Trong Tù.
+Nếu hô hào suông, thần tượng Hồ Chí Minh chỉ
+là:&nbsp;<b>Trông xa ngỡ tượng tô vàng; Nhìn gần
+lại hóa toàn là đồ gian.</b></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><b><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">&nbsp;</span></b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">Thật
+vậy, thực tiễn mới là thước đo chân lý.
+Muốn biết về thời đại Hồ Chí Minh thì
+“<i>Hãy lắng nghe tiếng vọng từ đáy vực”</i>&nbsp;bằng
+cách đọc Hoa Địa Ngục và Hỏa Lò. &nbsp;Kinh
+nghiệm Cọng sản là một cái gì cụ thể. Trong
+“Hồi kí Nguyễn Hiến Lê”, một học giả có cả
+trăm đầu sách, rất có ảnh hưởng ở
+miền Nam, ông viết,&nbsp;<i>muốn thấy chế
+độ đó ra sao thì phải sống dưới
+chế độ. Đó là bài học đầu tiên và vô
+cùng quan trọng mà tôi và có lẽ cả 90% người miền&nbsp;Nam&nbsp;rút
+được</i>. Mấy ông Tây bà đầm, các nhà khoa
+bảng lẫy lừng khi nói đến họ Hồ nên
+nhớ đến lời này. Mong lắm thay!</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:150%"><b><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">Phan Thanh Tâm</span></b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;color:navy">Saint
+Paul, 12/08</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:0in;
+margin-left:1.2in;margin-bottom:.0001pt;text-align:justify;text-indent:-.5in;
+line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">(1)</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span><a href="http://www.gio-o.com/NguyenDuyChinhTangTuyetMinh.htm"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;color:navy">http://www.gio-o.com/NguyenDuyChinhTangTuyetMinh.htm</span></a></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:0in;
+margin-left:1.2in;margin-bottom:.0001pt;text-align:justify;text-indent:-.5in;
+line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">(2)</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span><a href="http://www.geocities.com/xoathantuong/bt_sophanntt.htm"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">http://www.geocities.com/xoathantuong/bt_sophanntt.htm</span></a></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:0in;
+margin-left:1.2in;margin-bottom:.0001pt;text-align:justify;text-indent:-.5in;
+line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">(3)</span><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,serif;
+color:navy">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size:7.0pt;
+font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span><a href="http://www.geocities.com/xoathantuong/dtn_1905hcm.htm"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif">http://www.geocities.com/xoathantuong/dtn_1905hcm.htm</span></a></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;color:navy">Một
+trang thơ trong Hoa Ðịa Ngục do Nguyễn Chí Thiện
+viết tay bằng mực xanh.</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:.8in;
+margin-bottom:10.0pt;margin-left:1.2in;text-align:center;line-height:normal"><span style="font-size:13.5pt;font-family:&quot;Times New Roman&quot;,serif;color:black">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:.8in;
+margin-bottom:10.0pt;margin-left:1.2in;text-align:center;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;color:navy"><img border="0" width="277" height="400" id="Picture 5" src="http://www.gio-o.com/Images/PTT2TT4.jpg"></span><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;color:navy"><br>
+</span><span style="font-size:7.5pt;font-family:&quot;Arial&quot;,sans-serif;color:navy">nguồn
+ảnh:
+http://www.nguoi-viet.com/absolutenm/articlefiles/86798-big_Diendan%20NCT_5.JPG</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Arial&quot;,sans-serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;color:navy">©
+gio-o.com 2008</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;color:navy">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:.8in;margin-bottom:10.0pt;
+margin-left:1.2in;text-align:justify;line-height:normal"><span style="font-size:13.5pt;font-family:&quot;Times New Roman&quot;,serif;color:black">&nbsp;</span></p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+</div>
+
+
+
+
+</body>

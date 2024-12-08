@@ -1,0 +1,928 @@
+<html><head> <script type="text/javascript"> document.domain = 'gio-o.com'; (()=>{"use strict";const e=window.Cypress=parent.Cypress;if(!e)throw new Error("Something went terribly wrong and we cannot proceed. We expected to find the global Cypress in the parent window but it is missing. This should never happen and likely is a bug. Please open an issue.");const t=(()=>{let e,t,n,r;const i=()=>{e=!1,t=!1,n=[],r={}},o=(e,t=[])=>"function"==typeof e?e.apply(window,t):window.eval(e);return i(),{wrap:()=>{const i={setTimeout:window.setTimeout,setInterval:window.setInterval,requestAnimationFrame:window.requestAnimationFrame,clearTimeout:window.clearTimeout,clearInterval:window.clearInterval},a=(e,t)=>i[e].apply(window,t),s=e=>n=>(t&&(r[n]=!0),a(e,[n])),w=t=>(...r)=>{let i,[s,w,...p]=r;return i=a(t,[(...r)=>{if(!e)return o(s,r);n.push({timerId:i,fnOrCode:s,params:r,type:t})},w,...p]),i};window.setTimeout=w("setTimeout"),window.setInterval=w("setInterval"),window.requestAnimationFrame=w("requestAnimationFrame"),window.clearTimeout=s("clearTimeout"),window.clearInterval=s("clearInterval")},reset:i,pause:a=>{e=Boolean(a),e||(t=!0,n.forEach((e=>{const{timerId:t,type:n,fnOrCode:i,params:a}=e;"setInterval"===n&&r[t]||o(i,a)})),i())}}})();e.removeAllListeners("app:timers:reset"),e.removeAllListeners("app:timers:pause"),e.on("app:timers:reset",t.reset),e.on("app:timers:pause",t.pause),t.wrap(),e.action("app:window:before:load",window)})(); </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="Generator" content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Microsoft Sans Serif";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:14;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:24.0pt;
+	font-family:"Times New Roman","serif";
+	color:windowtext;
+	font-weight:bold;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	color:windowtext;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+.MsoChpDefault
+	{font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang="EN-US" link="blue" vlink="purple">
+
+<div class="WordSection1">
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><b><span style="font-size:14.0pt;line-height:150%;font-family:&quot;14&quot;,&quot;serif&quot;">&nbsp;</span></b></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><b><span style="font-size:14.0pt;line-height:150%;font-family:&quot;14&quot;,&quot;serif&quot;"><img src="http://www.gio-o.com/NguyenThiLeLieu/hienluong20.jpg"></span></b></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span style="font-size:
+22.0pt;line-height:150%;font-family:&quot;Microsoft Sans Serif&quot;,&quot;sans-serif&quot;;
+color:#948A54">Đoàn Nhã Văn</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span style="font-size:
+22.0pt;line-height:150%;font-family:&quot;Microsoft Sans Serif&quot;,&quot;sans-serif&quot;;
+color:#948A54">Những Chân Nhang Trên Đỉnh Charlie</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;14&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;14&quot;,&quot;serif&quot;">chuyện ngắn</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;line-height:
+150%"><b><span style="font-size:14.0pt;line-height:150%;font-family:&quot;14&quot;,&quot;serif&quot;">&nbsp;</span></b></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Buổi sáng, trời mát dịu, rừng núi đẫm hơi sương. Từ
+lưng chừng núi trở xuống , từng màn sương đục bay là là như muôn ngàn dãi lụa
+trắng nối kết nhau, phủ cả một vùng thung lũng rộng lớn.&nbsp; Nhìn xuống đường 14, con
+sông Pô-Kơ&nbsp; ngoằn ngoèo như một con rắn, mà khúc đuôi ở tận ngã ba Đông Dương,
+với cái đầu đang chồm tới, lao về hướng biển. Một màu xanh ngút ngàn, tít tắp,
+trãi dài đến tận chân trời. Những áng mây hồng đang từ từ trôi giữa một không
+gian lồng lộng. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Tôi đã định rời nơi này từ lâu lắm, nhưng mà hình như
+có cái gì níu kéo, không rời được. <i>Rồi cũng phải đi thôi, chứ chẳng lẽ ở lại
+đây mãi.</i> Thằng Cộng nói thế. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Những ngày đầu, tôi với thằng Cộng từng đánh nhau tóe
+lửa. Tôi đuổi hắn. Nói: đỉnh Charlie này là của tao, mày dẫn cả bọn đi nơi
+khác. Thằng Cộng trả lời: Núi rừng này làm quái gì của anh. Thế là đánh nhau.
+Chúng tôi đánh tay đôi. Hắn võ nghệ như cứt nhưng được cái sức trẻ và sáng dạ.
+Tôi, đai đen nhu đạo, nhiều lần, cho hắn ăn đòn tới tấp, quỵ ngã, nhưng tánh
+nào tật nấy, không bao giờ chịu bỏ đi. Lâu dần, để tránh đòn, cộng thêm sức trẻ,
+hắn thường xông vào ôm tôi, rồi vật xuống. Có hôm, hai thằng lăn long lóc xuống
+sườn núi. Đánh rồi nghỉ, rồi đánh, liên tục. Đánh nhau lâu ngày thành quen. Rồi
+chúng tôi thân từ lúc nào chẳng biết. Chỉ nhớ, từ cái hôm ấy, tôi gọi hắn: thằng
+Cộng. Hắn gọi tôi: lão Ngụy. Có lần, hắn hỏi tôi: sao lão Ngụy chưa đi? Tôi bảo:
+đi làm quái gì, thênh thang ở đây không sướng à. Hắn nói: <i>Rồi cũng phải đi
+thôi, chứ chẳng lẽ ở lại đây mãi</i>. Ừ, thì mày đi trước đi, tao còn chờ. Lão
+chờ ai? Rồi có một ngày mày sẽ hiểu thôi. Thấy tôi chưa rời chốn này, hắn cũng
+chưa chịu đi. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Từ phía Nam, tít tắp dưới chân núi, ba cái vòng tròn
+đen, lắc lư, lắc lư, di chuyển. Hình như có người đi lên. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">- Cộng ơi.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">- Gì thế lão Ngụy?</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">&nbsp;- Mày nhìn kìa, có người đang đi lên.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">- Ai mà lên tới cái chỗ chó chết này nhỉ?</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Thằng Cộng vẫn thế, lúc nào cũng bẵng gắt. Hắn chạy lại
+một cách nhẹ tênh. Nhìn theo hướng chỉ, hắn cười hì hì: lão Ngụy đúng đấy. Có
+ba người cả thảy.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Mấy tuần trước, tôi cũng bảo hắn, linh tính cho biết,
+dường như sẽ có người lên này. Hắn bảo: ông cứ chờ đợi mãi. Đấy, cả một đám gần
+chục thằng lên hồi ấy, đem theo cả ống nhòm ống nhiếc, ngó bên này, nhòm bên
+kia, có ai nhắc nhở gì tới lão hay tôi đâu. Đợi chờ gì. Ừ, có lẽ hắn nói đúng.
+Mà mình cũng có đợi chờ ai đâu. Thôi, thì đi chơi. Thế là tôi qua thăm ông Đạt,
+bên Tân Cảnh. Rồi ông Đạt rủ đánh cờ, nên đến chiều mới về lại bên này. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Tối đến, thằng Cộng kể lại. Hồi sáng lão đoán đúng đấy.
+Đi đâu, mà tôi gọi mãi chẳng nghe thấy. Hắn kể, khi mặt trời lên khá cao, từ
+chân núi, một vòng tròn trắng lớn, và hai vòng tròn đen, nhỏ hơn, từng bước
+theo triền dốc. Nhưng khi đi dến chỗ đất bằng, ngay lưng chừng núi thì dừng lại.
+Tôi chạy xuống, thì ra, một thiếu phụ và hai thanh niên. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Trời nắng như thiêu đốt, từng cơn gió Lào giật muốn
+cháy thịt da, nên cả ba phải dừng lại, và hình như người thiếu phụ mệt lắm, không
+còn sức trèo lên cao nữa. Họ trãi ra một khăn giấy lớn, bày một ít bánh, kẹo,
+có cả chén gạo, chén muối nũa ông ạ. Hai người thanh niên ngồi núp dưới bóng
+mát hai bụi cây, người đàn bà lấy cái nón lá ra, quạt mấy cái, tay lau mặt, rồi
+lấy mấy thẻ nhang ra đốt.&nbsp; Đốt mãi mà vẫn không cháy. Anh thanh niên phải chạy
+lại, kéo cái áo ra, che hướng gió, đốt giùm cho thiếu phụ. Người thiếu phụ nhắm
+mắt, rồi lầm thầm khấn vái. &nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>Hôm nay con về đây, cúng bố con. Bố con là
+Nguyễn Văn T, nguyên là một sĩ quan thuộc tiểu đoàn 11 nhảy dù của Trung Tá
+Nguyễn Đình Bảo. </i></span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Thưa bố, ngày bố mất, con còn chưa chào đời. Mẹ nói,
+sau trận Hạ Lào gì đó mấy tháng, bố về phép, và bố Mẹ gặp nhau.&nbsp; Bố hứa, lần về
+phép sau, sẽ cưới Mẹ.&nbsp; Vì thương bố và không biết ngày mai sẽ ra sao, khi chiến
+tranh ngày một ác liệt, mẹ đã nhất quyết hiến dâng đời con gái của mình cho một
+chàng sĩ quan trẻ</span></i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">. <i>Thưa bố, đã mấy chục năm rồi con mới về đây,
+thăm bố. Con muốn về đây lâu rồi, nhưng lần nào, người ta cũng viện nhiều thứ,
+không cho vào vùng này. Con chỉ biết dừng lại bên ngoài Tân Cảnh, nhìn về hướng
+Nam mà cúng bố. Không biết sau lần này, con có về đây được nữa không, vì sức
+khõe con ngày càng xa sút, mà kinh tế gia đình rất khó khăn. </i></span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Bố ơi, mong bố và các chú, các Bác cùng về thuận hưởng.
+</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Người thiếu phụ vừa nói vừa sụt sùi lau nước mắt.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bố ơi, ngày ấy con còn quá nhỏ dể hiểu chiến
+tranh là gì, để thấy cái mất mát của Mẹ là quá lớn... Mẹ ở vậy nuôi con mà
+không hề đi bước nữa. Trước khi Mẹ mất, có nói với con rằng, có 1 điều, Mẹ muốn
+làm từ bao nhiêu năm nay mà chưa hề làm được, đó là: được đến nơi bố đã hy sinh
+mà thắp vài nén nhang cho bố. Con đã hứa với Mẹ, sẽ thay Mẹ làm điều đó. Hứa mà
+con nào có biết Charlie, Delta ở nơi nào. Mẹ bảo con, cứ về Kon Tum hay Tân cảnh,
+rồi hỏi, sẽ có người chỉ giúp. Rồi Mẹ đi.</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bố ơi, Mẹ bảo bố là một anh hùng. Từ lúc lọt
+lòng, cho đến hôm nay, &nbsp;từ tận đáy lòng của con, bố lúc nào cũng là anh hùng.&nbsp;
+Phải đợi đến lúc con trưởng thành, con mới thấu hiểu hết. Con mang niềm hãnh diện
+được làm con của một anh hùng đi vào cuộc sống. &nbsp;Nhưng bố ạ, cuộc đời nghiệt
+ngã lắm, làm con của một anh hùng thật không dễ dàng gì. Làm con của một anh
+hùng thuộc phe bại trận thì quả thật không còn gì nghiệt ngã hơn. Làm vợ, có chồng
+là anh hùng phe bại trận, thì bố hiểu, Mẹ đã sống một vào đời vất vã làm sao...
+Không có gì cản được tấm lòng con thương Mẹ, thương bố. Đó là lẽ sống, và cũng là
+sức mạnh để con đi trên hai đôi chân của mình, vượt qua những con đường đầy
+chông gai mà kẻ chiến thắng đã giăng trãi sau khi nắm trọn giang sơn. Con hứa với
+bố, như đã từng hứa với Mẹ là: con sẽ đứng thẳng người mà sống, dù cuộc đời có thẳng
+tay với con. Bố cứ yên lòng.....</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Nước mắt của thiếu phụ rơi lã chã. Hai người thanh
+niên chỉ cuối đầu yên lặng. Mấy cây nhang chưa kịp tàn, hai người thanh niên đã
+hối xuống núi, vì sợ trời tối. Ba chiếc bóng đổ dài xuống núi. Tôi bật khóc ông
+ạ. Lòng tôi, lúc đó, như lăn dài theo triền dốc...</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Đó là chuyện đã qua. Còn bây giờ, ai lại lên núi lúc
+này? Tôi tự hỏi.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Cả ba bượt qua khỏi chỗ đất bằng, lưng chừng đồi.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">- Ông Thầy, nhìn kìa. Mấy chân nhang còn mới. Chắc mới
+vài ngày trước thôi. Gã đầu bạc nói.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">- Có lẽ vậy. Gã đầu hói trả lời.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Tôi nhìn gã đầu hói. Dáng hắn quen quen. A, thằng
+Sơn. <i>Sơn</i>! Tôi gọi hắn thật to, hắn không nghe, cứ chậm rãi bước. Hắn bảo
+người bên cạnh: lên tí xíu nữa là tới hầm chỉ huy. Gắng nhe. Tôi lặng lẽ bước
+theo ba người.&nbsp; Và chỉ có thằng Sơn là tôi nhận ra.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;14&quot;,&quot;serif&quot;">********</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;14&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Tôi đến Komtum, khi mặt trời bắt đầu ngã xuống, từng
+chùm mây phản ánh nắng chiều, tóe lên những chùm hoa đỏ.&nbsp; Komtum, với người
+khác là nơi đầy bụi đỏ, nhưng với tôi là tuổi thơ thần tiên. Không hiểu sao, bố
+tôi - bắc kỳ 54- mà lại đưa gia đình lên tận nơi nắng gió này. &nbsp;Lớn lên tí xíu
+nữa, bố đem gia đình tôi về lại Sài Gòn. Rồi làm thanh niên trong thời loạn lạc,
+tôi đã dẫm xuống mảnh đất cao nguyên này biết bao nhiêu dấu chân của một thời
+binh lửa.&nbsp; Vậy mà không lần nào, lòng dạ ngỗn ngang trăm mối, như lần này.&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Tôi không có ý định về. Về thăm lại chốn xưa chỉ đau
+lòng nhớ người ở lại. Nhưng anh em nói mãi, thúc giục hoài. Anh em ở đây, không
+phải là ruột thịt, mà còn hơn ruột thịt.&nbsp; Đã từng cùng nằm chịu trận những đợt
+pháo dai dẵng, cùng lội nát núi rừng Tây Nguyên, cùng nhau mở đường máu, vùng
+chạy xuống đồi, sau giờ phút bi thương. &nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Không về, cũng được thôi, nhưng rồi ai về? ông Lang
+Tây đã ra đi từ sớm. Từng cánh dù đã rụng rơi. Thằng Bắc thì hắn nói ai cấp
+visa cho hắn mà về. Mười bốn năm trong tù, vẫn không làm hắn nhụt chí, không
+làm hắn quên đi những ân tình xưa cũ. Bây giờ, dù đầu đã bạc trắng, nhưng mỗi lần
+nhắc tới Charlie là hắn khóc. Vậy đó, với kẻ thù, hắn lừng lững, mà nhắc tới
+anh thì nước mắt hắn lưng tròng. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Không về, cũng được thôi, nhưng lời hứa với chính
+mình, dù chẳng ai biết, làm sao quên được. Thế là về. Không phải một mình mà
+còn có thằng Đức.&nbsp; Bao nhiêu năm rồi mà hắn vẫn cứ gọi: ông Thầy. Trước khi đi,
+tôi có nói với Đức là tôi muốn về thăm lại nơi này một chuyến, trước khi sức
+tàn, lực kiệt. Nghe vậy, thằng Đức nhảy dựng lên: em cũng muốn đi với ông Thầy.
+</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Từ California về Sài Gòn, sau đó chúng tôi đi Kontum,
+thăm lại quê cũ. Vừa về đến nhà đứa cháu, tôi nói: Hai Bác muốn ngày mai thăm lại
+chốn xưa, cháu nghĩ mình làm cách nào tốt nhất?&nbsp; Thằng cháu bảo: đường đi hơi
+khó, các cơ sở du lịch cũng chỉ dẫn người quanh quẩn ngoài này, chứ chưa vào tận
+trong đó. Nhưng mà có thể được.&nbsp; Rồi hắn tiếp:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">- Bác biết Năm Cam không? </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">- Bác có đọc internet, hình như bị tử hình rồi mà!</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">- Bác nói đúng. Hắn đã chết, nhưng lại chết vì chính
+câu nói của hắn. Hắn bảo, bây giờ nước mình, "<i>cái gì mà mua bằng tiền
+không được, thì mua... nhiều tiền"</i>.&nbsp; Người ta giết hắn vì câu nói này
+chứ không phải vì những hành vi của hắn. Bởi vì hắn đã đụng chạm đến sự thật, đụng
+chạm đến nhiều người, đụng chạm đến cả một hệ thống. Hắn chết, vì người ta muốn
+chứng minh rằng: hắn đã nói sai. Nhưng thôi, để cháu gọi cho vài người, xem sao.
+&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Sau một hồi, thằng cháu cho biết: ngày mai chưa được,
+phải ngày mốt. Cháu đã tìm người dẫn đường, có giấy phép đàng hoàng, giấy phép
+từ một cơ quan đủ uy tín để vượt qua, nếu có những chận, hỏi không cần thiết.
+Anh này tên Huy, đang làm trong đoàn khảo sát môi tường của tỉnh Kon Tum. Có giấy
+của đoàn này là được.&nbsp; Thế là chúng tôi chờ. Một ngày chờ đợi, để khỏi phí thời
+giờ, thế là chúng tôi đi xe ôm, từ Kon Tum, theo đường 14 về thăm Tân Cảnh, một
+địa danh nổi tiếng một thời, của những trận đánh dữ dội. Sáng sớm hôm sau, Huy
+đến. Tôi ngồi sau Huy. Đức ngồi sau đứa cháu. Chúng tôi lên đường, đi về hướng
+Pkei Cần, rồi vào xã Saloong, đến Đắc Sú. Ngọn Charlie bây giờ nằm giáp ranh giữa
+các xã của huyện Ngọc Hồi và huyện Sa Thầy.&nbsp; Trên đường đi, Huy bảo: gần 10 năm
+trước, đoàn khảo sát của tỉnh đã vào tận đây, và đi xa hơn, lên tới tận suối
+Đac- HNiêng, chảy từ ngã ba Đông Dương ngang qua Charlie. Tỉnh dự định làm một
+con đừng dẫn nước, tự chảy, phục vụ nhân dân trong thị trấn, tuy nhiên nồng độ
+dioxin của chất khai quang cao quá, nên nguồn nước vẫn chưa xử dụng được. Tôi bảo:
+khi vào đó, Huy chờ chúng tôi bên dưới, không phải nhọc công theo chúng tôi leo
+núi.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Trước mắt tôi, ngọn núi sừng sững, một màu xanh ngát
+bao phủ tận đỉnh. Tôi và Đức đã chuẩn bị từ trước, mỗi người một cái ba lô nhỏ
+sau lưng, tay cầm gậy chống, bắt đầu leo. Cả hai đều yên lặng, trôi theo từng dòng
+suy nghĩ, đứt quãng, rời rạt của mình.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Ngày 2 tháng 4, cả tiểu đoàn được thảy xuống cao điểm
+này. Trên đỉnh, anh Năm nhìn tứ phía, mặt gợn lên nổi lo lắng của một người anh
+đầy kinh nghiệm chiến trường. Chiều, trong hầm chỉ huy, anh nói: kỳ này mình kẹt
+rồi. Lính dù mà tử thủ cái ngọn đồi này thì vô lý quá. Nhưng lệnh là lệnh. Quân
+lệnh như núi, làm sao cãi được. Mình được thảy lên đây là nhằm chặn đứng kế hoạch
+chiếm Kon Tum của Cộng quân. Chúng cần phải </span></i><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;14&quot;,&quot;serif&quot;">qua được 6
+tiền đồn phòng thủ Tân Cảnh của Lữ Đoàn 2 tại dẫy Rocket Ridge này, là căn cứ
+hỏa lực 5, 6, Charlie, Delta, Yankee và Hotel. Rồi a</span></i><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;14&quot;,&quot;serif&quot;">nh cho lệnh
+phân tán thật mỏng. Chỉ giữ một đại đội trên đỉnh.</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Ngay trưa hôm sau là thấy quyết định của anh không
+sai một ly. Pháo và pháo, những đợt mưa bùn đổ xuống. </span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">"<em><span style="font-family:&quot;14&quot;,&quot;serif&quot;">Kinh
+khiếp hơn Ất Dậu, tàn khốc hơn Mậu Thân, cao hơn bão tố, phá nát hơn hồng thủy.
+Mùa Hè năm 1972- Mùa Hè máu. Mùa Hè của sự chết và tan vỡ toàn diện. Mùa Hè cuối
+đáy điêu linh. Dân tộc ta sao nỡ quá đọa đày!". Bắc đã viết như thế. Phải
+sống chết với núi rừng Tây nguyên, phải nằm oằn lưng đội pháo, lúc đó mới thấm
+hết từng chữ của hắn.</span></em></span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Pháo nối tiếp pháo. Anh Năm lên máy nhắc nhở từng
+trung đội. Sau pháo, đội kèn “âm binh” ở lưng chừng lũng thổi lên từng nhịp
+thôi thúc điên khùng. Những cái nón cối nhô lên, chuyển động lúp xúp.</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Anh ra lệnh gọi khu trục. Chẳng bao lâu, trên cao,
+hai khu trục vào vùng, rồi ào xuống, “ỉa” từng loạt, từng loạt, trên đầu những
+cái nón cối. Tiếng rên la, kêu thét hãi hùng, lẫn tiếng kèn thôi thúc như ma mị.
+Những cái nón cối, bây giờ biết đứng, chạy và la hét, đồng loạt xông lên. Đất bụi
+mịt mù. Tiếng vũ khí đủ loại nhất loạt lên tiếng. Hàng hàng lớp lớp ngã xuống. </span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Chiều, anh lại gọi họp. Anh nói: nó nhiều tiền hơn
+mình. Pháo mình xa quá, tay đôi không lại tụi nó. Rán kêu tụi nhỏ sửa lại hầm hố
+cho thật kĩ càng. Mình phải chịu trận lâu dài, chứ không phải một hai hôm đâu. Nửa
+đêm, tuồng cũ diễn lại, pháo và pháo, từng đợt nối tiếp. Lại biển người xông
+lên, núi rừng bị đánh thức bởi muôn ngàn tiếng súng, lại gục ngã. Rồi trả lại
+cái im lặng cho núi rừng, chỉ còn nghe văng vẳng tiếng rên la của những kẻ bị
+thương bên ngoài hàng rào phòng thủ.</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Anh Năm, anh còn nhớ không, trước trận Damber, ông Đại
+Lộc (thiếu tá Lộc) bên thiết giáp có vẻ khó chịu khi tụi em không gọi anh bằng
+cấp bậc. Anh đã phải đỡ lời cho tụi em: "Mấy chú em trong đơn vị ít khi
+kêu tôi là Trung Tá, lúc nào cũng xưng hô là Anh Năm, Anh Năm! Nghe mãi thành
+quen, thân mật, gần gũi như anh em trong nhà."</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Anh Năm, anh Hải có kể lại rằng cũng trong trận Damber
+này, anh thoát chết sau quả 122 của tụi nó. Anh Hải nói: &nbsp;lần này về, anh phải
+cúng heo cho tiểu đoàn. Ông Lang Tây còn bồi thêm: " Đệ nhất phong thủy miền
+Nam, "Diễn tiên sinh", khi được xếp lớn đón lên coi doanh trại đã lắc
+đầu nói là bộ chỉ huy nằm trên thế đất sát chủ. Đã thế sân cờ lại còn đối diện
+với Nghĩa trang quân đội. Nếu không dời ngay xuống phía Nam trông ra bờ sông
+thì lành ít dữ nhiều". &nbsp;Anh bảo: tụi mày với ông Tu bíp suốt ngày cứ tử
+vi, bói toán, làm tao điên cái đầu.</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Anh Năm, &nbsp;trong lúc em đang thúc quân chống lại biển
+người thì ông Lang Tây cho hay anh đã bắt tay với ông Phan rồi<em><span style="font-family:&quot;14&quot;,&quot;serif&quot;">. Hầm anh lãnh nguyên trái. Trước mắt em, cả
+núi rừng chao đảo.&nbsp; Ông Lang Tây cho hay là đã cho lính lau xác anh, bọc trong
+poncho.</span></em></span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Anh Năm, ngày 12 anh đi, ngày 13, đại bàng tìm mọi
+cách đưa anh về. Hai chiếc khu trục vào vùng đều dính pháo. Không còn cách gì
+hơn, B52 vào vùng trải thảm, thiêu rụi 1 trung đoàn của thằng 320. </span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Anh Năm, anh còn nhớ ông Lạc bên pháo binh không? Ngày
+14-4 ông Lạc tháp tùng Ðại Tá Lữ Ðoàn Trưởng bay trên căn cứ. Cả hai đều rơi nước
+mắt.&nbsp; Bao nhiêu ngày pháo dội, những tấm thảm B52 đã đổ xuống, từ trên mây nhìn
+xuống, ông Lạc nói, đỉnh Charlie chỉ còn là một vùng đất đỏ, ngầu lên trong màu
+máu. Tất cả mọi sinh vật trong vùng này đều bị hủy diệt. Anh đã về với cát bụi,
+cùng với các chiến sĩ anh hùng của TÐ11Nhảy dù.</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Anh Năm, ngày 15 tháng 4, "con beo gấm của chiến
+trường" đang dẫn Lữ đoàn về lại An lộc, bồi hồi nghe tin anh gục gã trong
+khi xua quân đi về hướng Chơn Thành. Đấy, Đại Bàng nào cũng thương anh, em út đứa
+nào cũng thương anh. Anh từng hứa là lên tướng sớm cho tụi em nhờ. Vậy mà anh
+đi sớm quá.</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Sau khi nói chuyện với ông Lang Tây, thì em đã tự hứa
+với mình, với anh.... </span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Sơn, tôi gọi to lần nữa, vậy mà hắn không nghe thấy,
+lại ngồi xuống, bày biện lung tung. Tôi bực mình. &nbsp;Đứng bên cạnh, thằng Cộng thấy
+tôi nổi nóng, nên lặng thinh.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>Anh Năm, anh còn nhớ thằng Đức không. Thằng
+Sơn vừa đốt hương, vừa nói. Ngày em về tiểu đoàn, anh đã giao Đức cho em, vì thấy
+nó nhanh nhẹn và thành thật. Nó đã theo em suốt từ đó. Nghe em về đây, nó đã
+quyết định một cách dứt khoát, là cùng về với em. Giờ đây, hai thầy trò về thăm
+anh và các anh em, anh có linh thiêng thì cho em hay. </i></span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">-Mẹ, tao gọi mày nãy giờ mà mày không chịu nghe, còn
+bảo tao cho mày hay là làm sao?</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Anh Năm, Em đã theo lữ đoàn, bỏ xứ từ sau ngày
+gãy súng, nên bây giờ không biết chị và cháu ở đâu. Bắc nói, sau khi ra tù, hắn
+cũng hỏi han nhiều chỗ mà cũng bặt vô âm tín. Nếu anh sống khôn thác thiêng thì
+cho tụi em biết để tìm chị và cháu.</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">- Sơn, tôi quát lên. Vậy mà hắn chẳng nghe thấy gì, cứ
+lầm bầm trong miệng. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">-Lão Ngụy, mình nói hắn không nghe đâu. Bây giờ tôi
+và ông cùng quạt lên một cái thật mạnh, hy vọng hắn biết là ông đang nghe hắn.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">-Đức, hình như anh Năm về, đang ở đâu đây.</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">-Sao ông thầy biết.</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">-Tao vừa khấn, thì một luồng gió mạnh thổi qua, mấy
+thẻ nhang bừng cháy. </span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">-Nãy giờ, trời đứng yên chứ có hột gió nào đâu ông thầy.</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">-Chính vì mày không thấy gió, mà tao lại thấy gió,
+nên tao nghĩ anh Năm đang ở đâu đây.</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">-Anh Năm, nếu anh ở bên cạnh em thì xin&nbsp; nghe em nói.
+Bởi không nói được với anh bây giờ thì mãi mãi không có hội nào nữa. Sau khi
+nghe ông Lang Tây nói, em có tự hứa với mình là bằng mọi cách phải đưa anh về. Ngay
+sau đó, Mê Linh lệnh cho em, chỉ dể lại một ít trên đỉnh, còn lại kéo về bảo vệ
+BCH tiểu đoàn. Và trên đường về em dính thương. Thằng đệ tử phải vừa chạy vừa
+dìu. Tình hình càng lúc càng trở nên tồi tệ, khi đạn dược hết, lương thực cạn
+kiệt, tải thương không được, ông Lang Tây hết thuốc men, phải xin cầm cây M16. Sau
+đó Mê Linh và ông cố vấn quyết định mở đường máu rút lui, và bằng mọi cách phải
+mang anh theo, vậy mà ông trời cũng không buông tha vào phút chót. </span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Anh Năm, sau khi nằm viện ra, em nhiều lần định ghé
+qua cư xá thăm chị và cháu. Vậy mà, em không làm được. Cứ gần tới nơi là nước mắt
+cứ lưng tròng. Mỗi lần như thế em lại quay ngược trở về... </span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Hai thằng này vậy mà mau rớt nước mắt. Một thằng đàn
+ông đầu tóc bạch thếch, một thằng hói cả cái đầu, mà còn chảy nước mắt trông kỳ
+quá.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Anh Năm, còn nhớ Nhật Trường không? Sau cú Hạ Lào, hắn
+viết nhạc phẩm "Anh không chết đâu anh" để vinh danh Đương đấy.&nbsp; Rồi
+anh ở lại đây, hắn viết một bản nhạc để đời, về anh, về Charlie đó. Để em hát
+cho anh nghe nhé:</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">"Anh, anh, hỡi anh ở lại Charlie</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Vâng, chính anh là loài chim quý</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Ơi cánh chim trùng khơi vạn lý</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">.....</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Ngày anh đi, anh đi, anh đi từ tổ ấm</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Anh ơi, địa danh nào mà thiếu dấu chân anh</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">.........</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Anh, hỡi anh, vừa ở lại một mình, vừa ở lại một mình</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Charlie, tên vẫn chưa quen người dân thị
+thành...."</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">- Cái thằng, già đầu mà còn hát hò. Giọng ồm ồm như vịt
+đực.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Anh Năm... em muốn nói thật nhiều với anh mà không hiểu
+sao không thể nói gì thêm được nữa vào lúc này...</span></i></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;14&quot;,&quot;serif&quot;">**********</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Mười bảy tuổi, tôi viết đơn tình nguyện để đi vào miền
+Nam, nơi đang bị gò xiết bởi Đế quốc Mỹ, cùng bọn Thiệu, Kỳ bán nước buôn dân.&nbsp;
+Mười bảy tuổi lớn dậy một lòng yêu nước khi những dòng thơ hòa trong từng nhịp
+đập của con tim: </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">"Xẻ dọc trường sơn đi cứu nước,</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">mà lòng phơi phới dậy tương lai."</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Vâng, chúng tôi đi cứu nước. Chúng tôi mang trên vai
+sứ mạng tuyệt vời: đi giải phóng miền Nam.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Còn nữa, tin tức từ chiến trường đưa về, quân ta giải
+phóng hết thị trấn này, tới thành phố khác. Tuổi trẻ phải tranh nhau ra trận vì
+sợ không kịp lập chiến công. Thằng cha chết tiệc nào viết thật hay:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">&nbsp;<i>"Đường ra trận mùa này đẹp lắm </i></span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">&nbsp;Trường sơn đông nhớ Trường sơn tây." </span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Những vần thơ đưa hàng hàng lớp lớp thanh niên ra trận.
+Và tôi, nằm trong lớp lớp đó. Bảy năm vào Nam, đánh bao nhiêu trận, bị thương
+nhẹ hai lần, đeo hàm thượng úy, trước khi dứt điểm thằng Dù. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Tối đó, Trung đoàn trưởng của chúng tôi cho gọi tất cả
+các sĩ quan về trại chỉ huy, và cho biết: pháo sẽ nổ liên tục trong suốt 30
+phút, sẽ dập nát từng gốc cây, ngọn cỏ, và sau đó, các đồng chí phải có nhiệm vụ
+dẫn đầu, đưa quân tràn ngập vị trí của địch. Viên chính trị viên lên tinh thần
+mọi người, khi nói lớn: Đêm nay, các đồng chí được vinh dự nhận một nhiệm vụ lớn,
+là đập nát sự chống cự mãnh liệt của bọn dù. Hơn bao giờ hết, chúng ta phải trả
+thù cho những đồng chí của mình đã hy sinh trong mấy ngày qua, khi bọn chúng một
+mực ngoan cố trấn thủ. Vinh quang này, không phải lúc nào cũng có, vì nếu không
+thành công lần này, không những chúng ta phải giao nhiệm vụ cao cả này cho
+trung đoàn bạn, mà chúng ta còn đánh mất niềm tin từ Đảng và từ nhân dân miền
+Nam. Các đồng chí có quyết tâm giành thắng lợi này hay không? Những tiếng hô
+vang dậy: Coooooó!!!!! </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Những đợt pháo sau cùng vừa dứt, tôi bật dậy, chạy tới,
+vừa hô xung phoooooong. Chỉ chừng hơn mười bước, tôi đã ngã ngược về phía sau.&nbsp;
+Đất trời nghiêng ngã, từng chùm hoa lửa thắp sáng cả bầu trời. Tôi bay lên, bay
+lên, bay lên...Tiếng xung phong, tiếng rên la, tiếng chữi thề, và cả tiếng súng
+từ từ nhỏ dần, nhỏ dần, nhỏ dần, rồi im hẳn.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Khi đã thật thân, lão Ngụy kể nhiều về đời sống, về
+chiến hữu của lão. Mỗi lần kết thúc câu chuyện, lão thường bảo: Tụi tao <i>sống
+bằng cái tình</i>.&nbsp; Mình nghĩ, tình quái gì! Tình người, tình nghĩa, tình thân,
+tình chiến hữu... Thì mình cũng có cái tình, tình Mẹ con. À, mà bỗng dưng nhớ Mẹ
+quá.&nbsp; Trước ngày đi, mẹ khóc ngất. Có một thằng con, lại là con liệt sĩ Điện
+Biên, nhà nước cho hoãn, mà lại xung phong. Vậy mà đêm ấy, gạt nước mắt, mẹ luộc
+hai quả trứng, gói lại trong mớ giẽ rách, bảo mình đem theo. Nhà nghèo như cùng
+đinh thời Pháp, chỉ có con gà mái và ba con gà con là tài sản quý giá, nên mấy
+quả trứng mẹ bán ra cũng đổi được ký nếp.&nbsp; Mẹ thổi xôi, bắt mình phải mang theo
+cho bằng được. Rồi mãi sau này mới biết, mẹ đổi ba con gà con, lấy tí đường
+cát, giấu trong bọc, không cho mình hay, lo cho mình vào Nam chống Mỹ.&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Mẹ, bao nhiêu năm rồi, con không gặp Mẹ. Không biết Mẹ
+còn khõe không. Có sống nổi không sau những chờ đợi mỏi mòn, những hy vọng lụn
+tắc. Mẹ ạ, con ở lại núi rừng này lâu rồi, nhớ Mẹ quá.&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Ừ, mà mình còn có tình đồng chí nữa chứ.&nbsp; Ngày ấy,
+lão chính trị viên tiểu đoàn cứ ư ử:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tình đồng chí ấm áp như mùa xuân</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Trong công tác nhiệt tình như nắng hạ</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Với kẻ thù, lạnh lùng như băng giá</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Chủ nghĩa cá nhân như chiếc lá mùa thu...</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Mà cũng lạ, có cái gì lấn cấn nhỉ. Lúc mới vào chiến
+trường, ngày đêm cận kề sinh tử, không có thì giờ suy nghĩ về điều này, cũng phải.
+Nhưng sau khi ở lại đây, sao mình nghĩ không ra nhỉ?</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">&nbsp;Khi thân với nhau, thì gọi nhau, mình và tớ, cậu, đằng
+ấy. Khi giận hờn nhau, kiểm điểm, phê bình nhau, thì mới gọi nhau là đồng chí. Dường
+như hai chữ đồng chí chỉ dành cho những những lúc lễ nghi, nghiêm trọng. Như
+cái lần, một anh mới vào, nhưng chịu không thấu cái ác liệt của chiến trường,
+nên anh thực hiện B-quay, nghĩa là quay đầu đi ngược về Bắc. Anh bị chận lại,
+và đưa về đơn vị.&nbsp; Đêm ấy, cả một đơn vị phê bình, và hết người này đến người
+khác:&nbsp; <i>đồng chí mất lập trường, đồng chí tiểu tư sản</i>, <i>đồng chí không căm
+thù Mỹ Ngụy</i>... Đằng sau hai tiếng đồng chí ấy, là những những tố cáo nặng nề.
+Và mình là người nói hăng nhất, nói dài nhất trong cuộc kiểm điểm phê bình này.
+Người thanh niên chỉ im lặng, cuối đầu. Về sau, nghe rằng không còn được cầm
+súng nữa, mà chuyển sang làm công việc tải đạn cho một đơn vị khác. Nhưng cũng
+có tin đồn là: người thanh niên ấy đã phải chịu một hình phạt cao nhất giữa chiến
+trường. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Mình nhớ lại rồi, cứ mỗi lần mà gã chính trị viên
+trân trọng gọi ai là đồng chí, thì dường như người ấy đang có vấn đề. &nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Chiều nay, mình thấy lão vui, vui như hôm trước mình
+kể cho hắn nghe về người thiếu phụ.&nbsp; Khuôn mặt xấu trai của lão rạng rỡ hẳn
+lên. Mình chưa thấy thế bao giờ. Ừ nhỉ, một đứa con gái, chưa lần nào gặp mặt bố,
+mà lại leo tận trong này mà cúng vái? Một người, dù xa cách ngàn trùng, vẫn lội
+lên tận núi rừng tây nguyên này, để trải lòng ra với lão. Họ đã về đây trong sự
+cấm đoán của những đồng chí bên mình. Vậy mà họ về được, và làm được</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;14&quot;,&quot;serif&quot;">*********</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Suốt đêm ấy, nơi lưng chừng núi, bên dưới tàn cây lớn,
+người đàn ông trằn trọc, thầm thì một mình: Đồng chí, Tình đồng chí, Nhiệm vụ
+cao cả, Hận thù chất ngất, biến đau thương thành hành động....Mình vào đời như
+một cánh đồng đang chuẩn bị một mùa mạ mới. Những nhánh mạ hận thù được gieo
+vào lòng đất. Cái nhân hận thù sâu quá làm sao trỗ được những nhánh thóc trĩu nặng
+tình thương? Có lẽ vậy, nên bao năm rồi, có ai về đây, giữa núi rừng Kon Tum,
+Tân Cảnh này, nhắc đến những đồng chí của mình đã gục ngã vì những lời nói hùng
+hồn của những gã chính trị viên? Thì ra, thì ra là láo cả!... </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Lão Ngụy nói đúng. Phải biết "Sống bằng cái
+tình"... Mà, cái tình không thể xây bằng những tượng đài vĩ đại nhưng rỗng
+ruột. Cái tình càng không thể bị tô hồng bởi từng hàng, từng dãy băng rôn đỏ
+chói khắp phố phường Ban Mê Thuộc, với những "nhiệt liệt chào mừng...",
+"...sống mãi trong quần chúng", "...đời đời bền vững",
+"...vinh quang muôn năm" v.v... Đó là những khẩu hiệu hùng hồn nhưng
+thiếu những nhịp đập của một trái tim. Giờ đây, mình hiểu được:<i> cái tình phải
+bắt đầu từ những điều nhỏ nhoi trong cuộc sống, như những chiếc chân nhang, được
+cắm xuống trên đỉnh Charlie này. Nó nhỏ bé vô cùng mà lại rộng lớn bao la. &nbsp;</i></span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Người đàn ông đi vào giấc ngủ, mà miệng vẫn còn lẩm bẩm:
+sống bằng cái tình, những chân nhang, những chân nhang... </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">Cũng giữa núi rừng êm ắng ấy, phía bên kia dốc đồi, có
+một người đàn ông, nằm đung đưa trên võng, lòng vui như pháo tết, tự nói với
+mình: "Vậy là đủ rồi, ngày mai sẽ cho thằng Cộng biết, đã đến lúc cũng phải
+đi thôi."</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><b><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Microsoft Sans Serif&quot;,&quot;sans-serif&quot;;color:#948A54">Đoàn Nhã Văn</span></b></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;"><a href="http://www.gio-o.com/DoanNhaVan.html">http://www.gio-o.com/DoanNhaVan.html</a></span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-family:&quot;14&quot;,&quot;serif&quot;">© gio-o.com 2010</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;14&quot;,&quot;serif&quot;;color:red">&nbsp;</span></p>
+
+</div>
+
+
+
+
+</body></html>

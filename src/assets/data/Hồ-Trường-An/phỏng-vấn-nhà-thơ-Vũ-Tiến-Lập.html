@@ -1,0 +1,618 @@
+<head> <script type="text/javascript"> document.domain = 'gio-o.com'; (()=>{"use strict";const e=window.Cypress=parent.Cypress;if(!e)throw new Error("Something went terribly wrong and we cannot proceed. We expected to find the global Cypress in the parent window but it is missing. This should never happen and likely is a bug. Please open an issue.");const t=(()=>{let e,t,n,r;const i=()=>{e=!1,t=!1,n=[],r={}},o=(e,t=[])=>"function"==typeof e?e.apply(window,t):window.eval(e);return i(),{wrap:()=>{const i={setTimeout:window.setTimeout,setInterval:window.setInterval,requestAnimationFrame:window.requestAnimationFrame,clearTimeout:window.clearTimeout,clearInterval:window.clearInterval},a=(e,t)=>i[e].apply(window,t),s=e=>n=>(t&&(r[n]=!0),a(e,[n])),w=t=>(...r)=>{let i,[s,w,...p]=r;return i=a(t,[(...r)=>{if(!e)return o(s,r);n.push({timerId:i,fnOrCode:s,params:r,type:t})},w,...p]),i};window.setTimeout=w("setTimeout"),window.setInterval=w("setInterval"),window.requestAnimationFrame=w("requestAnimationFrame"),window.clearTimeout=s("clearTimeout"),window.clearInterval=s("clearInterval")},reset:i,pause:a=>{e=Boolean(a),e||(t=!0,n.forEach((e=>{const{timerId:t,type:n,fnOrCode:i,params:a}=e;"setInterval"===n&&r[t]||o(i,a)})),i())}}})();e.removeAllListeners("app:timers:reset"),e.removeAllListeners("app:timers:pause"),e.on("app:timers:reset",t.reset),e.on("app:timers:pause",t.pause),t.wrap(),e.action("app:window:before:load",window)})(); </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="Generator" content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+.MsoChpDefault
+	{font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body background="#F8F8F8">
+
+<div class="WordSection1">
+
+<p class="MsoNormal" align="center" style="margin-right:1.5in;margin-bottom:12.0pt;
+margin-left:1.5in;text-align:center;line-height:150%;background:#F8F8F8"><b><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">&nbsp;</span></b></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.5in;margin-bottom:12.0pt;
+margin-left:1.5in;text-align:center;line-height:150%;background:#F8F8F8"><b><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">&nbsp;</span></b></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.5in;margin-bottom:12.0pt;
+margin-left:1.5in;text-align:center;line-height:150%;background:#F8F8F8"><b><span style="font-size:22.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Hồ Trường An</span></b></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.5in;margin-bottom:12.0pt;
+margin-left:1.5in;text-align:center;line-height:150%;background:#F8F8F8"><b><span style="font-size:22.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Mạn Đàm Thi Ca</span></b><span style="font-size:22.0pt;
+line-height:150%;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;color:#6E6E6E">&nbsp;</span><b><span style="font-size:22.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Với Vũ Tiến Lập</span></b></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.5in;margin-bottom:12.0pt;
+margin-left:1.5in;text-align:center;line-height:150%;background:#F8F8F8"><b><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Phỏng Vấn</span></i></b></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.5in;margin-bottom:12.0pt;
+margin-left:1.5in;text-align:center;line-height:150%;background:#F8F8F8"><span style="font-size:12.0pt;line-height:150%;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+color:#6E6E6E">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Hồ Trường An (HTA): Thưa anh Vũ Tiến Lập, xin anh cho độc
+giả chúng ta biết thi ca của anh qua bao chặng hành trình của nó.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Vũ Tiến Lập (VTL):&nbsp; Tôi thật không có ý niệm nào về
+một hành trình trong sự sáng tạo, ngoại trừ thời gian và sự mất mát. Có lẽ căn
+bản để thực hiện một hành trình phải có ít nhất là 2 yếu tố. Ði và Ðến. Thi ca
+tự nó không bị ràng buôc ở bất cứ điều kiện gì, hoàn cảnh hay thân phận nào. Nó
+lửng lơ, nó giống như mây mong manh trôi trôi giữa biển trời bát ngát.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">HTA: Những động lực nào thôi thúc anh làm thơ? Hồi mấy
+tuổi, anh đã cảm thấy mình có thể làm thơ? Và anh có hoài bảo gì, cao vọng gì
+với lứa thơ đầu mùa của mình? Ngoại cảnh có tham dự vào cảm hứng của anh không?</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">VTL:&nbsp; Vào những năm đầu thập niên 70 tôi tí toáy làm
+những bài thơ tình đầu tay, và chỉ để bằng hữu xem cho vui, có bài thì tặng con
+gái. Thậm chí cho đến bây giờ tôi cũng chưa hề nghĩ đến một hoài bảo hay cao
+vọng nào về thơ cả. Sau biến cố 30 tháng 4 năm 75, Tôi di tản sang Hoa Kỳ, có
+sáng tác nhiều hơn. Ngôn ngữ vốn có ma lực, người làm thơ cần có đôi bàn tay và
+khối óc của nhà phù thủy, anh có nghĩ như vậy chăng? Ðương nhiên Tâm luôn đối
+với ngoại cảnh để sinh tình, nó phản chiếu tất cả những gì đối diện nó, chỉ
+khác là bóng nguyệt không ở lòng sông.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">HTA: Thi tập Tạp Ghi Thơ của anh được hình thành như thế
+nào, và trong khoảng thời gian bao lâu? Nó giúp anh tìm được điều gì về mặt
+tinh thần? Những ai đã khuyến khích anh trong việc dưa nó trình làng?</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">VTL:&nbsp; Tạp Ghi Thơ chẳng phải là làm mới mà chỉ để tạo
+thêm một đặc tính cho thơ có môt đường nét riêng biệt. Với những góc nhìn trên
+phương diện cấu trúc chữ nghĩa, như người họa sĩ đã tìm thấy một màu sắc để
+sáng tạo. Ðặc tính đó được xây trên nhiều thể loại, hình thức, tư tưởng cũng
+như tâm linh trong suốt 30 năm lưu vong.</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Buổi chiều đông, giữa đất trời bao la bồng bềnh những con
+sóng lạnh của vùng vịnh Mễ Tây Cơ.Trương Ðình Luận bỗng hỏi tôi như muốn nhắn
+nhủ từ những đám mây hoang xám. Có một thứ gì đó vừa thoát ra, như đã đến lúc
+góp mặt với đời sống hoang vu này bằng những hồn thơ đã chín !</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Tôi im lặng. Im lặng cho đến buổi tối cuối năm, khi hai
+người bạn trẻ Lê Sông Văn (chủ trương của Việt Báo Houston) và Như Băng cũng đề
+nghị giúp tôi thực hiện thi tập. Gió Văn cũng định ngày xuất bản. Về mặt tinh
+thần những người bạn trân quý tôi và thơ, họ là những động lực khuyến khích tôi
+không thể chối từ trong việc đưa Tạp Ghi Thơ trình làng.</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">HTA: Thi tập này hình như có ba chủ đế chính yếu: thơ
+tình, thơ cảm hoài và thơ tâm linh (tức là những bài đạo ca hàm nhuận tinh thần
+Phật giáo). Có đúng không?</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">VTL:&nbsp; &nbsp;Có thể nhìn như vậy. Như còn trẻ thì sống
+cho tình yêu. Trung niên đắm đuối yêu đời hơn nên có chút ít cảm hoài, và gần
+về chiều thì thấm đời vô ngã.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">HTA: Về thơ tình yêu, anh không nghiêng về loại hoan ca (
+Hymne) mà nghiêng về loại bi ca (poème saturnien). Có phải anh đã chịu khổ lụy
+trong tình yêu, hoặc bị sứt mẻ trầy trụa trong vấn đề tình cảm trước hoặc trong
+lúc sáng tác? Hay đó là anh theo trào lưu thi ca: thơ phải buồn mới đúng nghĩa
+là thơ, anh nghĩ sao đây?</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">VTL: Tôi nhớ đến một lời ca rất ư là vọng cổ&nbsp;<i>“Ðường
+vào tình yêu có trăm lần đau có vạn lần sầu”</i>&nbsp;Anh có nhìn thấy nó là
+như thế không? Thơ không có giới hạn nên thơ rất tự trào, buồn vui chỉ là xúc
+tác.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">HTA: Còn qua loại thơ cảm hoài về thân thế, anh đã có vấn
+đề gì trong cuộc sống giữa các cuộc phong ba của lịch sử, trong nếp sống gia
+đình, trong sư nghiệp. Hình như loại thơ này hơi ít, vậy có lẽ những cái mà tôi
+vừa hỏi không va cham mạnh vào cuộc sống tâm tình của anh? Có đúng không?</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">VTL:&nbsp;&nbsp;&nbsp; Nếu có sự cảm hoài về thân phận lưu
+vong, có lẽ được dăm bài, nhưng chỉ có bài&nbsp;<i>Cổ Tích</i>&nbsp;tôi nhớ lại
+biến cố đã thay đổi hẳn cả cuộc đời tôi và hàng triệu người đã phải tị nạn khắp
+năm châu. Nỗi hận chăng? Tôi không phủ nhận điều đó, nhưng hận để được gì? Làm
+được gì? Những con rối đã chết, đoàn rối mới lại thành hình cứ y như một vở
+tuồng không ngơi nghỉ. Chắc hẳn sẽ vô cùng mệt nhọc với hơi thở của hận thù.
+Những chung nghiệp cũ đang tan rã, những cộng nghiệp mới lại bắt đầu. Hôm qua
+là cổ tích. Tất cả là vọng tưởng, là ảo ảnh. Anh thấy đó, mọi thứ chung quanh
+chúng ta đang dần dần biến mất.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">HTA: Những bài thơ mà anh tặng bạn bè như Trương Ðình
+Luận, Phương Triều và như cố thi sĩ Cao Ðồng Khánh hình như không phải hoàn
+toàn là thơ thù tạc. Hình như anh muốn nhắn gửi hoặc trao đổi với họ một điều
+gì, có phải? Xin anh nói rõ mục đích của anh khi trước và trong khi tác từng
+bài thơ trang tặng ấy.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">VTL:&nbsp;&nbsp;&nbsp;&nbsp; Mỗi một người bạn đều có với
+tôi những kỷ niệm, mỗi bài thơ tôi tặng, đều đong đầy những trìu mến riêng tư.
+Tôi có nhiều kỷ niệm với Trương Ðình Luận, Bùi Huy và Cao Ðồng Khánh, sau khi
+Khánh chết tôi có làm 2 bài thơ để tưởng nhớ người bạn thâm giao.</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Nhà thơ Phương Triều (cư ngụ tại Austin, Texas). Với tôi,
+anh có tầm vóc một người đàn anh trong làng báo. Chúng tôi thường liên lạc qua
+điện thoại cho đến ngày anh phải mổ thanh quản, và từ đó anh không thể tiếp
+chuyện với tôi qua giây nói, thay vào đó chúng tôi liên lạc qua Email, thỉnh
+thoảng tôi lái xe lên thăm, một lần trên đường về, nghĩ đến anh, tôi cảm hứng
+một bài thơ đề tặng.</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">HTA: Anh thường làm thơ tự do. Ngoài ý tưởng ra, thơ tự do
+vốn không hàm chứa âm nhạc nên khó quyến rũ người đọc. Vây người sáng tác thơ
+phải dùng cách nào để làm thơ tự do nổ vang dội trong ấn tượng và trong cảm
+nhận người đọc.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">VTL:&nbsp;&nbsp;&nbsp;&nbsp; Anh hỏi tôi mới chợt suy
+nghĩ. Chữ nghĩa quả có khả năng để rền vang một âm thanh! Nhưng đã gọi là thơ
+tự do thì cứ tự do phóng bút, dù thơ có là chất nổ. Chữ nghĩa cũng như ý tứ
+phải thật mặc nhiên, ung dung tự tại, giống như ta lấy một vật trong túi áo ra
+vậy. Làm được như thế thơ sẽ gây được ấn tượng trong cảm nhận của đọc giả</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">HTA:&nbsp;&nbsp; Anh nghĩ gì về thơ tự do của Thanh Tâm
+Tuyền? Nhiều độc giả phàn nàn rằng thơ ông ta gột rửa hết lớp sơn lộng lẫy của
+ảo mộng chúng ta. Anh làm thơ theo hình thức tự do như ông ta, nhưng khác với
+đường lối thơ ông ta ở những điểm nào?</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">VTL: &nbsp;&nbsp; &nbsp;Tôi thích thơ Thanh Tâm Tuyền
+những năm cuối Trung Học. Ở vào thời gian đó, ông như một vì sao Bắc Ðẩu, người
+đã đổi mới được thi ca. Cho đến bây giờ biết bao người đã viết về thơ ông, mỗi
+người mỗi nhận xét. Riêng tôi những điều này không còn quan trọng nữa. Tôi yêu
+mến cái kín đáo mà lầm lì của ông với đời nhiều hơn. Tôi làm thơ tự do nhiều vì
+không thích gò bó trong vần điệu, bởi tính chất là tự do nên ngôn ngữ và cấu
+trúc dễ khác nhau, thỉnh thoảng tư tưởng có gặp nhau ở một ngã ba nào đó…</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">HTA:&nbsp;&nbsp; Xin cho bết qua những nhà thơ nào mà anh
+tâm đắc, nhất là những nhà thơ nữ. Nếu không gì trở ngại, xin anh cho biết đặc
+tánh thơ của từng nhà thơ đó.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">VTL:&nbsp;&nbsp; Những nhà thơ tôi thưởng thức thì nhiều,
+nhưng không tâm đắc thơ ai cả, tuy nhiên, về các nhà thơ nữ tôi không thể nói
+hết được trong bài phỏng vấn hôm nay, chỉ đưa ra nhận xét ngắn gọn mà cũng là
+tiêu biểu của 2 tư tưởng khác nhau, sau này nếu có dịp, chúng ta sẽ đi sâu vào
+thế giới thi ca của phái nữ.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Hàn Song Tường. Viết văn, làm thơ. Cả 2 lãnh vực đều mang
+chung một sắc thái: Chơi vơi với ảo giác tử sinh. Thơ của Hàn Song Tường là một
+thế giới mơ hồ, bằng những ngôn ngữ thuần những đam mê và khắc khoải.</span><span style="font-size:12.0pt;line-height:150%;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+color:#6E6E6E">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Em nhớ anh</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Kẻ đi lạc quá lâu - Anh biết không</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Hoàng hôn vẫn thổn thức cùng biển cả</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Anh ơi</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Nước mắt biển - mặn như nước mắt em</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Máu hoàng hôn - đỏ như máu em</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Em tìm anh - trên thế gian này</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Las aguas se separaron de los cielos</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Halos - Aloha - Anh ơi</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Then waters divided from the skies</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Em nào thấy anh - dù bầu trời</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Mây nước đã chia hai</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Nơi đây - mọi nguời xa lạ. Cảnh tình xa lạ</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Em nhớ anh - Người bên đời em</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Hàn song Tường ( trích đoạn Mây nước đã chia hai )</span></i><span style="font-size:12.0pt;line-height:150%;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+color:#6E6E6E">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Lê thị Huệ: &nbsp; Thơ của chị nghiêng về tâm linh trừu
+tượng. Có sự thách đố với đời sống và đám đông. Ngôn ngữ có đôi phần bạo dạn
+nhưng kín đáo, cao ngạo và tràn đầy nhựa sống.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:darkslategray">Chúng
+ta đã bước qua biên giới của thân xác.<br>
+Khi chia tay nụ hôn dường tuyệt vọng.<br>
+Người đàn ông ghì xiết tôi sau cuộc hôn phối sầu.<br>
+Âm thanh môi hôn rơi lẻng kẻng những vòng tuổi trẻ.<br>
+Môi mềm mắt ướt những ký ức đêm tháng Hai.<br>
+Tôi bước vội sợ lỡ thời gian không toan tính.&nbsp;<br>
+Khi chia tay hồn vãi trong đáy quần nhàu.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:darkslategray">Lê&nbsp;
+Thị Huệ (Bước mau sau nụ hôn)</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%;background:#F8F8F8"><span style="font-size:12.0pt;
+line-height:150%;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;color:#6E6E6E">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">HTA: Còn những nhà thơ ngoại quốc thì sao? Ai tâm đắc thơ
+của những ai?</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">VTL: &nbsp;&nbsp; &nbsp;Tôi thích nhất là cách cấu trúc
+thi ca qua những đề tài mang tính chất thực nghiệm và bất định qua những ý
+tưởng đan trong thơ John Ashbery và David Shumate.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">HTA: &nbsp; Có một nhà văn cho rằng thơ chỉ cần lời chứ
+không cần ý. Thế có nghĩa là ông ta chỉ chú trọng tới xác thơ mà rẻ rúng cái
+hồn của thơ. Xin anh cho biết ý kiến.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">VTL:&nbsp;&nbsp;&nbsp; Ðiều này cũng không phải là sai. Nó
+tùy thuộc vào sự ưa thích của mỗi cá nhân, có người thích ngắm hoa nhựa và
+tranh sơn mài thay vì hoa thật và tranh sơn dầu nghệ thuật.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:12.0pt;line-height:150%;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+color:#6E6E6E">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">HTA:&nbsp;&nbsp; Anh đã từng công tác với những tạp chí
+văn chương văn học sáng giá như Văn, Gió Văn, Hợp Lưu, Phương Trời Cao Rộng.
+Anh nhận định thơ văn đã từng đăng trên các tạp chí này ra sao?</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">VTL: &nbsp;&nbsp; &nbsp;Trước khi cộng tác với những tạp
+chí anh nhắc, tôi đã có những bài đăng trên các tạp chí địa phương, có người
+cho là báo chợ, báo Lá Cải, Lá Chanh. Sự khác biệt của chúng chỉ là giá trị
+phân biệt, như một bên thì được đặt trên kệ sách, trịnh trọng như một thứ sưu
+tầm, và một bên xem xong thì để dành gói đồ vật dễ vỡ. Kinh nghiệm vỏn vẹn chỉ
+có thế.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">HTA: Ðiều đáng nói nhất ở bài phỏng vấn này là thơ anh nếu
+không phải là loại thơ Thiền thì cũng là những bài đạo ca chan hòa tư tưởng
+Phật Giáo. Vì lý do gì mà anh chọn đường lối thơ này?</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">VTL: &nbsp;&nbsp; &nbsp;Tôi không phải người làm thơ
+thiền, nhưng rất muốn đem tư tưởng triết học Phật giáo vào thi ca. Ðây là điều
+rất phiêu lưu và khó khăn để thực hiện.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Nhà văn triết gia Nghiêm Xuân Hồng cũng đã đem tư tưởng
+Phật giáo vào thơ ông rất nhiều vào những năm cưối đời, hầu hết ông đã đem tư
+tưởng của Hoa Nghiêm Kinh, Bát Nhã cùng Không Tánh vào những lời thơ thăm thẳm
+ấy.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Tôi không chọn một đường lối nào cho hướng đi tìm thi ca.
+Tôi chỉ làm thơ theo đòi hỏi của tâm tư. Những năm gần dây tôi thường xem Kinh
+đọc Luận, sự hấp thụ và học hỏi tất nhiên bị ảnh hưởng ít nhiều trong thơ, có
+lần mạn đàm với Triết gia Ðặng Phùng Quân về thơ và sự khác biệt trong triết
+học, ông có nói “t<i>rong Triết có Thơ, trong Thơ có Triết</i>,” Câu nói ấy tuy
+bình thường, nhưng ngẫm nghĩ nó càng thâm thậm.&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:12.0pt;line-height:150%;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+color:#6E6E6E">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">HTA: Xin anh cho biết cái cốt tủy của một bài thơ Thiền.
+Theo anh, nhà thơ nào mà biết đôi chút Phật pháp có thể làm nổi một bài thơ
+Thiền không? Có nhiều kẻ không biết chút gì về Phật pháp, vậy mà lâu lâu đương
+sự có thể đưa Thiền phong Thiền vị vào thơ, có phải thế không? Ðây là hiện
+tượng gì?</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:12.0pt;line-height:150%;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+color:#6E6E6E">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">VTL:&nbsp;&nbsp;&nbsp; Với tôi cốt tủy của Thiền tức là đóng
+kín mọi ngôn ngữ. Pháp là tư tưởng, tư tưởng luôn rộng mở. Tư tưởng là nền tảng
+trong Duy Thức, có tư tưởng thì có suy nghĩ và hành động. Sự tư duy và hành
+động nhiều khi trái ngược nên cần được huấn tập để trở thành thói quen, nề nếp.
+Nói như thế không có nghĩa là phải tập thiền trong thơ. Ảnh hưởng thật sự là
+những nối kết trong đời sống hằng ngày chúng ta say đắm, chúng ta không biết
+ruồng bỏ mà chỉ biết tích lũy. Nhìn nhận nó là của Ta, là Thơ, là Thiền, là Tư
+Tưởng vĩ đại. Ðây không phải là hiện tượng, mà chỉ là sự làm dáng trong thi ca.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:12.0pt;line-height:150%;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+color:#6E6E6E">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">HTA: &nbsp; Theo anh, ở hải ngoại tình trạng thơ Thiền có
+lạm phát hay quá hiếm hoi? Ða số nhà thơ cứ gọi Phật và gọi Bồ-tát ơi ới trong
+thơ nhưng các Ngài không chịu hiện trên dòng thơ cũa họ, anh nghĩ sao đây?</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">VTL: &nbsp;&nbsp; &nbsp;&nbsp;Lạm phát hay hiếm hoi là do
+nhu cầu. Một kinh nghiệm nhỏ tôi xin được chia sẻ với anh là Hiểu không có
+nghĩa là Chứng. Chứng không có nghĩa là giải thoát. Nói một cách khác:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Hiểu
+không?</i></span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Dạ,
+hiểu.</i></span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Làm
+được không?</i></span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Dạ,
+không.</i></span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:12.0pt;line-height:150%;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+color:#6E6E6E">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">HTA: Những Kinh Phương Ðẳng và Kinh Ðại Thừa nào mà anh đã
+đọc qua? Ngoài Kinh Duy-ma-cật anh khế hợp với kinh nào? Anh đem tư tưởng kinh
+nào vào thi ca của anh nhiều nhất?</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">VTL: &nbsp;&nbsp; &nbsp;Kinh Hoa Nghiêm nói về vô tướng,
+vô tự tánh. Pháp Hoa thì nói chúng sanh đều thành Phật. Kinh Viên Giác nói giác
+tâm bất động. Kinh Thủ Lăng Nghiêm thì bẩy chỗ gạn Tâm, mười phen chỉ Tánh.
+Thiền tông thì bản lai diện mục. Ðàn không giây. Thuyền không đáy. Tất cả là
+nói Tâm, chỉ Tâm, và do Tâm tạo tác. Ðó là ý Kinh.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Riêng Kinh Duy Ma Cật và Kinh Lăng Già đúng ra không có
+trong Kinh điển của Phật giáo. Duy Ma Cật nhân vật như hư cấu, như huyền thoại,
+như một sự đề cao hàng Cư sĩ thời Phật còn tại thế. Cái hư cấu ấy tuy thế nhưng
+cực kỳ lãng mạng và quyến rũ, nằm trên mọi tư tưởng của hạng Tiểu thừa, Thanh
+Văn. Vì thế Nguyên lý Bất Nhị và Không Tánh là căn bản cho hàng Bồ Tát.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Kinh lăng Già là một bộ Kinh có nhiều vấn đề cơ bản của
+Ðại thừa, thậm chí có những luận thuyết của ngoại đạo cũng được đề cập khá
+nhiều. Tuy nhiên, khuynh hướng khai triển tư tưởng của bộ Kinh thì luôn luôn đi
+theo một trật tự mang tính cách chủ đạo. Ðó là những căn bản của tư tưởng
+Không, Pháp thân, Niết Bàn, Như Lai Tạng, và A-lại-da thức.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">Tôi thích làm thơ theo tùy hứng. Khi ý tưởng đến trong
+khoảnh khắc. Kinh chỉ là điểm tựa. Chỗ nắm bắt đưa vào thơ mới chính là chỗ
+tuyệt diệu của Pháp môn. Tôi yêu thích tư tưởng Bất Nhị cùng Không Tánh, cũng
+như Lăng Nghiêm thường ẩn hiện trong thơ.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">HTA: Xin anh nói qua cách triển khai đoạn Thiên nữ tán hoa
+trong kinh Duy-ma-cật vốn đã gây ảnh hưởng lớn trong vài bài thơ của anh.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">VTL:&nbsp; Thiên nữ tán hoa đã để lại những ấn tượng cực
+kỳ siêu bạt. Tôi hoàn toàn không có ý định khai triển, nhưng thích thú với
+Không Tánh đó mà đem diển tích vào thơ. Việc Thiên nữ rải hoa cúng dường, hoa
+rơi đến các Bồ Tát, rồi hoa rớt xuống một cách bình thường. Hoa rơi lên các đệ
+tử Thanh Văn, hoa dính lại trên người đến nỗi phủi cũng không rớt. Hàng Thanh
+Văn thấy hoa vừa đẹp vừa thơm. Thưởng thức cái đẹp, cái thơm e rằng mình bị
+phạm giới. Chỗ siêu bạt ấy là&nbsp;<b><i>tưởng phân biệt</i></b>. Vì sao? Vì
+hoa không có phân biệt, tại vì Xá Lợi Phất có cái tưởng phân biệt đấy thôi. Ở
+trong Phật pháp, xuất gia mà còn có phân biệt đó là không đúng. Nếu không phân
+biệt thế mới là đúng.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Bấu víu nỗi bất tường</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;hạt ảo tưởng đâm rễ</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+khó hun đúc một lẽ hằng</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+không gian trắng hoa thiên nữ</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+tuyết nhuyễn trên tay</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><i><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+( Hoa thiên nữ )</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:12.0pt;line-height:150%;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;;
+color:#6E6E6E">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Những nối kết để thành hình một tư tưởng cho bài thơ đều phải nằm trên những
+điều kiện hiểu biết, cũng vì thế mà tôi có hỏi anh. Người làm thơ cần có đôi
+tay và khối óc của nhà phù thủy là vậy &nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">HTA: Trong cuộc hành trình thi ca của anh, Phật pháp có
+tác dụng gì trong phút tìm cảm hứng của anh? Muốn cho bài thơ thấm nhuần Phật
+pháp khỏi trượt ngã qua bài kệ khô khan, nhà thơ phải làm sao?</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">VTL: &nbsp;&nbsp; &nbsp;Dẫn hứng đến bằng nhiều cửa ngõ.
+Bằng cảm nhận trong tâm thức về đời sống, tình yêu hay bất cứ điều gì chúng ta
+hướng tới, nhưng muốn cho bài thơ đem được tinh thần Bát nhã điều quan trọng là
+lọc ý chứ đừng giữ lời của Kinh, như vậy sẽ giúp cho bài thơ không rơi vào bài
+kệ khô khan, khó nuốt.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">HTA: &nbsp; &nbsp;Anh có dư định gì về việc sáng tác và
+xuất bản các thi tập mới trong một tương lai gần gũi không?</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">VTL: &nbsp;&nbsp; &nbsp;Tôi chưa có dự tính gì cả. Muốn
+tiêu tiền, trước hết phải kiếm tiền, ấy là quy luật chung của đời sống. Sáng
+tác và xuất bản cũng tương đồng một quy luật.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">HTA: &nbsp; &nbsp;Xin cám ơn nhà thơ Vũ Tiến Lập.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">VTL: &nbsp;&nbsp; &nbsp;Cám ơn anh Hồ trường An đã cho tôi
+những phút mạn đàm vừa qua.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;text-align:justify;line-height:150%;background:#F8F8F8"><span style="font-size:13.5pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:darkslategray">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%">&nbsp;</p>
+
+</div>
+
+
+
+
+</body>

@@ -1,0 +1,467 @@
+<html><head> <script type="text/javascript"> document.domain = 'gio-o.com'; (()=>{"use strict";const e=window.Cypress=parent.Cypress;if(!e)throw new Error("Something went terribly wrong and we cannot proceed. We expected to find the global Cypress in the parent window but it is missing. This should never happen and likely is a bug. Please open an issue.");const t=(()=>{let e,t,n,r;const i=()=>{e=!1,t=!1,n=[],r={}},o=(e,t=[])=>"function"==typeof e?e.apply(window,t):window.eval(e);return i(),{wrap:()=>{const i={setTimeout:window.setTimeout,setInterval:window.setInterval,requestAnimationFrame:window.requestAnimationFrame,clearTimeout:window.clearTimeout,clearInterval:window.clearInterval},a=(e,t)=>i[e].apply(window,t),s=e=>n=>(t&&(r[n]=!0),a(e,[n])),w=t=>(...r)=>{let i,[s,w,...p]=r;return i=a(t,[(...r)=>{if(!e)return o(s,r);n.push({timerId:i,fnOrCode:s,params:r,type:t})},w,...p]),i};window.setTimeout=w("setTimeout"),window.setInterval=w("setInterval"),window.requestAnimationFrame=w("requestAnimationFrame"),window.clearTimeout=s("clearTimeout"),window.clearInterval=s("clearInterval")},reset:i,pause:a=>{e=Boolean(a),e||(t=!0,n.forEach((e=>{const{timerId:t,type:n,fnOrCode:i,params:a}=e;"setInterval"===n&&r[t]||o(i,a)})),i())}}})();e.removeAllListeners("app:timers:reset"),e.removeAllListeners("app:timers:pause"),e.on("app:timers:reset",t.reset),e.on("app:timers:pause",t.pause),t.wrap(),e.action("app:window:before:load",window)})(); </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="Generator" content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+.MsoChpDefault
+	{font-family:"Calibri","sans-serif";}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang="EN-US">
+
+<div class="WordSection1">
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:6.0pt;margin-left:1.5in;text-align:center"><b><span style="font-size:18.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#C00000">&nbsp;</span></b></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:6.0pt;margin-left:1.5in;text-align:center"><b><span style="font-size:18.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#C00000">&nbsp;</span></b></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:6.0pt;margin-left:1.5in;text-align:center"><b><span style="font-size:18.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#C00000">ĐÀO
+TRUNG ĐẠO</span></b></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:6.0pt;margin-left:1.5in;text-align:center"><b><span style="font-size:22.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#767171">Michel
+Foucault</span></b></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:6.0pt;margin-left:1.5in;text-align:center"><b><span style="font-size:18.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">(</span></b><b><span style="font-size:16.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">1926-1984)</span></b></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:12.0pt;margin-left:1.5in;text-align:center"><b><i><span style="font-size:18.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#538135">parrêsia
+= dũng cảm chân thành nói lên sự thật</span></i></b></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:12.0pt;margin-left:1.5in;text-align:center"><b><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">kỳ 5</span></b><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> (tiếp theo)</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:12.0pt;
+margin-left:1.5in"><b><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><a href="http://www.gio-o.com/DaoTrungDao/DaoTrungDaoFoucaultParresia2.htm">kỳ
+1</a>, <a href="http://www.gio-o.com/DaoTrungDao/DaoTrungDaoFoucaultParresia2.htm">kỳ
+2</a>, <a href="http://www.gio-o.com/DaoTrungDao/DaoTrungDaoFoucaultParresia3.htm">kỳ
+3</a>, <a href="http://www.gio-o.com/DaoTrungDao/DaoTrungDaoFoucaultParresia4.htm">kỳ
+4</a></span></b></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:12.0pt;
+margin-left:1.5in"><i><span lang="VI" style="font-size:14.0pt;color:#7030A0">Dân
+Việt (miền Bắc từ 1955, miền nam từ 1975) bị tước đoạt quyền nói lên Sự Thật.
+Tâm đắc với bài thuyết/giáo trình của Michel Foucault vào cuối đời tôi thấy nên
+tóm lược tư tưởng của Foucault về vấn đề này nhằm đặt cơ sở cho những vận động
+trí thức trong tương lai. Mong lắm thay!</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:6.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp; Cần nhắc lại:
+thỏa thuận nói sự thật nơi Euripide là thỏa thuận chính trị của <i>parrêsia. </i>Khác
+với thứ thỏa thuận này, thỏa thuận cá nhân (pacte individuel), thỏa thuận hướng
+dẫn (pacte directionel): khi tôi cho anh lời khuyên anh muốn tôi nói một cách
+thành thật, tôi không chỉ có ý nói cho anh biết điều tôi cho là đúng thật, tôi
+chỉ nói điều đúng thật này trong chừng mực tôi quả thực chính là tôi, tôi nằm
+trong sự thực tôi nói ra. Ở đây có sự bao hàm chủ thể trong lời phát biểu. Có
+hai cách bao hàm, cách thứ nhất hoàn hảo và kiểu mẫu chỉ có những triết gia tầm
+vóc có thể làm được: biểu lộ họ là gì ngay trong chân lý họ nói ra. Còn cách thứ
+nhì là một thứ mở ra hai chiều (ouverture réciproque) giữa hai người tham dự
+vào <i>parrêsia</i> khi người hướng dẫn bao hàm mình trong lời hướng dẫn, nhưng
+không phải để xác nhận đúng là sự thật ông ta nói nhưng là ông ta cố gắng tiến
+đến sự thật. Sénèque trong một loạt những bức thư nhất là trong bài tựa quyển
+IV <i>Questions naturelles</i> trong đó mối tương quan cá nhân là tương quan thầy
+trò và thường khi cũng là tương quan giữa bạn bè như giữa Sénèque và Lucilius.
+Lucilius sấp sỉ tuổi Sénèque, vừa mới được cử làm biện lý (procurateur) Sicile
+được Sénéque khuyên: Giờ đây biển cả ngăn cách chúng ta nhưng tôi vẫn muốn tiếp
+tục phục vụ bạn. Bạn vẫn chưa chắc chắn về hoạn lộ, con đường bạn sẽ đi, nên
+tôi sẽ nắm tay bạn để hướng dẫn bạn.<span style="color:#C00000">[1] </span>Nhưng
+Sénèque cũng bảo Lucilius là chúng ta sẽ cho nhau những lời khuyên bảo nhau.
+Như thế Sénèque tho thấy hai bên có sự cởi mở tâm hồn tương tác.</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:6.0pt;margin-left:1.5in;text-align:center;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">***</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:6.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp; Foucault có
+loạt 6 bài diễn thuyết “<i>Discours et Vérité/Diễn ngôn và Chân lý</i>” tháng
+10 và tháng 11, 1983 ở đại học Berkeley<span style="color:#C00000">[2] </span>Để
+bổ xung cho bản văn do H.-P. Fruchaud và D. Lorenzi biên tập chúng ta có thể
+qui chiếu với giáo trình <i>Le Courage de la Vérité</i> của Foucault ở College
+de France 1984.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:12.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><b><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Bài
+thuyết trình thứ I ngày 24 tháng 10, 1983. </span></i></b><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Từ
+<i>parrêsia</i> xuất hiện trong văn chương Hy lạp cuối thế kỷ thứ V trước công
+nguyên nơi Euripide và sau đó vào cuối thế kỷ thứ IV sau công nguyên trong những
+bản văn giáo lý trong sách các ông cha giảng đạo như của Jean Chrysostome. Có
+ba hình thức của từ này: hình thức danh từ <i>parrêsia</i>, hình thức động từ <i>parrêsiazein</i>
+hay <i>parrêsiazeisthai</i> nghĩa là “dùng <i>parrêsia</i>” và cả từ <i>parrêsiastes</i>
+người sử dụng <i>parrêsia</i> và nói sự thật. Nhưng từ này hiếm thấy trong những
+bản văn thời kỳ hy lạp hay hy lạp-la mã nơi Plutarque hay Lucien. Người ta thường
+dịch <i>parrêsia</i> sang tiếng Anh là “free speech”, sang tiếng Pháp là
+“franc-parler”. Foucault muốn dùng phần đầu bài thuyết trình để đưa ra một nhận
+định tổng quát nghĩa của từ này và sự tiến hóa của từ này trong văn hóa hy lạp
+và hy lạp-la mã.</span></p>
+
+<div style="border:none;border-bottom:solid windowtext 1.5pt;padding:0in 0in 22.0pt 0in;
+margin-left:1.5in;margin-right:1.5in">
+
+<p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:
+150%;border:none;padding:0in"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp; Nghĩa tổng quát của ừ <i>parrêsia</i>
+là gì? Theo từ nguyên <i>parrêsiazein</i> hay <i>parrêsiazeisthai</i> có nghĩa
+“tout-dire/nói hết” vì <i>pan</i> có nghĩa tất cả, và gốc <i>rêma</i> nghĩa là
+cái bạn nói, <i>parrèsiaste, pan-rêsia</i> có nghĩa người nói ra tất cả cái
+mình nghĩ, không dấu diếm điều gì, mở rộng trái tim và tinh thần mình ra với
+người khác. Khái niệm <i>parrêsia </i>dẫn về một mối liên hệ nào đó giữa kẻ nói
+và điều người này nói: người nói làm cho sáng tỏ, rõ rệt và hiển nhiên rằng điều
+mình nói ra là ý kiến của chính mình. Và người nói tránh mọi thứ hình thức hùng
+biện có thể che khuất điều mình nghĩ, cố gắng dùng những từ, những hình thức biểu
+lộ trực tiếp nhất có thể. Điều này không có nghĩa parrèsiaste không nghĩ tới những
+hậu quả đối với người khác do của lời mình nói.</span></p>
+
+<p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:
+150%;border:none;padding:0in"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp; <i>Điểm thư nhất</i> ta có thể phân
+biệt giữa chủ thể của sự phát biểu, chủ thể nói, và chủ thể thứ ba là chủ thể của
+<i>enunciandum</i> tức chủ thể của câu nói về mặt văn phạm tức là điều được
+phát biểu như parrèsiaste. <i>Điểm thứ hai</i>, <i>parrêsia</i> là một thứ hơn
+cả sự thành khẩn, chân thành hay mở rộng tinh thần. Parrèsiaste không nói ra tất
+cả cái gì mình nghĩ. Chính xác ra có hai thứ <i>parrêsia</i>: <i>parrêsia </i>xấu
+trong trường hợp parrèsiaste nói ra tất cả cái gì có trong đầu mà không kiểm
+soát điều có trong đầu, dùng <i>parrêsia</i> như vậy không mấy khác với nói
+huyên thiên, tầm phào (bavarder). Việc sử dụng <i>parrêsia</i> kiểu này hiếm thấy
+trong những bản văn cổ điền, nhưng lại thường thấy trong những bản văn Cơ đốc
+giáo, thứ <i>parrêsia</i> này đối nghịch với sự im lặng được coi như một kỷ luật
+hay một điều kiện của sự chiêm ngưỡng Thượng đế vì nó là một trở ngại cho chiêm
+ngưỡng. <i>Điểm thứ ba </i>trong<i> parrêsia </i>không những chỉ có mối quan hệ
+giữa chủ thể nói với chân lý, sự trùng khớp giữa sự tin tưởng với chân lý. Thế
+nhưng khi người ta nói rằng một người nào đó sử dụng <i>parrêsia </i>và người
+này xứng đáng được coi như một parrèsiaste nếu như, và chỉ như thế khi có sự hiểm
+nguy. Do đó một ông thày giáo dạy văn phạm không phải là một parrèsiaste. Nhưng
+khi một triết gia nói với nhà vua quyền uy hay một tay độc tài rằng độc tài
+không thể làm ông ta sung sướng vì độc tài không thể tương hợp với công lý thì
+không những triết gia này nói ra sự thật, sự tin tưởng của ông ta trùng khớp với
+chân lý nhưng ông ta còn đối mặt với sự hiểm nguy vì tay độc tài có thể trừng
+phạt, lưu đầy hay giết chết ông.</span></p>
+
+<p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:
+150%;border:none;padding:0in"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp; Sự hiểm nguy không hẳn là hiểm nguy
+tính mạng, chẳng hạn khi ta thấy người bạn hành động xấu xa nếu ta là
+parrèsiaste chấp nhận hiểm nguy làm cho hắn tức giận bởi vì đã nói cho hắn biết
+là hắn sai lầm thì không hẳn gặp hiểm nguy nhưng ta có thể làm cho bạn tổn
+thương và tình bạn bị sứt mẻ. Trường hợp khác, chẳng hạn như trong tranh luận
+chính trị nếu như một diễn giả chấp nhận hiểm nguy như có thể mất thanh danh vì
+ý kiến của ông ta đối nghịch với ý kiến đa số khi ông ta sử dụng <i>parrêsia</i>.
+Thí dụ này cho thấy <i>parrêsia </i>không những gắn liền tới hiểm nguy mà còn gắn
+liền với sự can đảm: trong <i>parrêsia </i>nói sự thật nằm trong trò chơi sống
+chết. <i>Điểm thứ tư</i>, không phải <i>parrêsia </i>gắn liền với mọi loại hiểm
+nguy. Chẳng hạn khi bạn biết một sự bí mật và phơi bày bí mật này ra tuy điều
+này có thể được dùng để chống lại bạn thì bạn không phải ta là một parrèsiaste
+theo nghĩa tích cực của từ này. Trong <i>parrêsia </i>chỉ có hiểm nguy khi nào
+sự thật do bạn vén mở có thể làm tổn thương hay làm nổi giận người bạn nói với:
+<i>parrêsia </i>luôn luôn là một trò chơi giữa kẻ nói và người nghe.</span></p>
+
+<p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;line-height:
+150%;border:none;padding:0in"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp; Chức năng của <i>parrêsia </i>không
+phải là cung cấp một chứng minh cho sự thật, không bao gồm trong một tranh biện
+về vấn đề sự thật mà chức năng của nó là phê bình, phê bình ta phê bình người:
+phê bình cái bạn làm hay không và cái bạn nghĩ hay không. “Chính đặt vị trí phê
+bình này là đặc điểm của <i>parrêsia</i>. <i>Parrêsia</i> là một phê bình, một
+tự-phê bình hay một phê bình hướng đến người khác, nhưng luôn luôn ở một vị trí
+của kè dưới đối với người đối thoại.<i> Parrêsia</i> đi từ “phía dưới” hướng
+lên “phía trên”. Parrèsiaste không mạnh mẽ bằng người đối thoại với, hắn yếu
+hơn nhiều so với kẻ hắn đưa ra những lời phê bình.”<span style="color:#C00000">[2]</span>
+Người Hy Lạp cho rằng khi ông thầy giáo hay người cha dùng <i>parrêsia </i>để
+phê bình một đứa trẻ thì đó không phải là <i>parrêsia</i>. Nhưng khi một triết
+gia phê phán một hoàng tử, khi một công dân phê bình đám đông quần chúng, khi một
+người học trò phê bình ông thầy, thì đúng là đã dùng<i> parrêsia</i>. Sau đây
+là vấn đáp giữa những tham dự viên và Foucault:</span></p>
+
+</div>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:6.0pt;
+margin-left:1.5in;text-align:justify"><i><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:6.0pt;
+margin-left:1.5in;text-align:justify"><i><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Hỏi: Nếu parrêsia có thể là một sự tự
+phê thì phạm nhân kẻ thú nhận tội của hắn thì hắn có phải là parrèsiate không?</span></i></p>
+
+
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:6.0pt;
+margin-left:1.5in;text-align:justify"><i><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Trả
+lời</span></i><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">:
+Trong một số trường hợp những phạm nhân khi họ nhận tội, nhưng khi tự nguyện,
+dùng sự tự do của họ, họ quyết định nói thật về việc họ đã làm, và họ trong một
+hoàn cảnh đối với kẻ họ hứa sẽ trừng phạt hay trả thù họ thì trong trường hợp
+này có <i>parrêsia</i>.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:6.0pt;
+margin-left:1.5in;text-align:justify"><i><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><i><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Hỏi:
+Câu hỏi của tôi là về điểm thứ tư của ông. Sự hiểm nguy gắn liền với parrêsia
+có phải là nằm trong nội dung phê bình của lời tuyên bố hay đến từ mối quan hệ
+giữa kẻ nói và kẻ hắn nói với, mối quan hệ này có làm cho sự kiện lời tuyên bố
+được coi như một sự nhục mạ?</span></i></span></span></i></p><i>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:6.0pt;
+margin-left:1.5in;text-align:justify"><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+
+</span></p></i><p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:6.0pt;
+margin-left:1.5in;text-align:justify"><i><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Đáp:
+</span></i><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Nếu
+câu trả lời của tôi không phải là câu trả lời hay, thì xin bạn bảo cho tôi biết
+và dùng <i>parrêsia </i>đi! Đó là một câu hỏi về địa vị, quan hệ pháp lý
+(statut), quan hệ này làm cho kẻ này mạnh hơn kẻ kia. Thí dụ trường hợp triết
+gia với nhà vua. Như trong trường hợp Electre vì lý do nào đó ở trong hoàn cảnh
+một nô lệ còn Clytemneste là hoàng hậu và Electre đã dùng <i>parrêsia </i>chứ
+không phải Clytemneste. Chính vấn đề về địa vị xã hội này tạo nên sự hiểm nguy,
+khả năng bị trả thù.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:6.0pt;
+margin-left:1.5in;text-align:justify"><i><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Hỏi:
+Nhưng có phải là parrêsia gắn liền với chính lời tuyên bố hay đó là phản ứng của
+người đối đáp sau đó tạo nên tuyên bố này, một thí dụ của parrêsia?</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:6.0pt;
+margin-left:1.5in;text-align:justify"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Đáp:
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Đúng,
+thí dụ khi Denys trừng phạt Platon và lưu đầy ông ấy ở Syracuse, hắn không xử sự
+như một vị hoàng tử tốt vì một số lý do nào đó mà tôi sẽ giải thích cho bạn, bởi
+đó chính là bổn phận của vị hoàng tử phải chấp nhận <i>parrêsia</i>. Thế nhưng
+[hoàng tử có vào cuộc chơi hay không và có trừng phạt hay không,] triết gia
+luôn luôn đã sử dụng <i>parrêsia.</i></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:6.0pt;
+margin-left:1.5in;text-align:justify"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Trước
+khi trả lời các câu hỏi khác Foucault muốn thêm một điểm chót về vấn đề các đặc
+điểm tổng quát [của <i>parrêsia</i>]: trong <i>parrêsia</i> việc nói sự thật
+không chỉ là chấp nhận hiểm nguy hay đối mặt với nguy hiểm, nhưng đó chính là một
+<i>bổn phận</i>. Chẳng hạn, nhà biện thuyết kẻ nói ra sự thật với mọi người vốn
+không sẵn sàng chấp nhận sự thật này và có thể trừng phạt, kết án tử hay lưu đầy
+ông ta, ông ta có thể tự do giữ im lặng, không ai buộc ông ta nói cả; nhưng ông
+ta cảm thấy ông có bổn phận phải nói: <i>parrêsia</i> gắn liền với tự do và bổn
+phận.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:6.0pt;
+margin-left:1.5in;text-align:justify"><i><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Hỏi:
+Sự kiện nói sự thật có tạo ra một sự dấn thân cho parrèsiate không?</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:6.0pt;
+margin-left:1.5in;text-align:justify"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Đáp:
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Có,
+như các bạn thấy, đó là một điều phải thảo luận, bởi khá phức tạp. Chẳng hạn,
+khi người nào đó nói “trời xanh” (le ciel est bleu) chắc chắn theo nghĩa đó hắn
+cho rằng mọi xác định, mọi thứ khẳng định đều là một sự dấn thân nào đó để chứng
+thực rằng điều hắn nói là đúng thực hay đó là một sự dấn thân theo nghĩa người
+ta có thể hay sẵn sàng lập lại cùng một điều, v.v…Luôn có sự dấn thân khi một
+người nào đó nói để xác quyết một cái gì đó nhưng sự dấn thân trong<i> parrêsia</i>
+mạnh bạo hơn nhiều, sự dấn thân này khác với dấn thân bình thường giữa một người
+nào đó và điều hắn nói khi hắn xác định một cái gì đó, bởi vì sự dấn thân này nối
+kết với một địa vị xã hội nào đó, với những khác biệt về địa vị, nó cũng gắn liền
+với sự kiện parrèsiaste nói một điều gì nguy hiểm và nhận chịu sự liều lĩnh,
+v.v…</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:6.0pt;
+margin-left:1.5in;text-align:justify"><i><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Hỏi:
+Sự dấn thân này có thể được coi như một hành vi tình yêu (acte d’amour) hướng về
+người mình nói với không?</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:6.0pt;
+margin-left:1.5in;text-align:justify"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Đáp:
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Chúng
+ta thấy rằng trong một số bản văn mối liên hệ giữa <i>parrêsia</i> và tình bạn
+thật rất quan trọng. Có hai khung xã hội lớn (deux grands cadres sociaux) của <i>parrêsia</i>:
+khung thứ nhất là định chế dân chủ với việc sử dụng <i>parrêsia</i> trên <i>agora</i>,
+và, với tư cách một công dân tốt, thì người ta phải dùng <i>parrêsia</i>; và
+khung thứ hai là tình bạn hay tình yêu (chúng rất tương tự nhau trong văn hóa
+Hy Lạp): đối với bạn, người ta phải dùng <i>parrêsia</i>. Nhưng như các bạn thấy,
+đó là một loại dấn thân khác với sự dấn thân giữa một người nào đó với điều hắn
+nói, khi hắn cho ra một câu trả lời. Đó là một cái khác.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:6.0pt;
+margin-left:1.5in;text-align:justify"><i><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Hỏi:
+Tôi không nói về một sự hứa hẹn hay về một sự bắt buộc…</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:6.0pt;
+margin-left:1.5in;text-align:justify"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Đáp:
+</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Bạn
+thấy đấy, rằng đó hoàn toàn không phải là một hành vi của ngôn ngữ hay một phát
+biểu động thái (énoncé performatif) theo nghĩa của Austin. Tuyệt đối không phải.
+Cái đó là cái khác, đó chính là lý do tôi đã không nói về hành vi của ngôn ngữ,
+nhưng về hoạt tính của ngôn ngữ (activité du langage). Đó là một hoạt tính với
+những thể thức khác nhau (différentes procédures), một hoàn cảnh với những người
+nói với, một cái khung xã hội, v.v…</span></p>
+
+<p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;border:none;
+padding:0in"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:6.0pt;
+margin-left:1.5in;text-align:justify"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[1]
+Theo Fruchaud và Lorenzi là những người biên tập quyển <i>Discours et la Verité</i>
+thì cho đến năm 2016 quyển vẫn này chưa được xuất bản ở Pháp. Bản tiếng Anh <i>Fearless
+Speech</i> do Josept Perason biên tập, (nxb MIT Press xuất bản năm 2001) không
+đúng với lời giảng của Foucault. Fruchaud và Lorenzi đã căn cứ vào bản ghi âm của
+Foucault lưu trữ ở Thư Viện Quốc Gia Pháp.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:6.0pt;
+margin-left:1.5in;text-align:justify"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[2]
+<i>Sđd</i> trang 84: C’est ce positionnement critique qui est la
+caractéristique spécifique de la<i> parrêsia</i>. La <i>parrêsia </i>est une
+critique, une auto-critique ou une critique dirigée vers les autres, mais
+toujours dans une position d’inferiorité vis-à-vis de l’interlocuteur. La <i>parrêsia
+</i>vient “en-dessous” et est dirigée vers “au-dessus”. Le parrèsiaste est
+moins puissant que son interlocuteur, il est plus faible que celui auquel il
+adresse ses critiques.</span></p>
+
+<p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;border:none;
+padding:0in"><b><i><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></i></b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:6.0pt;
+margin-left:1.5in;text-align:justify"><b><span style="font-size:18.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:#C00000">đào trung đạo</span></b></p>
+
+<p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;border:none;
+padding:0in"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;border:none;
+padding:0in"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:6.0pt;text-align:justify;border:none;
+padding:0in"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+</div>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt"><span lang="VI">&nbsp;</span></p>
+
+
+
+
+
+
+</body></html>

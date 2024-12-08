@@ -1,0 +1,641 @@
+<head> <script type="text/javascript"> document.domain = 'gio-o.com'; (()=>{"use strict";const e=window.Cypress=parent.Cypress;if(!e)throw new Error("Something went terribly wrong and we cannot proceed. We expected to find the global Cypress in the parent window but it is missing. This should never happen and likely is a bug. Please open an issue.");const t=(()=>{let e,t,n,r;const i=()=>{e=!1,t=!1,n=[],r={}},o=(e,t=[])=>"function"==typeof e?e.apply(window,t):window.eval(e);return i(),{wrap:()=>{const i={setTimeout:window.setTimeout,setInterval:window.setInterval,requestAnimationFrame:window.requestAnimationFrame,clearTimeout:window.clearTimeout,clearInterval:window.clearInterval},a=(e,t)=>i[e].apply(window,t),s=e=>n=>(t&&(r[n]=!0),a(e,[n])),w=t=>(...r)=>{let i,[s,w,...p]=r;return i=a(t,[(...r)=>{if(!e)return o(s,r);n.push({timerId:i,fnOrCode:s,params:r,type:t})},w,...p]),i};window.setTimeout=w("setTimeout"),window.setInterval=w("setInterval"),window.requestAnimationFrame=w("requestAnimationFrame"),window.clearTimeout=s("clearTimeout"),window.clearInterval=s("clearInterval")},reset:i,pause:a=>{e=Boolean(a),e||(t=!0,n.forEach((e=>{const{timerId:t,type:n,fnOrCode:i,params:a}=e;"setInterval"===n&&r[t]||o(i,a)})),i())}}})();e.removeAllListeners("app:timers:reset"),e.removeAllListeners("app:timers:pause"),e.on("app:timers:reset",t.reset),e.on("app:timers:pause",t.pause),t.wrap(),e.action("app:window:before:load",window)})(); </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="Generator" content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";}
+span.MsoEndnoteReference
+	{vertical-align:super;}
+p.MsoEndnoteText, li.MsoEndnoteText, div.MsoEndnoteText
+	{mso-style-link:"Endnote Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:15.0pt;
+	margin-left:0in;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Title Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:15.0pt;
+	margin-left:0in;
+	border:none;
+	padding:0in;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	letter-spacing:.25pt;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.EndnoteTextChar
+	{mso-style-name:"Endnote Text Char";
+	mso-style-link:"Endnote Text";}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	letter-spacing:.25pt;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+.MsoChpDefault
+	{font-size:14.0pt;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang="EN-US" link="blue" vlink="purple">
+
+<div class="WordSection1">
+
+<br><br><br><br>
+
+<p class="MsoTitleCxSpFirst" align="center" style="text-align:center;line-height:
+150%"><span style="font-size:24.0pt;line-height:150%;color:#632523"><img src="http://www.gio-o.com/Tet/Horse-3_zps2ac375d7.jpg"></span></p>
+<br><br>
+<p class="MsoTitleCxSpLast" align="center" style="text-align:center;line-height:
+150%"><span style="color:#632523">Nguyễn thị
+Hải Hà</span></p>
+<br>
+<p class="MsoTitleCxSpLast" align="center" style="text-align:center;line-height:
+150%"><span style="color:#632523">giữa ngựa và người</span></p>
+
+</div>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:center;
+line-height:150%"><i>tản mạn</i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">Ngựa có mặt trên thế
+giới chừng bốn mươi ngàn năm trước Công nguyên, được thuần hóa vào khoảng bốn
+ngàn năm trước Công nguyên. Ngựa xuất hiện thường xuyên trong văn học và nghệ
+thuật. Ngựa là biểu tượng của chia lìa vì chiến tranh vì người đàn ông phải ra
+trận. Chúng ta có thể không biết nét mặt của người đàn bà ở phía sau rặng liễu
+nhìn dáng chồng từ từ khuất nẻo nhưng ai cũng biết màu y phục của người chồng
+và màu con ngựa chàng cưỡi qua hai câu thơ trong Chinh Phụ Ngâm Khúc <i>“Áo
+chàng đỏ tựa ráng pha, ngựa chàng sắc trắng như là tuyết in.”</i> Và có lúc đã tiếc
+mình không theo kịp người đi<i>“Đưa chàng lòng dặc dặc buồn. Bộ khôn bằng ngựa,
+thủy không bằng thuyền.” </i>Ngựa là biểu tượng của sức mạnh, nhanh nhẹn, dẻo
+dai, tình bạn, lòng trung thành, trí khôn ngoan trong vô số tác phẩm. Ngựa
+hoang được dùng để ám chỉ một người có ước muốn tự do không chịu khuất phục trước
+những trói buộc của uy quyền như <i>“Ngựa hoang nào dẫm nát tơi bời. Đồng cỏ
+nào xanh ngắt chân trời. Ngựa phi như điên cuồng, giữa cánh đồng dưới cơn
+dông.”</i><a href="#_edn1" name="_ednref1" title=""><span class="MsoEndnoteReference"><i><span style="font-size:8.0pt;line-height:150%"><span class="MsoEndnoteReference"><b><span style="font-size:8.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[i]</span></b></span></span></i></span></a>
+Chỉ vài câu mà chúng ta nhìn thấy một bức tranh ngựa phi tuyệt đẹp và những
+ngón đòn thù giữa “ngựa” và người. Mối liên hệ giữa ngựa và người, ân tình và
+oán thù được thăng hoa trong nhiều tác phẩm. Một con ngựa đã giết người để trả
+thù được Patti Highsmith ghi lại trong truyện ngắn Engine Horse. &nbsp;Alice Munro,
+Nobel 2013, đã nhiều lần nhắc đến ngựa, tiêu biểu là hai truyện ngắn <i>Boys
+and Girls </i>và <i>Under the Apple </i>Tree. Rất may trong văn học chúng ta được
+chứng kiến ân tình giữa ngựa và người nhiều hơn thù oán. Trong phạm vi bài tản
+mạn này, xin mời độc giả thưởng thức một ít ân tình giữa ngựa và người trong bốn
+tác phẩm văn học bất hủ của Tây phương.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<h1 style="margin-top:24.0pt;margin-right:1.5in;margin-bottom:0in;margin-left:
+1.5in;margin-bottom:.0001pt;line-height:150%"><span style="color:#632523">1. Con
+ngựa trong A Country Doctor (Bác Sĩ Làng) của Franz Kafka</span></h1>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">Trong truyện ngắn A
+Country Doctor của Franz Kafka có ông bác sĩ già cần phải đi chữa bệnh cho một người
+ở cách đó mười dặm nhưng con ngựa duy nhất của ông đã chết đêm qua vì kiệt sức.
+Cô gái giúp việc, Rose, đi khắp nơi đến nhà láng giềng để mượn ngựa cho chủ nhưng
+không ai cho mượn. Trong cơn tức bực, bác sĩ đá cánh cửa cái chuồng lợn, thì bỗng
+nhiên, có anh nài ngựa dẫn hai con ngựa lóp ngóp từ trong chuồng lợn bò ra. <i>“Thật
+là người ta nhiều khi trong biết trong nhà người ta có chứa những gì.”</i> Kafka
+tả, hai con ngựa cao lớn khỏe mạnh, nhưng ông không nói rõ ngựa màu gì. Koji
+Yamamura, đạo diễn Nhật, trong đoạn phim họa hình đã vẽ đôi ngựa màu đen.<a href="#_edn2" name="_ednref2" title=""><span class="MsoEndnoteReference"><span style="font-size:8.0pt;line-height:150%"><span class="MsoEndnoteReference"><span style="font-size:8.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[ii]</span></span></span></span></a>
+Anh nài ngựa bỗng dưng ôm chầm lấy Rose thô bạo cắn vào má cô nàng đến rướm
+máu. Bác sĩ muốn đánh tên nài ngựa để cứu Rose nhưng lại sợ hắn không cho mượn
+ngựa và có lẽ cũng vì hắn cường tráng mà ông thì già yếu hom hem. Bác sĩ lên đường
+một mình vì tên nài ngựa tuyên bố ở lại để chiếm đoạt Rose. Đôi ngựa tự động
+mang bác sĩ đi đến một nơi quang đãng, xa mười dặm mà đi trong chớp mắt. Bệnh
+nhân là một cậu bé mười một tuổi, gầy gò xanh xao nhưng không bị sốt. Bác sĩ
+cho là bệnh của cậu không nguy hiểm và đôi ngựa thò đầu vào cửa sổ khiến Bác sĩ
+nghĩ đến Rose đang cần được ông cứu. Sau tiếng ngựa hí Bác sĩ tìm thấy bên hông
+của cậu bé có một vết lở to như cái hoa hồng, bên trong đóa hoa hồng này là những
+con dòi to bằng ngón tay út, đầu trắng và có nhiều chân. Dân làng tụ họp trước
+nhà bệnh nhân xông vào cởi quần áo của Bác sĩ và đặt ông lên giường của bệnh
+nhân vì ông không chữa được bệnh và phải bị giết, y như lời hát của một bài đồng
+dao. Bác sĩ ném quần áo ra cỗ xe ngựa ngoài cửa sổ và trốn về. Trên đường về Bác
+sĩ già trần truồng và hai con ngựa lê bước chậm chạp trong cơn bão tuyết.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">Truyện ngắn Bác Sĩ
+Làng của Franz Kafka, thường được giới phê bình văn học cho rằng vì truyện giống
+như một giấc mơ nên khó phân tích một cách khoa học. Hai học giả Louis H.
+Leiter<a href="#_edn3" name="_ednref3" title=""><span class="MsoEndnoteReference"><span style="font-size:8.0pt;line-height:150%"><span class="MsoEndnoteReference"><span style="font-size:8.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[iii]</span></span></span></span></a>
+và Richard H. Lawson<a href="#_edn4" name="_ednref4" title=""><span class="MsoEndnoteReference"><span style="font-size:8.0pt;line-height:150%"><span class="MsoEndnoteReference"><span style="font-size:8.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[iv]</span></span></span></span></a>
+dùng phân tích tâm lý học của Freud và Jung để “giải mã” tác phẩm Bác sĩ Làng của
+Franz Kafka.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">Con ngựa, biểu tượng
+tính dục của người đàn ông, đã chết trong đêm trước, tượng trưng sự cạn kiệt tình
+dục của Bác sĩ làng. Rose, cô hầu gái tượng trưng tính dục của người phụ nữ, đã
+cố giúp hồi sinh tính dục của ông chủ bằng cách đi mượn ngựa của láng giềng.
+Hai con ngựa xuất hiện từ chuồng heo là ước muốn khả năng làm tình được hồi
+sinh. Hai con ngựa nhìn vào phòng bệnh nhân từ cửa sổ tượng trưng cho hành động
+xâm nhập tình dục. Cậu bé bệnh nhân là một hình ảnh tương phản sự bất lực của
+Bác sĩ làng (già nhưng không đau yếu; và trẻ nhưng đau yếu trầm trọng). Sự kiện
+mất quần áo của Bác sĩ trong khi chạy trốn được xem như biểu tượng cho sự bị
+thiến bộ phận sinh dục (castration) và sự mệt mỏi của hai con ngựa khi trở về
+là nhận thức về sự bất lực của Bác sĩ làng.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">Người viết vốn không
+tin là mọi tác phẩm đều có thể phân tích dựa trên căn bản tình dục như lý thuyết
+của Freud và Jung. Tuy nhiên, xin tóm tắt ý kiến của hai học giả để giúp vui độc
+giả. </p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">Một độc giả có thể phân
+tích tác phẩm như sau:</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">Kafka, ai cũng biết,
+bất hòa với người bố vì bị bố cấm viết văn. Viết văn, sự sáng tạo của Kafka,
+nguy hiểm cho tính mạng của tác giả trong chế độ độc tài. Văn chương như một
+đóa hoa đẹp, nhưng cũng nguy hiểm như vết thương lở lói đầy dòi lúc nhúc trên
+thân thể của cậu bé, và cậu bé là hiện thân của Kafka. Truyện ngắn Bác sĩ làng được
+Kafka viết với quan điểm của Bác sĩ làng, tượng trưng cho người bố của Kafka. Ước
+muốn và sự tự tin sẽ cứu được bệnh nhân, (tượng trưng cho ước muốn của người bố
+muốn cứu Kafka bằng cách khuyên bảo ông ngừng viết), biến thành hai con ngựa khỏe
+mạnh và đưa Bác sĩ đến gặp cậu bé trong chớp mắt. Con ngựa của Bác sĩ làng bị
+chết từ đêm trước ám chỉ người Bố không có phương tiện, hay không được phép đi
+thăm Kafka. Ông bố phải lén lút đi thăm Kafka do đó Bác sĩ làng phải đi trong
+đêm bão tuyết mịt mù. Khi đến nơi, biết là đứa con của mình mang cái nghiệp viết
+văn có thể nguy hiểm đến tính mạng, sự bất lực và tan nát tâm hồn của người bố
+được Kafka biểu hiện bằng cái trần truồng trong trời giá lạnh của Bác sĩ làng,
+và hai con ngựa trở nên mệt mỏi biểu hiện nỗi buồn của người bố phải cao bay xa
+chạy để tự cứu mình mà không cứu được con. </p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<h1 style="margin-top:24.0pt;margin-right:1.5in;margin-bottom:0in;margin-left:
+1.5in;margin-bottom:.0001pt;line-height:150%"><span style="color:#632523">2.
+Con ngựa Frou-Frou</span><a href="#_edn5" name="_ednref5" title=""><span class="MsoEndnoteReference"><span style="font-size:8.0pt;line-height:150%;
+color:#632523"><span class="MsoEndnoteReference"><b><span style="font-size:8.0pt;
+font-family:&quot;Cambria&quot;,&quot;serif&quot;;color:#632523">[v]</span></b></span></span></span></a><span style="color:#632523"> trong Anna Karenina của Leon Tolstoi</span></h1>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">Mặc dù Vronsky và
+Anna đã yêu nhau và nhiều lần lén lút gặp gỡ nhau, chuyện tình của hai người chỉ
+bị khám phá sau cuộc đua ngựa của Vronsky. Giàu, đẹp trai, lịch thiệp, và là một
+kỵ mã tài hoa, Vronsky tham dự cuộc đua ngựa vượt qua các chướng ngại như rào cản
+và hào mương. Rất tự tin ở sức khỏe, lòng can đảm, cũng như tài cỡi ngựa của
+mình, nhưng Vronsky có chút ngần ngại vì chưa mấy quen với Frou-Frou con ngựa sắp
+cùng chàng tham dự cuộc đua. Frou-Frou là con ngựa cái tơ màu nâu sậm, vẫn còn
+bị xem là “chưa hoàn hảo lắm.” Tuy nhiên “nàng” thuộc nòi giống có tiếng tăm và
+như thế là đủ để được bỏ qua mọi khuyết điểm khác. Trong khi đua ngựa này, do
+Vronsky không khéo điều khiển nên sẩy bước, lỗi nhịp khiến Frou-Frou ngã và gãy
+xương sống. Trông thấy Vronsky ngã ngựa Anna khóc và biểu lộ sự bấn loạn khác
+thường khiến Karenine đoán biết vợ mình ngoại tình với Vronsky. &nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">Theo hai học giả
+Martin Stevens<a href="#_edn6" name="_ednref6" title=""><span class="MsoEndnoteReference"><span style="font-size:8.0pt;line-height:150%"><span class="MsoEndnoteReference"><span style="font-size:8.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[vi]</span></span></span></span></a>
+và Hugh McLean<a href="#_edn7" name="_ednref7" title=""><span class="MsoEndnoteReference"><span style="font-size:8.0pt;line-height:150%"><span class="MsoEndnoteReference"><span style="font-size:8.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[vii]</span></span></span></span></a>,
+Tolstoy đã dùng cái chết của Frou-Frou làm điềm báo trước vận mệnh u tối của
+Anna và mối đam mê của nàng dành cho Vronsky. </p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">Qua cách dùng chữ của
+Tolstoy, độc giả dễ nhận ra, tác giả dùng Frou-Frou để ám chỉ Anna. Khi Vronsky
+gặp Frou-Frou trong chuồng ngựa, chàng nhận thấy đôi mắt của <i>nàng</i> “nổi bật,
+<i>sáng rực</i> và hào hứng,” còn thân hình của <i>nàng</i> “căng đầy nhựa sống
+nhưng lại rất <i>mềm mại</i>.” Mối quan hệ của Vronsky với Frou-Frou cũng rất gợi
+cảm. “Chàng càng đến gần, nàng càng trở nên <i>rạo rực</i>. Khi chàng đứng bên
+cạnh đầu của nàng, bỗng nhiên nàng trở nên đằm thắm hơn, cùng lúc ấy những sớ
+thịt của nàng run rẩy bên dưới lớp lông<i> mềm</i> <i>mại </i>như tơ.”</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">Vronsky quả là một
+người có sự nhạy cảm và con mắt quan sát của nhà văn. Với con ngựa chàng đã
+tinh tế như thế thì với Anna chàng càng tinh tế hơn. Vronsky bị Phu nhân
+Karenine thu hút ngay trong lần gặp gỡ đầu tiên khi nàng ngồi chung cỗ xe với mẹ
+chàng. Chàng nhận ra trên nét mặt nàng có một “vẻ mơn trớn <i>mềm mại</i> đặc
+biệt” và “đôi mắt của nàng <i>sáng rực</i>” và một “vẻ <i>rạo rực</i> được kềm
+chế.” Nét tương đồng của Frou-Frou và Anna cũng được Tolstoi miêu tả qua cách
+Kitty quan sát Anna, tình địch của nàng. Kitty nhìn thấy “<i>ánh sáng lấp lánh</i>
+run rẩy trong đôi mắt của Anna, nụ cười đầy hạnh phúc <i>sự rạo rực</i> một
+cách vô thức đang nở trên môi nàng, vẻ duyên dáng thật chín, và cử chỉ uyển
+chuyển nhẹ nhàng của Anna.”</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">Sự tương đồng của Frou-Frou
+và Anna Karenine qua cách miêu tả của Tolstoy không chỉ ngừng ở ánh sáng của
+đôi mắt, đường cong nét mềm của thân thể, hay một sự rạo rực ngấm ngầm trong
+đôi môi, sớ thịt. Trong một lần Anna bị ngã, Tolstoy đã miêu tả nét mặt của
+Vronsky như sau: “Nét mặt nhợt nhạt và hàm dưới run run chàng cúi xuống nhìn
+nàng” Và lúc Frou-Frou chết, Vronsky được miêu tả như sau: “Khuôn mặt bị biến dạng
+vì xúc cảm cực độ, nhợt nhạt và hàm dưới run run.” Frou-Frou cũng là tên thân mật
+của Gilberte, nhân vật trong vở kịch thịnh hành của Meilhac và Halévey ra mắt
+khán giả năm 1870. Những chi tiết của vở kịch này theo Stevens và McLean đã ảnh
+hưởng sâu đậm trong việc xây dựng nhân vật Anna Karenine của Tolstoy.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<h1 style="margin-top:24.0pt;margin-right:1.5in;margin-bottom:0in;margin-left:
+1.5in;margin-bottom:.0001pt;line-height:150%"><span style="color:#632523">3.
+Con ngựa Rocinante của Don Quixote</span></h1>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">Don Quixote sẽ không
+được xem là tác phẩm khôi hài bất hủ nếu chàng hiệp sĩ tấn công nhà máy xay lúa
+chạy bằng gió không có con ngựa gầy Rocinante. Trái ngược với vận mạng của Frou-Frou,
+con ngựa đua được chăm sóc cẩn thận nhưng lại chết dưới trôn của chủ, Rocinante
+của hiệp sĩ Don Quixote bị bỏ đói, đánh đập nhưng sống lâu hơn chủ. &nbsp;Nói rõ
+hơn, tuy Don Quixote không yêu Rocinante kiểu Vronsky yêu Frou-Frou nhưng không
+phải ông hiệp sĩ khùng này ngược đãi súc vật. Rocinante bị bỏ đói vì chủ của nó
+cũng bị đói. Rocinante không đánh đập bởi bàn tay của chủ mà bởi những người vị
+hiệp sĩ tấn công. &nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">Khi mới vừa tự phong
+chức hiệp sĩ, Quixote gặp một đoàn thương gia Toledo đi bán lụa đang nghỉ chân.
+Quixote bắt họ phải tán dương sắc đẹp của Dulcinea. Khi một người trong bọn bảo
+rằng chưa từng gặp mặt làm sao biết thần tượng của Quixote đẹp đến mức độ nào
+thì Quixote nổi giận bảo rằng họ không kính trọng nàng do đó ông giục Rocinante
+tiến lên với một khí thế hùng hổ ngọn giáo chỉa lăm lăm. Nếu Rocinante gầy còm
+không ngã quị thì chắc lũ lái buôn phải có vài ba người bị toi mạng. Vì
+Rocinante ngã quị nên bọn lái buôn xúm vào đánh cả người lẫn ngựa một trận nhừ
+tử. Don Quixote ông không kém tài và chắc chắn là không hèn nhát chỉ tại Rocinante
+lóng ngóng vụng về. </p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">Rocinante bị đánh và
+bị ngã nhiều lần nhưng không chết. Nếu trận đòn ấy là do Don Quixote khiêu chiến
+thì cũng có nhiều lần lỗi lầm đưa đến chỗ bị đánh đập hoàn toàn là tại
+Rocinante. Don Quixote cố gắng giữ tiết hạnh để biểu lộ lòng kính trọng với
+Dulcinea del Toboso, một phụ nữ nhà quê được ông đưa lên ngôi thần tượng. Học
+giả John Cull<a href="#_edn8" name="_ednref8" title=""><span class="MsoEndnoteReference"><span style="font-size:8.0pt;line-height:150%"><span class="MsoEndnoteReference"><span style="font-size:8.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[viii]</span></span></span></span></a>
+dựa vào học thuyết của Freud phân tích rằng sự tiết chế tình dục này được dùng
+để ám chỉ Don Quixote là người bị bất lực về mặt sinh dục. Don Quixote có cây
+giáo mòn lụt, và nhiều lần bị đối thủ bẻ gãy cũng là cách ví von sự bất lực của
+Quixote vì cây giáo là tượng trưng cho <i>phallus</i> hay “con cờ” của nam giới.
+Rocinante, con ngựa đực, được&nbsp; xem là biểu tượng tình dục của đàn ông. Suy nghĩ
+theo chiều hướng trên, Rocinante là hình ảnh đối kháng của Don Quixote. Don
+Quixote ăn chay tình dục nhưng Rocinante lại rất khát tình. Và chính vì cái
+khát tình của Rocinante mà cả Don Quixote với Sancho, người hầu cận, bị một trận
+đòn tơi tả. </p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">Sau khi đi mấy ngày
+đường đói và khát, Don Quixote và Sancho gặp một cánh đồng cỏ non mượt có con suối
+chảy ngang nước trong veo mát rượi. Sancho thả Rocinante trên đồng cỏ non, nghĩ
+rằng thường ngày Rocinante rất nhút nhát chắc chẳng quấy rầy ai. Trên đồng cỏ có
+một nhóm người yangueses đã đến trước và đang cho ngựa nghỉ ngơi. Rocinante lên
+cơn khát tình, nên thay vì gặm cỏ non và uống nước suối lại rượt đoàn ngựa tơ ponies
+của đám yangueses đòi cưỡi ngựa. Đám lái buôn đánh đuổi Rocinante đến độ chàng
+ngựa vừa gầy vừa già rớt hết “quần áo” yên cương chỉ còn lại thân hình trụi lũi.
+Nóng lòng Rocinante của mình bị đánh đập tàn nhẫn, hiệp sĩ Don Quixote ra lệnh
+Sancho phải cùng hiệp sĩ trả thù cho Rocinante. Sancho nhắc nhở cho chủ biết là
+“bọn chúng hơn hai mươi đứa, còn chúng ta chỉ có hai người, đánh làm sao lại họ
+mà đánh.” Tuy nhiên bản tính hiệp sĩ của Quixote đã chẳng chịu lùi bước trước sức
+mạnh nào nên Don Quixote xông lên và dĩ nhiên bị đánh cho một trận bò lết bò
+càng. May cho hiệp sĩ nhà ta là đã ngã bổ nhào nằm bên cạnh Rocinante. Vì hiệp
+sĩ nhỏ bé hơn Rocinante nên roi vọt đánh trúng Rocinante nhiều hơn đánh trúng
+hiệp sĩ. Tội nghiệp Sancho đã không được may mắn như thế. Vẫn biết Rocinante phạm
+tội “dê,” nhưng theo cái kiểu con hư là tại cha mẹ, vì thế Don Quixote phải bị
+vạ lây. Nếu không có Rocinante độc giả sẽ không có cơ hội mà mỉm cười.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">Bên cạnh cây giáo,
+cánh tay của Don Quixote cũng được xem là biểu tượng của <i>phallus.</i>
+Quixote thường khoe sức mạnh của cánh tay, nhưng khi hữu sự cánh tay của hiệp
+sĩ thường trở nên bất lực. Maritornes và con gái của vị chủ quán đã đùa cợt với
+Quixote khi ông đến trú ngụ. Hiệp sĩ e ngại hai vị nữ lưu sẽ lợi dụng xâm phạm
+tình dục ông. Tuy nhiên vốn bản tính hiệp sĩ hay chìu ý phụ nữ, Quixote nghe lời
+dụ dỗ của hai nàng nên thò cánh tay vào một cái lỗ trong nhà chứa rơm. Hai nàng
+tinh nghịch cột cổ tay của ông và để ông tay bị treo lủng lẳng. Quixote mỏi quá
+phải dựa vào Rocinante tuy nhiên con ngựa đã chạy theo cơn khát tình mà bỏ ông
+chủ lại. Đây cũng là một ẩn dụ tình dục John Cull đã nhìn theo phương pháp
+Freud và sự có mặt của Rocinante làm tăng thêm phần khôi hài của tác phẩm.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="color:#632523">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><b><span style="color:#632523">4. Con ngựa Boxer trong Animal Farm (Trại Súc Vật) của
+George Orwell</span></b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">Nếu nhắc đến con ngựa
+trong văn học, mà không nói đến bầy ngựa trong Trại Súc Vật của Orwell thì là một
+thiếu sót lớn lao, bởi vì bầy ngựa này, đặc biệt là Boxer, tượng trưng cho người
+dân sống trong chế độ độc tài. Trong Trại Súc Vật, có đôi vợ chồng Boxer và
+Clover thuộc loại ngựa kéo (kéo xe hay kéo cày), Mollie là loại ngựa kiểng
+(nuôi để đi thi ở các cuộc thi giữa các nông trại), và Benjamin (nửa ngựa nửa lừa).
+Boxer màu đen, to lớn, cao hơn một mét tám, có sức khỏe bằng hai con ngựa bình
+thường. Mặc dù dáng dấp đồ sộ, Boxer bị xem là ngu ngốc bởi vì Boxer có một vệt
+lông trắng chạy dài trước đầu. Clover như một phụ nữ to béo sau khi sinh bốn đứa
+con. Mollie là một cô nàng ngựa trẻ, màu trắng, đỏm dáng với cái nơ buộc trên bờm.
+Thường bị xem là phù phiếm, nhẹ dạ, lười biếng, ích kỷ, ngu ngốc vì chỉ biết có
+một mẫu tự. Thật ra cả bầy ngựa không ai biết nhiều chữ, chỉ Benjamin loài người
+thường mắng là ngu như lừa lại biết chữ, có thể đọc nguyên câu văn.&nbsp; Về sau khi
+Napoleon và lũ heo chó thay đổi luật lệ để có thể thao túng quyền hành và giết
+hại “dân chúng” trong trại, Benjamin chính là “người” đọc luật cho Clover nghe.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">Boxer, như một người
+nông dân anh hùng, đã chung vai sát cánh với lãnh đạo để chống chọi với “kẻ
+thù” loài người. Chính Boxer là kẻ đã hạ gục một kẻ thù bằng cách đứng lên bằng
+hai chân sau, dùng hai chân trước, có bọc móng sắt bổ xuống đầu Foxwood khiến hắn
+ngã lăn quay ra chết giấc. Boxer hạ kẻ thù một cách quang minh chính đại, bất cứ
+ngón đòn nào, dù đá đạp đấm đánh đều ra chân trước mặt chứ không đánh từ bóng tối
+như loài người. Trong khi Boxer và các loại thú anh dũng chiến đấu kẻ thù thì
+Mollie trốn trong chuồng của nàng, vùi đầu vào máng rơm. Nàng chạy trốn ngay lập
+tức khi nghe tiếng súng của kẻ thù.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">Độc giả dễ có ác cảm
+với Mollie. Khi lãnh đạo bàn chuyện làm cách mạng, Mollie hỏi ngay là khi cách
+mạng xong rồi cô ta có còn được ăn đường và được đeo nơ không. Khi mọi người phải
+từ chối mọi xa hoa phù phiếm để ủng hộ cách mạng thì Mollie mang tất cả lạc thú
+của cô ta đem dấu dưới đống rơm. Và khi toàn trại súc vật được ra chỉ thị phải
+căm ghét, và không làm nô lệ cho kẻ thù, thì Mollie có cử chỉ thân thiện với
+loài người. Mollie chối rằng không theo loài người để phản bội loài vật, nhưng
+“người ta” nhìn thấy Mollie đứng giữa hai gọng của xe kéo, nhăm nhi đường, bờm
+có gắn nơ, và được người ve vuốt.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">Ann Patchett, trong
+bài tiểu luận giới thiệu Trại Súc Vật, đã bênh vực hành động của Mollie.
+Patchett cho rằng dù Mollie làm nô lệ cho loài người thì đó là hành động chọn lựa.
+Do sự chọn lựa đó Mollie tránh được nỗi đau lòng khi bị đồng bọn phản bội. Người
+ta có thể cho rằng lựa chọn hạnh phúc của Mollie là một hành động hèn mạt, vì
+nàng không chịu sống theo gương mẫu của người khác đặt ra, nhưng Patchett cho rằng,
+vào thời buổi của Trại Súc Vật, đạt được hạnh phúc mà không lợi dụng công lao của
+đồng loại nên được xem là một sự vẻ vang.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">Boxer là điển hình
+cho một mẩu công dân, hiền lành, chân thật, yêu thương đồng loại, tôn trọng luật
+pháp. Boxer cũng như nhiều người dân khác đã quá tin vào giai cấp lãnh đạo, để
+tư tưởng của họ bị kềm chế và bị đưa đến con đường hủy diệt. Bất cứ vấn đề gì xảy
+ra, Boxer chỉ biết nai lưng lao động, không ngờ sự hy sinh của mình chỉ phục vụ
+giai cấp thống trị và tiếp tay họ làm cho tình trạng xã hội trở nên tệ hại hơn.
+</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">Ngựa chiếm một vị trí
+rất lớn trong huyền thoại, văn học và phim ảnh Tây phương. Từ con ngựa trắng
+Pegasus trong huyền thoại Hy lạp đến con ngựa đen trong Black Beauty hay Black
+Stallion. Ngựa không những để kéo cày mà con dùng để kéo những cỗ đạn pháo nặng
+nề, hơn một triệu con ngựa khỏe được dùng để phục vụ Thế chiến thứ Hai. Sức khỏe,
+lòng trung thành và sự khôn ngoan của Joey được trân trọng trong phim War Horse
+của Speilberg. Tình bạn giữa người dù chết cũng không chia xa như White Mane. Ngựa
+được Trịnh Công Sơn dùng để miêu tả một người nghệ sĩ rong chơi như <i>“Đời vẽ
+tôi tên mục đồng, rồi vẽ thêm con ngựa hồng, từ đó lên đường phiêu dong.” </i>Ngựa
+đủ thông minh để được huấn luyện nhảy múa theo điệu nhạc phục vụ khán giả. Mấy
+mươi năm qua, những con ngựa trong Trại Súc Vật của George Orwell, trong Anna
+Karenina của Leon Tolstoy, trong Don Quixote của Miguel de Cervantes, trong the
+Country Doctor vẫn còn đáng cho chúng ta chiêm ngưỡng và suy ngẫm.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<blockquote> <blockquote> <blockquote><blockquote>
+
+<p class="MsoEndnoteText"><a href="#_ednref1" name="_edn1" title=""><span class="MsoEndnoteReference"><span class="MsoEndnoteReference"><span style="font-size:10.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[i]</span></span></span></a>
+Vết Thù Trên Lưng Ngựa Hoang của Ngọc Chánh và Phạm Duy.</p>
+
+
+
+
+<p class="MsoEndnoteText"><a href="#_ednref2" name="_edn2" title=""><span class="MsoEndnoteReference"><span class="MsoEndnoteReference"><span style="font-size:10.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[ii]</span></span></span></a>
+<a href="https://www.youtube.com/watch?v=ZDjmW-gIsKs">https://www.youtube.com/watch?v=ZDjmW-gIsKs</a></p>
+
+
+
+<p class="MsoEndnoteText"><a href="#_ednref3" name="_edn3" title=""><span class="MsoEndnoteReference"><span class="MsoEndnoteReference"><span style="font-size:10.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[iii]</span></span></span></a>
+Leiter, Louis, “A Problem in Analysis: Franz Kafka’s A Country Doctor.” <i>The
+Journal of Aesthetics and Art Criticism</i>, Vol. 16, No. 3 (Mả., 1958), pp. 337-347.</p>
+
+
+
+<p class="MsoEndnoteText"><a href="#_ednref4" name="_edn4" title=""><span class="MsoEndnoteReference"><span class="MsoEndnoteReference"><span style="font-size:10.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[iv]</span></span></span></a>
+Lawson, Richard, “Kafka’s Der Landarzt.” <i>Monatshefte,</i> Vol. 49, No. 5
+(Oct., 1957), pp. 265-271.</p>
+
+
+<p class="MsoEndnoteText"><a href="#_ednref5" name="_edn5" title=""><span class="MsoEndnoteReference"><span class="MsoEndnoteReference"><span style="font-size:10.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[v]</span></span></span></a>
+Wikipedia dùng chữ Fru-Fru.</p>
+
+
+
+<p class="MsoEndnoteText"><a href="#_ednref6" name="_edn6" title=""><span class="MsoEndnoteReference"><span class="MsoEndnoteReference"><span style="font-size:10.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[vi]</span></span></span></a>
+Stevens, Martin, “A Source for Frou-Frou in Anna Karenina,” <i>Comparative
+Literature,</i> Vol. 24, No. 1 (Winter, 1972), pp. 63-71.</p>
+
+
+
+<p class="MsoEndnoteText"><a href="#_ednref7" name="_edn7" title=""><span class="MsoEndnoteReference"><span class="MsoEndnoteReference"><span style="font-size:10.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[vii]</span></span></span></a>
+McLean, Hugh, “Correspondence: On Horses, Adulteresses, and Tolstoy.” <i>Comparative
+Literature</i>, Vol. 24, No. 3 (Summer, 1972), pp. 285-286.</p>
+
+
+
+<p class="MsoEndnoteText"><a href="#_ednref8" name="_edn8" title=""><span class="MsoEndnoteReference"><span class="MsoEndnoteReference"><span style="font-size:10.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[viii]</span></span></span></a>
+Cull, John, “The ‘Knight of the Broken Lance’ and his ‘Trusty Steed’: On Don
+Quixote and Rocinate,” <i>Cervantes: </i>Bulletin of the Cervantes Society of
+America 10.2 (1990): 37-53 </p>
+
+
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+
+</blockquote> </blockquote> </blockquote></blockquote>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:16.0pt;line-height:150%;color:#632523">Nguyễn thị
+Hải Hà</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%">&nbsp;</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>

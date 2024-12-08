@@ -1,0 +1,950 @@
+<head> <script type="text/javascript"> document.domain = 'gio-o.com'; (()=>{"use strict";const e=window.Cypress=parent.Cypress;if(!e)throw new Error("Something went terribly wrong and we cannot proceed. We expected to find the global Cypress in the parent window but it is missing. This should never happen and likely is a bug. Please open an issue.");const t=(()=>{let e,t,n,r;const i=()=>{e=!1,t=!1,n=[],r={}},o=(e,t=[])=>"function"==typeof e?e.apply(window,t):window.eval(e);return i(),{wrap:()=>{const i={setTimeout:window.setTimeout,setInterval:window.setInterval,requestAnimationFrame:window.requestAnimationFrame,clearTimeout:window.clearTimeout,clearInterval:window.clearInterval},a=(e,t)=>i[e].apply(window,t),s=e=>n=>(t&&(r[n]=!0),a(e,[n])),w=t=>(...r)=>{let i,[s,w,...p]=r;return i=a(t,[(...r)=>{if(!e)return o(s,r);n.push({timerId:i,fnOrCode:s,params:r,type:t})},w,...p]),i};window.setTimeout=w("setTimeout"),window.setInterval=w("setInterval"),window.requestAnimationFrame=w("requestAnimationFrame"),window.clearTimeout=s("clearTimeout"),window.clearInterval=s("clearInterval")},reset:i,pause:a=>{e=Boolean(a),e||(t=!0,n.forEach((e=>{const{timerId:t,type:n,fnOrCode:i,params:a}=e;"setInterval"===n&&r[t]||o(i,a)})),i())}}})();e.removeAllListeners("app:timers:reset"),e.removeAllListeners("app:timers:pause"),e.on("app:timers:reset",t.reset),e.on("app:timers:pause",t.pause),t.wrap(),e.action("app:window:before:load",window)})(); </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="Generator" content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Microsoft Sans Serif";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"\@MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-link:"Footnote Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+span.MsoFootnoteReference
+	{vertical-align:super;}
+span.MsoEndnoteReference
+	{vertical-align:super;}
+p.MsoEndnoteText, li.MsoEndnoteText, div.MsoEndnoteText
+	{mso-style-link:"Endnote Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";}
+span.UnresolvedMention
+	{mso-style-name:"Unresolved Mention";
+	color:#605E5C;
+	background:#E1DFDD;}
+span.FootnoteTextChar
+	{mso-style-name:"Footnote Text Char";
+	mso-style-link:"Footnote Text";}
+span.EndnoteTextChar
+	{mso-style-name:"Endnote Text Char";
+	mso-style-link:"Endnote Text";}
+.MsoChpDefault
+	{font-size:14.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang="EN-US" link="#0563C1" vlink="#954F72">
+
+<div class="WordSection1">
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:8.0pt;margin-left:1.5in;text-align:center;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:8.0pt;margin-left:1.5in;text-align:center;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:8.0pt;margin-left:1.5in;text-align:center;line-height:150%"><span style="font-size:22.0pt;line-height:150%;font-family:&quot;Microsoft Sans Serif&quot;,&quot;sans-serif&quot;;
+color:#C55A11">Nguyễn thị Hải Hà</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:8.0pt;margin-left:1.5in;text-align:center;line-height:150%"><span style="font-size:22.0pt;line-height:150%;font-family:&quot;Microsoft Sans Serif&quot;,&quot;sans-serif&quot;;
+color:#C55A11">tương quan giữa mặt nạ và mặt thật</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:8.0pt;margin-left:1.5in;text-align:center;line-height:150%"><i>tản
+mạn</i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Nếu không có COVID-19 có
+lẽ tôi không bao giờ đeo khẩu trang ra nơi công cộng.&nbsp; Khẩu trang tiếng Anh là
+mask.&nbsp; Tuy vậy, chữ mask còn được dùng để chỉ mặt nạ.&nbsp; Khẩu trang được dùng để
+che miệng và mũi, trong thời dịch bệnh Covid, được dùng để bảo vệ cơ thể chống
+bệnh xâm nhập.&nbsp; Mặt nạ có khi che hết khuôn mặt như mặt nạ Guy Fawkes, có khi
+chỉ che ở vùng đôi mắt như mặt nạ Zorro.&nbsp; Mặt nạ Zorro còn có tên là Domino.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><b>Lịch sử của mặt nạ</b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Mặt nạ xuất hiện từ bao
+giờ không ai biết rõ, có lẽ một thời gian ngắn sau khi có con người.&nbsp; Mặt nạ xưa
+nhất được tìm thấy làm bằng đá, khoảng 7000 năm trước Công Nguyên, được cất giữ
+ở viện bảo tàng "Bible et Terre Sainte"&nbsp;(Paris), và&nbsp;Israel (Jerusalem).&nbsp;
+Tuy vậy, có thể mặt nạ xuất hiện từ thời xưa hơn nữa, khoảng 30 ngàn cho đến 40
+ngàn năm, nhưng vì vật dụng thô sơ, làm bằng đất đá, hay gỗ, nên không tồn tại.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><b>Cách dùng phổ thông của
+mặt nạ</b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Mặt nạ được dùng trong
+các lễ nghi tôn giáo từ thời cổ.&nbsp; Mặt nạ còn được dùng để bảo vệ người đi săn, chơi
+thể thao, hoặc tham dự chiến tranh.&nbsp; Trong những buổi lễ hội của Hy Lạp thời cổ
+xưa, thí dụ như bacchanalia và Dyonius, người tham dự lễ hội được khuyến khích
+mang mặt nạ hóa trang.&nbsp; Cho phép người dự tiệc mang mặt nạ là để tất cả mọi người
+được vui chơi thỏa thích, không phân biệt đẳng cấp, không lo sợ bị bắt phạt vì
+say rượu (và có những hành vi không đúng với giai cấp hay tục lệ).&nbsp; Từ năm 1268,
+vào dịp lễ hội Carnival of Venice, tất cả mọi người ở đằng sau cái mặt nạ đều
+được xem là bình đẳng.&nbsp; </p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Sau đây, tôi xin kể vài
+câu chuyện về cách dùng mặt nạ trong truyện và phim ảnh.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><b>Mặt nạ được dùng để trình diễn</b> </p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Mặt nạ được dùng để
+trình diễn trong các vở kịch Nhật Bản, thí dụ như mặt nạ Noh.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Mặt nạ Noh&nbsp;(<span style="font-family:&quot;MS Gothic&quot;">能面</span>&nbsp;<i>nō-men</i>&nbsp;or <span style="font-family:&quot;MS Gothic&quot;">面</span>&nbsp;<i>omote</i>) được đẽo từ gỗ cây
+tùng Nhật Bản.&nbsp; Sau đó được sơn bằng màu của các chất nhuộm từ thiên nhiên như
+vỏ sò nghiền nát, đất, và đá.&nbsp; Có khoảng 450 loại mặt nạ Noh dựa vào 60 khuôn mẫu,
+tất cả mặt nạ này đều có tên hoàn toàn khác nhau để dễ phân biệt.&nbsp; Một số mặt nạ
+được xem như đại diện một số nhân vật nổi tiếng và được sử dụng thường xuyên
+trong nhiều vở kịch.&nbsp; Và một số mặt nạ khác rất cá biệt chỉ được dùng trong một
+hay hai vở kịch thôi.&nbsp; Mặt nạ Noh giúp phân biệt được giống phái, tuổi tác,
+giai cấp trong xã hội của nhân vật.&nbsp; Mặt nạ Noh cũng giúp người xem phân biệt
+được nhân vật trình diễn là người hay thần thánh, ma quỉ, hay thú vật.&nbsp; Chỉ có <i>shite</i>,
+diễn viên chính, đeo mặt nạ trong hầu hết các vở kịch.&nbsp; Diễn viên <i>tsure</i>&nbsp;có
+thể cũng mang mặt nạ trong một số vở kịch để đóng vai nhân vật nữ. &nbsp;Mặc dù mặt
+nạ che giấu nét mặt của diễn viên, dùng mặt nạ Noh không có nghĩa sự diễn tả bằng
+nét mặt hoàn toàn bị loại bỏ.&nbsp; Diễn viên có thể dùng một số qui ước để bắt khán
+giả phải dùng trí tưởng tượng để nhìn thấy tâm trạng của nhân vật sau mặt nạ
+qua cách diễn tả và sự chuyển động của cơ thể.&nbsp; Đôi khi diễn viên lợi dụng ánh
+sáng để truyền đạt cảm xúc, thí dụ như ngước mặt lên hướng về ánh đèn khiến
+gương mặt sáng lên có vẻ như vui cười, hay cúi mặt xuống khiến gương mặt tối đi
+giống như buồn bã hay cáu giận.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Mặt nạ Noh là kho tàng
+quí báu, nếu là của riêng của gia đình thì được dòng họ cất giữ hay thuộc về viện
+bảo tàng nếu là của công.&nbsp; Tương truyền rằng cái mặt nạ Noh cổ xưa nhất được giấu
+kín thuộc về trường phái Konparu do chính Hoàng tử Shotoku (572-622) khắc tạc hơn
+một ngàn năm trước.&nbsp; Người ta có thể không tin mặt nạ này do chính tay hoàng tử
+khắc, nhưng sự cổ xưa của nó được ghi lại trong quyển <i>Style and the Flower</i>&nbsp;của
+Zeami viết từ thế kỷ 14.&nbsp; Một số mặt nạ của trường phái Konparu được cất giữ và
+thường xuyên triển lãm ở Viện Bảo Tàng Quốc Gia Tokyo.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><b>Mặt nạ dùng để che dấu mặt thật</b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Trên căn bản, người ta đeo
+mặt nạ để che giấu mặt thật.&nbsp; Có nhiều nguyên nhân khiến người ta phải che giấu
+mặt thật.&nbsp; Thí dụ như mặt bị thương tích trở nên quá xấu, quá ghê rợn, khiến ai
+nhìn cũng sợ hãi.&nbsp; Đó là trường hợp của nhân vật trong phim Phantom of the
+Opera (Bóng Ma Trong Nhạc Viện), dựa tiểu thuyết của nhà văn Pháp Gaston Leroux
+và nhạc kịch Andrew Lloyd Webber.&nbsp; Phim do Joel Schumacher làm đạo diễn, phát
+hành năm 2004.&nbsp; Truyện Bóng Ma Trong Nhạc Viện rất nổi tiếng và được chuyển
+thành phim, nhạc kịch, rất nhiều phiên bản, bởi nhiều tác giả.&nbsp; Chỉ riêng hình
+thức phim, đã có khoảng nhất mười bản dành cho màn ảnh lớn và truyền hình.&nbsp;
+Chưa kể kịch bản phát thanh trên radio, truyện, và kịch dành cho sân khấu.&nbsp; Bài
+viết này giới hạn trong cuốn phim ca vũ nhạc của Joel Schumacher với Gerard
+Butler trong vai chính, bóng ma trong nhạc viện.&nbsp; Đây là một chuyện tình tay ba
+giữa Christine, nữ ca sĩ opera; Raoul, một vị Tử tước trẻ tuổi đẹp trai; và
+Erik, bóng ma trong nhạc viện.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Erik, có một tuổi thơ bất
+hạnh.&nbsp; Là một người trình diễn trong gánh xiệc, Erik bị đánh đập đến độ trở nên
+xấu xí dị dạng.&nbsp; Khi chống trả ông chủ gánh xiệc, Erik lỡ giết chết ông ta, và
+bị truy nã rất ngặt.&nbsp; Erik được phu nhân Giry cứu giúp đem giấu dưới hệ thống hầm
+mộ của nhà hát.&nbsp; Hệ thống hầm mộ này có nhiều ngõ ngách phức tạp, thậm chí có cả
+một cái hồ rất lớn dẫn ra bên ngoài nhà hát.&nbsp; Erik sống âm thầm trong nhạc viện,
+không hề xuất hiện trước công chúng; tuy vậy, dấu vết chàng xuất hiện nơi này
+nơi kia khiến mọi người nghĩ rằng Erik là bóng ma.&nbsp; Christine là cô gái mồ côi,
+có giọng hát opera rất tốt, được Erik hướng dẫn và đào tạo tài năng, đến mức độ
+có thể thay giọng hát của ca sĩ chính nổi tiếng thời bấy giờ.&nbsp; Erik là một người
+có tài năng thiên phú.&nbsp; Ngoài việc có thể xây dựng sửa chữa kiến trúc, chàng
+còn có thể sáng tác nhạc và có giọng ca rất hay.&nbsp; Tuy nhiên, tính tình Erik rất
+dữ tợn và khi không hài lòng với sự thô bạo của một diễn viên, Erik đã giết anh
+ta.&nbsp; Điều này càng làm người ta sợ hãi bóng ma trong nhạc viện hơn.&nbsp; Trong quá
+trình đào tạo Christine, Erik đem lòng yêu cô ca sĩ có giọng hát và gương mặt đẹp
+như thiên thần này.&nbsp; Christine lại yêu Raoul, người bạn thời thơ ấu, giờ là người
+bảo trợ nhạc viện và Raoul cũng yêu Christine.&nbsp; Erik vì lòng ghen đã suýt giết
+Raoul, nhưng cuối cùng vì yêu Christine nên tha cho Raoul rồi biến mất dưới hệ
+thống hầm mộ.&nbsp; Vài chục năm sau, khi Raoul đi thăm mộ Christine vừa mới qua đời,
+ông nhìn thấy đóa hoa hồng màu vàng còn tươi thắm ở mộ Christine.&nbsp; Loại hoa
+Erik thường tặng cho Christine ngày mới yêu nàng.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Trong bộ phim, Erik đã hát
+rằng, Christine là bộ mặt nạ của chàng.&nbsp; Người ta nhìn thấy tài năng và tâm hồn
+của Erik đã truyền đạt bằng giọng hát của Christine.&nbsp; Quả là một mối tình sâu đậm
+của Erik.&nbsp; Chistine là người duy nhất mà Erik đã yêu, và yêu suốt chiều dài cuộc
+đời bất hạnh của một bóng ma trong nhạc viện.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><b>Đeo Mặt Nạ để biến
+thành người khác</b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Không những để che dấu mặt
+thật, mặt nạ có thể biến người đeo mặt nạ thành người khác, một người trẻ tuổi,
+đẹp trai, khiêu vũ điêu luyện mà người ta mơ ước.&nbsp; Đó là trường hợp nhân vật
+không có tên, trong truyện ngắn The Mask của Guy de Maupassant<a href="#_ftn1" name="_ftnref1" title=""><span class="MsoFootnoteReference"><span class="MsoFootnoteReference"><span style="font-size:14.0pt;line-height:107%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[1]</span></span></span></a>.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Trong một buổi khiêu vũ
+hóa trang ở Elysee-Montmartre, giữa rừng người trẻ đẹp sang trọng, <i>“có một
+người dáng gầy, ăn mặc đỏm dáng, đeo mặt nạ sơn bóng, có bộ ria mép vàng, và bộ
+tóc giả dợn sóng.</i>&nbsp; <i>Anh ta trông giống như một pho tượng bằng sáp trong Viện
+Bảo Tàng Grevin, một bức hí họa của chàng trai duyên dáng trong tập ảnh thời
+trang. &nbsp;Anh ta khiêu vũ một cách đầy cố gắng, sôi nổi nhưng rất vụng về trông
+khá buồn cười.&nbsp; Anh ta có vẻ như đã lụt nghề khi cố bắt chước những bước khiêu
+vũ tân kỳ của những người bên cạnh: dường như anh ta bị chứng bệnh thấp khớp,
+chậm chạp như con chó Dane đang nô đùa với chó greyhound.&nbsp; Những lời khen tặng
+giả vờ đầy chế nhạo lại càng làm anh ta hăng chí.&nbsp; Trong lúc phấn khởi anh ta múa
+may quay cuồng tíu tít lên, rồi bất thình lình vì quá trớn đã nhào đầu vào hàng
+người đang xem khiêu vũ.&nbsp; Họ vẹt ra tránh đường cho anh ta, rồi tụm lại bao vây
+chung quanh thân hình bất động của người khiêu vũ đang nằm úp mặt.”<a href="#_ftn2" name="_ftnref2" title=""><span class="MsoFootnoteReference"><span class="MsoFootnoteReference"><b><span style="font-size:14.0pt;line-height:107%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[2]</span></b></span></span></a></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Người ta gọi bác sĩ, chữa
+bệnh tạm thời, và đưa anh về nhà.&nbsp; Anh ta ở trong một khu nhà tồi tàn, tầng thứ
+tư của một chung cư.&nbsp; Ra mở cửa là bà cụ tóc bạc.&nbsp; Mặc dù bác sĩ lo ngại rằng
+anh ta vẫn đang mê man, nhưng bà cụ, có vẻ quá quen với chuyện xảy ra, bảo chồng
+bà chẳng hề gì đâu, chẳng qua ông ấy uống quá chén và bỏ bữa ăn tối để có thể khiêu
+vũ nhanh nhẹn hơn.&nbsp; Vị bác sĩ ngạc nhiên hỏi thêm.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i>“Tại sao đã ngần ấy
+tuổi ông ấy lại khiêu vũ cuồng loạn như thế?”</i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i>Bà cụ nhún vai, và đỏ
+mặt vì cơn giận đang từ từ trồi lên.&nbsp; Bà kêu:</i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i>“Tại sao à?&nbsp; Bởi vì
+ông ấy muốn người ta nghĩ là ông ấy vẫn còn trẻ đằng sau cái mặt nạ; để đám đàn
+bà con gái vẫn nghĩ rằng ông ta là một gã trai sung sức và thì thầm những lời trăng
+hoa vào tai ông ta; để ông ta ve vuốt làn da nhơ nhớp đầy nước hoa và son phấn
+của họ.&nbsp; Ồ, đó là một chuyện đổi chác tuyệt vời! Thật đáng buồn cho tôi trong
+suốt bốn mươi năm cuối đời này!”</i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Tuy giận ông chồng ham
+vui, bà vẫn rất yêu chồng.&nbsp; Bà lau mặt và chải tóc cho chồng.&nbsp; Mặt nạ tháo ra để
+lộ mái tóc trắng của ông.&nbsp; Bà bào chữa cho ông, <i>“giá mà quí vị nhìn thấy ông
+ấy hồi ông ấy hai mươi lăm tuổi.”</i> Bà cụ quen với ông cụ trong một buổi
+khiêu vũ.&nbsp; Mặc dù bản tính thích theo đuổi giai nhân của chồng làm bà rất đau
+lòng, bà không bao giờ than phiền.&nbsp; Mỗi lần ông chinh phục được một người đẹp
+ông lại về nhà khoe với vợ <i>như một con công khoe mấy cọng lông đuôi đẹp</i>,
+cho đến lúc ông trở nên già nua, đàn bà không còn chú ý đến ông nữa.&nbsp; Ông bỏ cả
+công ăn việc làm, thay đổi nghề, chọn những nghề có thể giúp ông tiếp xúc với
+phụ nữ (như nghề làm mũ cho phụ nữ) để được phụ nữ chú ý, cho đến khi ông khám
+phá rằng ông có thể đeo mặt nạ, che dấu vẻ già nua và tham dự các buổi khiêu vũ
+hóa trang. </p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><i>“Giờ thì quí vị đã thấy việc ông ấy làm.&nbsp;
+Cái thói quen này đã bám cứng ông ấy.&nbsp; Ông phải trẻ trung; phải khiêu vũ với
+các bà các cô, những người thơm phưng phức mùi nước hoa và son phấn.&nbsp; Tội nghiệp
+ông chồng già của tôi.”</i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><b>Mặt nạ dùng để che dấu
+sự thật về tông tích của vị vua Pháp</b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Có một tù nhân người Pháp
+(1640 – 19 November 1703) dù đang bị giam biệt lập, trong nhà tù nổi tiếng là
+kiên cố vẫn phải đeo mặt nạ.&nbsp; Trước ông ta bị giam ở Bastille và sau đó dời đến
+Fortress the Pignerol (Italy).&nbsp; Đây là hai nhà tù nổi tiếng kiên cố dành cho các
+tội nhân nguy hiểm đang chờ ngày hành quyết.&nbsp; Không ai biết mặt tù nhân này.&nbsp;
+Ông ta bị bắt phải mang mặt nạ làm bằng nhung màu đen suốt 34 năm ở trong tù.&nbsp; Đây
+là một nhân vật có thật trong lịch sử. &nbsp;Khi chết, tù nhân này mang tên
+Marchioly.&nbsp; Có rất nhiều bút mực kể lại câu chuyện người tù mang mặt nạ này.&nbsp; Đầu
+tiên là nhà văn Voltaire, người đã đưa ra giả thuyết tù nhân này là người anh
+sinh đôi, nhưng không được chính thức công nhận,&nbsp; của hoàng đế Louis XIV (1643
+– 1715) nước Pháp.&nbsp; Voltaire, trong quyển &nbsp;Questions sur l'Encyclopédie (1771)
+xuất bản lần thứ nhì đã viết (sai lầm) mặt nạ của người tù làm bằng sắt.&nbsp; </p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Vào cuối thập niên 1840,
+Alexandre Dumas trong quyển tiểu thuyết The Vicomte of Bragelonne: Ten Years
+Later, chương nói về hiệp sĩ D’Artagnan, đã lập lại một số chi tiết trong truyện
+của Voltaire, người tù nhân này đeo mặt nạ bằng sắt, và là anh sinh đôi không
+được thừa nhận của Hoàng đế Louis XIV.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Dựa vào tiểu thuyết của
+Dumas, có gần chục phiên bản kịch và phim.&nbsp; Gần đây nhất là phim <i>The Man in
+the Iron Mask</i> (1998), Người Đeo Mặt Nạ Sắt, của đạo diễn Randall Wallace.&nbsp;
+Phim này có nhiều diễn viên nổi tiếng, Jeremy Irons - Aramis, John Malkovich -
+Athos, Gérard Depardieu – Porthos, và Gabriel Byrne - &nbsp;D'Artagnan.&nbsp; Đặc biệt
+Leonardo DiCaprio lúc ấy còn rất trẻ (sinh năm 1974) đã được đóng hai vai, người
+tù và Hoàng đế Louis XIV.&nbsp; Trong phim này, cái mặt nạ của người tù chẳng những
+làm bằng sắt mà còn có khóa phía sau.&nbsp; Để ăn, người ta mở khóa và nhấc mặt nạ
+ra khỏi đầu người tù.&nbsp; Râu tóc của người tù mọc dài ra phía sau cái mặt nạ quấn
+quanh đầu người tù, biến ông ta thành một người dị dạng.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Cốt truyện trong phim
+như sau.&nbsp; Nước Pháp vào thời Hoàng đế Louis XIV đang có chiến tranh với Dutch.&nbsp;
+Hoàng đế sống xa xỉ, dân chúng lầm than nên âm mưu đảo chánh.&nbsp; Ba chàng ngự lâm
+đã rời bỏ quân ngũ bảo vệ vua, chỉ D’Artagnan còn ở lại làm thủ lĩnh đoàn ngự
+lâm quân.&nbsp; Hoàng đế Louis XIV manh tâm chiếm đoạt Christine, nên giết chết
+Raoul.&nbsp; Raoul là người yêu của Christine và cũng là con trai của Athos, một
+trong ba chàng ngự lâm quân nổi tiếng (trong truyện của Dumas).&nbsp; Aramis, cựu ngự
+lâm quân, giờ là nhà tu, lập mưu ám sát Louis XIV không thành công nhưng có dịp
+gặp lại D’Artagnan, và D’Artagnan cho biết người tù đeo mặt nạ bằng sắt trong
+ngục Bastille là người anh song sinh của Louis.&nbsp; Khi ra đời, vua cha cho rằng một
+nước không thể có hai vua, họ sẽ tranh giành ngôi báu và đưa đất nước vào chỗ
+chiến tranh.&nbsp; Người anh của Louis XIV phải bị giết nhưng D’Artagnan đã tìm cách
+cứu, lén nuôi, và sau đó người anh của Louis bị đưa vào nhà tù.&nbsp; Louis XIV ngày
+càng truy hoan trụy lạc, dân Pháp nổi loạn đòi truất phế nhà vua. D’Artagnan và
+ba chàng cựu ngự lâm quân đã đem người anh về làm vua, và Louis XIV phải thế chỗ
+người tù.&nbsp; Vì hai giống nhau như đúc nên người tù phải bị đeo mặt nạ để giấu
+tông tích thật.&nbsp; Lệnh rằng người tù phải được tiếp đãi tử tế không thua gì người
+giàu bên ngoài tù, và được chu cấp tiền để có thể thuê người hầu cận và mua những
+thứ cần thiết.&nbsp; Tuy nhiên vì không ai được đến thăm người ta tước đoạt dần số
+tiền chu cấp cho người tù.&nbsp; Người anh của Louis XIV là một vị vua tốt và đưa nước
+Pháp trở lại tình trạng hòa bình. </p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Trong phim có một đoạn,
+người tù trong lúc theo ba chàng cựu ngự lâm quân vượt ngục, đã nói “I wear the
+mask, it doesn’t wear me” dịch là<i> “ta đeo mặt nạ, mặt nạ không đeo ta.”</i>&nbsp;
+Chữ đeo dùng trong phim (wear) tôi nghĩ mang ý nghĩa kiểm soát hay làm chủ (control).&nbsp;
+Câu nói này cho thấy quan điểm của người làm phim về tương quan của mặt nạ và
+người dùng nó.&nbsp; Một người mang mặt nạ để che dấu tông tích thật, hay mang một
+tông tích mới.&nbsp; Người mang mặt nạ và con người đằng sau cái mặt nạ là hai con
+người khác nhau.&nbsp; Người thật và người mang mặt nạ lâu dài có thể thay đổi vị
+trí của nhau.&nbsp; Vua giả có thể biến thành vua thật.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><b>Biến mặt thật thành mặt nạ.</b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Thông thường, người ta
+dùng mặt nạ để che dấu bộ mặt thật hay con người thật.&nbsp; Đạo diễn Phùng Tiểu
+Cương (Feng Xiaogang) nghĩ khác.&nbsp; Trong phim The Banquet (khi xuất hiện ở Hoa Kỳ
+phim được đổi tên thành Legend of the Black Scorpion) ông dùng mặt nạ để bàn về
+nghệ thuật trình diễn. &nbsp;Đóng kịch.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Hai nhân vật chính,
+hoàng tử Wu Luan (Vũ Luân) và Little Wan (Uyển Nhi) bạn với nhau từ thuở bé đã
+thầm yêu nhau.&nbsp; Hoàng đế (cha của Vũ Luân) cưới Uyển Nhi làm vợ khiến Uyển Nhi
+từ người yêu thành mẹ kế của Vũ Luân.&nbsp; Đau buồn, Vũ Luân vào rừng học nhạc và
+luyện kiếm.&nbsp; Chú của Vũ Luân, giết anh, chiếm ngôi và đoạt vợ.&nbsp; Uyển Nhi chuẩn
+bị trở thành hoàng hậu lần thứ nhì.&nbsp; Biết Hoàng đế Li âm mưu giết Vũ Luân, Uyển
+Nhi vời chàng về cung, với mục đích tìm cách bảo vệ chàng.&nbsp; Vũ Luân trong buổi
+trình diễn ra mắt Hoàng đế, đã trình diễn một màn múa có đeo mặt nạ, với âm mưu
+thích khách, nhưng không thành công.&nbsp; Vũ Luân thoát chết nhờ sự che chở của Uyển
+Nhi.&nbsp; Sau đó Uyển Nhi tra hỏi Vũ Luân.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%">&nbsp;</p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:8.0pt;margin-left:1.5in;text-align:justify;text-indent:-.25in;
+line-height:150%">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><i>Tại sao anh có thể thua thảm hại như thế?</i></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:8.0pt;margin-left:1.5in;text-align:justify;text-indent:-.25in;
+line-height:150%">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><i>Em nghĩ là anh thua ư?</i></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:8.0pt;margin-left:1.5in;text-align:justify;text-indent:-.25in;
+line-height:150%">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><i>Em hy vọng anh sẽ biểu diễn khá hơn trong buổi lễ đăng quang của em.&nbsp;
+Nhưng tại sao anh lại mang mặt nạ trong lúc biểu diễn? </i></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:8.0pt;margin-left:1.5in;text-align:justify;text-indent:-.25in;
+line-height:150%">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><i>Mặt nạ sẽ giúp cho diễn viên đạt đến mức độ cao nhất trong nghệ thuật
+trình diễn.&nbsp; Không có mặt nạ, bao nhiêu hạnh phúc, thù hận, nuối tiếc, hay vui
+mừng đều hiện ra trên mặt.&nbsp; Ẩn đằng sau cái mặt nạ, một người nghệ sĩ đại tài bắt
+buộc phải dùng hết tài năng của mình để có thể chuyên chở đến khán giả những cảm
+xúc phức tạp nhất và sâu kín nhất.&nbsp;&nbsp; </i></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:8.0pt;margin-left:1.5in;text-align:justify;text-indent:-.25in;
+line-height:150%">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><i>Nói như vậy thì anh có thể nhìn thấy gì trên khuôn mặt đơn giản,
+không có mặt nạ của em? </i></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:8.0pt;margin-left:1.5in;text-align:justify;text-indent:-.25in;
+line-height:150%">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><i>Sáu phần kiêu ngạo, ba phần bất an, và một phần tội lỗi khi nghĩ đến
+người chồng quá cố.&nbsp; </i></p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:8.0pt;margin-left:1.5in;text-align:justify;text-indent:-.25in;
+line-height:150%">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><i>Anh lầm.&nbsp; Đó là sự thất vọng – thất vọng vì anh.&nbsp; Em không thể nhờ
+vào anh để thực hiện mộng ước của em.&nbsp; Em chỉ có thể cầu xin ơn trời nhủ lòng
+thương mà bảo vệ cho chúng ta.&nbsp; Anh không có khả năng trình diễn dù chỉ là màn
+kịch đơn giản nhất.&nbsp; Những đau buồn, giận hờn, cay đắng, lo lắng cho tương lai bấp
+bênh của anh đều hiện rõ ai cũng nhìn thấy.&nbsp; Anh đã để cho nguy hiểm theo đuổi
+anh khắp nơi.&nbsp; Anh nghĩ rằng ẩn núp đằng sau cái mặt nạ thì có thể thăng hoa
+nghệ thuật trình diễn của anh sao?&nbsp; Nghệ thuật, ở mức độ cao nhất của trình diễn,
+là phải biến khuôn mặt thật của anh thành cái mặt nạ. </i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Uyển Nhi là người biến mặt
+thật thành mặt nạ trong suốt tuổi thanh xuân của nàng.&nbsp; Cái mặt nạ của người
+làm hoàng hậu lần thứ nhất, làm mẹ kế, làm hoàng hậu lần thứ hai, làm kẻ âm mưu
+đầu độc người chồng thứ nhì, để trả thù và cũng để chiếm đoạt ngôi hoàng đế.<i>
+</i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Không phải người nào biến
+mặt thật thành mặt nạ cũng có âm mưu thâm độc, giết hại người khác.&nbsp; Có khi người
+ta làm thế chỉ để tự bảo vệ mình, như trường hợp Kochan, nhân vật trong “Confessions
+of a mask” của Yukio Mishima. </p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Kochan là một người đồng
+tính luyến ái.&nbsp; Trong thời kỳ sau thế chiến thứ Hai, nước Nhật còn rất bảo thủ
+về vấn đề tính dục, để không bị phát hiện khuynh hướng ái tình của mình, Kochan
+đã giả vờ, mình cũng thích bạn gái như bao nhiêu cậu trai khác. &nbsp;Trong sự cố gắng
+che dấu khuynh hướng tình dục, Kochan có lúc đã lầm tưởng mình thật tình yêu cô
+bạn gái Sonoko.&nbsp; </p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i>“Sự ‘đóng kịch’ của
+tôi đã chấm dứt khi tôi biến nó thành bản tính tự nhiên của tôi, tôi tự nhủ
+mình như thế.&nbsp; Nó không còn là đóng kịch nữa.&nbsp; Tôi biết rằng việc tôi giả vờ bình
+thường (có khuynh hướng tình dục giống như mọi người) đã làm han rỉ hao mòn sự
+bình thường tôi từng có.&nbsp; Tôi chấm dứt sự đóng kịch này bằng cách tự bảo mình,
+nhay đi nhay lại, bất quá đây chỉ là sự giả vờ của cái bình thường mà thôi. Nói
+một cách khác, tôi trở thành tuýp người không thể tin tưởng vào bất cứ thứ gì,
+ngoại trừ cái giả mạo.&nbsp; Nhưng nếu đây là suy nghĩ thành thật, thì việc tôi xem chuyện
+Sonoko yêu mến tôi chỉ là chuyện giả vờ có thể chẳng có gì quan trọng mà chỉ là
+cái mặt nạ để tôi che giấu ước muốn thật sự của tôi, đó là tôi thật sự yêu
+nàng.&nbsp; Có lẽ tôi là loại người không thể hành động ngược lại với bản chất của
+mình, và cũng có thể là tôi thật sự yêu nàng...”</i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Chuyện không đơn giản thế.
+&nbsp;Sonoko bị tổn thương nặng nề bởi vì cô yêu một người không thật sự yêu cô.&nbsp;
+Sonoko đã lãng phí tuổi thanh xuân để chờ Kochan.<a href="#_ftn3" name="_ftnref3" title=""><span class="MsoFootnoteReference"><span class="MsoFootnoteReference"><span style="font-size:14.0pt;line-height:107%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[3]</span></span></span></a></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><b>Mặt Thật Giống Như Mặt
+Nạ</b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Thông thường, người ta cố
+gắng làm cho mặt nạ giống như mặt người thật.&nbsp; Có một trường hợp, mặt thật
+nhưng vì quá khác thường nên người ta lầm tưởng là mặt nạ.&nbsp; Tôi muốn nhắc đến
+trường hợp phim Mask (1985) do Peter Bogdanovich làm đạo diễn.&nbsp; Phim nói về một
+cậu bé Roy Dennis bị bệnh craniodiaphyseal dysplasia khiến cho xương sọ không
+phát triển bình thường biến khuôn mặt của cậu méo mó. &nbsp;Người ta thường hiểu lầm
+là cậu bé đeo mặt nạ.&nbsp; Bị trêu chọc, kỳ thị, và luôn luôn đau đớn vì chứng bệnh
+hành hạ, nhưng cậu bé rất thông minh, học rất giỏi và cậu đã khéo léo chinh phục
+tình cảm mọi người.&nbsp; Cậu bé qua đời trong lúc còn rất trẻ mang theo nỗi thương
+tiếc của mọi người yêu mến cậu.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Một trường hợp khác, mặt
+thật trông giống như mặt nạ được nhà văn Yasunari Kawabata nhắc đến hai lần
+trong quyển truyện Snow Country (Xứ Tuyết)<a href="#_ftn4" name="_ftnref4" title=""><span class="MsoFootnoteReference"><span class="MsoFootnoteReference"><span style="font-size:14.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[4]</span></span></span></a>.&nbsp;
+</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i>“Yoko đứng bất động,
+nhìn sửng vào mặt Komako.&nbsp; Khuôn mặt nàng, giống như cái mặt nạ, mang một vẻ
+thành thật tuyệt đối, đến độ không thể nào biết được là nàng đang giận dữ, kinh
+ngạc, hay đau đớn.&nbsp; Dường như, đó là một khuôn mặt tinh khiết phi thường và đơn
+giản tột độ đối với Shimamura.” </i>trang 82.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Shimamura là một anh nhà
+giàu đang tìm vui với geisha Komako.&nbsp; Shimamura tìm cách rời bỏ Komako, và nàng
+geisha đang nôn ọe vì say rượu túy lúy.&nbsp; Giữa Yoko và Komako có sự căng thẳng
+ngầm vì Komako ghen tị với Yoko.&nbsp; Trước khi Komako trở thành geisha, nàng đính
+hôn với Yukio, và về ở với mẹ của Yukio (vốn là cô giáo dạy âm nhạc cho Komako)
+để giúp cô giáo trả nợ tiền thuốc men cho Yukio.&nbsp; Yukio lại sống chung với Yoko
+có vẻ như vợ chồng.&nbsp; Shimamura tuy đang có Komako nhưng luôn tơ tưởng đến giọng
+nói du dương và vẻ đẹp của Yoko, ngay từ đầu khi ông gặp nàng trên toa xe lửa
+trên đường đến Xứ Tuyết.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i>“Ánh sáng mờ nhạt hơn
+cả ánh trăng thượng tuần trong tháng, tuy vậy dòng Ngân Hà sáng hơn cả lúc
+trăng tròn.&nbsp; Trong cái ánh sáng mơ hồ không để lại bóng tối nào trên mặt đất, mặt
+của Komako nổi lên như cái mặt nạ cũ. Kỳ lạ làm sao, ngay cả trong cái mặt nạ
+cũng nên có mùi hương của người đàn bà.” </i>trang 168.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><b>The Death Mask </b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Tự ban đầu, death mask
+là mặt nạ được đúc từ mặt người chết.&nbsp; Có lẽ thời xưa, để giữ lại nét mặt của
+người thân trước khi họ trở thành cát bụi, người ta dùng đất sét hay thạch cao
+đắp lên mặt người chết làm khuôn.&nbsp; Cái mặt nạ vì thế thường giống như mặt người
+chết.&nbsp; Mặt nạ này có thể được chôn theo người chết, do đó còn có tên là funeral
+mask, có khi được giữ lại để thờ.&nbsp; Sau đó, người ta nhận ra rằng, người ta có
+thể làm mặt nạ bằng khuôn mặt của người đang sống.&nbsp; Loại mặt nạ này có thể dùng
+để tôn kính thần tượng hay lãnh tụ khi họ còn tại chức.&nbsp; Chữ death mask vì vậy
+nếu dịch đơn giản là mặt nạ chết thì sẽ không đầy đủ ý nghĩa nhưng tôi xin phép
+dùng như thế cho ngắn gọn.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Mặt nạ chết có nguồn gốc
+rất lâu đời, nổi tiếng nhất (có lẽ) là mặt nạ chết của Agamemnon.&nbsp; Đây là mặt nạ
+làm bằng vàng ròng được chưng bày ở National Archaeological Museum of Athens.&nbsp;
+Năm 1876, nhà khảo cổ <a href="https://en.wikipedia.org/wiki/Heinrich_Schliemann">Heinrich Schliemann</a>
+tìm thấy nó trong mộ và che trên mặt một bộ thi hài.&nbsp; Ông nghĩ rằng đó là hài cốt
+của Agamemnon, vua của nước Mycenae, thủ lãnh đoàn quân cuốc chiến tranh Trojan
+War trong quyển trường thi Iliad của Homer (1600 B.C.).&nbsp; Tuy vậy các nhà khảo cổ
+học ngày nay cho rằng mặt nạ này có từ trước thời Trojan khoảng 400 năm.&nbsp; Mặt nạ
+vàng này được chiêm ngưỡng nhiều đến độ có người đã bảo rằng đây là Mona Lisa
+thời tiền sử.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:8.0pt;margin-left:1.5in;text-align:center;line-height:150%"><img src="MaskOfAgamemnon.jpg" width="280"></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:8.0pt;margin-left:1.5in;text-align:center;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Nhà văn Yasunari
+Kawabata đã quan sát, khuôn mặt của hai người đàn bà đẹp, có lúc giống như mặt
+nạ.&nbsp; Ông cũng có một truyện ngắn tựa đề Death Mask<a href="#_ftn5" name="_ftnref5" title=""><span class="MsoFootnoteReference"><span class="MsoFootnoteReference"><span style="font-size:14.0pt;line-height:107%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[5]</span></span></span></a>.&nbsp; Cả hai
+nhân vật chính trong truyện, người đàn ông cũng là người kể chuyện, và người
+đàn bà ông nói đến đều không được tác giả đặt tên.&nbsp; Người phụ nữ này có lẽ ở
+trong giới nghệ sĩ trình diễn.&nbsp; Nàng tự biết mình đẹp.&nbsp; Ngay cả lúc sắp chết vẫn
+có thể khuynh đảo người ái mộ.&nbsp; Người đàn ông biết nàng có nhiều tình nhân, nhưng
+có lẽ ông là người tình cuối cùng, vì nàng sắp chết.&nbsp; </p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i>“Anh ủ hai bàn chân em
+giùm.&nbsp; Chúng cô đơn quá em chịu không nổi.”</i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Đôi bàn chân trần làm
+người đàn ông cảm thấy xao xuyến.&nbsp; Mỹ nhân đầy nữ tính. </p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i>“Anh nghĩ là có lẽ có
+điều gì thiếu sót trong cuộc tình của chúng ta, nên chúng ta không còn ghen
+tuông nữa.&nbsp; Nhưng khi em chết rồi thì có thể những chuyện làm anh ghen sẽ xuất
+hiện.&nbsp; Từ một nơi nào đó.”</i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Nói xong, nàng lìa đời.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Một nam diễn viên của một
+kịch viện mới thành lập đến nhà quàn.&nbsp; Anh ta trang điểm khiến thi hài nàng trở
+nên đẹp lộng lẫy, giống như người đàn bà thời anh ta bắt đầu yêu.&nbsp; Sau đó, một
+họa sĩ đến trát thạch cao lên mặt nàng để làm một cái mặt nạ.&nbsp; Dường như vì
+ghen tuông, anh họa sĩ đã bóp nghẹt sự sống của cái thi hài đầy son phấn mới
+đây.&nbsp; Người đàn ông kể chuyện thấy, cảm giác vinh quang chiến thắng mọi tình địch,
+vì người đẹp đã chết trong vòng tay của ông, cũng không còn. </p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Cái mặt nạ chết của người
+phụ nữ đẹp trông không giống đàn ông cũng chẳng giống đàn bà.&nbsp; Người đàn ông thấy
+thất vọng.&nbsp; Ông ta nghĩ cái mặt nạ chết ít ra cũng phải có chút nữ tính bởi vì
+người yêu của ông tràn đầy nữ tính.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i>“Cả cuộc đời nàng là
+một vở kịch bi thương về niềm vui được làm đàn bà.&nbsp; Cho đến lúc thở hơi cuối
+cùng, nàng luôn luôn là một người đàn bà có quá nhiều nữ tính.” Ông ta chìa tay
+ra, có cảm giác như thể một cơn ác mộng vừa tan biến.&nbsp; “Nếu cuối cùng, nàng đã
+thoát khỏi cái bi kịch này, thì chúng ta có thể bắt tay, ngay bây giờ và ngay ở
+đây, trước cái mặt nạ chết mà chúng ta không thể phân biệt được đây là khuôn mặt
+của một người đàn ông hay một người đàn bà.</i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Qua cái mặt nạ chết,
+Kawabata cho người đọc nhìn thấy sự vô thường của đời người.&nbsp; Ngay cả cái nữ
+tính của người đẹp, một thời khuynh đảo đàn ông, cũng không ghi lại được bằng mặt
+nạ.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Mặt nạ chết khiến tôi nhớ
+đến cái mặt nạ màu đỏ của Tử Thần.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><b>The Masque of the Red
+Death </b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Đây là một truyện ngắn của
+Edgar Allan Poe (1809-1849) xuất bản năm 1842.&nbsp; Vương quốc của hoàng tử
+Prospero đang trải qua cơn đại dịch.&nbsp; Cơn dịch này theo lời miêu tả của Poe thì
+nó có triệu chứng giống như bệnh Ebola của thời bây giờ.&nbsp; Bệnh nhân bị sốt, nhức
+đầu, sau đó thất khiếu bị chảy máu.&nbsp; Để chạy trốn cơn đại dịch đang giết hại vô
+số người, hoàng tử Prospero ra lệnh cho mời họ hàng thân thích, quan lại, vương
+tôn công tử, hầu cận giúp việc, tập hợp lại trong lâu đài của hoàng tử để sống
+cách ly.&nbsp; Những người được mời là những người có thể phục vụ ông hoàng và guồng
+máy của triều đình trong một thời gian dài.&nbsp; Sau đó hoàng tử cho đóng cửa
+thành, nội bất xuất, ngoại bất nhập.&nbsp; </p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Triều đình sống như thế
+được vài tháng thì hoàng tử cảm thấy buồn chán, ngài ra lệnh tổ chức đại tiệc,
+có dạ vũ hóa trang.&nbsp; Lâu đài rộng lớn của hoàng tử được chia ra 7 khu vực, mỗi
+khu vực có một hành lang rất dài dẫn đến 7 cung điện nhỏ hơn.&nbsp; Mỗi hành lang và
+cung điện được trang trí bằng một gam màu chủ đạo.&nbsp; Xanh trời, tím, xanh lục,
+cam, trắng, và đen.&nbsp; Mỗi cung điện đều có cửa sổ bằng kính cùng màu với thảm,
+màn, và cờ phiến.&nbsp; Duy chỉ có cung điện màu đen thì kính cửa sổ không cùng với
+màu chủ đạo mà lại mang màu đỏ huyết dụ.&nbsp; Cung điện này, đặc biệt không có đèn
+đuốc như các cung điện khác.&nbsp; Các bức màn phủ từ trần xuống nền nhà làm bằng
+nhung gấm đen tuyền.&nbsp; Giữa điện có một bộ lư có ba trụ bên trong đốt lửa.&nbsp; Ánh
+lửa lập lòe chiếu lên trên các vật dụng bằng vàng và cửa sổ kính màu huyết dụ tạo
+thành những hình ảnh ma quái.&nbsp; Ở giữa điện này là một cái đồng hồ con lắc khổng
+lồ.&nbsp; Tiếng vận chuyển máy móc của đồng hồ và tiếng chuông điểm giờ tạo thành bản
+nhạc, âm thanh rất vang dội và kỳ quái khiến người nghe cảm thấy bất an.&nbsp; Lệnh
+của hoàng tử là những người tham dự buổi dạ vũ phải hóa trang cho thật lạ, càng
+kỳ quặc càng tốt.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Nhạc luân vũ rộn ràng,
+nhưng khi tiếng nhạc tạm ngưng, và tiếng chuông đồng hồ vừa dứt điểm, cả cung
+điện rơi vào sự im lặng vô biên thì mọi người phát hiện ra một nhân vật kỳ lạ.&nbsp;
+Đó là một người rất cao và rất gầy.&nbsp; Y phục là cái áo choàng màu đỏ như máu phủ
+từ trên đầu xuống dưới dân.&nbsp; Trên mặt cũng đeo một cái mặt nạ màu đỏ chỉ chừa
+đôi chân mày rất rậm.&nbsp; Cách trang phục và đặc biệt màu đỏ nhắc nhở đến cơn đại
+dịch làm Hoàng tử cảm thấy bị nhạo báng.&nbsp; Nổi giận, ông ra lệnh bắt kẻ mặc áo
+choàng đỏ và mang mặt nạ đỏ đến trước mặt để ông xử tội.&nbsp; Tuy vậy không ai dám
+đến gần kẻ áo đỏ.&nbsp; Hắn đi đến đâu, người ta vẹt ra đến đấy.&nbsp; Hắn thong thả bỏ
+đi, lúc ấy Hoàng tử đang đứng ở cung điện màu xanh, ngang chỗ Hoàng tử đứng và
+tiến về cung điện màu đen.&nbsp; Sau vài phút, Hoàng tử hoàn hồn nhận ra sự sợ hãi của
+mình, ông rút kiếm rượt theo kẻ mặc áo choàng đỏ và đeo mặt nạ đỏ. </p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Cây gươm chưa kịp chạm đến
+kẻ áo đỏ thì hoàng tử Prospero đã ngã vật ra mà chết.&nbsp; Binh tướng lao vào cung
+điện màu đen cùng lượt ập vào để bắt cho kẻ áo đỏ lúc ấy hắn vẫn đứng uy nghi,
+yên lặng bên cạnh cái đồng hồ quả lắc khổng lồ.&nbsp; Bọn quân sĩ đưa tay lột cái mặt
+nạ màu đỏ thì nhận ra rằng đằng sau cái mặt nạ ấy chỉ là một khoảng không.&nbsp; </p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i>“Giờ đây người ta nhận
+ra sự hiện diện của Tử Thần Đỏ.&nbsp; Người đến như kẻ trộm trong bóng đêm. Những
+người tham dự buổi dạ vũ đêm ấy lần lượt ngã xuống, trong các cung điện dính đầy
+máu xuất ra từ thân thể họ, chết trong tư thế đầy tuyệt vọng.&nbsp; Cái đồng hồ quả
+lắc khổng lồ cũng thở hơi cuối cùng sau khi điểm giờ một cách vui vẻ.&nbsp; Ngọn lửa
+trong bộ lư ba chân cũng tàn lụi đi.&nbsp; Bóng tối, sự tan rữa và Tử Thần Đỏ hoàn
+toàn thống trị lâu đài.”<a href="#_ftn6" name="_ftnref6" title=""><sup><b><sup><span style="font-size:14.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[6]</span></sup></b></sup></a></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><b>Người phía sau mặt nạ
+và người mang căn cước mặt nạ</b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Lệ thường, chúng ta cho
+rằng người mang mặt nạ có căn cước khác với người đằng sau cái mặt nạ.&nbsp; Thí dụ
+như, đối với người xem phim khi chưa biết tông tích Người dơi Batman, thì
+Batman và Bruce Wayne là hai người khác nhau.&nbsp; Tương tự, Người Nhện và Peter
+Parker.&nbsp; Chúng ta cũng phân biệt, người thật và người đeo mặt nạ.&nbsp; Người giao
+tiếp với xã hội không đeo mặt nạ là người thật.&nbsp; Người dơi và người nhện là người
+đeo mặt nạ.&nbsp; </p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Có một câu nói, hay đó
+là một bài thơ haiku tôi không chắc lắm, của ông Basho:&nbsp; </p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i>“Year by year,
+the&nbsp;monkey's&nbsp;mask&nbsp;reveals the&nbsp;monkey”</i><a href="#_ftn7" name="_ftnref7" title=""><span class="MsoFootnoteReference"><span class="MsoFootnoteReference"><span style="font-size:14.0pt;line-height:107%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[7]</span></span></span></a></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Có nghĩa là lâu ngày,
+con vượn đeo cái mặt nạ sẽ để lộ nó là con vượn.&nbsp; Vì con vượn quên cảnh giác,
+quên là nó mang một cái căn cước khác nên trở lại với bản chất ban đầu, con người
+thật của nó?</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Oscar Wilde cũng có một
+câu gần giống như vậy.</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i>“</i><i><span lang="EN">Man&nbsp;is least himself when he talks in his own person. Give him a
+mask, and he will tell you the&nbsp;truth.”</span></i><span lang="EN"> - <i>Oscar
+Wilde</i></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span lang="EN">Tạm dịch
+là: –&nbsp;Con người ít thật thà khi tự nói về bản thân.&nbsp; Cho anh ta đeo một
+cái mặt nạ, và anh ta sẽ nói sự thật.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span lang="EN">Có một trường
+hợp ngược lại.&nbsp; Một người diễn viên đóng vai vua một thời gian, nhập vai, đã
+suy nghĩ, quyết định, cư xử như thể mình là vua thật.&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span lang="EN">Phim
+Masquerade (Giả Dạng) của Nam Hàn do đạo diễn Choo Chang-min thực hiện.&nbsp; Phim rất
+nổi tiếng và được nhiều giải thưởng.&nbsp; Vua Hàn Gwang-hae vào triều đại Joseon lo
+sợ bị kẻ địch ám sát, nên bảo vị tướng trung thành Heo Gyun tìm một người đóng
+vai thay thế nhà vua.&nbsp; Ông quan tìm được một anh diễn viên hài, có diện mạo rất
+giống vua đem về thế chỗ.&nbsp; Ông dạy anh diễn viên các cư xử, đàm thoại, lễ tân
+và anh diễn viên làm rất được việc.&nbsp; Ông vua thật là người ích kỷ, tàn ác, ngược
+đãi người chung quanh ai cũng sợ và ghét.&nbsp; Anh diễn viên, tuy làm vua giả nhưng
+rất tốt, thật lòng yêu nước thương dân nên ai cũng quí mến.&nbsp; Vua thật bị trúng
+độc, không chết nhưng phải chữa bệnh một thời gian dài.&nbsp; Triều đình thì thối
+nát, quan lại lũng đoạn hèn nhát, một số quan kết hợp với nhau âm mưu soán ngôi
+vua.&nbsp; Anh vua giả được lệnh là không nói nhiều, chỉ ừ hử vâng dạ trước một số
+luật dâng lên cho anh ký thay thế nhà vua.&nbsp; Tuy nhiên anh lại cư xử như mình là
+một vị vua thật, một đấng minh quân, nhất quyết ra lệnh ngược lại để chống kẻ địch
+xâm lăng nước nhà.&nbsp; Vì (trên danh nghĩa) mạo danh vua nên khi vua thật trở lại
+ngôi, anh có thể mang tội chết.&nbsp; Nhưng vì cách cư xử như một đấng minh quân,
+nên quan tổng thái giám cảm động, xin vua tha tội và đưa anh đi về một miền quê
+khác sống yên bình.&nbsp; Câu chuyện phim có phần nào tương tự với phim Người mang mặt
+nạ sắt của Randall Wallace dựa vào truyện của Dumas. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Mặt nạ có nhiều hình thức.
+Dù để tôn thờ, thực dụng, trình diễn, hay vui chơi chúng đều giữ vai trò quan
+trọng trong lịch sử loài người.&nbsp; Mặt nạ cho phép người đeo mặt nạ được thay đổi
+bản sắc, biến thành một con người khác.&nbsp; Mặt nạ cũng giúp người ta nhận ra bản
+sắc thật của họ.&nbsp; Mặt nạ giúp người ta trốn tránh pháp luật.&nbsp; Mặt nạ cũng có thể
+giúp người ta xử sự công lý khi pháp luật không đưa công lý đến với mọi người.&nbsp;
+Đa số các nền văn hóa trên thế giới đều dùng mặt nạ.&nbsp; Tôi chưa nói đến trường hợp
+người ta mang mặt nạ để ăn cướp.&nbsp; Nhiều quá không thể ghép chung vào bài này.&nbsp;
+Xin hẹn dịp khác nếu người đọc không chán</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">&nbsp;</p>
+
+
+
+
+
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">Viết xong ngày 20 tháng
+Ba năm 2021</p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><b><span style="color:#ED7D31">Nguyễn thị Hải Hà </span></b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><b><span style="color:#ED7D31">&nbsp;</span></b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span lang="EN" style="font-size:10.0pt;line-height:150%">© gio-o. com 2021</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span lang="EN">&nbsp;</span></p>
+<blockquote> <blockquote><blockquote>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span lang="EN"></span></p><div id="ftn1">
+
+<p class="MsoFootnoteText"><a href="#_ftnref1" name="_ftn1" title=""><span class="MsoFootnoteReference"><span class="MsoFootnoteReference"><span style="font-size:10.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[1]</span></span></span></a>
+De Maupassant, Guy.&nbsp; The Mask.&nbsp; The Necklace and Other Stories, pp. 214-20.
+©2004 Ann Arbor Media Group, LLC, Border Classics, MI</p>
+
+</div>
+
+<div id="ftn2">
+
+<p class="MsoFootnoteText"><a href="#_ftnref2" name="_ftn2" title=""><span class="MsoFootnoteReference"><span class="MsoFootnoteReference"><span style="font-size:10.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[2]</span></span></span></a>
+Những chữ in nghiêng là của Nguyễn thị Hải Hà dịch từ nguyên tác.</p>
+
+</div>
+
+<div id="ftn3">
+
+<p class="MsoFootnoteText"><a href="#_ftnref3" name="_ftn3" title=""><span class="MsoFootnoteReference"><span class="MsoFootnoteReference"><span style="font-size:10.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[3]</span></span></span></a>
+page 153.&nbsp; “Confessions of a Mask”&nbsp; Yukio Mishia, translated by Meredith
+Weatherby. ©1958 by New Directions Publishing Corporation.</p>
+
+<p class="MsoFootnoteText">&nbsp;</p>
+
+</div>
+
+<div id="ftn4">
+
+<p class="MsoFootnoteText"><a href="#_ftnref4" name="_ftn4" title=""><span class="MsoFootnoteReference"><span class="MsoFootnoteReference"><span style="font-size:10.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[4]</span></span></span></a>
+Yasunari Kawabata. Snow Country. ©Alfred A. Knopf, Inc. 1984</p>
+
+</div>
+
+<div id="ftn5">
+
+<p class="MsoFootnoteText"><a href="#_ftnref5" name="_ftn5" title=""><span class="MsoFootnoteReference"><span class="MsoFootnoteReference"><span style="font-size:10.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[5]</span></span></span></a>
+Yasunari Kawabata, Palm-of-the-Hand Stories, © 1988 trs. by Lane Dunlop and J.
+Martin Holman, © Hite Kawabata. Farrar, Straus and Giroux, New York. p. 164-6. </p>
+
+</div>
+
+<div id="ftn6">
+
+<p class="MsoFootnoteText"><a href="#_ftnref6" name="_ftn6" title=""><span class="MsoFootnoteReference"><span class="MsoFootnoteReference"><span style="font-size:10.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[6]</span></span></span></a>
+“The Masque of the Red Death” trích trong tuyển tập&nbsp; In the Shadow of the
+Master, classic tales by Edgar Allen Poe, do Michael Connelly biên soạn, trang
+228. ©2009 by Mystery Writers of America, Inc.&nbsp; Harper Collins Book, NY.</p>
+
+</div>
+
+<div id="ftn7">
+
+<p class="MsoFootnoteText"><a href="#_ftnref7" name="_ftn7" title=""><span class="MsoFootnoteReference"><span class="MsoFootnoteReference"><span style="font-size:10.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">[7]</span></span></span></a>
+https://quotes.yourdictionary.com/author/matsuo-basho/1437</p><p></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span lang="EN">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span lang="EN">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">&nbsp; </p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%">&nbsp;</p>
+
+</div>
+
+<div><br clear="all">
+
+
+
+
+<p class="MsoFootnoteText">&nbsp;</p>
+
+</div>
+
+</blockquote></blockquote></blockquote></div>
+
+
+
+
+</body>

@@ -1,0 +1,33 @@
+# Define the base folder path
+$basePath = "."  # Change this to your actual data folder path
+$jsonOutputPath = "structure.json"  # The output JSON file path
+
+# Initialize the actors array
+$actors = @()
+
+# Get the list of actor directories
+$actorDirectories = Get-ChildItem -Path $basePath -Directory
+
+foreach ($actor in $actorDirectories) {
+    # Get all .html files in the actor's folder
+    $works = Get-ChildItem -Path $actor.FullName -Filter "*.html" | Select-Object -ExpandProperty Name
+
+    # Create an object for the actor and their works
+    $actorObject = @{
+        name  = $actor.Name
+        works = $works
+    }
+
+    # Add the actor object to the actors array
+    $actors += $actorObject
+}
+
+# Create the final JSON structure
+$jsonStructure = @{
+    actors = $actors
+}
+
+# Convert the structure to JSON and save to a file
+$jsonStructure | ConvertTo-Json -Depth 3 | Out-File -FilePath $jsonOutputPath -Encoding UTF8
+
+Write-Host "JSON file generated at $jsonOutputPath"

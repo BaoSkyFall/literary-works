@@ -1,0 +1,821 @@
+<head> <script type="text/javascript"> document.domain = 'gio-o.com'; (()=>{"use strict";const e=window.Cypress=parent.Cypress;if(!e)throw new Error("Something went terribly wrong and we cannot proceed. We expected to find the global Cypress in the parent window but it is missing. This should never happen and likely is a bug. Please open an issue.");const t=(()=>{let e,t,n,r;const i=()=>{e=!1,t=!1,n=[],r={}},o=(e,t=[])=>"function"==typeof e?e.apply(window,t):window.eval(e);return i(),{wrap:()=>{const i={setTimeout:window.setTimeout,setInterval:window.setInterval,requestAnimationFrame:window.requestAnimationFrame,clearTimeout:window.clearTimeout,clearInterval:window.clearInterval},a=(e,t)=>i[e].apply(window,t),s=e=>n=>(t&&(r[n]=!0),a(e,[n])),w=t=>(...r)=>{let i,[s,w,...p]=r;return i=a(t,[(...r)=>{if(!e)return o(s,r);n.push({timerId:i,fnOrCode:s,params:r,type:t})},w,...p]),i};window.setTimeout=w("setTimeout"),window.setInterval=w("setInterval"),window.requestAnimationFrame=w("requestAnimationFrame"),window.clearTimeout=s("clearTimeout"),window.clearInterval=s("clearInterval")},reset:i,pause:a=>{e=Boolean(a),e||(t=!0,n.forEach((e=>{const{timerId:t,type:n,fnOrCode:i,params:a}=e;"setInterval"===n&&r[t]||o(i,a)})),i())}}})();e.removeAllListeners("app:timers:reset"),e.removeAllListeners("app:timers:pause"),e.on("app:timers:reset",t.reset),e.on("app:timers:pause",t.pause),t.wrap(),e.action("app:window:before:load",window)})(); </script>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="Generator" content="Microsoft Word 15 (filtered)">
+<title>Tet2016</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Microsoft Sans Serif";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma",sans-serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma",sans-serif;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang="EN-US" link="blue" vlink="purple">
+
+<div class="WordSection1">
+
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:center">
+<img src="http://www.gio-o.com/gio7de.jpg">
+
+</p><p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:center"><span style="font-size:48.0pt;font-family:Mistral;color:#FF8D19">X</span><span style="font-size:26.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#FF8D19">uân </span><span style="font-size:48.0pt;font-family:Mistral;color:#FF8D19"><span style="Papyrus">D</span></span><span style="font-size:26.0pt;font-family:&quot;Arial&quot;,sans-serif;
+color:#FF8D19">ó 2016</span>
+
+
+<br><br>
+<img src="http://www.gio-o.com/images/NguYen2016.jpg" width="400"></p>
+
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in"><span style="font-size:14.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:5.0pt;margin-left:1.5in;text-align:center"><span style="font-size:22.0pt;font-family:&quot;Microsoft Sans Serif&quot;,sans-serif;
+color:#FF8D19">NGU YÊN<br>
+<br>
+<br>
+</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:5.0pt;margin-left:1.5in;text-align:center"><span style="font-size:24.0pt;font-family:&quot;Microsoft Sans Serif&quot;,sans-serif;
+color:#FF8D19">ruồi Saint Lutocia</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;line-height:15.0pt"><i><span style="font-size:14.0pt;
+font-family:&quot;Times New Roman&quot;,serif;color:#FF8D19">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:15.0pt"><i><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif;color:#FF8D19">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:15.0pt"><i><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif;color:#FF8D19"></span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in"><span style="font-size:18.0pt;font-family:&quot;Microsoft Sans Serif&quot;,sans-serif;
+color:#FF8D19">1. Một Mình Xa Chiêm Bao<br>
+<br>
+</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:0in;text-align:justify;line-height:15.0pt"><i><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Tôi
+đến Saint Lutocia. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Cơn
+bệnh bất ngờ giữ em lại Houston. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Tình
+yêu: giấc chiêm bao thú vị; lo âu không biết lúc nào trời
+sáng; thỉnh thoảng thức dậy, cô đơn. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Tình
+yêu, phải chăng là đôi giày? Thiếu một chiếc,
+đường xa, tâm hồn sẽ rướm máu.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Tôi
+đến Saint Lutocia, một mình.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Phi
+trường nghèo. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Hương
+mùa thu nóng hực trong gió. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><b><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Ruồi!</span></i></b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Chưa
+bao giờ thấy ruồi nhiều như vậy, quái dị
+như trong mơ. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Ruồi
+đậu kín người bản xứ, khi du khách đến
+gần.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Rồi
+bay mất, khi du khách đi xa. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Lộ
+màu da bánh mật, nâu đậm, sắc điệu hoang dã. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Những
+thanh niên dong dỏng, bắp thịt tượng đồng.
+Những thiếu nữ eo thon, đôi mông chờ chồng.
+Những đàn bà tròn trịa, ngực dừa, ngực
+mướp, chứa đầy đậu dưới da.
+Những đàn ông bụng mỡ, thiếu răng. Ông bà già
+ốm yếu. Chó mèo gầy guộc. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Không
+thấy cảnh sát, không xe cứu thương, không xe chữa
+lửa. Không kỷ nghệ, không nhà máy, không lầu cao. Không
+gian thuộc vài thế kỷ trước.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Ruồi
+sống ba mươi ngày, không cần văn minh.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><b><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Đường
+về nhà trọ:</span></i></b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Con
+rắn dài quanh co. Đầu rúc vào góc phố. Đuôi ngỏng
+lên chóp núi. Mình mẩy ghẻ lở, lột da. Lộ đá
+cục lởm chởm, nơi mặt đường lở
+loét. Những chỗ gãy xương, thòi ra cùi chõ. Cua gắt
+như tai nạn đang chờ. Rắn xương xẩu,
+đủ hai xe ngược chiều, từ tốn lấn
+qua.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Cây
+lá nhiệt đới, sống chung gió đảo, hiện
+thân khác thường. Có cây thân quen, Phượng đỏ;
+Có trái trẻ thơ, "này, Mùng Bát chưa gặp đã
+lâu." Có cây lạ, chưa bao giờ thấy. Trái như
+phân khô. Tưởng tượng có người đi cầu,
+từ cao rớt xuống,&nbsp; dính lòng thòng.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Ruồi
+đậu kín bác tài. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Chỉ
+thấy đôi mắt. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Ông
+thản nhiên lái xe. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Bầy
+ruồi im lặng. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Xe
+lao đường xấu, ngã nghiêng. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Bầy
+ruồi bất động. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Mỗi
+năm ba dặm, bay qua hố sâu,</span></i><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif"> <i>sụp vì
+nước xoáy, có chỗ lút đầu. </i></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Kinh
+hãi, hỏi bác tài:</span></i></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:5.0pt;margin-left:1.5in;text-align:justify;text-indent:-.25in;
+line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:
+&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Làm
+sao xe bay qua?</span></p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:5.0pt;margin-left:1.5in;text-align:justify;text-indent:-.25in;
+line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:
+&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Không
+ai biết. Ruồi chở đấy.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Đuôi
+rắn cong giấu vào khe núi, nơi nhà trọ màu vàng. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Tôi
+mang hành lý vào phòng, một mình.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:15.0pt"><i><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:15.0pt"><i><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:15.0pt"><i><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif"></span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify"><span style="font-size:18.0pt;font-family:
+&quot;Microsoft Sans Serif&quot;,sans-serif;color:#FF8D19">2. Xứ Ruồi Hoan Lạc</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:15.0pt"><i><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><b><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif"><br>
+Trưa xuống phố</span></i></b><i><span style="font-size:14.0pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,serif">, thấy kỳ hoặc,
+không đường nào có tên. Làm sao họ gửi thư,
+không thể biết.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Chợ
+nửa ngoài trời nửa trong nhà. Thịt treo bên hiên, nửa
+con bò, vài con heo nguyên. Trái cây bày dưới đất. Bùn
+nước nghinh ngang. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Khung
+cảnh lạc hậu.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Nhưng
+cá nằm khô trên sạp, hân hoan.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Tôm
+cua sắp hàng vui tươi dâng hiến.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Gà
+cỡ bồ câu, đi đứng háo hức, chờ phiên
+mua.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Dê
+kêu thoải mái. Động cỡn khi đợi trả
+giá.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Cả
+chợ nhộn nhịp hát hò. Bài ca địa phương
+đơn sơ hoan lạc. Ngươi mua kẻ bán cười
+miên mang, phảng phất nét nhìn thiên sứ.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Nghèo
+và giàu như cặp kinh thuốc: bên này cận thị, bên
+kia viễn thị. Tùy mắt bên nào nhìn rõ hơn. Khi nhắm
+lại, cùng thấy tối đen.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><b><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Lang
+thang xuống biển</span></i></b><i><span style="font-size:14.0pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,serif">.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Bãi
+cát xám đậm, giữ truyền thống thạch nham.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Du
+khách mặc quần cụt, áo tắm, bikini sặc sỡ. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Dân
+bản xứ mặc ruồi. Khi họ xuống nước,
+ruồi bay bên trên. Khi họ trồi lên, ruồi đáp xuống,
+che kín. Họ đi trên bờ, trần trục, như những
+pho tượng xôi đậu đen. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Lạ
+lùng, những thiếu nữ tấm thân huyền nhánh, cánh
+ruồi lấp lánh, như ngư nhân bỏ đuôi mọc
+hai chân. Cảm giác không thô tục. Đẹp hoàn toàn tan riệu,
+thấm vào tim.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Người
+bản xứ nói, ra biển tắm, làm tình theo nhịp sóng.
+Tự do giao tiếp đất trời. Khoái lạc gấp
+mười trong nhà tù túng.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Người
+bản xứ ca tụng, không gì hơn làm tình. Khi hai người
+nối nhau, núi nối biển, đất nối trời,
+tổ phụ nối con cháu, thần linh nối bình an và
+khoái lạc không có gì thay thế.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Tình
+yêu, bắt đầu rồi liên tục âu yếm. Một
+chiếc giày hư, đôi giày sẽ ly tan.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><b><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Đêm
+nóng rậm rực, hương mồ hôi ái tình</span></i></b><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">.
+Đàn ông đàn bà đẹp hơn, khi bốc mùi xác thịt.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Phố
+cuối tuần, lạc thú lăm le.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Những
+cô gái nghề, lai vãng chờ. Đa số vạm vỡ, rắn
+chắc. Mặc váy ngắn, chân leo núi, bắp chuột cao,
+mông săn cứng. Du khách lái xe ngang, nhiều cô quay lưng,
+cúi xuống, chào hàng.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Qua
+góc tối, gã thanh niên chận lại, mồi chuyện bán
+tình:</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">- Ông thử
+cho biết.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; Khắp thế
+gian, không nơi nào, làm tình huyền ảo.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; Phụ nữ
+ở đây, có mắt dưới mông.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; Tôi thề
+không nói dối.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; Họ có mắt
+dưới mông.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; Mắt nhìn
+ra từ háng. Đẹp hơn mắt mỹ nhân.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; Đàn ông
+tuyệt sướng, không chỉ một lần.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; Chúa ôi, mắt
+trào dâm lực, suốt đêm hưng phấn. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Xoay
+lại, theo hướng tay giới thiệu. Năm cô gái gập
+người, bày nửa mùa xuân, không quần lót. Chợt, đàn
+ruồi từ háng bay ra, che như tấm màn đen, ngăn
+giữa. Không cho nhìn.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">- Ông thấy
+chưa, lạ lắm phải không?</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; Con ruồi
+khổng lồ.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; Không giống
+đàn bà khác.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; Ông thử
+cho biết.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; Đảo
+này mang bí danh:</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;&nbsp; Đảo
+sướng.</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:5.0pt;margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Tôi
+rảo bước về hướng chiêm bao, có đôi mắt
+em chờ đợi. </span></i></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:5.0pt;margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Đàn
+ruồi rút nhanh vào háng, đám gái đứng lên bình thản.
+Gã thanh niên gạ gẫm du khách khác.</span></i></p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:5.0pt;margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><b><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Quay
+về nhà trọ</span></i></b><i><span style="font-size:14.0pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,serif">, tin báo trời
+mưa.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Cô
+quản lý cười:</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;- Đêm còn
+dài, chân khuya sao về sớm?</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Tôi
+cười mệt</span></i><span style="font-size:14.0pt;line-height:
+150%;font-family:&quot;Times New Roman&quot;,serif">: </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">- Mỏi. chân
+nhớ nhà.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">- Internet hư
+theo gió. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">- Không Internet,
+tôi thèm sữa như trẻ con.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">- Ông nhìn tôi soi
+mói, có phải đã thấy ruồi?</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">- Đúng, làm
+sao nhìn mặt thật?</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">- Dễ thôi. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Cô
+chỉ vào gương soi. Lisa đẹp man dại. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Lisa
+trong gương không thấy ruồi. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Lisa
+bên ngoài đầy ruồi. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Ruồi
+không hiện trong gương. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Cảm
+giác chưa hiểu, tôi từ giả, mai về Hoa Kỳ:</span></i></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:5.0pt;margin-left:1.5in;text-align:justify;text-indent:-.25in;
+line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:
+&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Cảm
+ơn. Chúc ngủ không cần sữa.</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:5.0pt;margin-left:1.5in;text-align:justify;text-indent:-.25in;
+line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:
+&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Cô
+cũng vậy. </span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:5.0pt;margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;</span></i></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:5.0pt;margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Đọc
+sách đến nửa đêm. </span></i></p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:5.0pt;margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Trời
+gầm thét. Mưa đảo mênh mông, gió không giới hạn.
+Tiếng nước đập quanh nhà, tiếng phèn la, tiếng
+thùng thiết. Nếu em có ở đây, hẳn là kinh hãi. Anh
+bắt đầu nhớ em rồi.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Bỗng
+dưng trên mặt nệm, trồi lên một đống
+cao, cao dần, dưới tấm chăn, hình giống gò
+đất.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Trên
+đỉnh nóng đỏ. Cháy. Nghe tiếng ruồi vo ve.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Anh
+nghĩ đến môi em và bắt đầu tuột dốc.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Tôn
+giáo lầm lẫn, không ngợi ca thân xác. Giải quyết
+nhu cầu là tình ái thủy chung.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Trước
+khi giày hư, đều có triệu chứng. Yêu giày, sao
+để rách giày?</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif"></span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:18.0pt;line-height:
+150%;font-family:&quot;Microsoft Sans Serif&quot;,sans-serif;color:#FF8D19">3. Trở
+Về Chiêm Bao Với Ruồi<br>
+<br>
+</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Sắp
+hàng qua kiểm soát. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Ruồi
+rời dân bản xứ, khi họ vào phi cơ.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Kiểm
+tra viên thân thiện, đầy ruồi, hỏi:</span></i></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:5.0pt;margin-left:1.5in;text-align:justify;text-indent:-.25in;
+line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:
+&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Người
+đến vui như gió; người về buồn nhớ
+biển, ông thì sao?</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:5.0pt;margin-left:1.5in;text-align:justify;text-indent:-.25in;
+line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:
+&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Thao
+thức. Ruồi khiến tôi mộng du.</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:5.0pt;margin-left:1.5in;text-align:justify;text-indent:-.25in;
+line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:
+&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Ô,
+Ruồi là bạn thân. Đến đảo thời tổ
+phụ.</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:5.0pt;margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Giúp
+dân tôi thở nhịp thiên nhiên.</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:5.0pt;margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Sống
+tình ái không cần hạnh phúc.</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:5.0pt;margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Ông
+có thấy vườn cây Treo Phân?</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:5.0pt;margin-left:1.5in;text-align:justify;text-indent:-.25in;
+line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:
+&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Cây
+có trái khô dài lòng thòng?</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:5.0pt;margin-left:1.5in;text-align:justify;text-indent:-.25in;
+line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:
+&quot;Arial&quot;,sans-serif">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Đúng.
+Mỗi ngày, phân tốt được tuyển chọn,</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:5.0pt;margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">phơi
+khô, móc lên cây,</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:5.0pt;margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Ruồi
+đến dự dạ tiệc, khi chạng vạng.</span></p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:5.0pt;margin-left:1.5in;text-align:justify;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Làm
+tình và sinh trứng trên hoa.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Ông
+nói thiếu khoa học, nhưng làm tôi băn khoăn. Hỏi
+ông bà Mỹ ngồi bên cạnh, nghĩ gì về ruồi. Họ
+trả lời, chẳng thấy ruồi gì cả.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Phi
+cơ lăn ra phi đạo. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Nhìn
+Saint Lutocia lần cuối&nbsp; qua cửa sổ. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Thấy
+con ruồi bám ngoài cửa gương.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Có
+cơ hội nhìn kỹ. Ruồi hình tam giác. Hai cánh khép dọc
+dài, có lông xù xì. Đầu nhỏ, nhô lên. Mình dài trũng xuống.
+</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Quả
+thật, có mắt lộ, hồng, hấp dẫn. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">Con
+ruồi trông giống một âm hộ.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,serif">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:5.0pt;
+margin-left:1.5in;text-align:justify;line-height:15.0pt"><i><span style="font-size:14.0pt;font-family:&quot;Times New Roman&quot;,serif">(Magic Symbolism. Saint
+Lucia 8 tháng 11 năm 2015.)</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in"><span style="font-size:14.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in"><b><span style="font-size:16.0pt;line-height:115%;
+font-family:&quot;Times New Roman&quot;,serif;color:#FF8D19">NGU YÊN</span></b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in"><span style="font-size:14.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in"><span style="font-size:14.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,serif"><a href="http://www.gio-o.com/NguYen.html">http://www.gio-o.com/NguYen.html</a></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in"><span style="font-size:14.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in"><span style="font-family:&quot;Times New Roman&quot;,serif">©
+gio-o.com 2016</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in"><span style="font-size:14.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in"><span style="font-size:14.0pt;line-height:115%;font-family:
+&quot;Times New Roman&quot;,serif">&nbsp;</span></p>
+
+</div>
+
+
+
+
+</body>

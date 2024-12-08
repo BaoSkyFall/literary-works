@@ -1,0 +1,52 @@
+<div class="container mx-auto p-4">
+  <div class="flex">
+    <div class="">
+      <button
+      (click)="goBack()"
+      class="bg-transparent text-blue-500 p-2 rounded hover:bg-blue-100"
+      aria-label="Back to Authors"
+    >
+      <mat-icon>arrow_back</mat-icon>  <!-- Arrow Back Icon -->
+    </button>
+    </div>
+    <h1 class="text-3xl font-bold mb-4">Các Tác phẩm:  {{ actorNameDisplay }}</h1>
+
+  </div>
+
+  <!-- Search Bar -->
+  <div class="mb-4">
+    <input
+      [(ngModel)]="searchQuery"
+      (input)="onSearchChange()"
+      type="text"
+      placeholder="Search works..."
+      class="p-2 border border-gray-300 rounded w-full sm:w-1/2"
+    />
+  </div>
+
+  <!-- Works List -->
+  <ul class="list-none">
+    <li *ngFor="let work of filteredWorks" class="py-2 border-b border-gray-200">
+      <a (click)="viewWork(work)" class="cursor-pointer text-blue-500 hover:text-blue-700">{{ work }}</a>
+    </li>
+  </ul>
+
+  <!-- Pagination Controls -->
+  <div class="mt-4 flex justify-between items-center">
+    <button
+      (click)="changePage(currentPage - 1)"
+      [disabled]="currentPage === 1"
+      class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 disabled:bg-gray-300"
+    >
+      Previous
+    </button>
+    <span>{{ currentPage }} / {{ totalPages }}</span>
+    <button
+      (click)="changePage(currentPage + 1)"
+      [disabled]="currentPage === totalPages"
+      class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 disabled:bg-gray-300"
+    >
+      Next
+    </button>
+  </div>
+</div>

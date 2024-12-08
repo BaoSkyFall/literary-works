@@ -1,0 +1,626 @@
+<head> <script type="text/javascript"> document.domain = 'gio-o.com'; (()=>{"use strict";const e=window.Cypress=parent.Cypress;if(!e)throw new Error("Something went terribly wrong and we cannot proceed. We expected to find the global Cypress in the parent window but it is missing. This should never happen and likely is a bug. Please open an issue.");const t=(()=>{let e,t,n,r;const i=()=>{e=!1,t=!1,n=[],r={}},o=(e,t=[])=>"function"==typeof e?e.apply(window,t):window.eval(e);return i(),{wrap:()=>{const i={setTimeout:window.setTimeout,setInterval:window.setInterval,requestAnimationFrame:window.requestAnimationFrame,clearTimeout:window.clearTimeout,clearInterval:window.clearInterval},a=(e,t)=>i[e].apply(window,t),s=e=>n=>(t&&(r[n]=!0),a(e,[n])),w=t=>(...r)=>{let i,[s,w,...p]=r;return i=a(t,[(...r)=>{if(!e)return o(s,r);n.push({timerId:i,fnOrCode:s,params:r,type:t})},w,...p]),i};window.setTimeout=w("setTimeout"),window.setInterval=w("setInterval"),window.requestAnimationFrame=w("requestAnimationFrame"),window.clearTimeout=s("clearTimeout"),window.clearInterval=s("clearInterval")},reset:i,pause:a=>{e=Boolean(a),e||(t=!0,n.forEach((e=>{const{timerId:t,type:n,fnOrCode:i,params:a}=e;"setInterval"===n&&r[t]||o(i,a)})),i())}}})();e.removeAllListeners("app:timers:reset"),e.removeAllListeners("app:timers:pause"),e.on("app:timers:reset",t.reset),e.on("app:timers:pause",t.pause),t.wrap(),e.action("app:window:before:load",window)})(); </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="Generator" content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Palatino Linotype";
+	panose-1:2 4 5 2 5 5 5 3 3 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Cambria","serif";}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	font-style:italic;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Cambria","serif";}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";}
+h5
+	{mso-style-link:"Heading 5 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	font-size:13.0pt;
+	font-family:"Times New Roman","serif";
+	font-style:italic;}
+h6
+	{mso-style-link:"Heading 6 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"Heading 7 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"Heading 8 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	font-style:italic;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"Heading 9 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	text-align:center;
+	font-size:16.0pt;
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Subtitle Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	text-align:center;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+em
+	{font-family:"Calibri","sans-serif";
+	font-weight:bold;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoQuote, li.MsoQuote, div.MsoQuote
+	{mso-style-link:"Quote Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	font-style:italic;}
+p.MsoIntenseQuote, li.MsoIntenseQuote, div.MsoIntenseQuote
+	{mso-style-link:"Intense Quote Char";
+	margin-top:0in;
+	margin-right:.5in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;
+	font-style:italic;}
+span.MsoSubtleEmphasis
+	{color:#5A5A5A;
+	font-style:italic;}
+span.MsoIntenseEmphasis
+	{font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;}
+span.MsoSubtleReference
+	{text-decoration:underline;}
+span.MsoIntenseReference
+	{font-weight:bold;
+	text-decoration:underline;}
+span.MsoBookTitle
+	{font-family:"Cambria","serif";
+	font-weight:bold;
+	font-style:italic;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+p.Style1, li.Style1, div.Style1
+	{mso-style-name:Style1;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Cambria","serif";
+	font-weight:bold;
+	font-style:italic;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-weight:bold;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-link:"Heading 5";
+	font-weight:bold;
+	font-style:italic;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-link:"Heading 6";
+	font-weight:bold;}
+span.Heading7Char
+	{mso-style-name:"Heading 7 Char";
+	mso-style-link:"Heading 7";}
+span.Heading8Char
+	{mso-style-name:"Heading 8 Char";
+	mso-style-link:"Heading 8";
+	font-style:italic;}
+span.Heading9Char
+	{mso-style-name:"Heading 9 Char";
+	mso-style-link:"Heading 9";
+	font-family:"Cambria","serif";}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+span.SubtitleChar
+	{mso-style-name:"Subtitle Char";
+	mso-style-link:Subtitle;
+	font-family:"Cambria","serif";}
+span.QuoteChar
+	{mso-style-name:"Quote Char";
+	mso-style-link:Quote;
+	font-style:italic;}
+span.IntenseQuoteChar
+	{mso-style-name:"Intense Quote Char";
+	mso-style-link:"Intense Quote";
+	font-weight:bold;
+	font-style:italic;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.1in 1.1in 1.1in 1.1in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang="EN-US" link="#0563C1" vlink="#954F72">
+
+<div class="WordSection1">
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:center;
+line-height:150%"><b><span lang="VI" style="font-size:22.0pt;line-height:150%;
+font-family:&quot;Microsoft Sans Serif&quot;,sans-serif;color:#C00000">&nbsp;</span></b></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:center;
+line-height:150%"><span lang="EN-GB" style="font-size:22.0pt;line-height:150%;color:#C00000">
+
+<font color="olive">
+<img src="http://www.gio-o.com/gio5de.jpg" width="100&quot;">đọc trong mùa Tết</font></span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:center;
+line-height:150%"><b><span lang="VI" style="font-size:22.0pt;line-height:150%;
+font-family:&quot;Microsoft Sans Serif&quot;,sans-serif;color:#C00000">&nbsp;</span></b></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:center;
+line-height:150%"><b><img src="http://www.gio-o.com/Tet/2018Cho1B.jpg"></b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><b>&nbsp;</b></p>
+
+<br>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:center;
+line-height:150%"><b><span style="font-size:22.0pt;line-height:150%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;;color:#860000">Nguyễn-hòa-Trước</span></b></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:center;
+line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:center;
+line-height:150%"><b><span style="font-size:22.0pt;line-height:150%;font-family:
+&quot;Palatino Linotype&quot;,&quot;serif&quot;;color:olive">(gửi) em, mùa xuân sơ sinh</span></b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:center;
+line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">thơ xuôi</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">1.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Mù kéo trời xuống cho gần đất mây thả
+ngày lên gặp thiên đình bống bổi bốn quanh là gối là chăn xốp ôi chao trũng kê
+đầu ôm xoa lý tưởng với em tôi gần cạn một đêm cô đơn thầm ước có người yêu
+(như hôm nào) bên chiếc bàn con vừa nhấp cà-phê vừa kể chuyện; [có qua một đêm
+buộc phải đối diện với chính mình như thế, em mới biết cuộc đời này không nhất
+thiết (mọi cái) phải rất là thực].</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Những câu chuyện được em dán nhãn cho
+từng tên mèo chuột thỏ chim ngộ nghĩnh và tinh nghịch hết sức (vốn với tôi thì)
+là huyễn thoại cũng được mà là thực thoại cũng hay; những câu chuyện hoàn toàn
+rỗng ruột không khởi từ đâu nên không buộc phải kết từ đâu: chúng dài ngắn, thọ,
+tử, thuận theo giao ước về đột hứng của cả hai: người nghe + người kể (đổi vai
+cho nhau, hoặc lồng vai vào nhau, cũng tùy chợt hứng).</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Huyễn sự (thì) phơi phới thong dong
+như loài chim chóc, trong thế gian này; ken kín hơn vát rừng thông bên nhà,
+sinh nở nhanh hơn họ hàng nhà nấm trên lối dại mình dạo chơi mỗi lần mưa tạnh.
+Nhưng cái này thì (theo anh), em khó thể gọi là huyễn ảo: mây đang kéo trời xuống;
+đất lâng lên; cây xanh nhà tím được thay thế bằng nước đỏ; và cát, - cái được gọi
+là phù sa - uống ực sáng trời phún vòi lên, chóng mặt; và cỏ hoa, tươn tướt từ
+trong nội đô rì rào rầm rộ trồng lên, giậm lên, dần, nhanh, trên khoảng cát-phù
+sa đó; và (hy vọng là cuối cùng, bởi anh đang rất choáng) chiếc thang nóc cuốn
+ngùy ngoèo vừa được chiếc xe cút kít kéo ra. Hai màng tai điếc đặc cho suốt mấy
+giờ ngổn ngang với vân và vụ đã bị đám người xì xào kê kích hành lý xuyên thủng.
+Lúc này, chỉ lúc này, anh mới nghe (sao lại là?) tiếng em tin tít, “chào quý
+khách đã đến thăm thành phố chúng tôi”; “chúc quý khách những ngày ngơi nghỉ
+bình yên.” </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Giọng nói đó, tươm mướp như quàng
+khăn ấm lên cổ người (nghe), quậy đỏ rần khuôn mặt của chính mình, đó, xoi hai
+đồng xu trên đôi má đó, trệ một hũm sâu dưới bờ cằm đó, trên thế gian này, chỉ
+có một. Anh không thể lầm. (bởi) Cuộc đời anh đã tạc khắc vào đó, từ thế kỷ
+nào, em nhớ?</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Nước giữa đất bằng, hay mảnh đất vui
+vầy giữa bốn bên hồng thủy? - tên thành phố nghe rõ hay - đón anh bằng cái giọng
+sắc ngọt con gái và nụ cười bói lỗ trên má dưới cằm của cô mặc đồng phục xanh đứng
+gần bậc thang cửa nhất. Hồng lá Trúc Bạch hiu hiu trên vạt áo dài giong gió.
+Níu giọng nói đó, thả mình ngủ yên trong nó, ướp nhụy sen xưa, anh tự nhủ, “tuổi
+nhỏ ơi, đã trở về. Cho em”. [đời nữ sinh se quần kết áo tránh bấc hồ tàn niên,
+chưa xủng xẻng hào đồng chận xe nhón cây kem đỗ xanh thèm khát, được đền bù bằng
+vô số giấc mơ vùng vằng chưa chịu bước ra dù lắc xoay cối nhừ và lời trách yêu,
+“con bé này, nghe mẹ gọi không?; khéo kẻo lại muộn giờ học”.]</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">2.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Dứt luồng thôi!, nghĩ ngợi: chào!;
+nào, găng len khăn san quấn cổ, vẩy vung gậy ngà cong kiệu, khệnh khạng dạo phố,
+tìm sướng khoái với chút ướt cuối năm. Rét mỏng vờn hơi đuối mặt hồ, nhưng lại
+ngòn ngọt men rượu niệm. Thời tiết hẳn rằng đang thương lượng với con người.
+Mùa đông (sẽ đến), chưa biết chọn lối vào, phải nhờ áo cánh xoăn xoe trải dấu lộ
+trình (mà nó) sẽ qua. [Chỉ ái ngại cho mùa thu, nhùng nhằng nhớn nhác, đi chẳng
+nỡ, mà ở cũng đâu đành.] Phố ngõ như đâm chập vào nhau. Đầu trên đuôi dưới chẳng
+gốc mơ nào để nắm thóp làm chuẩn. Phùn phì phọp cao, cao, thi thoảng ré lên mừng
+rỡ khi bảo khéo được nhánh dầy nhích xê ra cho xuống gắn vương miện lên mái tóc
+cô bé nào kia dám bóc đầu trần. Nhạc xềnh xoang lẩy bẩy quả bóng hơi dội lăn tắn
+lộng váy hoàng kim của đám nhi nhô hồng nhan nào khác vừa bước ngang, môi chùn
+chụt hợp tấu hàng phím kem dễ có đến 7 màu. Đầu hướng hư không lòe sang đốm đỏ.
+Lan can cầu vừa chạy đèn xa mã. Mưa gieo mạ hoa đăng nan quạt, thật thoáng,
+trong rừng người thật chen. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Đã đến lúc cần làm dịu cái vật chất đời
+ta. Đúng 9 ngõ ngách trên bản đồ cần băng qua để đến được địa điểm phát chẩn đặc
+sản. Đèn lù mù hoa hòe do bụi mưa chưa khô ấm hẳn trên đôi đồng tử. Một hóa mười.
+Nhưng có cái gì rất tỏ: bát lương thực hôi hổi phố Bát Đàn nâng nót chỉ với hai
+tay mà nhân ảnh đùm đụp phủ phê. Vui rồi nhé, nhớ cẩn thận đừng đổ òa nước
+khoáng sục sôi lên đầu lên cổ hàng người ngồi xì xụp (không tĩnh) như bức ảnh
+treo tường chụp từ thế kỷ nào kia.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Có gì ảo không em khi tưởng nghĩ anh
+đang trải dài nghìn dặm chưa hứa hẹn cột dừng? Bên kia biển cũng chưa đến mùa
+đông. Chỉ khi lê la mấy nghìn con phố no nê gân cốt, hoài nhớ như nước con sông
+đèn lồng đỏ au mà chưa nhận được chút rùng mình, điều này mới được cho là rất
+thực.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">3.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Mùa xuân tới từ lúc nào với tan tản hồng
+của đào và man mát trắng của mận? Thành đô biệt tăm sau dồn dã dội cơn nước mỏng
+teo. Đèo cõng đèo chồm chỗm lệch nghiêng cả một bên sườn núi. Cao nguyên đi suốt
+một dải, mắt nhắm mở theo các hồi kéo rèm của mưa; chân chực chờ ngọ nguậy đánh
+tê độ đông của máu mới được đất trời thưởng cho dăm cánh cành đơn mộc. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Thời tiết, ẩn số của con người, nơi
+đây, lại rất ngoan thơ. Hoa và trời dường như đã hẹn trước. Trong cằn cỗi đất
+đá vẫn thơ thới nẩy một giò khô. Giá băng cực bắc vẫn là lò un đúc một sinh thể
+ấm áp. Đói nghèo lại là hạt ươm cho một thành tựu giàu sang. Thế trần ngàn năm
+tu luyện đã mặc vào linh hiển? Có cái gì không thực ở đây, hỏi em. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Có cái gì không thực trong cái lũng tục
+phút chốc (thực ra đã từ lâu) bấp bềnh vô nhiễm? Có cái gì không thực trong
+chân đi, biết năm ngón quặp quíu tự bảo vệ lúc giẫm lên gồ ghề thạch tảng mà
+như bấp bùng giữa khí và hư? Có gì không thực trong tình yêu 2 đứa mà dăm lúc
+nhàn tản ra trò em cứ triệu vời trực giác làm chứng nhân mang ra nhâm nhi ngẫm
+ghiền cứ thể đang mơn mê cặn rượu đắng? </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Cày sâu, lúa vẫn chưa được cho trổ
+nhánh. Cuốc bẫm, giống vẫn nhường đá cọ vạch bầm tim. Loài thảo 3 góc bé hơn đốm
+cỏ dại len đường đất thó. Ruộng vườn đắp chân thang ngăn bước tuột dài. Ấm ức
+nhìn sang núi nở thêm tầng. Cần kiệm lắm âm rì xào của gió tìm chỗ trọ trong
+lùm rối tre nứa. Âm ả quá thủ thỉ bọt cá đớp bóng trăng tà. Một cánh hoa. Giữa
+thiên thu trìu trĩu. Nhởn nha, ung dung, tự tại. Có gì không thực trong đôi mắt
+mở to và bộ óc của đời không chịu si mê mà chỉ lo sàng lọc. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Những chen chúc, không, mà lại là sức
+bật cho bồng bổng chan hòa. Lưỡi luồn hang róc mía ma khèn tình điệu. 10 ngón
+mây mưa quay vòng gùi địu sinh tử như chơi. Nước rong róng dầm dập ống vầu váy
+òa thiên sắc cầu vồng cuốn thênh thang gót đồng nữ gội sạch rồi mấy chầu cam thủy
+nhiên khê. Thiên địa ngã ngửa cuộn chiếu rừng rực tay vỗ mắn nan hoa. Cội trai
+gái quay cuồng nồng nực hả hê. Ôi, những bàn chân! Đạp hiên ngang trên đá kiếm,
+có đâu ngờ uyển hảo hơn cả đám rong suối dưới nương. Rực rỡ lắm rồi tua tủa vòi
+cần tửu giao hội kết thảo làm tin. Một chút bọt ươm (hay trời thở) gội bám
+ngoài xa kia đủ làm mùa đông phấn khởi.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">4.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Tình yêu: một khí hậu tự điều chỉnh:
+cái đông sương bạt vía khi va phải mảnh thổ cẩm hoa văn tháp ngực lên người.
+Ngôn ngữ dài đuôi răm ngược làm thành cầu âu yếm rất trần gian. Thớt cối xoay
+ăn vào nhả ra thực phẩm dị thường. Có cái gì rất thực ở đây, trong không gian
+dường thể dư không. Âm gà gáy lên chuồng nẻ tăn tăn mùi sơn cước vào chum nụ vối
+pha tiễn ngày. Có giống không em với một vuông đường trắng mịn tẩm ngẩm vịnh nước
+nâu đen mà chỉ nửa nhẹ tay khuấy làm hẩn lên mấy tia ấm mịn đã reo lên cả một
+sum vầy ân ái? </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Đứng chon von trên nóc nhà mái rạ, tự
+thu nhỏ tận cùng vào chấm sơ sinh, anh mới thấy mùa xuân. Xuân lê la từ gối
+chăn con nít; xuân tung tăng vào buổi sáng khai trường; xuân va vấp trên dốc về
+lối tắt; xuân cứng cáp theo những vòng đạp xe xuôi. Xuân vô tư; xuân xao động;
+xuân muộn phiền. Xuân không chỉ được hoài ngưỡng từ run rẩy lưu bút ngày xanh.
+Xuân nấp sau ánh nhìn kia, không-mà-cũng-là (của) mình. Một vòng sinh ái
+âm-dương, khôn tì vết, mà ngày xưa, anh tìm được trong mấy quyển album ảnh đen
+trắng, của em, tóc bện chão, chấm lưng, chưa dám cười sợ người bị xói lỗ; và nay,
+qua tiến trình khai nhũ lặng lẽ. Phải là rất thực cho thời đoạn đó. Phải là rất
+thực cho màu dịch trong con tim anh, từ nhờ nhờ, đến hườm hườm, và đỏ thắm, hôm
+nay.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Tình yêu. Gói ém bên này, và bung mở
+bên kia.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp; </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Tình yêu, phù hão trên vải nền, và lộ
+liễu dưới chỉ thêu.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Giữa đại-hải-con-người: (mùa) đông
+chưa về (mà) đã cầu kỳ rêm ran quắp cóng, gẫy gập oằn oại hơn cả chính phẩm vật
+của sơn địa căm căm, em: giọt mai lộ lơ ngơ, lạc lõng, hồn hậu đợi đón hồi-trăm-năm
+khai thị của bình minh. Gửi em, cẩn trong mắt: hồng khuyết của đào; và tuyết
+hao của mận. Gửi em, xăm vào lưỡi: ấm trà tươi, đun, vặn vừa một ngụm, nhấm,
+tót mỏm cao này, sảng hào ý nhị đồng trinh. Gửi em, guồng quanh tai: trên:
+nhánh nhạn non bô ba tập hót, dưới: mỉm cười dòng tiểu lưu nhái họa. Gửi em: ngầy
+ngậy mùi đất mẹ chuyển dạ mầm con. Gửi em, rờn rờn cảm hoạt: da thịt tê mê từ mớ
+ren trằn trọc thiếu nữ của kiếp-nào-em. Phấn hơi thở đầu tiên sẽ rây rịn từ, và
+hoài luân lưu trong, mớ chăn bông vườn trẻ đó. Không lâu đâu, rồi, anh xuống
+bình nguyên, sẽ cùng em, trong lồng lộng hạnh phúc, vận công trưng dụng cả 5
+giác quan được ban phát lúc chào đời, tuyệt kính phê chuẩn rằng bánh trầm lãng
+đãng ngày hợp hoan vừa ra mẻ thứ nhất này từ mùa xuân anh tìm thấy trên cao,
+mang về, là cái gì rất thực!</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><b><span style="font-size:16.0pt;line-height:150%;color:#860000">NHT</span></b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Mai Châu, Hòa Bình, đông 2017</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><b><span style="font-size:16.0pt;line-height:150%;color:#860000">&nbsp;</span></b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%"><a href="http://www.gio-o.com/NguyenHoaTruoc.html">http://www.gio-o.com/NguyenHoaTruoc.html</a></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:11.0pt;line-height:150%">© gio-o.com 2018</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+</div>
+
+
+
+
+</body>

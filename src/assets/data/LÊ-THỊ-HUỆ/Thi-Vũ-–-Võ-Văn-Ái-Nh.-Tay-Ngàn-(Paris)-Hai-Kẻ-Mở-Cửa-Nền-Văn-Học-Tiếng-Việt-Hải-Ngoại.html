@@ -1,0 +1,1554 @@
+<head> <script type="text/javascript"> document.domain = 'gio-o.com'; (()=>{"use strict";const e=window.Cypress=parent.Cypress;if(!e)throw new Error("Something went terribly wrong and we cannot proceed. We expected to find the global Cypress in the parent window but it is missing. This should never happen and likely is a bug. Please open an issue.");const t=(()=>{let e,t,n,r;const i=()=>{e=!1,t=!1,n=[],r={}},o=(e,t=[])=>"function"==typeof e?e.apply(window,t):window.eval(e);return i(),{wrap:()=>{const i={setTimeout:window.setTimeout,setInterval:window.setInterval,requestAnimationFrame:window.requestAnimationFrame,clearTimeout:window.clearTimeout,clearInterval:window.clearInterval},a=(e,t)=>i[e].apply(window,t),s=e=>n=>(t&&(r[n]=!0),a(e,[n])),w=t=>(...r)=>{let i,[s,w,...p]=r;return i=a(t,[(...r)=>{if(!e)return o(s,r);n.push({timerId:i,fnOrCode:s,params:r,type:t})},w,...p]),i};window.setTimeout=w("setTimeout"),window.setInterval=w("setInterval"),window.requestAnimationFrame=w("requestAnimationFrame"),window.clearTimeout=s("clearTimeout"),window.clearInterval=s("clearInterval")},reset:i,pause:a=>{e=Boolean(a),e||(t=!0,n.forEach((e=>{const{timerId:t,type:n,fnOrCode:i,params:a}=e;"setInterval"===n&&r[t]||o(i,a)})),i())}}})();e.removeAllListeners("app:timers:reset"),e.removeAllListeners("app:timers:pause"),e.on("app:timers:reset",t.reset),e.on("app:timers:pause",t.pause),t.wrap(),e.action("app:window:before:load",window)})(); </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="Generator" content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Microsoft Sans Serif";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:13.5pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang="EN-US" link="blue" vlink="purple">
+
+<div class="WordSection1">
+<br><center>
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">&nbsp;</span></p><br>
+<img src="http://www.gio-o.com/LTH/QueMeGioO2013_1.jpg"><br>từ trái qua phải: đứng: NAT, Lê Thị Huệ, Nguyễn Vũ Khuyên<br>
+ngồi: Ngô Bắc, Thi Vũ Võ Văn Ái, Ỷ Lan Faulkner <br>
+trong một bữa ăn tối ở San Jose năm 2013<br><br></center>
+<br><br>
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:10.0pt;margin-left:1.5in;text-align:center;line-height:150%"><span style="font-size:22.0pt;line-height:150%;font-family:&quot;Microsoft Sans Serif&quot;,&quot;sans-serif&quot;;
+color:#C00000">Lê Thị Huệ</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:10.0pt;margin-left:1.5in;text-align:center;line-height:150%"><b><span style="font-size:22.0pt;line-height:150%;font-family:&quot;Microsoft Sans Serif&quot;,&quot;sans-serif&quot;;
+color:#C00000">Thi Vũ – Võ Văn Ái</span></b><span style="font-size:22.0pt;
+line-height:150%;font-family:&quot;Microsoft Sans Serif&quot;,&quot;sans-serif&quot;;color:#C00000">,
+&nbsp;<b>Nh. Tay Ngàn</b> (Paris)</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:10.0pt;margin-left:1.5in;text-align:center;line-height:150%"><span style="font-size:22.0pt;line-height:150%;font-family:&quot;Microsoft Sans Serif&quot;,&quot;sans-serif&quot;;
+color:#C00000">Hai Kẻ Mở Cửa Nền Văn Học Tiếng Việt Hải Ngoại</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:10.0pt;margin-left:1.5in;text-align:center;line-height:150%"><i><span style="font-size:16.0pt;line-height:150%">tản mạn</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Thơ Nh. Tay Ngàn
+tối tăm. Chảy vào miền vô thức trong tôi. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<i>“Nỗi Liên Đen Tối Vô Cùng”</i> là bài thơ nổi bật nhất.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Tôi đọc bài thơ
+này trên tờ báo Quê Mẹ của Thi Vũ. Bài thơ viết đã lâu từ trước 1975.  Nhà
+thơ Thi Vũ cho in lại và lay out thật đẹp trên báo Quê Mẹ ở Paris, sau
+mấy năm mất Việt Nam Cọng Hòa 1975.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Thế giới của Nh.
+Tay Ngàn căng cứng ảo giác mù mờ. Thế giới đen tối của tâm linh khi đối diện
+với các Điều Không Biết Vĩ Đại. Như cái chết, sự ác độc của lịch sử, sự điên
+dại vướng mắc, kho vô tận vô nghĩa của đời sống …</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Tôi vừa chạy tỵ
+nạn 30.4.1975. Vừa rời Việt Nam vài năm . Nằm thổn thức ở căn phòng nhà trống
+vắng ở miền Tây Hoa Kỳ, Bắc Cali . Cầm tờ báo Quê Mẹ của ông Thĩ Vũ trên tay mở
+ra đọc bài thơ của Nh. Tay Ngàn ngấu nghiến. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Liên là con
+nhộng cháy dài trên quê hương.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:150%"><i><span style="font-size:14.0pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:black">Rồi mùa thu
+rủ tôi đi xa<br>
+Tôi đi xa mãi tôi rồi<br>
+Nhằm đêm hoa rụng như ánh trăng<br>
+Tan mù mù trên miệt hải ngạn<br>
+Và lớp sương mốc đổ liên hồi<br>
+Tận viễn khơi&nbsp; những con thuyền sôi nỗi<br>
+Lướt qua màn đe dọa khi ly hương<br>
+Giữa tôi và Liên hôm nay<br>
+Ánh trăng&nbsp; không thành như cơn huyễn mộng<br>
+Của tôi và Liên hôm nay<br>
+Khi mười hai năm xuống dần nói nhỏ<br>
+Một mùa thu trước Liên xa<br>
+Không còn gì nhớ lại nữa đâu<br>
+Những hàng sao im nguyên ngày ấy<br>
+Của con đường Trà Vinh sớm hôm<br>
+Không còn gì ru nhớ làm chi<br>
+Những đốm hoa tím tan nhoè<br>
+trước cổng nhà Liên đó<br>
+Mười hai năm thành điệu gió ngày mùa<br>
+Trên hình bóng Liên xa và xa<br>
+Như hiện thân tôi trôi và trôi<br>
+Mãi mãi với muôn ngàn ánh sao giá lạnh</span></i></p>
+<center>
+<br><br>
+<img src="http://www.gio-o.com/ThiVu/ThiVuNhTayNganLTH1.png"><br><br><br><br>
+</center>
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Khi
+cầm được tờ báo Quê Mẹ tôi chộp ngay bài thơ của Nh. Tay Ngàn và đọc như bị ma
+đuổi. Tôi bị thôi miên bởi phần chữ nghĩa đệm của người thi sĩ này.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">“Ngày
+tôi đi Liên ôi tôi đi để chết</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Với
+một mặt trăng tôi giấu đợi tuổi già</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Như
+cánh tay Châu Âu nện mòn nước nhược tiểu</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Bằng
+hư vô bằng vô nguyên với hôn mê</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Những
+mộng đời tôi xé vừa tan</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Con
+trăng từ đây chỉ hiện hình hoang cổ</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Cho
+phút sầu ca bi lệ làm đau</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Ngày
+tôi đi tới hôm nay Liên chết</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Đất
+Trà Vinh mưa xuống&nbsp; mãi tận đầu</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Có
+hay không lúc mình chỉ cầm bằng vô vọng</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Mộng
+đời xưa cũ ấy Liên ơi”</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Thơ của Nh. Tay
+Ngàn là cánh cửa đi vào vô thức.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Thơ Nh. Tay Ngàn
+sự lên đồng của chữ. Một đống chữ thảy vào thơ. Chúng nhảy múa trong bài thơ
+tạo nên hình lập thể của tâm thức một người, người đó là Nh. Tay Ngàn.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Sao tôi lại tìm
+thấy tôi trong thơ Nh. Tay Ngàn dù tôi thấy tôi không điên như anh ta.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Nhưng lại thấy
+gần với cơn điên và cơn lên đồng trong các ám ảnh của Nh. Tay Ngàn.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Thứ nhất ám ảnh
+của Nh. Tay Ngàn là ám ảnh chữ nghĩa. Nh. Tay Ngàn sở hữu một kho chữ. Một kho
+nhạc. Một kho mộng dài. Cho nên tuy thơ ông là thơ lên đồng. Thơ sấm. Nhưng vì
+trí thức đào hoa. Các chữ ông thảy xuống bài thơ lấp lánh sự minh mẫn xếp đặt
+chữ. Sự phong phú của nghĩa. Và sự đẹp đẽ của một đống chữ dính cục như cục cứt
+chữ thành một bài thơ đẹp nghĩa.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Sự vô thức tối
+tăm của chữ nghĩa trong thơ Nh. Tay Ngàn là một sự lôi cuốn không thể giải
+thích nổi. Với tôi. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Tôi
+cũng có những lúc như thế. Nhất là những lúc say men chữ nghĩa. Viết hoặc sáng
+tác như một cách tống tháo xúc cảm, suy tư, chữ nghĩa xuống trang giấy, com,
+hoặc đọc nên lời</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Thơ
+của Nh.Tay Ngàn hay vì nặng phần chữ đệm. Chữ vô nghĩa. Chữ mò chữ. Chữ kéo
+chữ.<br>
+Thơ Nh. Tay Ngàn phần “chữ sáng” nghĩa tuy ít, nhưng lại là phần sáng láng
+“thóp trí tuệ”.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Trí
+tuệ gồm triết lý sống, gồm kiến thức của một bậc thức giả, gồm mối quan tâm lớn
+lao về thân phận con người trong vũ trụ, trong tương&nbsp; quan quốc gia, quốc
+tế. Phải là một con người trí thức lớn mới có những cái nhìn rộng và độc lập
+như thế. Tôi bị lôi cuốn bởi cái trí tuệ điên khùng tuyệt vọng của “thơ chữ”
+&nbsp;Nh. Tay Ngàn.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:black">“Tôi có mười hai năm đi qua trên hơi thở<br>
+Run đau khi tiếng vạc buồn hư không<br>
+Ngày thơ Liên chờ tôi buổi nắng<br>
+Trí nhớ giống mỗi con cánh cam thương yêu<br>
+Biết kêu và biết tình ru lòng tơ mộng<br>
+Biết những bài trầm ca giấu trong quyển sách vô vi<br>
+Có là chữ Như trong đầu bồ tát<br>
+của nền không bị lãng quên<br>
+Tôi có mười hai mùa thu bị điên trong trí nhớ<br>
+Bằng kẻ đời giấu hết đồ ăn<br>
+Trong những thành phố Âu Châu đèn đổ<br>
+Nước mưa chiều cùng trận bão nội tâm<br>
+Khi Liên qua đời tôi là hình thân ảo ảnh<br>
+Khóc rất đau rồi khóc cho riêng tôi<br>
+Trong số cái chết chập chờn các dãy phố đói</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Các
+chữ “sấm nổ” trong bài thơ trên đây của Nh. Tay Ngàn, là các chữ “chữ Như”,
+&nbsp;“Bồ Tát”, “Thu Bị Điên”, “Âu Châu Đèn Đổ”, “Trận Bão Nội Tâm”, “Sợi Tóc
+Quê Hương”, “Chiến Tranh Dân Tộc”, “Dãy Phố Đói”. Chúng chữ thơ ấy nằm trong sự
+lươn lẹo bay bướm của “nhạc thơ chữ” của Nh. Tay Ngàn. Bậc độc giả nào đã say
+máu và say trí với đời sống của ở Âu Mỹ lâu ngày,&nbsp; cỏ thể “bị điện giật”
+ngay với cảm thức nặng ký này của trí thức Nh. Tay Ngàn . Thơ &nbsp;kỳ diệu như
+thế đấy . Một “chữ thơ”, một “câu thơ” xài chữ xài nhạc xài lời xuất thần, là
+chúng như DNA khơi mở trong tâm hồn người đọc đủ chiêu lăn lóc thần trí thần
+hồn thần xác được. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Thơ
+Thanh Tâm Tuyền sáng sủa. Cảm xúc chữ rõ rệt. Chữ nghĩa súc tích. Nhưng với tôi
+thơ của Thanh Tâm Tuyền không có chút xíu mênh mông hầm hố và mây trời lang
+thang của một người lăn lộn thấu đáy hai vực suy tư Đông Phương và Tây Phương
+bằng tâm thức Nh. Tay Ngàn. Chút xíu thôi nhưng như vì sao lẻ loi trong vòm
+trời đêm của tâm hồn nhân loại, làm người đọc tôi quyến luyến chút sao này
+trong thơ Nh. Tay Ngàn. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Câu
+thơ “<i>Hãy cho anh khóc bằng giọt lệ Budapest”</i> của Thanh Tâm Tuyền thấy
+ông này bức phá trí tưởng . Phóng người đọc tôi đến những chân trời viễn mộng
+như Budapest muốn đạp đổ Cọng Sản để được Tự Do vào năm 1956. Dẫu thế nào, thì
+các cảm nghiệm sau khi đọc câu thơ của Thanh Tâm Tuyền cũng chỉ là một thứ “mơ
+xa”, khi tôi biết ông Thanh Tâm Tuyền chưa từng sang Hungary bao giờ. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Nhưng&nbsp;
+đọc thơ Nh. Tay Ngàn, tuy thi sĩ nói các thứ tâm thức rất viễn mơ. Vậy mà tôi
+thấy chúng rất “thật” . Vì ngay cả các tâm thức trừu tượng ấy, thi sĩ cảm
+nghiệm bằng chính đời thật của anh. Như tôi từng cảm nghiệm bằng đời thật của
+tôi học tập và sống ở Mỹ gần 50 năm, gần gấp đôi thời gian tôi sống ở Việt Nam.
+</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Bài
+thơ là mối “ngộ” với vô thức huyễn mộng làm cho tôi “cảm” và “nhận ra” được nét
+hung bạo và điêu tàn của nền văn hóa văn minh Âu Châu sau khi tôi đã sống, học,
+và đi du lịch nát nước Mỹ và Âu Châu. Nghĩa là sau khi tôi đã xuyên qua đời sống
+này với những người với cuốc sống ở Âu Mỹ mấy chục năm . Rồi mới thấy thấm thía
+mấy câu thơ trên của Nh. Tay Ngàn . Thứ “bão nội tâm”mà Nh.Tay Ngàn chỉ cần vài
+câu thơ đã dựng đứng lên được nỗi niềm vong thân, lưu vong, đớn đau vì sự cùng
+đường trí thức của chính mình và của đời sống nhân loại trong tôi.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Sự
+kỳ diệu của chữ nghĩa thơ là thế. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Điểm lôi cuốn
+khác của thơ Nh. Tay Ngàn với tôi là sự “Ở Ngoài Quê Hương và Nhận Thức Về Vai
+Trò Của Quê Hương Ở Ngoài Quê Hương” </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Bài “<i>Nỗi Liên
+Đen Tối Vô Cùng”</i> là một bài nhớ về quê hương chuột chết . Đấy là điều khác
+biệt với thi tứ quê hương là tiếng mẹ ru, là chùm khế ngọt . Quê hương của kẻ ở
+ngoài quê hương như Nh. Tay Ngàn như tôi là một ý thức sáng tỏ rằng nơi quê
+hương là sự bần cùng của đau đáu . Của thứ chiến tranh không ngừng. Là cái ác
+lên ngôi . Là cái nghèo ám trị . Là cái yếu hèn làm run lập cập nền ý thức Quê
+Hương Tự Do Tiến Bộ Chậm Tiến trong đầu. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Tôi tìm thấy ở
+thơ Nh. Tay Ngàn cái tâm thức của kẻ trí thức hiểu biết tường tận ván cờ của
+bọn thế giới chà đạp hay chơi ván cờ với quê hương Việt Nam . Nhiều người khác
+cũng ở ngoài quê hương làm thơ về quê hương . Nhưng tôi tìm thấy ở thơ Nh. Tay
+Ngàn cái tư duy quốc tế Việt Nam có trình . Nh. Tay Ngàn là một trí thức Việt
+Nam có tầm quốc tế tiêu hóa được vị thế quốc tế của quốc tế, Việt Nam của Viêt
+Nam . </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Nh.
+Tay Ngàn chỉ liêng liếc qua vài câu ý thức quốc tế trong thi ca của ông nhưng
+các câu thơ ấy phản ảnh được phẩm chất của một trí thức cực kỳ thấu suốt với
+các vấn đề lớn của quốc tế và tư thế của Việt Nam trong bàn cờ thế giới. Không
+những vậy , Nh. Tay Ngàn còn có một hành động trí thức là ông tỏ thái độ chọn
+lựa bày tỏ quan điểm với các đề tài lớn ấy của quê hương Việt Nam . Chứ không
+phải là kẻ đứng bên lề quê hương bỏ lơ, làm ngơ, hay yếu xìu xìu nói cho có lệ,
+nói qua loa cho xong chuyện . Thành ra tuy là một cơn điên, nhưng Nh. Tay Ngàn
+lại điên có trình độ khi phát biểu trong thơ mình các thi tứ về Quê Hương Việt
+Nam của một kẻ ly hương và sống ở ngoài Việt Nam cho đến ngày qua đời .</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Cõi
+viết của Nh. Tay Ngàn là cõi chữ vô thức sáng như kim cương chợt lóe lên rồi
+tắt . Tôi cứ có cảm tưởng Nh. Tay Ngàn làm thơ trong cơn khích thích của những
+chất nghiện, chất kích thích . Nên trí óc mới cao ngất xúc cảm và sáng láng
+chữ. Cảm giác này tôi cũng tìm thấy khi đọc thơ Bùi Giáng . Có điều thơ Bùi
+Giáng không sáng láng trí lực như thơ Nh. Tay Ngàn</span><span style="font-size:12.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Nhất
+là những bài thơ sau cùng của Nh. Tay Ngàn chứng tỏ có một sự không mạch lạc
+trong suy nghĩ. Có vẻ chúng là một nùi chữ . Về mặt này , tôi có cảm tưởng cả
+Bùi Giáng và Nh. Tay Ngàn đều bị các chất khích thích trong tế bào não của ngôn
+ngữ khích động mạnh rồi cứ thế mà thơ bung ra . Nên các sáng tác thơ của họ như
+bị dây thần kinh ngôn ngữ giao hợp và đẩy ra những nùi chữ . May mắn thì có vài
+câu chữ nghe nhạc điệu bay bướm . Nhưng về nghĩa, thì rất nhiều sự vô nghĩa
+trong các bài thơ cuối đời của Nh. Tay Ngàn. Nhất là các bài thơ chép tay do
+chính Nh. Tay Ngàn viết, do nhà thơ Thi Vũ chuyển giao cho tôi khi tôi chủ bút
+trang mạng Gió O , gio-o.com&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Đấy
+là các bài, <i>Áo Thề Tang Tóc Quá, Hóa Kiếp Biệt Ly Tình, Nàng Ơi, &nbsp;Nhìn
+Lệ Khúc, Hạt Dưa Mở Cửa Mộ, Áo Rã Dưới Tường Hoa, Đường Lá In Dấu Chân, Thềm
+Sao Vương Nữ Ngủ, Sắc Rêu Làm Ước Hẹn. </i></span></p>
+<br><br>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%"><img src="http://www.gio-o.com/MS/NhTayNganDuongLa1_zpsseuksu5l.jpg"><br><img src="http://www.gio-o.com/MS/NhTayNganDuongLa2_zpsyyyqmgnb.jpg">
+</span></p><br><br>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">Sau này máy thơ cũng tạo ra hiện
+tượng này . Máy thơ tức là các chương trình nhu liệu (software) chế ra thơ.
+Nhiều bài thơ lung tung xòe chữ như thơ Nh. Tay Ngàn hay Bùi Giáng khi họ không
+tỉnh táo (??) . Thiếu mạch lạc của sự suy tư suy nghĩ từ trí não… (1)</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">Ví dụ các câu thơ này trích trong bài
+“<i>Hạt Dưa Mở Cửa Mộ</i>” của Nh. Tay Ngàn</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">“Công nương tuổi chết khóc òa</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Đầu toang vết nấm độc ra đen ngòm</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Nhưng áo cưới vẽ mòn hoa chức</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Hát xa xa một tục đế rung</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Chiều rồi bà lão lên rừng</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Điếm canh trôi mút nước lưng bên vàm</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Không để lại cho cam bóng sắc</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Tình vừa gieo lạnh ngắt từ ly</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Bước đường con ngựa vội quỳ” </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%">(trích thơ Nh. Tay Ngàn)</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">Không khác gì một bài thơ do “Máy
+Thơ” do công ty Tinh Vân chế tạo ra theo thể thơ lục bát.&nbsp; Khi tôi lắp hai câu
+thơ của Nh. Tay Ngàn </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;“Công nương tuổi chết khóc òa</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">Đầu toang vết nấm độc ra đen ngòm”</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;“Máy Thơ” của Tinh Vân đã chế ra một
+lô các câu tiếp theo như: </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;“Đầy thềm hoa rụng mộng mơ quan hoài<br>
+Trai khom cật hoặc lạc loài<br>
+Má đê con gái từ ngoài vào trong<br>
+Sá gì hóa đá lưng ong<br>
+Nhớ về rừng núi vành trong tám nghề<br>
+Khăn gieo cầu gối xưa kề<br>
+Thu muôn nơi tóc buông thề yến oanh<br>
+Xa trong gió nhẹ tung hoành<br>
+Bàng hoàng gạ gẫm yến oanh bên thềm<br>
+Khách du tôi lặng ngắm đêm” </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%">(trích thơ máy do máy thơ của công ty
+Tinh Vân chế tạo)</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%">Thử hỏi những câu thơ do Máy Thơ Tinh
+Vân chế trên đây, từ câu “<i>Trai khom cật hoặc lạc loài” </i>đến câu<i> “Khách
+du tôi lặng ngắm đêm” </i>có khác chi các câu từ&nbsp; “</span><i><span style="font-size:14.0pt;line-height:150%">Nhưng áo cưới vẽ mòn hoa chức” </span></i><span style="font-size:14.0pt;line-height:150%">đến câu<i> “Bước đường con ngựa vội
+quỳ” </i>như trong bài thơ<i>&nbsp; </i>“<i>Hạt Dưa Mở Cửa Mộ</i>” nguyên thủy của
+Nh. Tay Ngàn . Cả hai bài thơ đều có sự vô hồn vô nghĩa của một đống chữ hoa
+hòe vứt ngổn ngang trên sàn chữ Việt. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%">Tôi trao đổi với nhà thơ Thi Vũ, người cung cấp những
+bài thơ chưa từng được công bố của Nh. Tay Ngàn cho Gió O. Theo nhà thơ Thi Vũ&nbsp;
+thời gian cuối đời Nh. Tay Ngàn bị tâm thần nặng. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%">Tôi đoán là Nh. Tay Ngàn&nbsp; bị bịnh tâm thần
+schizophrenia (như Bùi Giáng). Tôi hỏi nhà thơ Thi Vũ về cái chết của Nh. Tay
+Ngàn. Có khi nào chết vì bị xài thuốc quá mức (overdosed) ? Thi Vũ nói anh không
+rõ. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Nh. Tay Ngàn là
+chút tối. Thi Vũ là chút sáng. Nh. Tay Ngàn là thăm thẳm đêm đen. Thi Vũ là mày
+mò bật sáng ban ngày. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Ra hải ngoại năm
+1975, &nbsp;tôi bắt đầu tìm đọc tờ Quê Mẹ Paris do nhà thơ Thi Vũ chủ biên. Từ
+đó khi thấy bất cứ bài nào có tên Thi Vũ Võ Văn Ái là tôi đều đọc ngay . </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Nh. Tay Ngàn và
+Thi Vũ Võ Văn Ái là hai tác giả tiêu hóa được mớ kiến thức và kinh nghiệm sống
+ở ngoài nước. Nên trong các sáng tác và biên khảo của hai tác giả này có thứ
+viễn kiến rộng, sâu, am tường quốc tế . Và nhất là họ “cảm” và “nhìn” ra được
+thứ sức mạnh của tính chất Việt trong bàn chữ quốc tế. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Thi Vũ Võ Văn Ái
+&nbsp;không những dùng chữ nghĩa để biểu diễn trí thức sâu rộng của thi ca
+mình, Thi Vũ còn là nhà tranh đấu, hiện thực chữ nghĩa thi ca vào các đấu
+trường chính trị tại trận. Thi Vũ là nhà thơ ảo ảnh. &nbsp;&nbsp;Võ Văn Ái là
+nhà cách mạng dấn thân thật trên đấu trường chính trị ở Paris, Washington DC,
+Geneve, Seoul, Tokyo …. &nbsp;Hai con người nhập một dấn thấn cả đời đi hoạt
+động chính trị trong tư thế là một nhà thơ trên đấu trường chính trị quốc thế ở
+Âu Châu, Mỹ Châu, Á Châu, Úc Châu, Phi Châu trong bảy thập niên 1960,
+1979,1980,1990, 2000, 2010, 2020 . </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Các thi tứ về
+những ám ảnh Quê Hương, Tự Do, Hòa Bình, cũng là vực trí thức đã xô đẩy tôi đến
+việc đọc say mê các sáng tác và biên khảo của nhà thơ Thi Vũ </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span lang="VI" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Hòa
+bình là một nụ hoa</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span lang="VI" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">nở
+giữa tình yêu và tiếng hát</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span lang="VI" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Cho
+tôi xin thêm muôn nghìn Ðôi Mắt</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span lang="VI" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">để
+tôi khóc lớn Niềm Vui</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span lang="VI" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">và
+nhìn quanh</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span lang="VI" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">mong
+manh bông hoa nhỏ</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><i><span lang="VI" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">chưa
+một lần ngưng nở đã thiên thu.</span></i><span lang="VI" style="font-size:14.0pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"> </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:2.0in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">(trích
+Hòa Bình)</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Những câu thơ như
+tiếng chiêng trống khai mở một cuộc đời dấn thân tranh đấu cho Hòa Bình - Nhân
+Quyền Việt Nam của Thi Vũ. Bài thơ trên được viết trong thập niên 1960 lúc ông
+còn trong lứa tuổi đôi- ba mươi. &nbsp;Mới thấy bài thơ <i>Hòa Bình</i> nở
+những đóa hoa đại đóa của một sự chứng nghiệm đời tác giả dấn thân tranh đấu
+cho “Hòa Bình là Sự Thật” từ thuở thanh niên đầu đời. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Nếu có điều tôi
+tri âm với thơ Thi Vũ là những quán tưởng của thi sĩ với những “Cái Lớn” mà
+chúng ta hằng quan tâm như: Quê Hương, Hòa Bình, Chiến Tranh, Hư Vô, Đường Đi,
+Thiền Niệm … . Tôi tìm thấy trong thơ Thi Vũ những quan tâm trong suốt của
+đường đi trí tuệ . Có thể đường là đường vô tận không có câu trả lời. Nhưng
+điểm tôi ngưỡng mộ ở ông là “Sự&nbsp; Không Cùng Đường”. Vì chính con đường
+tâm niệm và suy tư của Thi Vũ, tự nó le lói chút ánh sáng sắc bén.&nbsp; Và
+chút sáng ấy có một lôi cuốn tôi: &nbsp;Con đường tự chọn của trí thức Thi Vũ Võ Văn
+Ái tự sưởi ấm đường đi trí thức của mình.</span></p><br>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:150%"><i><span style="font-size:14.0pt;
+line-height:150%">WE TWO FORM A MULTITUDE</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">Những
+mái nhà quê hương bỗng nhiên thành đôi mắt</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">khóc dầm
+dề nước mắt lửa khôn nguôi</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">Bao kẻ
+thân yêu bao người lối xóm</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">sống
+không nhà</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">chết
+không nơi chôn</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">Những kẻ
+thân yêu bay cùng trời chộn rộn</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">giữa vũ
+trụ không cùng của trái tim tôi</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">Hãy bay
+đi bay đi giữa lòng tim không biến đổi</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">nhà
+chưa cất nhưng rừng xanh vòi vọi</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">những
+con đường lần chuỗi đá cầu an</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">nỗi buồn
+và cô độc</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">sẽ được
+nghe được hiểu</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">Hãy nằm
+yên</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">ta đắp
+em chiếu chăn thơm phức</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">hoa hồng
+và hỗ phách ấm hơi</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">tay mặt
+trời dẫn nụ cười em đi dạo</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">mưa
+xuân về khi em khóc hỏi han</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">thu sẽ
+tới này đây trái chín</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">em vào
+đông lót ổ giú cành mai</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:.5in;line-height:normal"><i><span style="font-size:14.0pt">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">Tiếng nổ
+rền vang</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">lòng ta
+không nát</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">đất trời
+kia nào của riêng ai</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">Hãy ở
+yên trên xóm mới thanh bình</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">có
+nguyên trinh tạo dựng</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">tóc em
+bay đưa mùa ủ hồn thơm ấm áp</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">tình sử
+ghé môi</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">tôi thấy
+mình lớn đẹp</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">tựa
+nàng tiên</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">gặp
+bóng đáy hồ xanh</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:.5in;line-height:normal"><i><span style="font-size:14.0pt">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">Hoàng lạp
+muôn hàng ta thắp lên đây</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">chiếu
+soi niềm oan ức</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">giữ trối
+trăn chưa kịp thốt nên lời</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:.5in;line-height:normal"><i><span style="font-size:14.0pt">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">Với ánh
+sáng này và ánh sáng trăng sao</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">em hãy
+cùng ta tạc tượng</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">những tảng
+đá thương đau sẽ phục hồi sinh khí</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">hình
+hài sương</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">giờ ngấn
+ngọc phương phi</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:.5in;line-height:normal"><i><span style="font-size:14.0pt">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">Hãy trời
+cao đất rộng</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">Hãy rừng
+xanh câu hát</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">Hãy lúa
+mật hoa hương</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">Hãy là
+người</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">đứng
+bên cạnh con người</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">khước từ
+tiêu huỷ.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">HÒA
+BÌNH</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">Hòa
+bình là nụ hoa </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">nở giữa
+tình yêu và tiếng hát</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">Suốt đời
+tôi ca hát</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">Còn sẽ
+hát ca</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">Cho mỗi
+lần thức dậy</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">Người
+lính thấy một bông hoa </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">mang
+hình bóng Mẹ</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">mang
+hình bóng Em</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">mùi
+hương cũ</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">con đường
+quen</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">dù mù
+đui cũng không lầm lẫn bước</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">mỗi
+chân đi một ân ái dặn dò</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">Ôi cho
+tôi xin muôn nghìn đôi mắt</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">Để tôi
+khóc lớn niềm vui</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">Và nhìn
+quanh</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">Mong
+manh bông hoa nhỏ</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">Chưa một
+lần ngưng nở đã thiên thu</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:2.0in;line-height:normal"><i><span style="font-size:14.0pt">1973</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;line-height:normal"><i><span style="font-size:14.0pt">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%">Hoặc như bài <i>“THƠ TÌNH CHO NGƯỜI LÍNH”</i> viết năm
+1973. Đây là những bài thơ của Thi Vũ mà tôi nghĩ rằng tôi đã thấy phải vượt
+qua muôn nghìn cửa ải của khổ đau và xoáy óc về tình nhân loại, mới thẩm thấu
+được ngọn nến lung linh của tình yêu thương cảm mến mà tôi muốn trao đến cho
+tha nhân khổ đau la liệt khắp lịch sử Việt Nam . Phải có một niềm xung động khổ
+đau cùng tha nhân lâu ngày chày tháng, mới thốt lên được những câu thơ “rộng”
+thế này. Thơ quên cả vần . Thơ quên cả thơ. Mà chỉ còn lại chút tro miếu của một
+tâm thức nhìn quê hương đồng loại Việt Nam bị giày xéo bởi sự ngu dốt và ác độc
+của lịch sử nhân loại. Phải trải qua những cơn giãy dụa bế tắc cùng đường của
+nghĩ suy và cảm xúc&nbsp; về các điều liên quan đến cơn đau Việt Nam mới tìm thấy
+tri kỷ trong bài thơ trên . Ồ mà bài thơ có cái tựa bằng tiếng English hàng ngoại
+. Tại sao có cái tựa tiếng ngoại quốc English “<i>WE TWO FORM A MULTITUDE” </i>mà
+ruột thì thơ nội quốc chữ Việt Nam. &nbsp;Thế mới thấm thía tâm tư của một kẻ hàng
+ngày sinh hoạt bằng ngôn ngữ ngoại quốc nhưng đêm về vẫn khoái làm thơ bằng tiếng
+Việt . Thế mới là một sân ga của thơ mà mình buộc phải dừng lại soi bóng. Vì
+tác giả cũng bị phải chọn lựa sống ở ngoại quốc gần cả đời, cũng gióng giả
+phèng la sự vô lý của đời tỵ nạn lưu vong vì lý do chính trị như tôi là. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;line-height:normal"><span style="font-size:14.0pt">&nbsp;</span></p>
+
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%">Quyển tạp ghi “<i>Gọi Thầm
+Giữa Paris</i>” của Thi Vũ là tập tản mạn của thế hệ thứ nhất của tiếng Việt
+tạo nên Văn Học Hải Ngoại . Các tản mạn trong Tạp Ghi Paris tả tận tình các
+cảnh sống ở Paris với các cảm xúc và kinh nghiệm của một người sống xoi mòn
+từng tế bào đẹp xinh của Paris, viết bằng tiếng Việt. Thi Vũ đã viết bằng tiếng Việt mới
+là cái đáng nói. Vì nếu tác phẩm được viết bằng Pháp Ngữ, Anh Ngữ, Đức Ngữ thì nó không
+thuộc về nền văn chương hải ngoại, đã không đóng vai trò mở đường cho "Văn
+Học Tiếng Việt  Hải Ngoại" </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%">“<i>Con lừa đứng áng giữa
+đường chợ. Lưng thồ hai giỏ hoa oải hương thảo (lavande), và các loại lá rau
+gia vị miền Provence. Đôi mắt ngây thơ rộng tới vô biên. Mặc bao lớp người qua
+lại ồn ào. Cái nhìn, như loài cá trên sông, không còn cơ khép đậy. Một ngọn đèn
+thắp mãi trong đêm. Cái nhìn suy tưởng hồn nhiên bám víu vào dòng sống, như mùi
+thơm trong thoáng gió. Hương vị oải hương thảo ngai ngái từ xa, lôi kéo tôi và Tánh.
+Đứng nhìn trân một lúc, chúng tôi ngồi xổm cạnh chân lừa. Mỗi đứa vào sâu một
+góc mắt, hay theo những tầng thơm lục soạn lại bao mẫu đời đã biệt tích nơi
+vùng xa ký ức.</i></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">Người chủ bán oải hương thảo
+và lá rau cũng phần nào xa lạ như con lừa nơi phố chợ Mouffetard. Tạc người
+thấp, đầu đội bê rê đen, chiếc quần màu xanh thợ, treo bằng nịt quai ngang trên
+đôi vai vuông vức. Ống quần rộng gần bằng chiều cao khổ người ông. Thượng trên
+đôi guốc gỗ bọc da cao ngất. Chông chênh dư thừa giữa mặt đường lót đá phẳng
+phiu. Con người đó chỉ thoải mái khi di động nơi chiều cao lối núi, con lừa đó
+cũng chỉ bình yên khi gõ nhịp cho mây trên sườn đồi. Bây giờ bọn họ bị vất
+xuống thị trấn, đứng im buồn bán độ nhật, còn lại gì ngoài mớ hương thoang
+thoẳng?</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">Chốc chốc Tánh nhìn tôi cười
+ngầm, như cùng khám phá một nỗi diệu kỳ nào của đời sống, mà khu chợ búa này đã
+để sổng đi theo từng bụm hương. Hương lavande trên lưng lừa. Hương của từng núi
+hoa quả, đào, lê, táo, cà chua ... chất chồng hàng quán dọc hai dãy phố hẹp.
+Chốc nữa đây, các bà nội trợ tấp nập sẽ mang riêng về nhà mình những bó rau
+ngọc thạch, những đĩa quả mọng nắng, những cá thịt tươi rói. Họ dọn tất cả lên
+bàn cơm thịnh soạn. Bàn cơm là nghĩa địa của bao nhiêu hương trời và trái đất,
+bao nhiêu sinh vật còn nhởn nhơ bơi lội hay chơi đùa hôm trước</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">Con cá nhởn nhơ trong nước.
+Con bò nhởn nhơ trên đồng. Rau cỏ nhởn nhơ theo gió đùa .... Người cũng nhởn
+nhơ nơi thế giới chăng ? Để tới lúc nào đó, bị lùa về chốn chợ trời, như hoa
+quả rau thịt ở chợ Mouffetard ?</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">Một dòng thư của người em gái
+chợt xoạc qua đầu:</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">"Ồ em tưởng tượng lúc
+đặt chân lên vùng đất tự do, em sẽ qùy xuống mà hôn lên nó, như đã từng tưởng
+tượng khi còn điêu đứng ở quê nhà. Nhưng em đã không qùy hôn mảnh đất đầu tiên
+đón em trên đường ly quốc, bởi em chưa cảm thấy được tự do trong đồn lính Mã Lai.
+Đàn ông thì bị đá đít và bị bắt hít đất. Đàn bà thì bị rọi đèn pin vô mặt,
+khiến đêm đầu tiên ấy dài bằng một năm. Rồi năm sáu tháng ở trại tỵ nạn chờ
+ngày lên đường sang một quốc gia đệ tam. Ôi, tự do phải ăn nóng, để nguội sẽ
+bớt ngon ... "</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">Ồ, em! Tự do là một vật thể?&nbsp;
+Một vùng đất ư?&nbsp; Tình yêu chỉ là môi má, và xác thân? Quê hương là một khoảng
+trống cách lìa?</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">Nếu chỉ có thế, đời sẽ buồn
+nhạt và phiền lụy biết bao. Vật thể ta mua được. Má môi có thể chiếm đoạt.
+Khoảng trống sẽ lấp đầy. Nhưng tự do, tình yêu, và quê hương? Và lòng mình-nơi
+khởi dựng thế giới</span></i><span lang="EN" style="font-size:14.0pt;line-height:
+150%">?</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%">Đoản văn trên là khúc giáo
+đầu trong tạp ghi tả <i>“Chợ Mouffetard”</i> của nhà thơ Thi Vũ cùng bạn là nhà thơ
+Phạm Công Thiện (Tánh), khi họ dạo chơi ở Paris thời cả hai là bạn thân ở các
+thập niên 1960, 1970. &nbsp;Là những thanh niên sinh viên trẻ học và làm việc tại
+kinh đô ánh sáng Paris.&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%">Đấy là một Paris sống thật.
+Một kinh nghiệm thật của tiếng Việt cuồn cuộn chảy ở phía ngoài đất đá Việt Nam.
+</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%">Không phải là phóng tưởng từ
+Hà Nội từ Sài Gòn từ Huế mơ xa chân trời Âu Mỹ. Mà là người Việt quẫy bước đạp
+lên những đường phố Paris cả đời, đã sống trên đất ngoại trọn kiếp bảy chục năm, nhưng lại tạo dựng cơ nghiệp bằng các tác
+phẩm Tiếng Việt. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%">Nhóm các tác giả Thi Vũ, Nh.
+Tay Ngàn, Nhất Hạnh, Phạm Công Thiện, Nguyên Sa, Cung Trầm Tưởng … là những tài
+hoa ra đi từ Việt Nam Cọng Hòa (một chế độ không cọng sản,  Miền Nam 1954-1975,
+cho đến khi Cọng Sản đánh chiếm Miền Nam và xóa bỏ chế độ này), là những tác
+giả có sáng tác viết về kinh nghiệm Việt ở hải ngoại. Các tác giả trên có thời
+gian sống ở ngoại quốc . Nhà thơ Nguyên Sa để lại dư vị trời Tây trong thơ ông
+bằng những bài thơ ướt át hương vị Triết Tây. Nhạc sĩ Cung Trầm Tưởng giới
+thiệu “người em mắt nâu tóc vàng sợi nhỏ, vườn Luxembourg, ga Lyon đèn mờ trong
+một bài hát hát được nhạc sĩ&nbsp; Phạm Duy phổ thành bài hát “Mùa Thu Paris” rất
+phổ biến ở Miền Nam trước 1975. Phạm Công Thiện với bài thơ “Ngày Sinh Của Rắn”
+tả khu Greenwich Village ở New York thật ấn tượng.&nbsp; Nhất Hạnh sáng tác nhiều
+thơ và văn trong thời ông sống ở Paris và Hoa Kỳ </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%">Nhưng Nhất Hạnh thành Sư đi
+phổ biến đạo Bụt của ông là chính. Mục tiêu của ông là đi phát triển tôn giáo .
+Mục tiêu phục vụ Tiếng Việt là mục tiêu phụ.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%">Phạm Công Thiện sáng tác lung
+tung, sống lung tung, không gầy dựng được tờ báo nào tạo ảnh hưởng một “thời
+thế” một giang sơn riêng. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%">Nguyên Sa là một tay gầy giang sơn rất giỏi. Tuy thơ ông có ảnh hưởng Triết Tây và hay . Nhưng Nguyên Sa được xem như là nhà thơ từ Sài Gòn Miền Nam. Năm 1975 ông sang Hoa Kỳ, sinh sống ở thủ đô tỵ nạn Bolsa, Westminter, Nam California và từng lập tạp chí Đời rất ăn khách . Nguyên Sa là tay phù thủy chữ nghĩa . Tiếc là ông sống ở Nam California cho đến năm 1998 thì qua đời . Nguyên Sa chưa kịp thiết lập “vương quốc Nguyên Sa” ở Hải Ngoại . Nếu Nguyên Sa còn trẻ thì có lẽ ảnh hưởng của Nguyên Sa như một “Ông Hoàng Văn Học Nghệ Thuật” ở Hải Ngoại rất lớn.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%">&nbsp;Hai người là nhà thơ Thi Vũ
+và nhà thơ Nh. Tay Ngàn là những kẻ tạo được ảnh hưởng trên sinh hoạt tiếng
+Việt qua tờ báo Quê Mẹ của ông Thi Vũ chủ trương ở Paris từ sau năm 1975. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%">Nhờ sự sinh hoạt lâu dài của
+ông Thi Vũ trên chính trường quốc tế, trên sinh hoạt quốc tế hải ngoại . Nhà
+thơ nhà tranh đấu Nhân Quyền Thi Vũ Võ Văn Ái có tư thế quốc tế mà không có nhà
+văn nhà thơ nhà chính trị hải ngoại nào, từ sau năm 1975 cho đến khi tôi viết các
+giòng chữ này là tháng 1 năm 2023, có được.&nbsp; Ngoài ra trong vai trò lãnh đạo
+chính trị và lãnh đạo tôn giáo, ông Thi Vũ Võ Văn Ái là người di chuyển, xê
+dịch, và tiếp xúc với các cộng đồng Việt Nam trên thế giới thường xuyên . Tôi
+không nghĩ có nhà văn nhà thơ nào tiếp xúc với các cộng đồng Việt Nam khắp thế
+giới như nhà thơ Thi Vũ . Nhạc sĩ biết hát ca như nhạc sĩ Phạm Duy thì may ra
+hơn được nhà thơ Thi Vũ. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.5in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%">Năm 2019 ông Thi Vũ Võ Văn Ái, đã 80 tuổi, &nbsp;từ Paris vẫn
+còn đến tham dự Hội nghị Cấp Bộ trưởng để Thăng tiến Tự do Tôn giáo do Bộ Ngoại
+giao Hoa Kỳ tổ chức tại thủ đô Hoa Thịnh Đốn từ ngày 16 đến 18 tháng 7 năm
+2019. Tại hội nghị quốc tế cấp quốc gia này, ông Thi Vũ Võ Văn Ái tuyên bố : “<i>Vi
+phạm tự do tôn giáo hay tín ngưỡng tại Việt Nam ngày càng gia tăng. Các cộng đồng
+tôn giáo bị kiểm soát khắt khe. Những ai hoạt động để bảo vệ tự do tôn giáo và
+nhân quyền bị tấn công, bắt bớ, tra tấn và giam cầm. Tại Hội nghị Cấp Bộ trưởng
+này, chúng tôi sẽ thúc giục Chính phủ Hoa Kỳ và Cộng đồng Thế giới gây áp lực
+Việt Nam tôn trọng các quyền tự do tôn giáo của người dân và cải cách thực sự
+pháp lý cũng như&nbsp; chính trị</i>”. (2)</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%">Cái đáng chú ý là sau khi nhà
+thơ nhà tranh đấu Nhân Quyền Thi Vũ Võ Văn Ái ra các diễn đàn quốc tế nói bằng tiếng
+Anh tiếng Pháp, nhà thơ Thi Vũ trở về trên báo Quê Mẹ viết tiếng Việt để sinh
+hoạt với các độc giả Việt Nam từ sau năm 1975 cho đến nay (năm 2023)</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%">Một tư thế xứng đáng của
+người dẫn đường, người khai mở, người dấn thân cho nền Văn Học Tiếng Việt Hải Ngoại</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%">Có khối các nhà văn sinh ra và lớn lên ở ngoài Việt Nam,  hoàn toàn viết 100%  bằng tiếng Anh (phần lớn họ không biết Tiếng Việt)  như nhà văn Thanh Viet Nguyen tác giả  tiểu thuyết “The Sympathizer”, “The Refugee” và nhóm “The Diasporic Vietnamese Artists Network (DVAN)” cũng tự gọi họ là “Văn Nghệ Sĩ Việt Nam Hải Ngoại” (Diasporic Vietnamese Artists) khi tuyên xưng chúng tôi-là-ai với các độc giả tiếng English (xem chú thích 3). Nhưng họ, The Diasporic Vietnamese Artists, viết tiếng Anh và các thứ tiếng “không phải là tiếng Việt”.  Còn “Văn Chương Hải Ngoại” là cụm từ mà những người Việt Tỵ Nạn năm 1975 ra khỏi Việt Nam đã sáng chế và xử dụng từ đó,  để đặc quyền chỉ các sáng tác "Viết Bằng Tiếng Việt",  ở hải ngoại </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">Tôi chọn hai nhà thơ Thi Vũ và Nh.
+Tay Ngàn là những người khai mở nền “Văn Chương Hải Ngoại” vì họ là những người
+sáng tác danh tiếng có mặt ở Hải Ngoại từ trước 1975 . Họ tiếp tục sáng tác và
+nổi tiếng sau 1975 . Họ sinh hoạt lâu năm với Tiếng Việt . Và quan trọng là họ
+thành công với tờ báo viết bằng tiếng Việt là tờ Quê Mẹ . Uy Tín của tờ Quê Mẹ
+do nhà thơ Thi Vũ thành lập và chủ trì trong vòng nửa thế kỷ là một dấu ấn lâu
+năm của sinh hoạt Tiếng Việt ở ngoài Việt Nam .&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.4in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%">Những năm đầu người Việt Hải Ngoại thành hình ở Mỹ Quốc,
+tờ Quê Mẹ ở Paris của Thi Vũ Võ Văn Ái như một ngọn đuốc văn hóa . Báo in đẹp.
+Bài vở chọn lọc. Đương đầu với các vấn đề của người Việt Tỵ Nạn Cọng Sản . Và
+thơ văn thì rất trí thức chọn lọc. </span></p> <br><br>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.4in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%"><img src="http://www.gio-o.com/TranDuyenTuong/QM11.jpg"></span></p>
+<br><br>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">Tuy Nh. Tay Ngàn chết trẻ (1978)
+ngoài 35 tuổi . Nhưng anh sinh hoạt văn chương trọn đời thanh thiếu niên. Và anh
+chết trong lúc đang hợp tác với tờ báo Quê Mẹ của Thi Vũ. Nên tôi chọn Nh. Tay
+Ngàn và Thi Vũ là những lãnh đạo tiếng Việt trong sinh hoạt sáng tác thơ văn ở
+Hải Ngoại sau năm 1975. </span></p>
+
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">Có thể nói tờ báo Quê Mẹ đã củng cố
+tư cách trí thức dấn thân của ông Thi Vũ Võ Văn Ái nhất. Tờ báo ra đời ở Paris
+sau khi Miền Nam Quốc Gia bị Miền Bắc Cọng Sản chiếm. Đấy là một diễn đàn sáng
+tác, biên khảo, tin tức,&nbsp; liên quan về Việt Nam mang tính quốc tế. Tính quốc tế
+sáng láng của tờ Quê Mẹ nổi bật hơn các diễn đàn Tiếng Việt cùng thời, là tính
+chọn lọc bài vở. Tư cách trí thức và sự minh mẫn của ông Thi Vũ Võ Văn cho ông một nền
+tảng trí thức tốt để ông chọn lựa những bài vở giới thiệu lên Quê Mẹ phù hợp với
+tiếng nói của dân tộc Việt Nam, tiếng nói của người Việt Tỵ Nạn Cọng Sản 1975 ở
+Hải Ngoại, và tiếng nói của văn nghệ sĩ sáng tác bằng tiếng Việt. Có thể nói Quê
+Mẹ là diễn đàn khởi nghiệp cho nền văn học Tiếng Việt Hải Ngoại nhất vì tính chất
+chọn lọc bài vở cho thích hợp với tiếng nói văn chương hải ngoại Tiếng Việt. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">Tờ báo Quê Mẹ ở Paris của nhà thơ Thi
+Vũ giới thiệu các bài Tiếng Việt. Khi chọn dịch các tác giả ngoại quốc giới
+thiệu, nhà thơ Thi Vũ chọn lọc kỹ càng có chất lượng. Trong khi tôi để ý các tờ
+báo Việt Ngữ thường có khuynh hướng chọn các tác giả ngoại quốc nổi tiếng hay
+được giải nổi tiếng quốc tế và dịch để trám trang cho đầy trang báo và chạy theo khuynh hướng thời đại. Tôi quý và
+rất thích sự chọn lựa cẩn thận này của chủ nhiệm Quê Mẹ. Một thái độ trí thức
+không “ba phải” hễ thấy cái gì của ngoại quốc nổi tiếng là chạy theo phò theo
+tung hứng, mà nhiều trí thức các nước nhược tiểu mắc phải. Một đầu óc phải
+thông thái và tiêu hóa trí thức thế giới, mới lặt cho mình được một tư thế độc
+lập như chủ biên Thi Vũ của tờ Quê Mẹ Paris</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">Vai trò của tờ Quê Mẹ rõ là dấn thân
+chính trị cách mạng,&nbsp; tranh đấu cho nhân quyền của người Việt Nam trong nước,
+tranh đấu cho Phật Giáo bị áp bức méo mó ở Việt Nam.&nbsp; Tranh đấu chính trị luôn
+luôn là một lý tưởng sang trọng. Đi làm cách mạng như nhà thơ nhà tranh đấu
+nhân quyền Thi Vũ Võ Văn Ái thật là một nhân dáng cao sang tuyệt đẹp. Sự thành
+công của Thi Vũ Võ Văn Ái là sáng lập và duy trì được một tờ Quê Mẹ Paris mấy
+thế kỷ để xiển dương và thắp đuốc cho lý tưởng mình theo đuổi . Mấy người trong
+lịch sử Việt Nam làm được như ông . Rất hiếm. Tờ Quê Mẹ Paris phải nói là một
+thứ Đảng Chính Trị mà đảng viên là các con chữ. Đảng Quê Mẹ tồn tại lâu năm dễ
+nể. Gia sản của đảng trưởng Thi Vũ Võ Văn Ái để lại là tổng hành dinh Quê Mẹ,
+là các cuộc lên diễn đàn quốc tế thế giới hô hào đọc diễn văn kêu gọi cho lý tưởng cao cả
+của nhân loại Việt Nam, và là các sáng tác văn chương, các bài luận thuyết ...</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">Có một điểm son nổi bật của tờ Quê Mẹ
+mà tôi rất thích, là mẫu mã các bìa và cách trình bày bên trong tờ báo. Tôi vẫn
+chọn tờ Quê Mẹ Paris của Thi Vũ Võ Văn Ái là tờ báo có khiếu thẩm mỹ đẳng cấp
+quốc tế nhất, trong tất cả các tờ báo hải ngoại. Nghĩa là gu thẩm mỹ của chủ
+bút chủ biên rất hải ngoại quốc tế nhưng vẫn duy trì được một thứ cá tính Việt
+. Một lần nữa, điều này chứng tỏ, khả năng tự tạo một hành trình trí thức tên
+tuổi Việt độc lập. Không bị vong thân vì uống nước ngoại quốc lâu năm . Thái độ
+và ánh sáng trí thức độc lập và dấn thân của Thi Vũ Võ Văn Ái là ngọn đuốc mà mỗi
+thời thế mỗi thời đại chỉ có dăm ba kẻ độc sáng mà chúng ta ngưỡng mộ họ. &nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;<span lang="EN">&nbsp;</span></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Trong bài nhận định về sự nghiệp đóng góp của Thi Vũ Võ Văn Ái,  đọc vào ngày kỷ niệm trang Gió O 20 năm 2001-2021,  tổ chức tại đại học UC Berkeley chiều Chủ Nhật  19 tháng12. năm 2021,  tôi đã lên tiếng:</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.4in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in;line-height:150%;background:white"><span lang="EN" style="font-size:14.0pt;line-height:150%">“<i>Là một thiếu niên cảm nhận ngay
+từ những ngày trong tù ước muốn giải phóng sự áp bức dưới bất kỳ màu sắc ý thức
+hệ nào, nhà thơ Thi Vũ Võ Văn Ái đã dứt khoát đứng trên lập trường quốc gia dân
+tộc, phi cộng sản trong suốt cuộc đời của ông.&nbsp; </i></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.4in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in;line-height:150%;background:white"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:4.0pt;margin-right:1.5in;margin-bottom:
+0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:.4in;line-height:150%;background:white"><a name="_k1o3rm2uon2o"></a><i><span lang="EN" style="font-size:13.5pt;line-height:
+150%">Tại Paris, cuối thập niên 1975, khi mà khi mà làn sóng người Việt trốn
+tránh chế độ Cọng Sản Hà Nội rời Việt Nam ồ ạt ra khơi tiến về hướng các nước
+Thái Lan, Mã Lai, Indonesia, Hồng Không , nhà thơ nhà tranh đấu Nhân Quyền Thi
+Vũ Võ Văn Ái đã sáng lập ra hai&nbsp; tổ chức “Ủy Ban Bảo vệ Quyền Làm Người
+Việt Nam”, và “Ủy ban Cứu Sống Người Vượt Biển” . Ủy Ban Cứu Sống Người Vượt
+biển đã đề xướng chiến dịch “Một Chiếc Tàu cho Việt Nam” tại Paris vào tháng 11
+năm 1978, mà “Tàu Đảo Ánh Sáng” đã ra Biển Đông vớt</span></i><a href="https://vi.wikipedia.org/wiki/Thuy%E1%BB%81n_nh%C3%A2n_Vi%E1%BB%87t_Nam"><i><span style="font-size:13.5pt;line-height:150%;color:windowtext;text-decoration:none">
+</span></i></a><a href="https://vi.wikipedia.org/wiki/Thuy%E1%BB%81n_nh%C3%A2n_Vi%E1%BB%87t_Nam"><i><span lang="EN" style="font-size:13.5pt;line-height:150%;color:windowtext;text-decoration:
+none">thuyền nhân</span></i></a><i><span lang="EN" style="font-size:13.5pt;
+line-height:150%"> cùng săn sóc sức khỏe cho đồng bào tị nạn trên Đảo Pulao
+Bidong, dẫn đầu cho một loạt những con tàu khác ở Đức (</span></i><a href="https://vi.wikipedia.org/wiki/Cap_Anamur"><i><span lang="EN" style="font-size:13.5pt;line-height:150%;color:windowtext">Cap Anamur</span></i></a><i><span lang="EN" style="font-size:13.5pt;line-height:150%">), Ý Đại Lợi, Na Uy… đi vớt
+Người Vượt biên. Ủy ban Bảo vệ Quyền Làm Người Việt Nam cũng mở cuộc họp báo
+quốc tế đầu tiên tại Paris tháng 5 năm 1978 tố cáo chế độ “Trại Tập Trung Cải
+Tạo” và đàn áp nhân quyền, tôn giáo của chế độ Cọng Sản Hà Nội. Võ Văn Ái và Ủy
+ban Bảo vệ Quyền Làm Người Việt Nam thường tường thuật đều đặn về các vấn đề
+nhân quyền và tự do tôn giáo ở Việt Nam cho</span></i><a href="https://vi.wikipedia.org/wiki/Li%C3%AAn_H%E1%BB%A3p_Qu%E1%BB%91c"><i><span style="font-size:13.5pt;line-height:150%;color:windowtext;text-decoration:none">
+</span></i></a><a href="https://vi.wikipedia.org/wiki/Li%C3%AAn_H%E1%BB%A3p_Qu%E1%BB%91c"><i><span lang="EN" style="font-size:13.5pt;line-height:150%;color:windowtext">Liên Hợp
+Quốc</span></i></a><i><span lang="EN" style="font-size:13.5pt;line-height:150%">
+(từ năm 1985),</span></i><a href="https://vi.wikipedia.org/wiki/Qu%E1%BB%91c_h%E1%BB%99i_Hoa_K%E1%BB%B3"><i><span style="font-size:13.5pt;line-height:150%;color:windowtext;text-decoration:none">
+</span></i></a><a href="https://vi.wikipedia.org/wiki/Qu%E1%BB%91c_h%E1%BB%99i_Hoa_K%E1%BB%B3"><i><span lang="EN" style="font-size:13.5pt;line-height:150%;color:windowtext">Quốc hội Hoa
+Kỳ</span></i></a><i><span lang="EN" style="font-size:13.5pt;line-height:150%">,</span></i><a href="https://vi.wikipedia.org/wiki/Ngh%E1%BB%8B_vi%E1%BB%87n_ch%C3%A2u_%C3%82u"><i><span style="font-size:13.5pt;line-height:150%;color:windowtext;text-decoration:none">
+</span></i></a><a href="https://vi.wikipedia.org/wiki/Ngh%E1%BB%8B_vi%E1%BB%87n_ch%C3%A2u_%C3%82u"><i><span lang="EN" style="font-size:13.5pt;line-height:150%;color:windowtext">Nghị viện
+châu Âu</span></i></a><i><span lang="EN" style="font-size:13.5pt;line-height:
+150%"> và tham gia các Hội nghị Nhân quyền, Dân chủ trên khắp năm châu.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.4in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+line-height:150%"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.4in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+line-height:150%;background:white"><i><span lang="EN" style="font-size:14.0pt;
+line-height:150%">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Rõ ràng rằng ông Võ Văn Ái đã đóng một vai trò then chốt trong việc lôi kéo sự
+chú ý của công luận thế giới về các sự vi phạm nhân quyền tại Việt Nam, với sự
+công bố bản đồ đầu tiên hệ thống hàng trăm trại tù mệnh danh là “Trại Cải Tạo”,
+để giam giữ hàng trăm nghìn quân cán chính miền Nam ngay sau biến cố Tháng Tư,
+1975.&nbsp;&nbsp; </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.4in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+line-height:150%"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.4in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+line-height:150%;background:white"><i><span lang="EN" style="font-size:14.0pt;
+line-height:150%">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Một thành quả vang dội khác là một Ủy Ban “Con Tàu Cho Việt Nam” thành lập hồi
+Tháng 11, 1978 đã có sự tham gia của nhiều nhân vật lừng danh thế giới như Yves
+Montand, Brigitte Bardot, Simone Signoret, Raymond Aron, Jean-Paul Sartre,
+Simone de Beauvoir,... đã tác động đến quyết định thu nhận các thuyền nhân tỵ
+nạn Việt Nam tại nhiều quốc gia trên thế giới.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.4in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+line-height:150%;background:white"><i><span lang="EN" style="font-size:14.0pt;
+line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.4in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in;line-height:150%;background:white"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">Về hoạt động tôn giáo, có thể xác
+quyết rằng ông Võ Văn Ái là một trí thức Phật tử gắng sức duy trì tiếng nói của
+Phật Giáo Việt Nam thuần túy từ thập niên 1960 cho đến nay tại hải ngoại, và là
+người tranh đấu bền bỉ cho tự do tôn giáo nói chung tại Việt Nam.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.4in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in;line-height:150%;background:white"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-left:1.5in;text-align:justify;
+text-justify:inter-ideograph;text-indent:.5in;line-height:150%;background:white"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">Từ 1963 đến 1970, ông đại
+diện cho</span></i><a href="https://vi.wikipedia.org/wiki/Gi%C3%A1o_h%E1%BB%99i_Ph%E1%BA%ADt_gi%C3%A1o_Vi%E1%BB%87t_Nam_Th%E1%BB%91ng_nh%E1%BA%A5t"><i><span style="font-size:14.0pt;line-height:150%;color:windowtext;text-decoration:none">
+</span></i></a><a href="https://vi.wikipedia.org/wiki/Gi%C3%A1o_h%E1%BB%99i_Ph%E1%BA%ADt_gi%C3%A1o_Vi%E1%BB%87t_Nam_Th%E1%BB%91ng_nh%E1%BA%A5t"><i><span lang="EN" style="font-size:14.0pt;line-height:150%;color:windowtext">Giáo hội
+Phật giáo Việt Nam Thống nhất</span></i></a><i><span lang="EN" style="font-size:
+14.0pt;line-height:150%"> ở nước ngoài, một tổ chức phật giáo mà sau 1981 không
+được chính thức công nhận.&nbsp; Sau khi Hòa thượng</span></i><a href="https://vi.wikipedia.org/wiki/Th%C3%ADch_Qu%E1%BA%A3ng_%C4%90%E1%BB%99"><i><span style="font-size:14.0pt;line-height:150%;color:windowtext;text-decoration:none">
+</span></i></a><a href="https://vi.wikipedia.org/wiki/Th%C3%ADch_Qu%E1%BA%A3ng_%C4%90%E1%BB%99"><i><span lang="EN" style="font-size:14.0pt;line-height:150%;color:windowtext">Thích Quảng
+Độ</span></i></a><i><span lang="EN" style="font-size:14.0pt;line-height:150%">
+trong vị thế Viện trưởng Viện Hóa Đạo, vào ngày 27.8.1999 đã cử ông Võ Văn Ái
+làm người Phát ngôn nhân của Viện Hóa Đạo, Giáo hội Phật giáo Việt Nam Thống
+nhất, và Phòng Thông tin Phật giáo Quốc tế.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.4in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in;line-height:150%;background:white"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">Cơ sở Quê Mẹ của ông Võ Văn Ái đã
+đóng góp cho học thuật Việt Nam hai tác phẩm giá trị: <b>Bộ Phật Quang Đại Từ
+Điển</b> của Thích Quảng Độ dịch gần 8,000 trang, và tập thơ độc đáo, độc nhất
+vô nhị, <b>Thơ Tù</b> cũng của Thích Quảng Độ.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.4in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+line-height:150%"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.4in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in;line-height:150%;background:white"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">Trong lĩnh vực tư tưởng, triết học và
+tôn giáo, đã có sự sản sinh ra từ ông Võ Văn Ái một ký giả theo dõi và tường
+thuật về các vấn đề thời sự nóng bỏng và một nhà luận thuyết về các vấn đề
+chính trị, lịch sử, triết học, tôn giáo.&nbsp; Chính vì thế chúng ta có được
+hai tác phẩm luận thuyết&nbsp; vừa có tính chất biên khảo, vừa có tính chất bút
+chiến: Nguyễn Trãi: Sinh Thức và Hành Động và Luận Chiến Nước Ngoài của nhà thơ
+Thi Vũ Võ Văn Ái</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.4in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+line-height:150%"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.4in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in;line-height:150%;background:white"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">Ông Võ Văn Ái có lẽ đã xem Nguyễn
+Trãi như một mẫu người trí thức dấn thân vì đại nghĩa, là bộ não đề ra chiến
+lược, đường lối ...trong cuộc kháng chiến chống quân Minh giành lại độc lập cho
+Việt Nam.&nbsp; Nguyễn Trãi đã thể hiện một sự lựa chọn sáng suốt, tuy là cháu
+ngoại của Trần Nguyên Đán, người giữ chức chưởng như Thủ Tướng dưới vua nhà
+Trần, nhưng vì Đại Nghĩa đã đi phù tá Lê Lợi cho đến lúc thành công.&nbsp;
+Chiến thắng oai hùng này đã giúp Nguyễn Trãi viết ra một bản Tuyên Ngôn Độc Lập
+bất hủ của Việt Nam, được lưu truyền mãi mãi cùng dân tộc Việt: bản Bình Ngô
+Đại Cáo.&nbsp; Hành động của Nguyễn Trãi biểu hiệu cho cuộc sống của một kẻ sĩ
+theo đúng nghĩa trong tư tưởng Việt Nam, kẻ vì đại nghĩa, tận dụng khả năng và
+tri thức của mình, để gánh vác việc chung, nhăm mưu cầu hạnh phúc cho người dân
+và thúc đẩy xã hội thăng tiến.&nbsp; </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.4in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+line-height:150%"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.4in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in;line-height:150%;background:white"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">Quyển “Luận Chiến Nước Ngoài”, Đi tới
+tận cùng sự Hòa Giải dân tộc ngoài việc giúp&nbsp; người đọc có được các chi
+tiết về các hoạt động cụ thể, còn chiếu rọi các khía cạnh khác trong tư tưởng
+của nhà cách mạng Võ Văn Ái, với những suy tư để đi tìm lối thoát và thăng tiến
+dân tộc Việt Nam.&nbsp; Các câu hỏi, các ưu tư của ông Ái hầu như vẫn còn
+nguyên: Chúng ta chỉ có thể đi đến sự hòa giải dân tộc với những người có cùng
+ý nghĩ đặt quyền lợi dân tộc lên trên hết.&nbsp; Thực hiện được ước mơ đó vẫn
+còn là khát vọng của mọi con người Việt Nam yêu nước, trong nước cũng như ở hải
+ngoại cho đến giờ phút này.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.4in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in;line-height:150%;background:white"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">Võ Văn Ái sống ở ngoại quốc
+lâu năm. Là một trí thức đọc nhiều, xông pha với người ngoại quốc ở các đấu
+trường chính trị quốc tế, các đấu trường cao cấp như Liên Hiệp Quốc, Quốc Hội
+các nước Mỹ Pháp, Hòa Lan vv.. nhưng nhà thơ nhà tranh đấu Nhân Quyền Thi Vũ Võ
+Văn Ái vẫn giữ được tâm thức trí thức của một con người trí thức Việt độc lập. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.4in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in;line-height:150%;background:white"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.4in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in;line-height:150%;background:white"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">Là một trí thức hải ngoại thông suốt
+tiếng Anh tiếng Pháp duy nhất đứng được trên các diễn đàn quốc tế , để tranh
+đấu cho nhân quyền tại Việt Nam, cho tôn giáo tại Việt Nam. Nhà thơ nhà tranh
+đấu Nhân Quyền Thi Vũ Võ Văn Ái đã làm được việc này bền bỉ trong gần 50 năm
+qua. Ông là một trí thức Việt duy nhất duy trì được tên tuổi tranh đấu cho
+quyền làm người của Người Việt trên các diễn đàn quốc tế. Không có một trí thức
+Việt Hải Ngoại thứ hai nào làm được như ông. </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.4in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in;line-height:150%;background:white"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.4in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in;line-height:150%;background:white"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">Trong lãnh vực văn học, Thi Vũ là một
+nhà thơ, nhà văn, một người thiết kế báo chí tài năng khó ai sánh bằng.</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.4in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in;line-height:150%;background:white"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.4in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:.5in;line-height:150%;background:white"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">Thơ của Thi Vũ &nbsp;cô đọng, súc
+tích, sâu thẳm, đã phản ảnh sự một sự tìm tòi trong việc sử dụng từng con
+chữ.&nbsp; Ông dụng chữ cầu kỳ . Nhưng là cái cầu kỳ của người trí thức . Cái
+cầu kỳ cần thiết dành cho cái đẹp của chữ nghĩa từ một nhà trí thức đọc quốc
+tế, sống giàu, và có thiên khiếu về văn chương và nghệ thuật hơn người.&nbsp; </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.4in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+line-height:150%;background:white"><i><span lang="EN" style="font-size:14.0pt;
+line-height:150%">&nbsp; &nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:.4in;line-height:150%;background:white"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">Quyển tạp ghi&nbsp; “Gọi Thầm giữa
+Paris” của nhà thơ Thi Vũ với những lời văn như thơ chứa chất đầy những cảm
+nghĩ của một con người Việt Nam thở hơi thở của một kinh đô Âu Châu . Đấy là
+một quyển tản văn rất Văn Chương Hải Ngoại thứ nhất . </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.4in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:.4in;line-height:150%;background:white"><i><span style="line-height:
+150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">Với tôi, tạp chí Quê Mẹ là
+lãnh tụ thứ nhất mở đường cho Văn Chương Hải Ngoại&nbsp; </span></i><span lang="EN" style="font-size:14.0pt;line-height:150%">(4)</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.4in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">============</span></p>
+
+<p class="MsoListParagraphCxSpFirst" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:10.0pt;margin-left:1.75in;text-indent:-.25in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">(1)<span style="font:7.0pt &quot;Times New Roman&quot;">
+</span></span><span style="font-size:14.0pt;line-height:150%">&nbsp;Thơ Máy là nhu
+liệu của công ty Tinh Vân chế ra:&nbsp; </span><a href="http://www.thomay.vn/thomay/"><span style="font-size:14.0pt;line-height:150%">http://www.thomay.vn/thomay/</span></a></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:10.0pt;margin-left:1.75in;text-indent:-.25in;line-height:150%"><span style="font-size:14.0pt;line-height:150%"><span style="font:7.0pt &quot;Times New Roman&quot;">
+</span></span><span style="font-size:0pt;line-height:150%;color:black;
+background:black;layout-grid-mode:line">&nbsp;</span><span style="font-size:14.0pt;
+line-height:150%"><img border="0" width="1326" height="839" id="Picture 2" src="http://www.gio-o.com/ThiVu/ThoMay.png"></span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:10.0pt;margin-left:1.75in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:10.0pt;margin-left:1.75in;text-indent:-.25in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">(2)<span style="font:7.0pt &quot;Times New Roman&quot;">
+</span></span><a href="https://pttpgqt.org/2019/07/15/tuyen-bo-cua-vchr-ministerial-forb/"><span style="font-size:14.0pt;line-height:150%">https://pttpgqt.org/2019/07/15/tuyen-bo-cua-vchr-ministerial-forb/</span></a></p>
+
+<p class="MsoListParagraphCxSpMiddle" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:10.0pt;margin-left:1.75in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoListParagraphCxSpLast" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:10.0pt;margin-left:1.75in;text-indent:-.25in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">(3)<span style="font:7.0pt &quot;Times New Roman&quot;">
+</span></span>&nbsp;<a href="https://dvan.org/"><span style="font-size:14.0pt;
+line-height:150%">https://dvan.org/</span></a></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">“Empowering Vietnamese American Literature and Culture</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">The Diasporic Vietnamese Artists Network (DVAN) celebrates and fosters
+diasporic Vietnamese literary voices. DVAN promotes nonfiction, fiction, and
+poetry to empower Vietnamese artists in the diaspora to inspire understanding
+and dialogue within our community, and with others. Our complex and diverse
+stories must be championed and passed on to current and future generations. We
+are refugees, immigrants, survivors, and descendants, and our stories must be
+heard.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">(B) Nâng Cao Văn Học và Văn Hóa Người Mỹ Gốc Việt</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Mạng lưới Nghệ sĩ Người Việt Hải ngoại (DVAN) tôn vinh và cổ vũ những tiếng
+nói văn học Việt Nam hải ngoại. DVAN quảng bá truyện phi hư cấu, hư cấu và thơ
+ca để trao quyền cho các nghệ sĩ Việt Nam ở hải ngoại nhằm khơi dậy sự hiểu biết
+và đối thoại trong cộng đồng của chúng ta và với những người khác. Những câu
+chuyện phức tạp và đa dạng của chúng ta phải được bảo vệ và truyền lại cho các
+thế hệ hiện tại và tương lai. Chúng tôi là những người tị nạn, người nhập cư,
+những người sống sót và con cháu, và những câu chuyện của chúng tôi phải được lắng
+nghe.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%"><img border="0" width="1178" height="530" id="Picture 1" src="http://www.gio-o.com/ThiVu/Divan.png"></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><i><span lang="EN" style="font-size:14.0pt;line-height:150%">(4) </span></i><span lang="EN" style="font-size:14.0pt;line-height:150%">.&nbsp; </span><a href="http://www.gio-o.com/GioO10Nam/20LeThiHueThiVu.htm"><span lang="EN" style="font-size:14.0pt;line-height:150%">http://www.gio-o.com/GioO10Nam/20LeThiHueThiVu.htm</span></a><span lang="EN" style="font-size:14.0pt;line-height:150%"> </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:.4in;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%">Lê Thị Huệ&nbsp; "Phát Biều
+Về Nhà Thơ Nhà Tranh Đấu Nhân Quyền Thi Vũ Võ Văn Ái"diễn ngôn được trình
+bày tại buổi sinh hoạt 20 năm Gió-O nắn Net tĐại học UC Berkeley, California
+chiều Chủ Nhật 19/12/2021. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:0in;margin-bottom:.0001pt;line-height:150%"><span style="line-height:
+150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.4in;line-height:150%"><span style="font-size:
+16.0pt;line-height:150%;font-family:&quot;Microsoft Sans Serif&quot;,&quot;sans-serif&quot;;
+color:#C00000">Lê Thị Huệ</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;text-indent:.4in;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%">Tháng 1/2023</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:10.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">&nbsp;</span></p>
+
+</div>
+
+
+
+
+</body>

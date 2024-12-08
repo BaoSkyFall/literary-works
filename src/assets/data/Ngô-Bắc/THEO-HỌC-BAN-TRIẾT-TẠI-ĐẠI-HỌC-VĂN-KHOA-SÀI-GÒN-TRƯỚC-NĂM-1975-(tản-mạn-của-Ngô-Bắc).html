@@ -1,0 +1,630 @@
+<head> <script type="text/javascript"> document.domain = 'gio-o.com'; (()=>{"use strict";const e=window.Cypress=parent.Cypress;if(!e)throw new Error("Something went terribly wrong and we cannot proceed. We expected to find the global Cypress in the parent window but it is missing. This should never happen and likely is a bug. Please open an issue.");const t=(()=>{let e,t,n,r;const i=()=>{e=!1,t=!1,n=[],r={}},o=(e,t=[])=>"function"==typeof e?e.apply(window,t):window.eval(e);return i(),{wrap:()=>{const i={setTimeout:window.setTimeout,setInterval:window.setInterval,requestAnimationFrame:window.requestAnimationFrame,clearTimeout:window.clearTimeout,clearInterval:window.clearInterval},a=(e,t)=>i[e].apply(window,t),s=e=>n=>(t&&(r[n]=!0),a(e,[n])),w=t=>(...r)=>{let i,[s,w,...p]=r;return i=a(t,[(...r)=>{if(!e)return o(s,r);n.push({timerId:i,fnOrCode:s,params:r,type:t})},w,...p]),i};window.setTimeout=w("setTimeout"),window.setInterval=w("setInterval"),window.requestAnimationFrame=w("requestAnimationFrame"),window.clearTimeout=s("clearTimeout"),window.clearInterval=s("clearInterval")},reset:i,pause:a=>{e=Boolean(a),e||(t=!0,n.forEach((e=>{const{timerId:t,type:n,fnOrCode:i,params:a}=e;"setInterval"===n&&r[t]||o(i,a)})),i())}}})();e.removeAllListeners("app:timers:reset"),e.removeAllListeners("app:timers:pause"),e.on("app:timers:reset",t.reset),e.on("app:timers:pause",t.pause),t.wrap(),e.action("app:window:before:load",window)})(); </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="Generator" content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Microsoft Sans Serif";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+h1
+	{margin-top:20.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:normal;}
+h2
+	{margin-top:.25in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:normal;}
+h3
+	{margin-top:16.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Arial","sans-serif";
+	color:#434343;
+	font-weight:normal;}
+h4
+	{margin-top:14.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Arial","sans-serif";
+	color:#666666;
+	font-weight:normal;}
+h5
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#666666;
+	font-weight:normal;}
+h6
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	color:#666666;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:26.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:16.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:15.0pt;
+	font-family:"Arial","sans-serif";
+	color:#666666;}
+.MsoChpDefault
+	{font-family:"Arial","sans-serif";}
+.MsoPapDefault
+	{line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang="EN-US">
+
+<div class="WordSection1">
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:center;
+line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:center;
+line-height:150%"><span lang="EN" style="font-size:24.0pt;line-height:150%;
+font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#002060">NGÔ BẮC </span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:center;
+line-height:150%"><span lang="EN" style="font-size:22.0pt;line-height:150%;
+font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:#002060">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:center;
+line-height:150%"><span lang="EN" style="font-size:24.0pt;line-height:150%;
+font-family:&quot;Microsoft Sans Serif&quot;,&quot;sans-serif&quot;;color:#002060">THEO HỌC BAN
+TRIẾT </span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:center;
+line-height:150%"><span lang="EN" style="font-size:24.0pt;line-height:150%;
+font-family:&quot;Microsoft Sans Serif&quot;,&quot;sans-serif&quot;;color:#002060">TẠI ĐẠI HỌC VĂN
+KHOA SÀI GÒN TRƯỚC NĂM 1975</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:center;
+line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:center;
+line-height:150%"><i><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">tản mạn</span></i></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:center;
+line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:center;
+line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="VanKhoaSaiGon.jpg" width="700"><br>đại học Văn Khoa Sài Gòn 1957-1975<br>nguồn ảnh: không rõ</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:center;
+line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;text-align:justify;line-height:
+150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Đây
+là các cảm nghĩ của tôi khi theo học ban Triết, Đại Học Văn Khoa Sàigòn trước
+năm 1975:</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Ban
+Triết tại Đại Học Văn Khoa Sàigòn trước năm 1975 có lẽ là một trong các ban có
+ít sinh viên ghi danh theo học, được chia thành hai giáo trình về Triết Đông và
+Triết Tây.&nbsp;&nbsp; Vì là trường đại học được ghi danh tự do, không có một tiêu chuẩn
+hạn chế nào, nên số ghi danh của Đại Học Văn Khoa rất đông, tương tự như Đại
+Học Luật Khoa.&nbsp; Tuy số ghi danh thật đông, nhưng số sinh viên&nbsp; thực sự đi học
+thường xuyên rất ít, càng ít hơn nữa là các sinh viên bản Triết Học.&nbsp; Ngoài rất
+ít nam sinh viên phải cố gắng học và thi đỗ cuối năm để tiếp tục được hoãn dịch
+việc thi hành nghĩa vụ quân sự, các sinh viên ban Triết là những người phải có
+sự đam mê trong ngành học đòi hỏi sự suy tư và lý luận.&nbsp; Có thể vì thế số nữ
+sinh viên ban Triết rất ít, nếu không nói là hiếm quý.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Chi
+phí ghi danh rất thấp, ai cũng có thể đăng ký, chỉ tội phải mất thì giờ để ghi
+danh vì số người đăng ký khá đông.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Các
+giáo sư và giảng viên cũng không bắt buộc các sinh viên phải trực tiếp tham dự
+các buổi giảng dạy.&nbsp; Phần lớn các sinh viên mua các ấn phẩm của môn học rồi tự
+học ở nhà và đi thi cuối khóa.&nbsp; Chi phí mua sách, ấn phẩm môn học cũng rất thập
+chưa bao giờ là một nỗi lo của sinh viên.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Tuy
+thế, các giáo sư và giảng viên ban Triết bao gồm các học giả ít nhiều có tiếng
+tăm trong giới học thuật Việt Nam và quốc tế.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Điển
+hình như Linh Mục Lương Kim Định, một cột trụ chủ yếu của ban Triết Đông, người
+ký tên là Kim Định trên các tác phẩm về Triết Học Đông Phương của ông.&nbsp; Linh
+Mục Kim Định đến dạy học bằng xe xích lô máy.&nbsp; Cứ trông và nghe thấy tiếng xe
+xích lô máy là biết ngay có Linh Mục Kim Định, thường trong bộ áo choàng màu
+trắng, ngồi trên xe với dáng diệu vô cùng thoải mái.&nbsp; Theo các chủng sinh sống
+gần Linh Mục Kim Định, Linh Mục giải thích đi xe xích lô máy vì thấy mình không
+muốn người lao động phải vận dụng sức mình khi đạp xe.&nbsp; Mặt khác, di xe xích lô
+máy nhanh hơn, gió thổi mát mẻ hơn và do đó thoải mái hơn.&nbsp; Hơn hai chục năm
+sau, tôi có đến thăm Linh Mục Kim Định tại San Jose, California.&nbsp; Tuổi tác tuy
+đã khá cao, nhưng thần thái của Linh Mục không thay đổi bao nhiêu, và có nhìn
+thấy lại một áo choàng màu trắng treo trên tường nhưng Linh Mục nói đã lâu
+không còn cử hành lễ nghi tại Nhà Thờ.&nbsp; Linh Mục nói còn ước ao sống thêm ít
+nhất 20 năm nữa để đủ thì giờ viết và để lại các tác phẩm mà Linh Mục cho là
+cần thiết.&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Linh
+Mục Kim Định đúng là một tác giả đã để lại một khối tác phẩm triết học đồ sộ
+nhất của Việt Nam và độc đáo nhất vì nhãn quan của ông về triết học Đông
+Phương, dù tôi chưa thấy ai làm một bản liệt kê các công trình nghiên cứu, biên
+khảo của ông.&nbsp; Là một người được huấn luyện trong môi trường triết học Tây
+Phương và thần học Thiên Chúa Giáo, nhưng cái nhìn của Linh Mục Kim Định về
+triết học Đông Phương lại mang một đường nét dân tộc chủ nghĩa Việt Nam đến mức
+cực đoan, theo nhận xét của một số học giả Tây Phương.&nbsp; Triết học Tây Phương,
+theo dòng tư tưởng từ Plato, Descartes, Pascal. Nietzsche, Kant, Kierkegaard,
+Kant cho đến Karl Marx, … đặt trên nền tảng duy lý, dẫn đến chủ nghĩa duy vật,
+được biện chứng bằng thực nghiệm. &nbsp;Bởi duy lý chỉ chấp nhận những gì có thể
+biện luận được, thực nghiệm được hay sờ mó được, như các vật chất và chỉ chấp
+nhận những gì hiện thực như vật chất.&nbsp; Dòng tư tưởng này sinh sản ra chủ nghĩa
+cộng sản của Karl Marx, khi áp dụng vào việc biện luận các giá trị kinh tế cụ
+thể.&nbsp; Đó là con đường một chiều của tư tưởng duy lý.&nbsp; Người học Triết Tây có
+thể nhận thấy một tác giả có thể đúng ở một khía cạnh nào đó, trong khi một tác
+giả khác cũng có thể đúng ở một khịa cạnh khác của cùng sự vật, cho dù hai khía
+cạnh có thể tương phản.&nbsp; Duy lý đưa đến việc loại trừ khía cạnh đối chọi, và do
+đó biện luận cho sự độc tôn, độc quyền, không chấp nhận ý thức hệ nào khác.&nbsp;
+Kết quả, chính sự khác biệt và muốn duy trì sự độc tôn về ý thức hệ đã là một
+nguyên nhân chính khiến loài người giết hại nhau nhiều nhất.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dòng
+tư tưởng duy lý một chiều đó không bao giờ hiểu được và chấp nhận được lý luận
+của Lão Tử khi cho rằng hữu vi là một thái độ hành động, nhưng vô vi cũng là
+một hình thái của hành động.&nbsp; Làm sao mà người học triết Tây Phương có thể chấp
+nhận được hai hiện tượng rõ ràng đối chọi là có thể hợp thành một, như lưỡng
+nghi âm dương hợp nhất ở Thái Cực.&nbsp; Phải hỉểu ngược lại, chính từ Thái Cực đã
+phát sinh ra Lưỡng Nghi Âm/Dương.&nbsp; Thoát ra khỏi cái nhìn duy lý một chiều của
+Tây Phương, Linh Mục Kim Định đã biện giải Triết học Đông Phương bằng cái nhìn
+từ cảm tính và sự suy tư của một con người mang tâm thức hoàn toàn Việt Nam.&nbsp;
+Thái Cực ở đây chính là Con Người, con người làm chủ vận mệnh của mình và Vũ
+Trụ,&nbsp;&nbsp; Đó là một học thuyết về Nhân Chủ độc đáo của Việt Nho, theo tác giả Kim
+Định.&nbsp; Học trò của ông được dẫn dắt từ <i>Cửa Khổng </i>đến <i>Dịch Kinh Linh
+Thể </i>bằng các lý giải thật mới mẻ và đầy ngạc nhiên.&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Khi
+được nhập vào sách giáo khoa để học tập, quyển <i>Dịch Kinh Linh THể</i> đã
+khiến các môn đồ thích thú với lý giải của Linh Mục Kim Định, khi hình dung
+lãnh địa phát sinh và sinh hoạt của dân tộc Việt từ miền thung lũng sông Dương
+Tử, với nếp sống văn minh nông nghiệp định cư, khác biệt với văn minh săn bắn
+du mục của người Hán ở vùng thảo nguyên miền Bắc Trung Hoa, giúp cho tác giả
+xác định rằng Kinh Dịch có nguồn gốc từ Việt tộc.&nbsp; Đối chiếu với văn chương thế
+giới, phải nói Linh Mục Kim Định là một trong những tác giả đầu tiên, nếu không
+nói là thứ nhất, đề xuất ra tư tưởng phân biệt văn hóa/văn minh Việt tộc với
+Hán tộc.&nbsp; Không những thế, văn hóa Việt tộc đã thuần hóa một số đặc điểm của
+văn hóa Hán tộc và định hình cho một triết thuyết mà tác giả Kim Định đã mệnh
+danh là Việt Nho, hay Triết Lý An Vi Nhân Chủ.&nbsp; Theo Linh Mục Kim Định, Việt
+Nho không phân cách Hữu Vi với Vô Vi của Lão Trang, mà lựa chọn thái độ An Vi,
+an nhiên tự tại trong cuộc sống, với con người làm chủ không chỉ cuộc sống của
+chính mình, mà của cả Trời và Đất, tạo nên triết lý Nhân Chủ.&nbsp; Nhân Chủ bao gồm
+cả vũ trụ, khác với Nhân Bản chỉ giới hạn ở phạm trù cá nhân.&nbsp; Thật vui thích
+khi nghe Linh Mục dẫn giảng về triết thuyết Nhân Chủ qua câu chuyện về Lý Công
+Uẩn khi còn trẻ, ở chùa và ăn vụng oản cúng, bị Phật mách bảo với nhà sư trụ
+trì.&nbsp; Kết quả Lý Công Uẩn bị đòn và uất ức.&nbsp; Họ Lý bằng dùng bút viết lệnh sau
+lượng bức tượng đuổi Phật về xứ Thiên Trúc.&nbsp; Phật hoảng sợ phải bàn thảo với
+nhà sư trụ trì sắp xếp lại trật tự giữa người và Trời Đất, và để Lý Công Uẩn
+rút lại lệnh trục xuất Phật ra khỏi chùa.&nbsp; Một bài giảng không thể quên để nói
+về địa vị của con người trong vũ trụ.&nbsp; Ý tưởng Nhân Chủ này cũng đã thấy xuất
+hiện lác đác trong tư tưởng Tuân Tử, Vương Dương Minh, hay ngay cả ở Mạnh Tử,
+nhưng không hề được thực hành như trong cuộc sống của Việt Nho, theo tác giả Kim
+Đinh.&nbsp; Với tư tưởng Nhân Chủ, Việt tộc đã thờ phụng con người, sống cũng như đã
+mất.&nbsp; Lễ nghi truyền tụng từ bao đời của Việt tộc quy định vái lạy người sống 2
+lạy, vái lạy người chết 4 lạy, trong khi chỉ vái lạy Phật 3 lạy.&nbsp; Con người cao hơn Phật, Phật cũng sinh
+ra là một con người&nbsp; chứ không phải là Thần Thánh bên ngoài nhân loại.&nbsp; Tôn thờ
+con người, qua tập tục thờ cúng tổ tiên, là tôn vinh sự sống, và nguồn gốc sinh
+ra sự sống&nbsp; Triết lý Tam Tài bao gồm Thiên Nhân Địa này được thể hiện qua thi
+văn Việt Nam như với bài Vịnh Tam Tài của Trần Cao Vân, hay trong tôn phái Phật
+Giáo Tứ Ân của Hòa Hảo trong đó Ân của Phụ Mẫu là một trong Tứ Ân, trước cả ân
+của Tam Bảo Phật Giáo.&nbsp; Linh Mục Kim Định đích danh là người đã lập ra chủ
+thuyết An Vi Nhân Chủ trong đó thể hiện các sắc thái độc đáo của tư tưởng Việt
+Nho.&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;text-indent:.5in;
+line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Tôi cũng có dịp may học hỏi với một tác
+giả cũng lập thuyết đương thời với Linh Mục Kim Định là ông Hoàng Văn Chí, tác
+giả quyển <i>Từ Thực Dân Đến Cộng Sản</i>, một tác phẩm được dịch ra hàng chục
+thứ tiếng và phổ biến rộng rãi trên toàn thế giới.&nbsp; Với bút danh là Mạc Định,
+ông đã biên soạn và cho ấn hành một tác phẩm nổi danh khác là quyển&nbsp; <i>Trăm
+Hoa Đua Nở Trên Đất Bắc</i>, nói về sự thanh trừng nhóm Nhân Văn Giai Phẩm sau
+năm 1954.&nbsp; Ông Hoàng Văn Chí đã từng giảng dạy nhiều năm tại Học Viện Ngoại
+Giao chuyên huấn luyện và đào tạo các nhân viên chuyên nghiệp thuộc Bộ Ngoại
+Giao Hoa Kỳ tại Washington DC từ thập niên 1960.&nbsp;&nbsp; Xin mời bạn đọc tìm đọc tác phẩm <i>Duy Văn Sử Quan </i>để hiểu
+biết về triết thuyết của một triết gia Việt Nam khác trong thời đại chúng ta.&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;
+</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;text-indent:.5in;
+line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Linh Mục Kim Định có lần nói với tôi
+rằng Linh Mục có đệ trình Luận Án Tiến Sĩ về Triết Học Đông Phương tại Đại Học
+Sorbonne nổi tiếng của Pháp ở Paris.&nbsp; Nhưng luận án này bị treo tại chỗ với lý
+do không có thầy chấm điểm!!!</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;text-indent:.5in;
+line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Linh Mục Kim Định là một người thầy
+thương yêu và luôn luôn muốn đùm bọc, che chở cho các học trò của ông.&nbsp; Theo
+tôi biết, hầu như chưa có một môn đồ nào của Linh Mục bị đánh rớt, và nếu sinh
+vien nào có bất kỳ câu hỏi nào, Linh Mục đều tận tình và rất vui vẻ khi chỉ
+bảo. Trong một chuyến bay từ Sàigòn lên Đà Lạt năm 1974, tôi có dịp may mắn
+ngồi cạnh Linh Mục và trong suốt chuyến bay, thầy trò trao đổi ý kiến về nhiều
+đề tài, và tôi nhận thấy Linh Mục Kim Định có một tinh thần bao dung, khoảng
+khoát, sẵn sàng chấp nhận mọi sự phản biện và sẵn sàng phá chấp trên đường đi
+tìm chân lý.&nbsp; Hơn một năm sau đó, khi gặp lại nhau trong tại Hoa Kỳ, ngoài sự
+mừng rỡ của việc “tha hương ngộ cố tri”, Linh Mục Kim Định vẫn giữ nguyên vẻ
+hồn nhiên khi thuật lại cảnh đẹp lúc được ngắm nhìn mặt trời dâng lên trên trên
+mặt đất phủ đầy tuyết trắng tại Alaska, nơi Linh Mục dừng chân trên đường di
+tản đến nước Mỹ.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;text-indent:.5in;
+line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;text-indent:.5in;
+line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Có thể nói, ngoài Trần Đức Thảo, người
+cùng thời và đã từng tranh luận với Jean Paul Sartre khi cùng học tại Paris,
+Linh Mục Lương Kim Định là một triết gia đúng nghĩa của Việt Nam trong thế kỷ
+thứ 20.&nbsp; May mắn hơn Trần Đức Thảo là người bị cho đi chăn bò ở Thái Nguyên sau
+này nên hầu như không để lại tác phẩm giá trị nào, Linh Mục Kim Định đã gây ra
+sự chú ý trong giới học thuật quốc tế và để lại một di sản đồ sộ gồm các tác
+phẩm triết học cần đến sự thâm cứu nhiều thế hệ học giả Việt Nam kế tiếp.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;text-indent:.5in;
+line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;text-indent:.5in;
+line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Ở ban Triết Đông còn có một vị Linh Mục
+khiến học trò ai cũng phải ghi nhớ, đó là Linh Mục Bửu Dưỡng.&nbsp; Linh Mục Bửu
+Dưỡng bắt các sinh viên học quyển <i>Đại Học</i> trong Tứ Thư của Trung Hoa,
+nhưng tôi cảm thấy Linh Mục hình như không theo giáo án nào cả, chỉ giảng giải
+ít bài trong quyển <i>Đại Học</i>, và nhấn mạnh hầu như trong mọi dịp đến bài
+học đầu tên là Đại Học chi Đạo, tại minh minh đức, tại thân dân, tại chỉ ư chí
+thiện “ và bài “chữ Thành” [sic] trong bát mục: Cách Vật, Trí Tri, Thành Ý
+(được giải thích là lòng thành thực, không giả dối [sic]), Chính Tâm, Tu Thân,
+Tề Gia, Trị Quốc, Bình Thiên Hạ.&nbsp; Khi vào thi vấn đáp, sinh viên được chọn hoặc
+lên trả lời câu hỏi của thầy, hay có thể viết lại những gì mình đã học được
+trong trọn khóa.&nbsp; Ngồi bên dưới, khi thấy Linh Mục Bửu Dưỡng chỉ đặt mỗi một
+câu hỏi cho học trò là cả niên khóa Linh Mục đã dạy hai chữ quan trọng nào.&nbsp; Học trò
+đứa nào cũng trả lời là hai chữ “Chữ Thành” đều bị Linh Mục cho hay là đã
+trả lời sai và cho điểm dưới trung bình tức điểm rớt.&nbsp; Tôi thấy vậy bèn
+ngồi viết lại nguyên văn hai bài về Đại Học Chi Đạo và Thành Ý chứ không 
+lên thi vấn đáp với ông.&nbsp; May mắn tôi đủ điểm để vượt qua kết quả cuối cùng của
+Chứng Chỉ Triết Đông.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;text-indent:.5in;
+line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;text-indent:.5in;
+line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Sau khi kết thúc buổi thi, học trò thắc
+mắc và hỏi lại rằng câu trả lời đúng là gì, Linh Mục Bửu Dưỡng nói là “minh
+đức” trong câu “tại minh minh đức”, các anh chị học đến bậc đại học thì mục
+đích chính là phải làm sáng “đức sáng: minh đức.”&nbsp; Các môn đồ thì thầm với
+nhau, “ừ bọn mình ngu quá, Linh Mục Bửu Dưỡng là người sáng lập và là Viện
+Trưởng Viện Đại Học Minh Đức mà bọn mình không nghĩ ra..’&nbsp; Một sinh viên khác
+có lẽ vì tính khôi hài hơn là giận dỗi, bước ra khỏi phòng thi liền la lớn lên
+rằng “thầy còn thiếu hai chữ, phải là “Minh Đức Hoài Trinh”, vốn là tác giả của
+bài thơ được Phạm Duy phổ nhạc thành bài hát rất nổi tiếng thời bấy giờ tức bài
+Kiếp Nào Có Yêu Nhau.&nbsp; Có sinh viên lên thi bị hỏi Thánh Augustinô nói gì về
+thanh niên, sinh viên này đáp lại rằng mình đi học về Triết Đông sao Linh Mục
+lại hỏi về Triết Tây.&nbsp; Linh Mục Bửu Dưỡng cho hay muốn hỏi xem sinh viên đó
+nghĩ gì về thanh niên.&nbsp; Vì thế, các học trò đều tôn xưng Linh Mục Bửu Dưỡng
+không chỉ là Cha, chủ các con chiên, mà còn là Thượng Đế đối các học trò của
+ông.&nbsp; Nói thế cũng đúng thôi, bởi Linh Mục Bửu Dưỡng được xem là người đồng
+sáng lập với Giáo Sư Nguyễn Đăng Thục ra ban Triết Đông tại Đại Học Văn Khoa
+Sàigòn từ những năm khởi đầu.&nbsp; Giáo Sư Nguyễn Đăng Thục là tác giả của các bộ
+sách mà sinh viên học triết nào cũng phải đọc và tham khảo như <i>Lịch Sử Triết
+Học Đông Phương, Lịch sử Tư Tưởng Việt Nam, Thiền Học Việt Nam, Triết học Thiền
+của Trần Thái Tông ….</i></span></p><br><br>
+<center>
+<p><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+<img src="VanKhoaDuocKHoaNonglamSuc.jpg"><br>Khu vực góc đường Cường Để và đại lộ Thống Nhất,  gồm 3 trường đại học Sài Gòn, Văn Khoa, Dược Khoa và Nông Lâm Súc trước năm 1975<br>photo: gettyimages</span></p></center>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;text-indent:.5in;
+line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;text-indent:.5in;
+line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Nhắc đến bài giảng được ưa thích của
+Linh Mục Bửu Dưỡng về Chữ Thành [sic] (Thành Ý) làm tôi nhớ lại một lời bình
+giải khác của tác giả Hoàng Văn Chí mà tôi đã hân hạnh được thụ giáo.&nbsp; Theo ông
+Hoàng Văn Chí, chữ Thành ở đây là động từ có nghĩa là Hoàn Thành, Kiện Toàn,
+đúc kết … chứ không phải là danh từ chỉ tính thành thực, không gian dối.&nbsp; Theo
+ông Hoàng Văn Chí, tính thành thật đâu có tác động gì đến việc tổng hợp các ý
+tưởng đã thu nhận được, đúng về mặt nghiên cứu và trước tác.&nbsp; Sách vở đã truyền
+tụng cả hàng trăm năm nay ý nghĩa sai lạc về chữ Thành này, và cứ như thế, bao
+thế hệ đã hiểu sai một đề mục quan trọng trong chương trình học tập và thực
+hành Khổng học.&nbsp;&nbsp; Quả thật đến giờ phút này, tôi thấy hầu hết các ấn phẩm liên
+quan đến bài học về Thành Ý vẫn còn tiếp tục lưu truyền sự giải thích sai lạc
+này!!!</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;text-indent:.5in;
+line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;text-indent:.5in;
+line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Linh Mục Bửu Dưỡng tuy thế rất yêu
+thương và che chở cho học trò, chính ông đã can thiệp với Tổng Thống Nguyễn Văn
+Thiệu sửa đổi chương trình bắt các sinh viên đi huấn luyện quân sự tại các quân
+trường trong 1 tháng mỗi dịp hè, là việc lợi bất cập hại, tạo ra nhiều khó khăn
+cho các sinh viên.&nbsp; Sau khi thay đổi quyết định, ở một số trường, sinh viên đã
+chỉ học tập quân sự tại chỗ.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;text-indent:.5in;
+line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;text-indent:.5in;
+line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Ban Triết Đông còn có các thầy như ông
+Giản Chi, dạy về Triết Trung Hoa, bao gồm từ Liệt Tử, Mặc Tử, Tuân Tử, Hàn Phi
+Tử ….các vị Thượng Tọa Phật Giáo như Thích Quảng Liên, Thích Quảng Độ dạy về
+Triết học Phật Giáo, ông Thu Giang Nguyễn Duy Cần dạy về Trang Tử, Lão Tử, Phật
+Học Tinh Hoa … Các sách giáo khoa của giáo sư Nguyễn Duy Cần thật súc tích, thể
+hiện sự uyên bác của ông.&nbsp; Gương mặt của ông thể hiện một hình ảnh của vị “tiên
+phong đạo cốt”, lúc nào cũng thật hòa nhã và tận tình giảng dạy cho học trò.&nbsp;
+Giáo Sư Lê Xuân Khoa giảng dạy về triết học Ấn Độ.&nbsp; Cho đến nay tôi thấy chưa
+có quyển sách nào về triết học Ấn Độ hay hơn quyển <i>Nhập Môn Triết Học Ấn Độ</i>
+của ông mà các học trò được thụ giáo.&nbsp; Cũng có một số tu sĩ khác của cả Thiên
+Chúa Giáo và Phật Giáo phụ trách các môn học khác mà tôi không có dịp theo học.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;text-indent:.5in;
+line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;text-indent:.5in;
+line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Bên ngoài môi trường học thuật của Đại
+Học Văn Khoa, phải kể đến khối tác phẩm triết học và tôn giáo có thể nói là
+nhiều nhất của Thiền Sư Thích Nhất Hạnh, trong mục đích hiện đại hóa và Việt
+hóa Phật Giáo và lịch sử Việt Nam, như qua tác phẩm <i>Văn Lang Dị Sử</i>.&nbsp; Mặt
+khác, trong tư tưởng của Phái Tiếp Hiện của Thiền Sư Thích Nhất Hạnh cũng lấp
+lánh các ảnh hưởng của Triết Học tây Phương như hiện sinh chủ nghĩa thời hậu
+Thế Chiến II.&nbsp; Một điều rõ ràng là phải nhìn nhận Thiền Sư Thích Nhất Hạnh là
+một nhà tư tưởng Việt Nam trong thế kỷ qua được hay biết và có ít nhiều ảnh
+hưởng trong dòng tư tưởng triết học/tôn giáo của Tây Phương.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;text-indent:.5in;
+line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Về Triết Tây,&nbsp; các bài giảng về
+Heidegger của giáo sư Lê Tôn Nghiêm, Luận Lý Toán Học của giáo sư Trần Thái
+Đỉnh, về hiện tượng luận của Husserl của giáo sư Lê Thành Trị … dẫn dắt các học
+trò vào mê hồn trận của tư tưởng Tây Phương, mỗi học thuyết đều có vẻ hợp lý
+riêng biệt của nó, những khi nhìn toàn cảnh, không thể nào tạo ra một bức tranh
+tổng hợp hữu lý, mà ngược lại có chứa đựng&nbsp; nhiều phần các sắc thái đối chọi
+nhau.&nbsp;&nbsp; Tuy thích thú khám phá, các học trò khó tránh khỏi các cơn đau đầu khi
+lĩnh hội.&nbsp; Học Triết Tây rất dễ bị “tẩu hỏa nhập ma,” bọn sinh viên chúng tôi
+khi đó vẫn kháo nhau như thế.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;text-indent:.5in;
+line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Quan trọng nhất là các giáo sư Nguyễn
+Văn Trung, Trần Văn Toàn …. Giáo Sư Nguyễn Văn Trung đã từng là Khoa Trưởng Đại
+Học Văn Khoa, Trưởng Ban Triết Tây là người đã có công giới thiệu, quảng bá các
+trào lưu tư tưởng và các tác giả triết học và văn chương Tây Phương cho các thế
+hệ môn đồ và người đọc Việt Nam trong các thập niên 1960, 1970.&nbsp; Là một trí
+thức Công Giáo, ông đã tham gia vào các phong trào chống chiến tranh, kêu gọi
+hòa giải dân tộc ….trong khi giảng dạy về triết học Karl Marx tại các trường
+đại học.&nbsp; Cho đến nay, thật khó tìm được tác phẩm nào về tư tưởng Karl Marx
+khúc chiết hơn các giảng khóa của các giáo sư Nguyễn Văn Trung, Trần Văn Toàn…
+Việc cho phép giảng dạy về tư tưởng cộng sản thời đó cho thấy khía cạnh khai
+phóng, tự do tư tưởng của chế độ Việt Nam Cộng Hòa ngay dù trong thời kỳ giao
+chiến với ý thức hệ này.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Giáo
+Sư Nguyễn Văn Trung nổi tiếng hơn ngoài môi trường đại học với các tác phẩm
+nghiên cứu về văn học, triết học như bộ <i>Lược khảo văn học</i> (ba tập,
+1963-1968), <i>Vụ án Truyện Kiều</i> (1972), <i>Chữ, văn quốc ngữ thời kỳ đầu
+Pháp thuộc</i> (1974), <i>Trường hợp Phạm Quỳnh </i>(1974), <i>Chủ đích Nam
+Phong</i> (1975), <i>Câu đố Việt Nam</i> (1986), <i>Những áng văn quốc ngữ đầu
+tiên: Thầy Lazaro Phiền của Nguyễn Trọng Quản</i> (1987), <i>Biện chứng giải
+thoát trong Phật giáo</i> (1958), <i>Người Công giáo trước thời đại</i> (đồng
+tác giả, 1961), <i>Lương tâm Công giáo và công bằng xã hội</i> (đồng tác giả,
+1963), <i>Nhận định</i> (6 tập viết và in trước 1975, 4 tập sau 1975), <i>Chủ
+nghĩa thực dân Pháp ở Việt Nam: thực chất và huyền thoại</i> (1963), <i>Góp
+phần phê phán giáo dục và đại học</i> (1967) …</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tôi
+nhớ Nhà Thơ Nguyên Sa Trần Bích Lan cũng có thời giảng dạy tại ban Triết, Đại
+Học Văn Khoa, nhưng tiếc không được thụ giáo ông, cũng như một số giảng viên
+khác.&nbsp; Các môn đồ cho biết Thi Sĩ Nguyên Sa còn có tài dạy học, vì học trò rất
+dễ thông hiểu, và rất dễ ghi nhớ những gì ông đã thuyết giảng. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nhà biên khảo Đặng
+Phùng Quân là thế hệ thụ giáo và tiếp nối việc giới thiệu và quảng bá các tư
+tưởng triết học Tây Phương sau những bậc thầy như Giáo Sư Nguyễn Văn Trung, Lê
+Tôn Nghiêm, Trần Thái Đỉnh …&nbsp; Đặng Phùng Quân sáng tác và nghiên cứu Triết
+trước và sau năm 1975.&nbsp; Sau khi định cư tại Hoa Kỳ đầu thập niên 1980, ông tiếp
+tục công việc biên khảo về triết học tại hải ngoại, cộng tác mật thiết với Gió O cho đến
+những ngày cuối đời. &nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span><b><span lang="EN" style="font-size:16.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:#002060">Ngô Bắc</span></b><span lang="EN" style="font-size:14.0pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">, Tháng 7, 2023</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-align:justify;line-height:150%"><span lang="EN" style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+</div>
+
+
+
+
+</body>

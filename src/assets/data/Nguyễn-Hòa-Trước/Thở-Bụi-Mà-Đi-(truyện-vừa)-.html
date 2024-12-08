@@ -1,0 +1,3138 @@
+<head> <script type="text/javascript"> document.domain = 'gio-o.com'; (()=>{"use strict";const e=window.Cypress=parent.Cypress;if(!e)throw new Error("Something went terribly wrong and we cannot proceed. We expected to find the global Cypress in the parent window but it is missing. This should never happen and likely is a bug. Please open an issue.");const t=(()=>{let e,t,n,r;const i=()=>{e=!1,t=!1,n=[],r={}},o=(e,t=[])=>"function"==typeof e?e.apply(window,t):window.eval(e);return i(),{wrap:()=>{const i={setTimeout:window.setTimeout,setInterval:window.setInterval,requestAnimationFrame:window.requestAnimationFrame,clearTimeout:window.clearTimeout,clearInterval:window.clearInterval},a=(e,t)=>i[e].apply(window,t),s=e=>n=>(t&&(r[n]=!0),a(e,[n])),w=t=>(...r)=>{let i,[s,w,...p]=r;return i=a(t,[(...r)=>{if(!e)return o(s,r);n.push({timerId:i,fnOrCode:s,params:r,type:t})},w,...p]),i};window.setTimeout=w("setTimeout"),window.setInterval=w("setInterval"),window.requestAnimationFrame=w("requestAnimationFrame"),window.clearTimeout=s("clearTimeout"),window.clearInterval=s("clearInterval")},reset:i,pause:a=>{e=Boolean(a),e||(t=!0,n.forEach((e=>{const{timerId:t,type:n,fnOrCode:i,params:a}=e;"setInterval"===n&&r[t]||o(i,a)})),i())}}})();e.removeAllListeners("app:timers:reset"),e.removeAllListeners("app:timers:pause"),e.on("app:timers:reset",t.reset),e.on("app:timers:pause",t.pause),t.wrap(),e.action("app:window:before:load",window)})(); </script>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="Generator" content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:"Tms Rmn";
+	panose-1:2 2 6 3 4 5 5 2 3 4;}
+@font-face
+	{font-family:Helv;
+	panose-1:2 11 6 4 2 2 2 3 2 4;}
+@font-face
+	{font-family:"New York";
+	panose-1:2 4 5 3 6 5 6 2 3 4;}
+@font-face
+	{font-family:System;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:Batang;
+	panose-1:2 3 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:PMingLiU;
+	panose-1:2 1 6 1 0 1 1 1 1 1;}
+@font-face
+	{font-family:"MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+@font-face
+	{font-family:Dotum;
+	panose-1:2 11 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:SimHei;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:MingLiU;
+	panose-1:2 1 6 9 0 1 1 1 1 1;}
+@font-face
+	{font-family:Mincho;
+	panose-1:2 2 6 9 4 3 5 8 3 5;}
+@font-face
+	{font-family:Gulim;
+	panose-1:2 11 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:"Angsana New";
+	panose-1:2 2 6 3 5 4 5 2 3 4;}
+@font-face
+	{font-family:"Cordia New";
+	panose-1:2 11 3 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Mangal;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Latha;
+	panose-1:2 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Sylfaen;
+	panose-1:1 10 5 2 5 3 6 3 3 3;}
+@font-face
+	{font-family:Vrinda;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Raavi;
+	panose-1:2 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Shruti;
+	panose-1:2 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Sendnya;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Gautami;
+	panose-1:2 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Tunga;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Estrangelo Edessa";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Marlett;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:13.0pt;
+	font-family:"Times New Roman","serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:13.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:13.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoEnvelopeAddress, li.MsoEnvelopeAddress, div.MsoEnvelopeAddress
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:2.0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoEnvelopeReturn, li.MsoEnvelopeReturn, div.MsoEnvelopeReturn
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:13.0pt;
+	font-family:"Times New Roman","serif";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+p.Style1, li.Style1, div.Style1
+	{mso-style-name:Style1;
+	mso-style-link:"Style1 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:13.0pt;
+	font-family:"Times New Roman","serif";}
+span.Style1Char
+	{mso-style-name:"Style1 Char";
+	mso-style-link:Style1;}
+span.msoIns
+	{mso-style-name:"";
+	text-decoration:underline;
+	color:teal;}
+span.msoDel
+	{mso-style-name:"";
+	text-decoration:line-through;
+	color:red;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang="EN-US">
+
+<div class="WordSection1">
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:center"><span style="font-size:18.0pt">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:center"><span style="font-size:10.0pt"><img src="http://i191.photobucket.com/albums/z234/gio-o/artichoke__NAT/atichoke3.jpg"><br>NAT @ gio-o.com</span></p>
+
+
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:0in;margin-left:1.5in;margin-bottom:.0001pt;text-align:center"><span style="font-size:18.0pt">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span style="font-size:
+24.0pt;line-height:150%;color:#3480A2">Nguyễn-hòa-Trước</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span style="font-size:
+28.0pt;line-height:150%;color:#3480A2">thở bụi mà đi</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></i></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">truyện vừa</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Buổi
+chiều rực rỡ lắm, dưới kia. Ở đó
+tập trung trăm ánh sáng và muôn tiếng động. Nhiệt,
+náo được thu gom về từ các nơi, đang ti
+toe với tất cả hào hứng. Thành phố thoải
+mái phô trương hết những gì sẵn có. Chiến tranh
+dễ dàng tước đi tất cả, bất kỳ
+lúc. Nó là đối cực với vui chơi. Nó núp đâu
+đó, càng kích thích vui chơi mở rộng biên độ.
+Chiến tranh: ở đây, không có chỗ cho nó. Thuần là
+tên gọi. Dầu rằng (nhưng), ở chỗ khác, nó không
+chỉ là tên gọi, mà còn khoác hình vóc hẳn hoi. Nơi những
+vùng đất thấp cao, ngoài, và chung quanh thủ đô
+kia, của trăm thành thị của đất nước,
+nó, chiến tranh - bị mỉa mai, ghét bỏ ví von như một
+con bọ - tùy địa thế và tình hình, đang lết
+nhanh hay chậm, hoặc giấu mặt, chờ thời. Ở
+đây, tuy ngoại vi đã được trải nhiều
+đợt thuốc ‘ngừa’ được chế biến
+và nhập cảng từ một xứ sở giàu có văn
+minh nhất, âm ừ ầm của đạn pháo vẫn
+len về, và không phải là ít lần, được minh họa
+bằng màu rực hồng man dại của một mảng
+trời. Ấy hẳn là một góc mộng không hiền.
+Nhưng tiếp mộng, vẫn là thực. Cuộc thế
+sinh động, cuốn, hút. Âm, và ảnh của chiến
+tranh, tuy khiến một số người thành phố
+nhăn trán chút nào, nhưng cái ám thị tập thể: “đây
+là thủ đô” như một chiếc chùy thép, dễ đập
+vụn mối ưu tư gỗ sậy kia. Lo sợ đấy,
+rồi người ta hỉ hả quên lấp đấy. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thằng
+bạn đưa Phiến đến, vừa gõ cửa là
+đã chuồn êm. Nó dặn, chị mở thì cứ vào. Hôm
+nay, cuối tuần, chị nghỉ. Chị đã
+được báo trước, đang chờ.&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="VI" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+không mang theo lửa từ dưới lên đây. Bởi, có,
+cũng sẽ chẳng tác dụng gì. Cái đang hiện ra
+còn rạng rỡ gấp bao lần. Thực-thể-giống-cái
+trước mắt anh đã tóm tất cả vào nó những
+gì gọi là hào quang, và sức nóng. Gọi là ‘chị’ e không ổn.
+Phiến ngỡ thằng bạn chơi trát mình. Nó bảo
+đến thăm chị Sen, chị thứ hai, sau chị Mận
+là bà cả ở Ban Mê Thuột, người hướng
+đạo tuyệt vời của Phiến suốt 2 tháng
+hè ‘lên-rừng-học-thi’ năm ngoái trên đồi đất
+đỏ. Chị Mận trẻ lắm so với tuổi,
+với Phiến đã là ngỡ ngàng. Người em của
+chị đang mở rộng cửa nhìn Phiến kia còn trẻ
+gấp bao lần: diệu kỳ! C..h..ị..., vàng rực,
+châm ngứa như vỏ quả dứa chỉ vừa
+được gọt phớt ngoài! Mái tóc ngắn, cắt
+sát trán, kiểu ‘nửa-con-trai’ của cô đào Jean Seberg
+trong phim ‘Buồn ơi, chào mi’ đang rất thịnh hành, càng
+biến chị như một nữ sinh.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="FR" style="font-size:14.0pt;line-height:150%">“Cậu là bạn của
+Hội? Hân hạnh… (ngó quanh) Thế Hội đâu?”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị,
+(đúng hơn là) nét mặt chị, nụ cười của
+chị, và... màu da của chị (cái trăm phần nằm
+ngoài tưởng tượng của Phiến: nó không trắng,
+không đen, mà nâu bóng, màu của gái biển, có mùi, thơm nặng;
+và vị: đắng ngọt!) đã chẹn họng Phiến.
+Phiến lấp lúng:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Dạ.
+Hội có hẹn. Đi rồi...”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hai
+gò má xây thành; nụ cười dưới chân mây (hàm
+răng chuột, nhỏ, trắng, đẹp, dữ, hệt
+hàm răng của thằng bạn!), chị kéo tay Phiến:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Hay
+thiệt đấy. Cậu ta thì cứ hẹn suốt.
+Long nhong suốt. Chẳng ngơi chân được lấy
+nửa giờ. Thèm vào chấp.”… “Còn cậu. (tay kéo tay) Vô
+đây đã. Ngồi chờ chị chút xíu.” Giọng nửa
+miền ngoài, nửa trong, nghe rất hay.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+quay ngón chỉ chiếc ghế xếp sát vách. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+không ngồi được, bởi khung ảnh 3 người
+treo trên tường. Chị (tóc dài, bung xuống hai vai), một
+người đàn ông, nom như lai Âu, râu ria tùm um ánh mắt
+nghiêng sang, và một chú bé khoảng hơn tuổi hai tay nắm
+tay hai người, cười toét. Chị đang bới
+gì trong cỏ. Bờ cỏ ngay tầm vai Phiến. Phiến
+nghĩ mình đang là cỏ. Tự dưng như bị lộn
+lạo hẳn đi.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phòng
+vuông vức. Hẹp ức mắt. Phải khéo lắm mới
+đưa tia nhìn vào được đúng vị trí các vật
+dụng thiết thân: giường, tủ, bàn… Không gian dành
+cho lối đi hẻo quá. Có lẽ, muốn di chuyển,
+người ta phải leo lên các vật khác chung quanh. Không còn
+gì đáng được để ý, ngoài cái máy truyền thanh
+tí teo như đồ chơi trẻ em giữa nhà, mặt
+kiếng bỏng bụi, một chồng sách báo khá cao, ngả
+ngớn như đang múa, và một sọc dài nắng, khảnh,
+dẹt, như chủ nhân, đang soài nằm dưới
+sàn gạch. Góc cuối phòng là một khung cửa nhỏ, có
+tay nắm, đóng. Gần bên, khoảng quây vuông che cách bằng
+tấm màn vải. Cây quạt máy khều khào như viêm họng,
+nghe mà phát chán. Nhưng, được chỗ, lực gió
+phun ra từ miệng của nó mạnh lắm. Dễ chịu.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hơi
+mát giúp Phiến tỉnh táo. Anh bắt đầu hài lòng với
+việc tìm lên đây. Chiếc quạt phong trần, như
+đồ cổ, quý giá, khiến anh chỉ muốn kê mặt
+gần song sắt của nó, thật lâu.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chiếc
+màn được đun gọn vào tường. Chị ra.
+Với chiếc ly và dĩa. Màu cam vắt óng nhuộm cả
+cổ tay đeo đồng hồ dây da. Các khuyên vàng mỏng
+như chỉ sợi lúc lắc với ngần ấy quả
+chuông tí hon cũng đang lanh canh theo sự va nhau của
+đá cục trong ly của bàn tay còn lại. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Đặt
+ly dĩa xuống. Tay đeo khuyên vói ngoặt sau vai. Có cái gì
+kẹt trong. Chị đã thay áo. Màu đọt chuối. Bộ
+ngực vừa, tuy ở thế ẩy. Người thẳng.
+Hơi gầy. Hai mông thịt hiền lành như bộ ngực.
+Cả cơ thể, mà mỗi phần góp, như một tờ
+nhạc, nhiều nốt trắng, trầm. Nhưng (sao Phiến
+nghe nóng?) ...</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bàn
+tay đó chồm lên vai, hợp với bàn tay kia, lục lạo.
+Chị vẫy, cong, xoay. Cuối cùng thì thở phà. Rút sâu từ
+trong hai sợi vải màu. Cuối, hai khoen sắt mạ kền.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Giọng
+tréo; song cổ thì vẫn ngay đuỗng:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Cậu
+giùm chị, với!”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+không nghĩ, và cũng không nghe chị gọi. Bức ảnh
+chận ngay tầm nhìn. Anh phân vân vì người đàn ông trong
+ảnh (cứ tưởng đã từng gặp đâu
+đó). </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Kìa,
+cái cậu gì kia!” Các ngón gõ cọc cọc vào thành quạt. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tiếng
+gọi lôi anh về thực tại. Hình ảnh người
+đàn ông tức thời bị bào láng trước cái thể
+hình cũng láng lép trước mắt. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hội
+không cho biết chi hơn về chị là, (những cái khác
+thì khoan hỏi đến, nó ra điều kiện) chị
+là người có thể giúp Phiến nhanh chóng nhất thuê
+được căn phòng (chỉ cần là mái, gác) ở
+địa điểm, và với giá thích hợp. Phiến
+đang dưới áp lực nặng nề của cô bạn
+nóng náu tìm một mái trú cho những cuộc ‘giải khuây sau
+việc học.’ Cô bảo, mỗi lần đến
+thăm Phiến, với sự xuất hiện ‘như ma
+trơi’ bất cứ lúc nào của thằng bạn thân của
+anh (cô vẫn hay chọc quê, cảnh hai người quấn
+quít trông ‘homo’ quá chừng!) là mỗi lần cô ‘siêu thăng’
+thành ‘nữ thần thánh thiện,’ rất khó chịu, rất
+không hợp với châm ngôn ‘chơi hết mình’ và tôn chỉ
+thờ chủ nghĩa cá nhân của cô.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “…
+Cậu cài cho chị cái móc này, đi! Mau, trễ hẹn mất!”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Con
+hẻm xương sống từ bờ vai chị tuột
+đến giữa lưng thì chạy ngầm dưới vải
+áo. Phiến nhìn thấy tận điểm của ẩn lộ
+bởi chiếc áo chị mặc thuộc loại thể
+thao, rất ngắn. Hai dây lụa, với Phiến, kể
+là thừa, bởi chúng không khép kín thêm được chút
+gì. Kiểu cọ vậy thôi. Phiến gài khoen vào lỗ, tay
+run, cố tránh đụng vào lườn lưng màu mật
+mía của chị (tươm tướp như da bánh cam!).
+Xong, Phiến mới nhìn thấy chiếc bớt nhỏ bằng
+bi gạo, lông mịn như lông trái đào nằm ngay giao
+điểm của hai cúc áo áp cuối. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Cảm
+ơn. Bây giờ mình thăng!”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+ngần ngừ: </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Hội
+không nói gì với chị? Biết chị bận thế này,
+... đã không tới.” </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Cậu
+này ngộ ghê!” chị cười thật hồn nhiên. “...
+Nhưng, vậy nè...” &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+lôi tay Phiến ùa ra ngoài. Tay kia kéo nắm đấm bằng
+đồng. Cửa phòng dập mạnh. Phiến nghe tiếng
+vỡ bên trong.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hành
+lang ngắn. Cầu thang gỗ lên xuống sát bờ tường,
+bên này, như dựng xiên hàng mi. Thang máy kềnh càng, ngốn
+gần hết chiều rộng còn lại của tầng.
+Hai người nhỏ bé, bơi trong lòng hổng vô trọng
+lực. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thang
+ngừng tầng kế dưới lấy thêm khách. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ngộp!
+Mùi keo xịt tóc của bà đứng trước Phiến
+nặng quá. Nặng như hai ụ ngực vĩ tượng
+và trâng trấc như cái màu thịt bì bì của bà. Trộn
+với hơi thở của non nửa chục người
+khác, khứu giác Phiến bị bịt nghẹt. Phiến
+phải quay trốn. Chiếc gáy nâu mịn hoe lông măng
+vàng vàng như râu bắp (!) của chị kê sát mũi Phiến.
+Tỉnh cả người. Chị thơm quá. Rất dịu.
+Rất quý phái. Mùi nước hoa (sao lúc này anh mới phát
+giác là chị có vẩy nước thơm?), nếu đúng
+theo trí nhớ một lần được ngửi thử
+lúc đi mua sắm với bạn, và cứ theo bảng phân
+loại nước hoa cao cấp dành cho quý bà quý cô sành
+điệu đương thời, và qua các quảng cáo rầm
+rộ trên báo chí, phim ảnh, thì hẳn là Chanel No. 5 (người
+ta tôn vinh nó là &nbsp;‘hương hậu’).</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mỗi
+vốc trắng là một đám cháy. Cả một hỗn
+hợp khối nhập nhùng quẫy rối nhau của nắng,
+bụi, và chuyển, lộng. Thành phố nhão nhoét dưới
+mặt trời trưa 3 giờ. Nhà cửa, đường
+phố teo lại, rồi chướng lên, chỗng chễnh,
+bập bênh. Cây im phắc. Trên chiếc nền nhớt nhợt
+đó, ảo giác đã biến lửa thành nước. Tất
+cả trôi xa, rồi tắp gần. Khu phố năng động
+nhất nhì của vùng Chợ Cũ như đang bị lụt.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tòa
+nhà nhiều tầng mà chị và Phiến đang bước
+ra là khách sạn bình dân: Chín Con Chim Phượng. Vươn
+đúng 9 tầng như cái tên, nhưng phong thế kiến
+trúc của nó lại không rộn ràng uốn éo. Trái lại:
+nó cứng khấc; và màu xi măng tổng thể nom nặng
+nề, nóng tê, buồn bặt. Một đàn anh văn nghệ
+của Phiến có tình nhân thuê phòng dãy sau. Một buổi chiều
+tắt nắng, ông rủ Phiến ghé qua đón cô đi làm.
+Suốt quãng đường 4 cây số tới quán rượu,
+nơi cô nhận chân quản lý, thêm khá nhiều chi tiết
+(ngoài những gì anh được biết qua ông) của
+cô, Phiến tạm đủ hình ảnh <span style="color:black">về
+sinh hoạt của giới ‘nửa đêm về sáng’
+như cô. Chiếm tỉ lệ nhỏ trong số khách thuê
+phòng, nhưng cuộc sống của họ lại rất sôi
+động - điều này làm cho cao ốc thỉnh thoảng
+được nhắc đến trong một vài kỳ
+phóng sự, một số bài là do ông viết. Cách lựa chọn
+vị trí của họ cũng rất đặc biệt:
+hoặc trên các tầng cao, hoặc tầng dưới cùng.
+Rồi thêm lần cô xăng xái tình nguyện hướng dẫn
+anh thăm thú quanh khách sạn, tầng trệt, tầng ‘trăm
+hoa đua nở’, “để có thêm kinh nghiệm mà</span> viết”:
+trên cái sân gạch bao la, cắt ngọn bởi các ụ kẽm
+dọc ngang, chưa đủ cảm thấy rối rắm
+với màn bay lộn của quần lót, áo vú, băng bông…
+trong gió và nắng, Phiến đã được ‘rửa mắt’
+tận tình với những thước phim sống quay chậm:
+các cô, bà vũ nữ, chiêu đãi viên, ca sĩ,… kẻ ngồi
+trên ghế thấp, người, nơi bậu cửa, tất
+cả đều ‘nhẹ như lông hồng’, tay thì chăm
+chút tỉa tót nhan sắc, miệng thì phơi phới bình luận
+về trò đời bằng thứ ngữ vựng tột
+cùng tả chân. Cánh cửa lạ đã mở. Phiến về,
+đầu óc luôn bị ám cắn bởi các màn trình diễn
+‘siêu-thời-trang’, rất vô tội (lũ núi đồi
+cung điện không ngờ có thể lộng lẫy, hay buồn
+phiền, đến thế, nơi một con người!),
+nhìn rõ sau chúng chiếc bờm của xác thân thả lỏng
+đang phóng khoáng lượn bay, lẫn lằn sét đe nẹt
+đánh xuống hai cọng cương hướng đạo.
+Bức tranh lồ lộ bản năng, phập phồng, khêu
+gợi, và ghê ghê thế nào ấy của các sinh vật vừa
+được lôi ra khỏi đáy thai nghén.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nhưng,
+sao chị của Hội lại ở đây? Chị có thật
+là chị của nó? Và chị Mận? Đã bao giờ chị
+ấy nói gì về cô em của mình? Bí mật quá! Thời
+gian quen nhau giữa Hội và anh chưa đủ lâu để
+nó kể hết với mình? Bọn anh chỉ mới gặp
+trong một buổi nghị luận sinh viên. Là hai người
+đóng góp ý kiến sôi nổi nhất, với hai quan điểm
+đối nghịch, hai lập luận tương phản.
+Trong diễn đàn, nếu chúng tẻ họ hai đường
+cách biệt, thì, trong cuộc sống, lại kéo nhích họ
+gần kề, thân, và yêu nhau hơn. Không gì còn là riêng tư,
+giữa họ. Phiến không chắc lắm, có một lần,
+Hội đề cập đến một bà chị nào
+khác, ngoài chị Mận ở miền Trung. Nhoáng sau, nó im bặt,
+có vẻ ân hận vì đã lỡ lời. Thấy bạn không
+mặn mà gì với chi tiết về gia phả này, Phiến
+cũng không hỏi thêm. Chỉ đoán là chị Sen của
+nó đang sống nơi nào đó rất xa, xa hơn bà chị
+cả, và vô cùng ít liên lạc với cậu em út.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Con
+thuyền sinh hoạt của gia đình bạn, dầu quá
+khứ có lúc trầm trọng nhất, Phiến không nghĩ,
+lại có thể bị sóng tắp vào bến này. Chỗ này
+không dành cho họ, nhất là cho những người
+như chị. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+nặng trí quá! Đan móc trong anh là một chuỗi nghi vấn
+khi nhìn về hai thái cực: người, và nơi mà người
+đang cư ngụ kia.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="VI" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+ngoắc ngón. Chiếc ví tuột theo cánh tay, vướng
+nơi nách. Bóng taxi màu nước biển chậm vào.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Chú
+cho về Phan Kế Bính, mé xa lộ.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Xin
+cô 30. Đồng hồ xe tôi hư rồi.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Chú
+chạy mau cho. Tôi có việc gấp.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Giọng
+mũi Lệ Thanh từ chiếc loa chui tót vào tai, “<i>… em biết
+rằng, khi núi sông chưa thái bình trên khắp nơi; anh
+đi… vì tự do, liều thân tranh đấu…</i>” Hình
+như chị nói gì. Phiến ngó sang. Chị tựa đầu
+vào nệm xe, môi mím, có vẻ cau có, mắt nhắm. Hai gò má
+cao, như tuyết đông, đánh trượt xuống vai
+cả cái mùa xuân của làn da căng cóng như quết sáp.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Này,
+hai người là bạn thế nào? Sao tôi chưa bao giờ
+nghe Hội nói đến cậu?”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Chị
+hỏi mà không cần nghe trả lời. Mệt mỏi. Mắt
+vẫn nhắm.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+tự cười, câu sau lẽ ra nên dành cho mình.</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">*</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%;
+color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến viết mấy chữ dán trước
+cửa hờ khi cô bạn đến tìm. Đạp xe
+đi thăm chị.</span><span lang="FR" style="font-size:14.0pt;
+line-height:150%">&nbsp; &nbsp;Nhân tiện để cảm ơn. Nhờ
+chị, Phiến đã thuê được căn gác vừa
+rẻ, vừa gần trường. Hôm đi với chị,
+qua cửa xe, anh thấy cái thư viện bề thế chỉ
+cách lối sau khách sạn mấy dãy nhà. Phiến chưa vào
+đó lần nào vì không tiện đường xe buýt. Lần
+này thì sẽ, cho biết. Anh cũng đang cần tra cứu.
+Vùng này như một biệt khu, cách xa hẳn phố thị,
+dành cho hạng khá giả. Có nhà thấy cả Quân Cảnh Mỹ
+đứng gác. Lắm cây cối, thừa màu xanh và khí ẩm,
+là những thứ thiết yếu để khỏi bị
+bốc hơi.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+tìm chị. Không báo trước. Hội hộp hơn cả
+khi gặp hẹn với bạn gái, lần đầu. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+gõ. Hai hồi hiệu. Bỗng dưng khấn thầm.... chị
+đi vắng! Phiến thật chưa dự liệu đủ
+cho chính mình.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cánh
+cửa tự động mở hé: chị đang ngồi
+bó gối giữa phòng.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gõ
+tiếp.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chiếc
+áo cánh. Màu bồ quân. Phiến nhớ: hôm đó, mở cửa
+cho Phiến, chị mặc áo này. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gật
+đầu: (gò má chị cao rõ. Chúng làm cho chiếc mũi của
+chị càng nhỏ gọn.)</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Chào.
+Nghỉ học à? Vô đi!”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Giấy
+tờ loạn xạ. Trên bàn. Dưới đất. Khắp
+giường. Có lẽ cả họ hàng nhà sách bị xổ
+gáy. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Không
+chỗ nào muốn tiếp đón Phiến.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Cậu
+cứ đạp trên đó mà vào. Giấy vất đi ấy
+mà.” </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+thì lại rất không nỡ. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “
+Đã nói…” Chị xua chân mở cho Phiến chỗ trống.
+Mặt hơi cau có giống hôm ngồi trên taxi. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Khoảng
+không vừa vặn đưa Phiến đến mặt ghế.
+</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+vơ hết các thứ vương vãi dưới sàn, hất
+vào dưới gầm giường: </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Cứ
+để đó. Rồi chị sẽ gom đốt.” </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mặt
+đỏ bừng. Thời tiết hôm nay đỡ oi nồng,
+nhờ trận mưa lớn vừa tạnh. Quạt không
+mở, nhưng nhiệt độ trong phòng khá dễ chịu.
+Như thế, không phải vì bức. Là vì tức. Còn giọng
+nói. Và nét mặt: sắt, khô. Phiến không quen nhìn thấy cảnh
+người khác vì sự viếng thăm không đúng lúc của
+mình mà tung hê tất cả. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Tôi
+chẳng bận lòng vì các thứ khổ kia đâu. Cậu
+đừng ngại.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+hất cổ ra sau, bước vào trong.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Đặt
+ly và chai nước màu vàng xuống bàn:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size:14.0pt;line-height:150%">“Tự do như cậu là
+sướng. </span><span lang="FR" style="font-size:14.0pt;line-height:
+150%">Hãy tận hưởng nó. Đừng để bị
+người khác cướp mất rồi mới hối
+tiếc thì đã muộn.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+không hiểu. Rót nước ra ly. Nhâm nhấp cho đỡ
+sốt ruột. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Tôi
+muốn nói Hội kia. Cậu có vẻ mết cô nàng của
+cậu tợn. Ở chơi với tôi mà cứ thắc thỏm
+đòi về. Cô bé coi khá lắm, ngoan, song cái tên ngang ngáng thế
+nào, chưa thấm được vào óc. Tôi cứ tự gọi
+cho dễ nhớ là ‘cô bé tóc hoe’.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+nuốt ngụm đầu tiên, cười:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Bọn
+nó quen nhau từ trung học, đủ lâu để hiểu
+và gắn bó với nhau.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+yên lặng, suy nghĩ.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hội
+hạnh phúc hơn Phiến. Cô bạn của nó quả tình có
+màu tóc lạ (như đầm ấy, tự nhiên, không do nhuộm),
+nhưng không khó tính, không đòi hỏi như cô bạn của
+Phiến. Chính Phiến có lúc ước, giá cô nàng của anh
+dễ chịu hơn chút thì có thể anh sẽ… dành thêm thời
+gian để nhớ đến cô. Sao chị lại nói
+ngược hẳn? </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “E..m
+đến để cảm ơn chị...”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+cười (nụ mở màn, từ nãy đến giờ;
+cái mà Phiến sẽ nghe chắc êm tai đây): </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Cậu
+chưa nói, nhưng tôi đã biết là gì rồi. Cậu cẩn
+thận quá. Không như Hội. Chưa bao giờ tôi nhận
+được từ cậu ta hai chữ ‘cám ơn’... Mà
+sao hai người vẫn hợp nhau được há?”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tờ
+giấy trên giường rớt xuống. Chị ngồi cạnh,
+không nhìn thấy. Phiến bỏ ghế, đến nhặt.
+Ngẩng lên, mắt Phiến lại chạm vào tấm ảnh.
+Phiến bị hút vào bộ mặt rất&nbsp; nghệ sĩ của
+người đàn ông. Ông nghiêm, mà như cười. Hai dấu
+phẩy như hai quệt râu mỏng chạy từ hai bên
+khóe mũi xuống hai mép môi tạo cho ông vẻ già dặn,
+tự tin. Mẫu đàn ông tràn trề nam tính. Đó là cái mà
+Phiến thiếu, Phiến thèm. Phiến cảm tình với
+ông ta.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+thở dài sau vai Phiến: </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Chồng
+chị đấy. Còn đây (ngón nhọn, tím tươi, cọ
+dưới góc hình), Sinh, cháu duy nhất.” </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+ngồi tựa lưng vào thành giường:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Cháu
+sắp lên 6. Chị gửi nội trú nơi mấy soeurs, gần
+bờ sông. Chiều cuối tuần, đón về chơi.
+Chiều Chúa Nhật lại đưa vào. Còn ông ta...&nbsp; (ngừng),
+lâu rồi, chị chưa được tin. Mà (thản
+nhiên)… cần chi nữa, hả em? Bọn chị hết còn
+sống chung. Cuối cùng rồi cũng phải vậy. (chỉ
+mớ giấy trong gầm) Lẽ ra chúng phải bị thủ
+tiêu từ lâu chứ không sống sót được đến
+hôm nay. Tại chị lười, làm biếng quá! Thời
+gian như thau nước hứng giữa lúc mưa lớn,
+như buổi trưa nãy đây, múc đổ đi không hết,
+thế mà… (cáu) Chúng như món đồ mình mua; lúc mua, tưởng
+là cái mình thiếu, mình cần. Sau mới biết mình đã
+bị gạt vì cái bề ngoài quyến rũ.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+cầm lên quyển sách hình, lật vài trang, rồi kẹp
+giữa hai đầu gối:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “
+Hào hoa! Khối cô chết vì thứ đòn bẩy đó. Khốn,
+chị là một trong họ. Tính chị thích cái gì thẳng,
+thật. Thế mà vẫn tủm vào chảo đường
+phèn nấu chảy kia chẳng hơn gì cô ruồi u mê. Đáng
+kiếp! Người ta bảo là do số, do phần. Cậu
+tin không?”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+đứng lên:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Tối
+nay, chị ‘thất nghiệp’. Mời cậu đi ăn
+phở gần Hồ Con Rùa. Tiệm của người
+quen. Mới khai trương. Khỏi trả tiền. Xong,
+vòng lên đón cháu. Sẵn dịp cho cậu cháu biết nhau.
+Hy vọng cậu khác với Hội: cậu không bị cô
+nào trói chân chứ?”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+đứng lên theo:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Em
+không khéo như Hội nên chẳng cô nào chịu cột chân
+cho. Chị nhắc phở làm em thèm. Dễ cả tuần
+nay chưa được nếm qua. ‘Cơm tay cầm’ làm
+chuẩn.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+cười nhìn Phiến. Da bánh mật khiến hai hàm
+răng chị trắng ớn. Và đôi môi nữa. Bị
+bao vây giữa khối màu hổ phách mà sao chúng lại có thể
+bình tĩnh đỏ chót như son thật thế kia? (cái
+gì ở người đàn bà này cũng khác người!)</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Chị
+có hơn gì đâu? Hôm nào đến chơi (bảo Hội
+nữa), chị nấu cho ăn. Không dẻo tay, nhưng chắc
+là không tệ hơn cái món ‘cơm khẩu cầm’ kia của
+cậu. Nhớ, đừng dính cuối tuần là
+được.” </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...
+“Và tránh đến vào buổi tối.” (cười, rất...
+lả) “Chị là con vạc ăn đêm mà.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cũng
+lại chiếc ví tọt xuống tận khủy lúc tay
+đưa lên ngoắc trong khi chân sắp đạp lề
+đường. Như một thói quen, lờ, hững, song
+bén, ngọt, và chính xác. Kết quả của&nbsp; trăm lần
+lập lại. Đã trở nên một phản xạ, thân
+thiết, biến thành một phần của đời sống.
+Cũng taxi. Mà, lạ. Hình như cũng là chiếc hôm nào chị
+gọi đưa Phiến đến gặp cô học trò của
+chị, bà chủ gác trọ của Phiến bây giờ. Nếu
+chiếc Renault neo sẵn ngoài phố hay trong sân khách sạn
+thì dễ cho Phiến suy luận. Không hiếm người
+Sài-gòn thuê xích lô hay taxi tháng. Mấy bà, cô - nhất là trong giới
+‘ca-ve’ -, càng thường xuyên hơn. Các bác tài, ngoài việc
+đưa đón, một vài (hiểu ngầm) kiêm luôn chức
+‘vệ sĩ’. </span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">*</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bây
+giờ, phòng ốc tạm ổn, và yên bình trân quý nhất hạng
+là cô bạn đang trong tuần du khảo với lớp,
+không đến đòi chia chác lãnh thổ biệt tư. Phiến
+thong dong sử dụng những lúc rảnh rỗi, cố,
+mà vẫn chưa tìm ra, lời giải khả dĩ cho những
+thắc mắc về một cành hoa cặm không chắc
+đã đúng lọ. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị,
+điều không ngờ nhất: chính chị đã tự thả
+lòng kể cho Phiến nghe ‘nửa đời’ đã qua của
+chị buổi chiều chị ghé ‘trú mưa’: người
+đàn ông rất-đàn-ông trong ảnh kia chính là người
+dạy kèm Philo cho chị. Philo, cái môn học ‘thời trang’.
+Ly rượu khả ái, nhưng đắng nghét, với
+nhiều người đã, định, hay chưa từng
+nếm. Chị mê, mà lại có khiếu sinh ngữ (năm
+nào cũng được phần thưởng ưu hạng),
+nên, không gì phải bàn cãi nữa là, chị sẽ lấy nhiệm
+ý này khi học lên. Nhưng, thời thế nói đến nó
+nhiều quá, bạn bè rủ rê sát sao quá; lại thêm bản
+tính thích chinh phục bị chạm nọc, chị muốn
+thử nhấp môi xem độ nồng của chất say
+kia là bao. Trong nửa chục cô cậu vừa qua ngưỡng
+cửa trung học họp tại ngôi biệt thự cổ
+kính của một người bạn học thân nhất của
+chị mỗi tuần hai buổi tối, mỗi tối
+hai tiếng đồng hồ, nhằm mục đích
+‘đánh hơi’ (nếu tốt nữa là nhận diện)
+các mũi lao hóc búa lô nhô trong ‘căn nhà của tư duy’, ông
+thầy vừa hoàn tất cái tiểu luận Cao Học về
+một thủ lãnh của cánh hiện sinh hữu thần
+đã được cô học trò xinh xẻo nhất
+đám tôn lên ngôi chúa tể. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Vừa
+cán cột mốc tuổi thứ 30. Nhỏ. Nhẹ. Da trắng.
+Mũi nhọn. Trán cao. Tóc thưa, mỏng, lông mày nhạt,
+tương phản với bộ râu quai nón rậm đen. Đĩnh
+đạc, lịch lãm trong phong thái, uyên ảo, bay bướm
+trong cách vận hành ngôn ngữ (khi giảng bài, chàng lột
+xác, hết vẻ lạnh lùng khô khốc bình thường)
+(chàng còn là tác giả của những bài thơ ‘siêu thực’
+rải rác trên một số tạp chí văn học giá trị
+- bút hiệu và tác phẩm của ông, Phiến có nhớ, vì
+quả tình, bởi, cả hai đều ‘không giống ai’).
+Thơ chàng bí hiểm ra sao, không biết. Chỉ biết là,
+chủ đề tư tưởng nào, dù hôn ám nhất, vẫn
+được chàng, lời giải của chàng rọi mặt
+trời vào.Người thì mỏng, nhưng giọng thì dầy,
+và ngân. Cái giọng Bắc-Trung phần của cái xứ nắng
+mưa phản cực, nằng nặng, nhừa nhựa, dai
+dai, ẩm, ấm, nghe mà cứ tưởng răng đang
+cắn vào miếng kẹo bột, dẻo đến như
+thể nó muốn ngủ luôn trong vòm miệng mình. Nghe thầy,
+mà như thấy tim bị nâng nắn, vò vo, say như say
+đò dọc ấy. Chàng nói, mà như hát. Ngoại hình của
+chàng là khuôn đúc từ các bức họa của các nhà hiền
+triết trong Larousse. (chỉ thiếu mái tóc với các mẻ
+quạt gối úp lên nhau như mây lông cừu.) Sự nhập
+thể của chàng trước các cô như một ‘sinh vật’
+lạ, ngời nét trìu mến và tình tứ. Như ánh nến
+lung linh trong gian phòng quét vôi xanh phớt, đã được
+kéo kín các màn cửa hồng phấn, vào một đêm sinh nhật,
+cuối đông .</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="VI" style="font-size:14.0pt;line-height:150%">*</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="VI" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Con
+trai một. Có cha tử trận. Dư tiêu chuẩn để
+được miễn quân dịch. Với người
+khác, là đặc ân, nếu không để khoe với đời
+thì cũng là món ngon nên nhấm nhút. Với anh, lại là bất
+công, đến như gian lận, không hợp chút nào với
+tinh thần ‘Tự Do, Bình Đẳng, Bác Ái’ mà cuộc
+Đại Cách Mạng Pháp đề xướng. Nhưng,
+vì mẹ góa, anh đành chịu cầm bút thay súng. Nhưng
+trong những lần chếnh choáng hơi men, ấm ức,
+anh vẫn tự kết tội là đã biển thủ,
+lưu dụng cái đáng ra không phải, không còn là của
+anh. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="VI" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="VI" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Yêu.
+Ngoài chuyện vượt qua ‘lễ giáo’, cô còn bổn phận
+‘chiêu hồi’ thầy. ‘Sứ mạng’ này nhận được
+sự ủng hộ tối đa từ phía họ hàng thầy.
+Nơi riêng người đàn bà sau này là mẹ chồng, phu
+nhân của vị đứng đầu một dòng tộc
+danh giá nhất nhì quận hạt, sự ủng hộ
+được nâng thêm một nấc. Nó biến thành loại
+‘lệnh tối thượng’ mà bất cứ thành viên nào
+trong tông chi cũng phải chấp hành. Có dâu, bà được
+góp thêm bàn tay, rào ngoài thêm được lớp kẽm nhằm
+giữ chân cậu quý tử trong đoàn tụ gia đình,
+trong hiếu thảo, và nhan sắc. Chiến tranh!: lò nướng
+quá lửa vô tận những khối bột thanh niên. Nó gieo
+khiếp đảm lên tâm tư những người thân.
+Người thân nhất của những người thân là
+những bà mẹ. Thương, tật, chết chóc, là viễn
+tượng kinh hoàng. Càng kinh hoàng hơn khi nó chờn chợn
+lửng lơ móng vuốt sần sùi ngay trên đầu đứa
+con thông thái nhất làng.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="VI" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="FR" style="font-size:14.0pt;line-height:150%">Chiến tranh là chủ
+bạc gian. Các con bạc có cách chơi khác nhau, nhưng giống
+nhau ở chỗ: luôn luôn bại. Mồi chơi thì chung thân
+chỉ là một: xác tuổi trẻ, tủy sống của
+cơ thể đất nước. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cô
+lạnh với chính mình; nhưng, tỏa ấm với
+người khác. Hai mặt của một đồng tiền
+uyển chuyển ngửa mặt trong một ngày sống. Với
+chàng, chúng không xung đột, mà trái lại, hỗ trợ nhau.
+</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hai
+tính cách phân định trong cùng một con người. Tài
+năng là yếu tố phân định con người
+đó với kẻ khác. Hai điều kiện cần thiết
+để thành công, chàng có. Song, bởi môn mà chàng gắn bó với
+là thứ, xem thì oách đấy, nhưng là loại ‘nghe xa
+thì được, đến gần thì không’, ít ăn khách,
+nên món quà chàng chào mời trước mắt đời chẳng
+nhận được bao đáp ứng. Cái phụ chú ‘tối
+ưu, với lời khen của ban giám khảo’ rạng rỡ
+trên mảnh bằng của chàng cũng chưa chịu giúp
+túi áo của chàng thêm vài xấp tiền giấy. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tình
+yêu, như hoa, đang chín tới. Nó sẽ vón quả. Tình
+yêu sẽ mang phúc lộc cho những ai chung thủy. Thời
+gian đầu, nàng vừa làm vợ, vừa làm học trò. Chàng
+vừa đóng vai chồng, vừa vai thầy. Và sau khi tặng
+thầy chú bé bụ bẫm, sức khỏe chưa thực
+hồi phục, cô học trò được thầy mấy
+ngày liền chở đến, và đón về, từ phòng
+thi, dưới mưa. Tình yêu lần nữa chiến thắng:
+dầu thứ hạng khiêm tốn, cô đã hoàn tất chứng
+chỉ dự bị văn khoa.&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Vẫn
+chưa gặp lúc để đổi chữ ra tiền. Công
+việc làm mẹ mới mẻ khiến cô ngây ngất,
+nhưng cũng gây bao bối rối. Quan trọng hơn: nó
+đã không cho phép cô gần thầy, gần bạn, và những
+chồng cours in trên loại giấy vàng, xấu, nhưng
+thơm tho.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sóng
+gió bất chợt trong gia đình đã đẩy họ ra
+thềm đời. Nhờ người quen của chàng (một
+ca sĩ kiêm vũ nữ phòng trà, người có đôi chân
+và giọng hát được chàng phối hợp tụng
+xưng là ‘những gót hồng như những vó ngựa bạc
+tung tăng trên thảm nhạc vàng’ trong điện thần
+của thơ ca chàng) giới thiệu, họ thuê được
+căn phòng tít tầng trên của cao ốc Cửu Phụng.
+Dân số thủ đô chớm gia tăng vì tình trạng người
+ở một số vùng kém an ninh dồn về. Sự
+đúng đắn trong câu ví ‘tấc đất, tấc
+vàng’ bắt đầu được minh chứng. Việc
+tìm được chỗ cư trú, gần trung tâm thủ
+đô, trong ý nghĩa đó, có kém gì nắm được
+chiếc phao cứu sinh giữa lòng nước động?</span><span lang="FR" style="font-size:14.0pt;line-height:150%"> </span><span lang="VI" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">*</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%;
+color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="VI" style="font-size:14.0pt;line-height:
+150%;color:black">Phiến sắp xong bài nộp thì chị đến.
+Từ bàn học, qua cửa sổ, nhấp nháy bảng</span><span lang="VI" style="font-size:14.0pt;line-height:150%"> quảng cáo cuốn
+phim chiến tranh đang chiếu rạp hát bên kia đường;
+mở một vát cửa ra vào, Phiến thấy rõ đuôi
+thang. </span><span style="font-size:14.0pt;line-height:150%">Khách, thỉnh
+thoảng. Khác với Hội miệng lưỡi, Phiến
+thuộc loại hạn hán lời. Không như bạn quảng
+giao, Phiến ngại kết tình với người. Chỉ
+một số Phiến cho là thân lắm mới biết
+được địa chỉ của anh. </span><span lang="FR" style="font-size:14.0pt;line-height:150%">Phần khách nữ, cô
+bạn khó tính không cần sợ ai khác thế chỗ. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Người
+đàn bà đang vén vạt váy phồng, đặt bước
+thứ nhất lên bậc thang. Mái tóc ngắn, cắt rất
+chỉnh, thân hình mảnh, dáng đi mềm... bảo Phiến:
+đó là chị. Cảm nhận nào trong Phiến đang cung
+cấp kết quả nhanh chóng, và hiệu quả hơn
+đôi mắt. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+vẹt nhanh mớ tài liệu vào góc bàn, đứng dậy.
+Chị còn vài nấc nữa. Ngẩng lên. Và đôi mắt.
+Và lưỡng quyền, và chiếc cổ, sợi dây chuyền.
+Và độ lơi của chiếc áo thun dư giả chứa
+gò ngực kém ăn. Và cái màu óng ả, ngọt ngào của những
+vùng da sâm sẫm như bắp chả quế, lướt
+mượt như vừa được phết dầu, lấp
+lánh như được chiếu đèn từ trong. Không
+thể là ai, và của ai khác.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+sướng sượng như bị điểm huyệt.
+</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Và
+cũng như lần đầu, chị là người mở
+lời:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Khách
+đến chơi. Chủ nhân chớ hề chào đón!”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “...
+Em ... kém miệng lưỡi lắm. Chị biết mà.
+Được chút số lẻ nào của Hội đâu?”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;“Kể
+gì đến cậu ấy nữa!” chị bĩu môi.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+né sang bên:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Chị
+vào đi. Phòng ốc lôi thôi quá, chị đừng cười.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Đôi
+mắt linh anh quét từ trong ra, và tinh nghịch đậu
+lên Phiến, thêm tràng gật gù của cái đầu trên lóng
+cổ thiên nga:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Lo…
+học quá nên chẳng còn thời giờ thu dọn ? Hay lại
+thích cái nghịch luận kỳ cục,&nbsp;‘học càng giỏi,
+ăn ở càng… lôi thôi?’” </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+chống gượng:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Chị
+biết mà: bọn em không thể như con tàu chạy mãi giữa
+hai đường song song: nhà trường, và quân trường.
+Phải ngừng, và đặt chân lên, hoặc bên này, hoặc
+bên kia. Trong hiện trạng của đất nước
+mình, với nhiều người, dẫu vừa vượt
+được lớp đệ nhất gai chông như bọn
+Hội và em, mảnh giấy hoãn dịch vẫn có thể bị
+‘cuốn theo chiều gió’ bất cứ lúc nào. Chiến
+tranh! Âm thanh này nhiều lúc vang vọng hơn cả tiếng
+đập của con tim; và hình ảnh của nó, dầu
+chưa rõ ràng gì, ám ảnh hơn cả bóng dáng của người
+yêu. Có cố lơ là với nó, nhưng nó có hàng trăm cách
+bắt mình phải nhìn nó thẳng vào mặt.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+xua tay, hất mặt:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Thuyết
+pháp vậy đủ rồi. Giọng điệu y hệt
+cái lão ‘triết-sĩ-thi-sĩ’ nhà này. Đúc cùng lò với
+nhau có khác. Ôi, tôi vẫn không tài nào hiểu nổi, tại
+sao sự việc đơn giản như vậy mà mấy
+vị lại luận giải dài dòng và rối rắm hóa nó
+làm chi? Đời tự nó chưa đủ nhiêu khê hay sao?
+Mà, cậu học trò cấp 3 kia ơi, nói gì cũng
+được. Nhưng chớ đả động đến
+chuyện lính tráng với tôi, nhá.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tiếp:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Cậu
+ăn ở ra sao, không can dự đến tôi. Tôi không, và
+cũng không hứng để làm... chị hay mẹ của
+cậu. Đến đây rủ cậu nghe nhạc uống
+cà-phê. Cái món này, với cậu, liệu dễ nuốt
+hơn chứ?”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Chị
+gõ đúng vào sở thích của em. Một sở thích khá xa xỉ,
+ít ra là lúc này. Em vừa xong bài. Vâng. Chị cho 5 phút.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+kéo màn. Thay quần áo chớp nhoáng. Anh mỉm cười, nếu
+chị chịu ‘thuyết pháp’ thì thế giới này sẽ
+có thêm một ‘tôn giáo’ nữa. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Giọng
+nữ rộn ràng từ bài hát ‘Downtown’ leo lẻo leo lên từ
+dãy phòng dưới khiến Phiến hưng phấn quá. Đời
+thật đáng sống! Chị còn trẻ. Và Phiến. Và bạn
+hữu của Phiến. Đó là của báu mà chúng tôi
+đang sờ mó được. Chiến tranh ơi! Chắc
+là mi có chứ. Nhưng lúc này, ở đây, sự hiện
+diện của con người đứng kia cho ta đủ
+sức mạnh để chôn sống mi. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chung
+quanh, ổ bánh thời gian đang trưng ra khúc vàng rượm
+nhất. </span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">*</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Chị
+chúa ghét cái bọn mặt mũi hiền lành, tẩm ngẩm
+tầm ngầm mà đấm chết voi. Chưa lúc nào chị
+thù đàn ông hơn lúc này”, chị nói khi cô phục vụ vừa
+quay lưng.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+tròn mắt. Đèn quán mờ. Chị, trước Phiến,
+chỉ còn là đôi mắt: hai con ngươi kia tựa
+như ảnh nhân lại từ đôi mắt của anh; nhưng
+không, bởi, rất thoát xác, rũ bỏ tất cả
+vướng víu từ cái nhìn vừa đậu lên, chúng biến
+thành những trái nhãn mới thu hoạch, còn cả cuống,
+lá, lúc thảnh thơi, lúc vướng víu, đầy
+đó, hụt đó, hóa không đó, nứt nẻ, rồi liền
+lặn, lấy lại thịt da, mang thể vóc, lung linh, trụ
+định, một, rồi nhiều, y như kính vạn
+hoa, tan, hợp, hợp tan, thất thường, đúng chu
+kỳ, và ngoan ngoãn, theo bóng cầu sòng sọc thiên sắc vần
+vụ trên trần. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;“Mong
+cậu đừng là người đàn ông mới, thứ
+nhất.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Những
+trái nhãn trợn lên. Quả cầu điểm ngay hột
+sáng trắng vào. Như người ta nhỏ thuốc vào mắt.
+Như họa sĩ chấm mắt rồng. Chỉ có hơi
+quá tay. Làm bắn nước.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+dùng muỗng khuấy tách cà phê, túng vụng, làm văng ra
+ngoài vài giọt. Anh không định sẽ uống: chị
+vừa khuấy bọt lên đầu óc Phiến: Phiến
+chưa bắt được ý của chị. Chưa dịu
+lòng để uống. Chỉ say say và bùi ngùi sao sao.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cơn
+mưa bất chợt từ những giọt dương cầm
+trên sân khấu đang nhả ướt chiếc thảm
+màu rêu. Mưa bóng mây. Mưa rào. Mưa dông. Âm điệu ‘Đêm
+Đông-Nguyễn văn Thương’ của Việt Nam
+Tango, bị lây sóng trào Slow Rock, qua cơn bão ầm giật mỗi
+giây mỗi tăng áp lực của kèn, trống từ dàn nhạc
+Phi luật Tân, đã rọc sưng hơi hướm ngật
+ngưỡng ngậm ngùi rất tĩnh tại của một
+kiếp lữ thứ hoàng kim. Các đợt cuồng phong
+như những nắm bông đặc dội vào, đập
+nứt, mở ê chề cánh cửa thê lương. Chúng nắm
+tóc thời gian kéo lết lên phía trước. Đạp
+đổ nhà cửa, cây cối, cạy đá vỉa hè ném
+túa lên, rải nhựa đen sì xuống, chôn nhầy những
+bước đi. Cười mê sảng. Thúc giục. Giết
+tươi nỗi ngậm ngùi; uất nén nguồn hấp hối.
+Rất nhân đạo. Rất lạnh lùng. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chiến
+tranh: phải nói, nó là màn lẻng xẻng đao kiếm của
+tiếng động, tiếng động của vũ lực:
+nó có mặt trong những nơi không chút gì hoan nghênh nó!</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+‘nhìn’ âm thanh. Chúng linh ứng từ hai bàn tay trắng phấn
+lột của nàng nhạc công ngoại quốc. Cô nàng nhỏ
+ti, bị chính cơn cựa quậy hung tợn của âm
+thanh từ hai bàn tay kéo gí vào nắp đàn; và chính mái tóc, mái
+tóc dài quá, đã hoàn thành bước sau cùng của nhiệm
+vụ là, cột cô luôn vào bục ngang. Hai cánh tay vạ vật
+lên sườn dọc của nhạc cụ. Màu da tay, trắng
+khiếp, trắng đến đổ vôi vào và sủi bọt
+cả vị cà phê trên lưỡi anh.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Âm
+thanh tủi hờn. Như hoang hồn không được
+phép kêu rêu. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tự
+dưng Phiến xót xa! Các ngón đẹp đẽ sang cả
+kia lẽ ra chỉ nên đùa nghịch với các âm khoái hoạt.
+Nếu tàn nhẫn thì cũng cần lựa đối tượng,
+mà cũng chớ cần giục giã, hớn hở như vậy.
+Phiến nẫu nhừ như tờ giấy lót dưới
+ly nước đá.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Còn
+điều này nữa: màu trắng da thịt đã mất
+nhiều ưu ái trong Phiến. Từ lúc biết chị, Phiến
+đâm ra mê cái màu sánh sệt của cà phê pha hơi nhiều
+sữa, yêu hết sức cái lượn lặt lờ của
+lưỡi lân la thật lâu trên nhúm sữa lạnh múc lên từ
+cốc sinh tố hay yaourt keo kết. Rồi đọc
+đâu đó bài báo ca tụng khả năng tình tự của
+những dân tộc có màu da sâm sẫm, Phiến càng ngưỡng
+vọng chị.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cô
+gái bên cạnh đập bàn, hét to. Hai ba anh chàng ngồi
+quanh phụ họa bằng &nbsp;tràng vỗ tay và sáo miệng.
+Phòng trà lên đồng. Mưa, giờ đã thêm sấm. Và lập
+tức, nó át cả tiếng mưa. Nhạc trên sân khấu
+dội sang khúc khập khiễng, gập ghềnh. Cô nhạc
+công đâm thót hai cánh tay lên trời, tỏ vẻ như
+đầu hàng, và nhoáng hơn cả một quặp quay của
+quả cầu, thần kỳ đu theo chảo sáng, lả
+lướt, sụp mềm, và biến mất. Mấy cặp
+đang oặt oại dưới sàn gỗ đánh bóng bỗng
+dưng cùng lúc cùng bị quất giập một bên thân. Phềnh
+theo tiếng nhạc, bây giờ chỉ thuần là tiếng
+rúc rú của kèn đồng, họ không còn đang ôm nhau, mà
+là đang chui lẫn vào từ bên hông sườn, từ sống
+áo xẻ của nhau. Sắc đỏ lủ khủ từ
+bốn góc sân khấu phối hợp, đụng độ
+với lũ màu sáng từ trên, bung tóe. Và róc rách: màu hóa lỏng.
+Phong cảnh thật quái dị: người ta đang bơi,
+đang đắm. Cầu cứu cho mình, cho nhau, bằng
+tay, bằng chân, bằng những trồi hụp của cả
+thân xác. Người sắp chết đuối lại là
+chiếc phao cứu mạng của kẻ khác; và tất cả,
+cùng đang mất chân đứng. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+quay sang, cánh mũi sạt bên tai Phiến:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Chớ
+bao giờ, ... nhé!” </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hết
+mực ‘Bồ Tùng Linh’! Chạy đua cùng ý nghĩ, Phiến
+ngửi thấy mùi... thịt da đàn bà bỏ quạnh trong
+căn nhà quê sực nức mùi cỏ đồng gặt lâu,
+từ ngàn năm, có lẽ. Hương vị của trắng
+đùng đục trong hai bầu nữ tích tụ bị
+đóng nút, bây giờ, nhờ biến động kia, bật
+vòi, phất mù lên. Quạt gió hai bên hông nhà thổi hống hốc.
+Có sóng; và có sạn ngầm. Âm nhạc đội mồ sống
+dậy. Mùa đông không tuyết, rán nóng làm mỡ. Tia
+clarinette luồn rúc cấu véo đến rứt rỉa thịt
+máu. Lúc tưởng nghĩ kia vừa cắn nháy và làm
+đau đớn một bên ngực, Phiến nghe phần
+chất liệu nhỏ nhất đầu tiên của nó vạ
+phệch xuống sàn nhà: một nhạc khí nào vừa
+rơi.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sau
+lớp áo lụa rêu của chị tập tềnh bên trái, Phiến
+ngắm suốt một cung biển. Một vịnh biển
+của kẹo caramel, và e lệ sóng. Hai sò vú con gái bỡ ngỡ
+mở miệng. Dưới, và trong đó là gì, Phiến biết
+chứ: một cao nguyên đất nâu, trồng cà phê, bạt
+ngàn (hơn cả rừng đồi trung phần gom lại)
+để uống chêm nhiều sữa, để ngấm dần
+trên đầu vị giác, và trây trét hai mép môi. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+tự thấy như con tàu, với tất cả than xúc đổ
+vào hầm; từng gút bươn lên là từng gút lún sâu tuyệt
+vọng trong chảo biển màu gỗ gụ.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+leo trèo cùng âm nhạc. Múa may. Hỉ hả. Hai trái núi chợn
+chờ vai Phiến. Chúng lớn nhanh nhiều hơn tưởng
+tượng của Phiến. Chúng được tiêm kích bởi
+dục vọng bất thần (trong Phiến?). Phiến
+trông thấy đôi vại men tự chúng đang mở nút,
+đang đòi được hút đi. Mật mỡ váng lên
+lớp da người, vồ vỗ bùm bụp như
+đang sôi, dầy ắp, mỏng, và trong suốt, rất
+nhanh, như cánh chuồn chuồn. Thoát xác ngài. Bướm,
+bay lên. Một nạm tóc lớn cà ngứa sứa mực, nhấm
+nhi răng thỏ trên má anh.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tách
+cà phê vừa động tới; khuấy; lại khuấy.
+Phiến vô thức chơi lại màn Rock Chậm bằng âm
+leng keng của muỗng bạc trong trũng diệu dụng
+của đất men sứ.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cợn
+kem cạ ngơn ngớn lũng thìa. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Vành
+tai Phiến đau xé. Phiến há miệng. Mũi nghẹt cứng.
+</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size:14.0pt;line-height:150%">Chim mái gù khinh khích.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Các
+cặp như những chồng đồ mã, hả hơi,
+nhả nhau ra, đầy bịn rịn. Vô hồi thước
+pháo tay. </span><span lang="FR" style="font-size:14.0pt;line-height:150%">Ngực
+Phiến bị ức cấn. Anh thèm hét to. Móng mèo cào nạo
+nhẹ dưới cánh tay. Phiến quay lại. Dưới
+chao đèn chụp cam, chị: một chum mạch nha mới
+ra lò; đầm đìa: chiếc khuôn có dung mạo nữ
+nhân. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+thở hắt. Dựa lại vào thành ghế mây. Nhẹ
+nhõm như con tàu rùng mình lần cuối khi đã nhả hết
+hàng hóa trên boong. Phiến đã hiểu: cái Phiến vừa
+nhìn thấy không là do mụ mẫm. Không gì là ảo ở
+đây hết.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+cười, tai ách:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Cậu
+vừa thôi nhé! Chớ bao giờ là người đàn ông mới,
+thứ nhất. Tôi đã khuyến cáo rồi.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lần
+thứ hai, gần như cùng câu nói cũ. Chữ lời rất
+mực bình thường. Nhưng nghĩa, lý? Trò chơi
+tưởng đã xong, nhưng chưa: anh lại bị bịt
+mắt. “Ở người đàn bà này, cái kim chọc chích
+người khác hình như lúc nào cũng vừa được
+mài xong.” Bực tức với chị, và với sự kém
+thông minh đổ đốn của chính mình, Phiến trâng
+tráo nhìn lại. Hai tụm vải bọc ngoài hai trái độn
+của chị hơi lõm vào. Bị lực đẩy từ
+bên trong, chúng phì phọp như đang nhóp khí. Nhưng chỉ
+đến độ nào thôi. Bởi chính Phiến, ngay buổi
+gặp đầu đã không đặt trọng tâm vào kích
+thước của chúng. Và không nghĩ chúng, vì bất cứ
+lý do, tăng thêm thể tích. Chị đã đánh đổ
+tức thì cái quan niệm trước đây của anh về
+cái phần thượng thân ăm ắp, hấp dẫn nhất
+của phụ nữ. Gia tài đàn bà đó của chị
+khá khiêm nhường, nhưng với Phiến, là của
+riêng chị, tiêu biểu, và tách chị khỏi đám
+đông. Chị không sở hữu cái mà người cùng giống
+phái như chị khát khao, làm chủ. Chị được
+cái khác: cái ‘khí’, cái ‘thần’ bàng bạc tịnh nhiên trong, và
+sau, tất cả những gì cấu thành chị. Cái đó
+hiếm quý, bất ngờ, là loài ‘thiên niên thảo’ trồng
+trong những chậu chuyện thần tiên, đến giây
+phút bí nhiệm nào, đúng nguyên đán đầu tiên của
+10 thế kỷ sau, duỗi lá; rồi (chưa kịp cho mắt
+trần chiêm bái) lẳng lặng thu về. Mấy giây huyễn
+mặc để sứ giả của một phần cái ‘hồn’
+kia hở hiện, cho Phiến, là lúc chị mở cửa.
+‘Màu da con gái xứ đảo’: nó đã cắm trại trong
+sân hồn anh. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rồi
+chiếc miệng đang ngậm ngụm nước đắng
+màu đen. Trời! Sao anh tinh mắt đến lạ: màu
+son đã bị thôi nhạt nơi hai mím góc. Phiến...
+cười. Vờ làm hụt rơi bìa thực đơn.
+(Ánh tối lưng chừng bàn đủ che tầm nhìn của
+chị.) Phiến quệt tay nhanh lên vành tai. Nhơm nhớp.
+Một chút. Như cặn bột trong chén nước
+cơm vừa ngậy lên. Cũng vừa tội. Phiến cố
+ngồi thẳng. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Với
+một khúc thân thể vừa bị (chiếc bàn) xén mót
+đi.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chiều
+nhả dần tên gọi theo nhịp thoi thóp của thành ráng
+hoàng hôn Serenata- E. Toselli. Nắng đã đổ hết thau
+màu hạnh nhân xuống bán nguyệt trời. Màu của nó
+lúc này là màu da cá, bệch bạc: màu của cái gút sau rốt,
+cũng là cái gút tiên khởi, của chu kỳ, của thời
+gian. Vòi ngày thòng dần, lâu, mềm oặp, rũ rời, và
+bị hòa tan vào độ mạnh của lọ cường
+toan đêm. Bụi phấn má của chiều đã bị
+thổi bay trọn, để lộ lớp da nhi đồng
+sơ sinh, tái, yếu. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Có
+lẽ hơi sớm: hay thính giác của Phiến đã trúng
+thương sau trận pháo kích của âm thanh vừa rồi:
+vài rìa chu mỏ, mỏng như bìa thở hắt, nhọn quắp
+như sợi tóc mèo hào hợt còn bám bấm tê mê trên trái tai
+của anh, của họa mi hai giờ sáng?</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sau
+cơn động cỡn nham thạch chiều, người
+ta hốt sỏi trứng chim rải về, hấp tấp,
+như &nbsp;muốn hối cải. Loạn thần đã xa. Tĩnh
+thần đã hiện. Các đốm cầu pha trộn màu
+vào nhau trên trần cũng khoan hòa theo. Bớt loáng lóa. Đỡ
+dồn dập. Ngay cái lưỡi đỏ bầm của
+nó cũng đã bị lóc vạt, dẹp đi nhiều. Màu
+đã êm. Dịu như ngụm rượu mận trại
+Hầm xứ lạnh. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rồi,
+đêm nhu mì hẳn với phiên chắc lưỡi ghi-ta
+thùng. Sau cơn mưa, sàn nhảy đâm tua tủa mụt
+măng-người. Lõm nhõm chút vốn liếng của kẻ
+nhập môn, nhưng Phiến vẫn đứng lên, chìa tay
+mời chị. Phiến không còn sợ bất cứ cái gì,
+và ai, nữa rồi. Phiến đã lớn. Ít ra thì bề
+ngoài của anh vẫn ‘có tuổi’ hơn chị. Phiến
+có đủ tư cách để ngang hàng với chị. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+Sen lắc đầu, bảo, không thấy ‘ngứa chân’;
+thôi, ngồi uống cà phê (ôi, màu cà phê sữa; đừng
+ai hòng tranh giành nó với chị!) nhòm thiên hạ đú đởn,
+tự thấy ‘nhẹ tội’ một chút. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+khước từ tỉnh bơ, coi như chuyện là phải
+vậy, không cáo lỗi theo như thói quen bộ điệu
+của giới…trí thức. (Chị vẫn nói, chị
+đã ớn cái thứ cơm nếp nát kia rồi!)</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+chỉ cáo lỗi khi (dúi cục tiền lẻ vào tay Phiến)
+gọi taxi cho Phiến, “chịu khó về… một mình, au
+revoir!”&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Còn
+chị, chiếc khác, đến trung tâm Sinh ngữ dạy
+đêm.</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">*</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+liệt giường đúng 4 ngày. Ngày thứ 2, nửa tỉnh
+nửa mê. Phiến mơ thấy lại cảnh năm
+trước, cùng cô bạn dạo chơi bến Ninh Kiều.
+Đêm, về, Phiến lên sốt. Chuyến phi cơ hồi
+Sài-gòn sáng hôm sau phải hoãn. Hai ngày tiếp, sốt lui.
+Người Phiến lả hơn cỏ, nhưng không thể
+nán lại vì kỳ thi của cả hai đã kề. Cô bạn
+phải ký giấy với hãng máy bay, hứa không kiện cáo
+nếu lỡ Phiến ... xuất hồn ngao du trên chỗ
+còn cao hơn mây. Cô tiếp viên cười và chúc chuyến về
+an lành. Hàm răng trắng tuyết. Làn da nâu củ thông. Tóc
+ngắn sát đầu nên đợt gió từ lỗ tròn
+trên mái xoa hoài mà cứ trợt. Lúc cô cúi xuống chỉnh
+dây an toàn cho Phiến thì Phiến níu tay cô lại. Cô cười
+rúc rích. Tiếng cười rất quen. Nhìn lại. Phiến
+chết điếng! Chị!</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Suốt
+gần tuần, chăm sóc cho Phiến là cô bạn. Có khi cô
+vào trường; lúc thì cô nhờ ghi giúp bài, ở nhà với
+Phiến. Lần đầu tiên, cô biết thế nào là nội
+trợ. Cũng may, chợ nhóm bên kia phố; và cái mà cô mó tay
+vào chỉ là nước nấu sôi, và cháo. (còn cô, cắp gà
+men mua ngoài về ăn.) Không đòi hỏi hoa tay, cân nhắc.
+Đặc hay loãng, sao đâu? Quan trọng là nó chín, tiệt
+trùng, không hại cho người bệnh. Cô vừa lo bếp,
+vừa học; luôn để mắt lên tờ giấy ghi
+giờ uống thuốc của Phiến. Đêm, cô đòi ở
+lại. Phiến nài nỉ cô hãy về. Cô muốn nằm
+trên chiếc ghế xích đu, “lỡ đêm hôm xảy ra
+chuyện.” Phiến phải chọc, với gân cốt teo rệu
+thế này, dầu có muốn ‘lỡ’ cũng chẳng ăn
+giải gì, cô mới giận dữ bỏ về. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nhờ
+bệnh, Phiến có dịp nghĩ thêm về bản chất
+con người - rõ, và gọn hơn, là người khác
+phái. Chỉ trong cơn cùng cực - đúng hơn là khi buộc
+đối đầu với cái ác, dầu nó không xảy ra
+cho mình - tính ‘bản thiện’ mới lộ mặt. Nơi
+người đàn bà, thiện tính kia dễ được
+xem như mẫu tính. Cô bạn Phiến ngổ ngáo có tiếng.
+Ngổ ngáo mà không cần được minh thị bằng
+mái tóc ‘bán nam’, đôi môi chuốt hình thoi, không cần
+được lập bản đồ bằng hành vi nghe
+và nhảy theo nhạc kích hoạt, miệng ú ớ như bị
+đụng dây thần kinh. Ngổ ngáo chỉ lộ, và
+được kinh nghiệm bởi, người trong cuộc.
+Cô đòi hỏi được phục vụ, được
+tôn trọng ngang hàng như, nếu không hơn, nam giới.
+Cô đả đảo quan niệm xem nữ giới là phái
+‘yếu.’ Cô bảo, trong công tác duy trì, phát triển nòi giống,
+và thuở giáo huấn đầu tiên, Thượng Đế
+đã giao trách nhiệm thiêng liêng cho người đàn bà: nhẫn
+nhịn, nhận chịu, vun quén. Và tác tạo. Có trách nhiệm
+thì phải có quyền lợi. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Với
+chị Sen, tính ngược ngạo kia, nếu có (chắc
+có), cũng không thể hơn được cô. Vậy thì,
+ở chị, thiện tính của con người, mẫu
+tính của người đàn bà, ắt phải phong phú lắm.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+thù ghét đàn ông? Thù ghét? Cần gì phải đàn ông chứ?
+Chỉ cái từ ‘thù ghét’ kia là đã không được
+phép tăn sóng trong bộ não xinh xắn kia rồi. Sự
+tình trong quá khứ thế nào đến nỗi đẩy
+lùi (mong là đừng triệt hạ) căn tính đáng yêu
+kia của người phụ nữ, trong chị?</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">*</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Mày
+xin cho tao một cành phù dung. Tao đang rất cần. Amour của
+mày có bà chị là chủ cửa hàng bán hoa trên đường
+Nguyễn Huệ nên nhờ chị ấy tìm cho chắc
+cũng không là vấn đề.”&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Mày
+‘phi lý’ vừa phải thôi. Cứ sách vở, tưởng
+tượng bông lông mãi nên biến thành khách lạ với trần
+gian rồi. Lấy đâu ra cái loại hoa chỉ có trong
+truyện thần tiên đó? Mà… cứ cho là có, vào cái mùa nắng
+bổ đầu người này, khó mà tìm được
+đóa nào cho ra hồn.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Không
+được hỏi. “Thi hành trước, khiếu nại
+sau.” Quy ước đặc biệt của tụi mình, chắc
+mày không định ‘xét lại’?”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ba
+hôm sau, về, mở cửa phòng, Phiến đã nhìn thấy
+đóa hoa lạ được cắm cẩn thận trong
+ly thủy tinh đầy nước, có cả một chút
+rong và vài viên bi đá màu hồng làm cảnh. Nếu không nhớ
+lời cầu cạnh hôm nào, Phiến không nghĩ đây là
+cái anh đang cần. Hoa lạ quá! Nó không hề giống với
+cánh bông còn nằm trong trí nhớ. Lâu lắm rồi (dễ
+chừng hai năm), Phiến chưa được lên
+Đà-lạt thăm lại chùa Sư Nữ Linh Phong,
+nơi lần đầu anh được chiêm ngưỡng
+tác phẩm kỳ bí kia của thiên nhiên. Phiến chỉ có
+thể tự thỏa mãn với những gì còn vương
+lại trong hồi ức về một vẻ đẹp cỏ
+cây đã khiến anh lặng hồn buổi sáng đông đẫy,
+sương làm mưa, ngoài sân gạch. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gặp
+chị Sen lần đầu, Phiến có cùng cảm giác nghẹt
+thở. Tự nhiên Phiến tưởng đến cánh hoa mùa
+đông năm nào. “Phù Dung vắn số; đoạn trường
+kiếp Mai.” Theo sách vở, hoa mang sẵn trong nó mầm đoản
+tử. Não nùng đẹp. Một lần cho vạn lần.
+Chị cũng vậy. Sắc; và Thọ. Trừ một: Phiến
+chỉ muốn áp dụng đặc tính thứ nhất của
+hoa lên chị. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+nghĩ, mùa nào rồi cũng qua. Nhưng, hoa vẫn
+tươi. Vẫn là. Ngay lúc này, anh tạm tự cho phép
+để không đồng tình với câu của triết
+gia cổ đại Héraclite: không thể tắm hai lần
+trong cùng một dòng sông. Hình ảnh cánh hoa vẫn tồn tại.
+Sông vẫn tồn tại. Quý là chỗ đó. Và chỉ cần
+thế. Nước sông, dẫu không còn chất liệu của
+khối lỏng năm xưa, hoặc, băng giá hơn,
+nóng ấm hơn? Hề chi! Vẫn còn nước, còn sông,
+còn cái bất biến mà.</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">*</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Không
+chỉ ngoài mặt trận, con bọ chiến tranh, bằng
+sự bền bỉ, lầm lũi đáng ghét và đáng
+kinh ngạc, đã bò lên được mặt báo. Người
+ta đã đến lúc không thể, và không dám, làm ngơ với
+nó nữa rồi. Cái ám thị “đây là thủ đô”
+đã bị mang ra săm soi dưới kính hiển vi của
+thực tế. Thực tế không đẹp, nhưng phải
+được nhìn nhận. Cái trước kia chỉ là ám ảnh,
+giờ đã mặc hình, đeo tướng. Các chữ đen,
+đỏ, mà nó, chiến tranh, là chủ đề chính, đã
+lên cột, khi ngắn hẹp, khi to dầy, thõng thun theo
+cường độ của các cuộc chạm súng. Một
+ít phụ lục, với những số liệu và hình ảnh
+rành rọt về từng loại vũ khí, khả năng
+công phá và giá cả của chúng… kèm theo, càng gây ấn tượng
+bất an lên người đọc. Chiến tranh, là mất
+mát cho nhiều gia đình; với Phiến, và lớp tuổi
+của anh, là hột nấm độc âm u, là bóng vía ma
+trơi. Không hiếm những buổi tiệc chia tay, hào
+hùng có, bi lụy có, giữa những con người, không chung
+một gia đình, nhưng do cùng hạn tuổi, cùng hoàn cảnh,
+cùng cảm nghĩ, đã phát sinh tình thân và kết keo họ
+với nhau. Thỉnh thoảng buổi sáng nào mở mắt
+ra, nghe tin một, hai, đã, hoặc tình nguyện, hoặc
+bị chọn gọi, bỏ bút, cầm súng, lưỡi
+lê. Nhân số nơi đường ranh bên này: học
+đường-hậu phương, mỏng dần, và dầy
+thêm ở đường ranh đối diện: quân
+trường-chiến địa. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Đường
+ranh bên kia, trong khi được tăng cường ở
+mặt này, thì lại hao hụt đi ở mặt khác: các
+tổn thất khi giao chiến. Tổn thất lần mò
+đến ngay cả với những đứa, đang
+trong binh chủng ngỡ là khá ‘thọ’: chỉ hôm trước,
+tuần trước, còn sáng ngời lượn phố trong
+bộ quân phục phép thẳng nếp cứng thơm hăng
+mùi hồ, đào hoa chĩnh chọa, hôm sau, tuần sau,
+đã nghe tin&nbsp;‘chim trời xếp cánh, tàu về bến
+mơ’. Lưới chết đã giăng được
+lên không, và lê la dưới nước. Chiến tranh tuần
+tự và đều đặn gián tiếp gửi về
+tín hiệu, mạnh yếu, nhanh chậm khác nhau, nhắc nhở
+bọn anh rằng, rồi cây thước khủng khiếp
+của ký ức tối hảo khôn hề sai sót kia của
+nó sẽ gõ đầu từng đứa còn lại. Việc
+còn đánh đu được vào cánh cổng nhà trường,
+lúc trước, không xa hiện tại lắm đâu, với
+bọn anh, là may mắn, hay phấn khởi hơn, đáng hãnh
+diện, thì nay, vị, hương của nó đã lạt lạnh
+nhiều. Rồi, hôm nào đó, tự dưng giọt thứ
+nhất của chạnh lòng, của nhìn ra người khác
+và nhìn về chính mình, đã rịn, đọng, và tí tách từ
+khe rạn của dấu hỏi về thân phận, về
+tương lai, về đất nước, lên từng tảng
+núi cá nhân. Để đến một giây phút nào nữa, niềm
+hãnh diện kia biến thành nỗi ngượng ngùng, xấu
+hổ. Sống, hưởng, trên sự hy sinh của
+người khác (một ít trong số ‘khác’ kia có cả vài tâm
+hồn thân ái nhất, đã từng cùng buồn vui với
+mình), man man mùi bất nhẫn sao ấy! Người ta vào,
+và rời ghế lớp. Thui thủi. Khép nép. Ngôn ngữ
+không biến mất. Nó khô, nẻ. Và làm cho những chiếc
+lưỡi liếng láu nhất cũng ngại ngùng, khó
+khăn, khi phát âm. Triết lý, hiện sinh, hiện tử… vừa
+bị đẩy lùi, vừa hùng hổ xâm lăng đầu
+óc bọn trẻ.</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">*</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+dăm khi ‘tiện đường tạt qua’. Khi gặp, lúc
+không. Cứ nghe chị kể lại ... “cậu đi vắng”,
+là Phiến xốn xang không chịu được. Phiến
+định... đánh thêm cho chị chiếc chìa khóa phụ
+(cô bạn của Phiến đương nhiên có một
+cái), song mở miệng thế nào đây? Chiến tranh, và bầu
+ủ ê nặc nồng lửa đạn của nó chụp
+xuống, đã khiến Phiến, từ lúc biết chị,
+thèm... rúc đầu vào đống nệm thơm nào kia mà
+hít, mà nếm, mà quên. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Có
+cái gì đó ầm ì phản đối Phiến từ
+trong.&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+lại đến. Với Sinh, đứa con trai duy nhất.
+Lâu rồi Phiến không gặp lại nó. Càng ngày, nó càng giống
+bố. Nó là tiểu bản của người đàn ông gầy,
+râu ria, hai mép là hai dấu phẩy, trong bức ảnh treo
+tường nơi phòng chị. (chị chép miệng, đã
+mấy lần chị hạ tấm ảnh xuống,
+nhưng bé khóc lóc, bỏ cơm nước, tội quá,
+đành phải treo nó lại.) Chị dỗ con: </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Sinh
+chơi với cậu. Mẹ đi công chuyện. Xong, mẹ
+cho ra Nguyễn Huệ ăn kem.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chú
+khoái cây tây ban cầm nẻ nứt Phiến móc trên đinh
+áo. Chú nói, trong nội trú, mẹ bề trên chơi đàn này
+thật tuyệt. Mẹ chỉ lại cho soeur Agnès bài
+‘Lullaby’ để đàn cho đứa nào nhớ nhà hay khóc
+không chịu ngủ. Chú hỏi Phiến biết bài nhạc
+kia của Brahms không? (chú có vẻ sành nhạc ghê, tên tác giả,
+chú xướng thật chậm.) Phiến vờ, bảo là
+không. Chú ‘xì’ một tiếng thất vọng.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Cháu
+đánh cho cậu nghe. Soeur Agnès khen là mỗi mình cháu đàn
+đúng thôi.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nó
+cười, thích hơn là thẹn:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Hồi
+mẹ mới gửi cháu, cháu cũng hay khóc nhè như thằng
+Antoine. Soeur dỗ mãi, cả mẹ bề trên nữa, cháu
+không nín. Mère mới bảo soeur đàn bài này cho cháu nghe .”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Thế
+cháu có nín khóc không?” Phiến cười.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Cháu
+càng khóc nhiều hơn!”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+bắt chước chú, ‘xì’ một tiếng:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Sao
+cháu hư quá vậy?”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Cậu
+chẳng hiểu thế nào là musique! Bài nhạc buồn quá,
+làm cháu càng nhớ nhà, nhớ bố mẹ hơn. Nhưng
+đó là lúc đầu.” Nó ‘xì’ trả.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Còn
+sau?”&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Khóc
+mãi cũng phải ngủ. Mãi, quen, không khóc. Nghe nhạc là
+díp mắt lại.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rồi
+chú kể cho Phiến về bố. (nó bĩu môi khi Phiến
+trả lời là không quen với bố.&nbsp;Lạ. Cái gì
+cháu hỏi cậu đều không biết!) Bố
+thương cháu nhất nhà. Mẹ ganh, không cho bố
+thương cháu. Mẹ hay cãi bố. Có hôm bố về trễ,
+mẹ rầy bố, rồi bỏ cơm, vào phòng khóa cửa.
+Bố xin lỗi; bảo cháu vào năn nỉ mẹ cho bố.
+Mẹ không mở. Cháu phải ngủ dưới gạch với
+bố tối đó... Bố mua món đồ chơi nào cho
+cháu cũng bị mẹ la. Mẹ không chịu đưa cháu
+thăm bà ngoại. Bố phải giả vờ nói đi phố,
+rồi lén gọi taxi đưa cháu đến. Thương
+bà ở ngoài đồng một mình, buồn lắm! Bà nội
+ở mãi tỉnh. Ít lên chơi. Nhà gần con sông rõ to. Tắm
+tha hồ. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Thế,
+mẹ và bố, cháu thương ai hơn?”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nó
+thẳng tuột :</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Cô
+bác nào gặp cháu cũng hỏi cháu vậy. Ai cháu cũng
+thương. Bố ít nói. Chỉ chúi mũi vào quyển
+sách. Mẹ bảo thế. Mẹ bảo bố ... xem
+...thường mẹ. Xem thường là gì hả cậu.
+(Tiện thì nó hỏi; nhưng chẳng cần câu trả lời.)
+Chỉ tội nghiệp bố ăn ít, còn ít hơn cháu nữa
+kìa. ‘Gầy như ma,’ mẹ cháu bảo bố thế. ‘Ma’
+thì ghê quá! Nhưng bố cháu chẳng ghê tí nào… Chỉ có hàm
+râu bố là…hãi thôi.”&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nó
+bấm vài nốt của bài hát ru. Đoạn cao nhất. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Soeur
+Agnès hát hay tuyệt, cậu ạ. Giọng soeur như chim hót.
+(những nốt nhạc láy đi láy lại.) Thằng
+Bernard nhõng nhẽo nhất đám. Thế mà nghe soeur hát
+đến chỗ này là cứ im như búp bê.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chưa
+nghỉ tiếp sức, nó đã thao thao:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Sao
+cậu lại không biết bố cháu? Bố quen nhiều. Khách
+luôn thôi. Mà toàn các cô các dì. Hôm nào bố về là bạn đầy
+nhà. Mẹ cháu không chuộng. Bảo các cô đến
+chơi ngồi lên giường ăn quà làm bẩn cả gối.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nó
+bỏ lửng. Có vẻ bí mật. Rồi ghé vào tai Phiến:</span></p>
+
+<p class="Style1" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Bố
+có súng. Cậu biết không? Bố bỏ dạy học,
+đi tập bắn súng. Bố tập ở trên núi ấy,
+nên rất ít thăm cháu. Bố đến một mình. Cháu hỏi.
+Bố bảo, mẹ không thích bố mặc lính nên bố
+đi một mình. Một hôm bố đón cháu ra chơi. Bố
+mang theo ảnh cho cháu xem. Ảnh thì bố ngồi; ảnh
+thì bố bò lê; ảnh thì đứng nghiêm. Ảnh nào bố
+cũng mang súng, súng to súng bé đủ kiểu. Bố oai ghê!
+Gầy, nhưng hách. Cháu thật thích. Bạn bè của cháu,
+đứa nào có bố có súng đâu? Nghe cháu kể, chúng nó
+lè lưỡi!</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .....
+Cậu là bạn của mẹ. Sao không thấy cậu
+đến chơi?”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+vuốt tóc nó, nói, cũng như cháu, cậu còn đi học,
+còn phải làm bài. Chỉ vào cây đàn trong đùi nó, Phiến
+tiếp, cậu chưa thuộc mấy bài hát nên chưa
+được đi. Lần sau đến, cậu sẽ
+đàn cho cháu nghe. Nó gật gù ra vẻ thông cảm.</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">*</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Có
+kín mấy rồi cô bạn của Phiến vẫn biết.
+Cô hỏi chị là ai. Phiến kể thật, cô không tin. Cô
+cười khẩy, chị của bạn anh chắc không
+là nàng Hélène hay Marie tóc vàng, mắt xanh rồi. Mà đã là
+không thì có bao giờ đến thăm bạn trai của em
+mình tại phòng trọ như vậy. Cái kẹp tóc chị
+để quên (mà lạ, Phiến cũng không nhớ cất
+đi!) trên cuốn truyện dịch là bằng chứng
+để cô trêu chọc Phiến. Cô kẻ cả, anh ăn
+vụng mà không biết chùi mép. Thừa gian, mà thiếu ngoan.
+Có thể cô không ghen, nhưng tức, tự ái, vì ‘ngai vị'
+mà cô muốn độc quyền ngồi trên đang có nguy
+cơ bị người khác chiếm mất. Nhưng cô
+không lồng lộn như đáng lý phải. Thái độ
+nhu hòa của cô khiến Phiến khó nghĩ. Cái gì trái
+thường vẫn làm tim mình thon thót. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cô
+ngồi chơi chút rồi đứng lên. Cẩn thận
+để lại chiếc kẹp đồi mồi lên bìa
+sách. Trước khi xuống thang, cô ngoái lại, chúng mình tuyệt
+đối tự do trước nhau. “Loại tình yêu ‘chàng-sinh
+viên; nàng-mệnh phụ’ đẫm nước mắt đầy
+dẫy trong tủ sách bỏ túi kia là món em không hợp ‘goût’.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+ngỡ cô sẽ đi luôn. Nhưng tuần sau, đi học
+về, Phiến bắt gặp trên bàn chén chè chuối, cả
+ly nước cốt dừa ‘tẩm bổ’, món Phiến rất
+mê và hay gọi khi đi với cô. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+hơi ân hận. Anh ăn. Nhưng người anh nghĩ về
+lại là chị. Chị Sen không thích ngọt. Chỉ thèm
+yaourt, trộn đá đập nhuyễn, vắt thêm chanh, không
+thêm đường, múc từng chút một, nhai đá rào rạo,
+liếm môi như mèo (mà có lúc nào sạch!), ngậm muỗng
+trong miệng (kém lịch sự, mà lại rất duyên dáng!),
+nháy nháy nhìn người khác châm chọc, khi nói chuyện.</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">*</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+không thuộc một số bài hát như buổi chuyện hôm
+nào với chú bé. Ngoài giờ học, thay vì dạo phố
+hay cầm đàn, Phiến cầm bút. Phiến chuyên chút làm
+thơ. Phiến làm vì chị. Chị là ngòi hứng khởi
+bất chợt đào gặp. Thời gian dành cho chị sẽ
+lấp đầy những phút vô vị, rỗng ruột. (nhưng
+sẽ không đưa chị đọc.)</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thằng
+bạn lại là đứa đọc được những
+bài thơ. Phiến hay lơ đãng. Nó lại quá thân tình
+đến chẳng nể nang gì khi lục lọi ngăn tủ
+của Phiến. Buổi chiều, trước khi anh vào lớp,
+đã thấy nó chờ trước cổng trường.
+Nó nhìn Phiến, lắc đầu, không được
+đâu. Mày không thể từ vai bạn chuyển lên vai anh.
+Dầu tao có rộng lòng, nhưng chắc bà chị tao chẳng
+chịu; và dầu có chịu, chẳng bao lâu cũng sẽ ‘hạ
+bệ’ mày. Trong gia đình, không ai biết tính chị ấy
+hơn tao. Anh Sủng chiều lụy chị đến mức
+như thần dân phục tòng nữ chúa mà vẫn chào thua! </span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">*</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+hối hả bấm nút đóng. Anh phải nắm chặt
+đà ngang, tựa lưng vào thành sắt để thở.
+Mưa không được. Trời oi quá. Giờ hành chánh,
+ngày thường. Cư xá vắng ngắt. Không ai khác, ngoài
+anh, trong thang máy. Anh lẩm nhẩm đếm. Như trò
+chơi, cho đỡ nóng ruột. Bao lần rồi, không thể
+sai: tới số 64, 65 là Phiến biết đã đến
+tầng chị thuê. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Con
+hành lang cắn củn ực hự lên vì nắng. Nắng
+đánh thẳng vào mặt. Vỡ rụng những trái nho
+trắng.  </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tầng
+này không đánh số. Nó đeo chữ ‘A+’ mà không ai hiểu
+nghĩa là gì. Chỉ suy đoán là ‘Addition’, tức là mớ xây
+dựng được thêm vào ngoài phác thảo ban đầu.
+Nghe ra cũng hợp lý. Bởi không ai nghĩ, trên chơ
+vơ chóp cao ốc này vẫn có cảnh con người
+tranh giành khí sống (và lại thắng!) với không gian. Đúng
+là căn phòng bổ túc, ‘ân huệ’, hiện ra cho ai đó
+trong lúc cực cùng tuyệt vọng. Vuông. Nhỏ, hẹp. Chỉ
+khá hơn chút cái khoảnh chứa dụng cụ là
+được quét vôi thẳng thớm và trổ thêm cửa
+sổ. Giá thuê chỉ bằng 2/3 so với các phòng khác.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+đang làm đẹp. Vài lọn nhựa màu hồng hời
+hợt cheo leo trên vách tóc. Phiến rất ghét con gái tự chỉnh
+đốn bằng các ống dẻo. Và ghét hơn khi nhìn chị
+trong hoạt cảnh này. Trước Phiến, lờn lợn
+hình ảnh mấy cô gái khỏa thân nửa, mồm nhóc nhách
+nhai, và tóc thì núng ních loại kẹp tương tự. Phiến
+không hiểu, tóc chị đã ngắn như mạ non mới
+nhú thế kia thì các ống gai kia giúp ích được gì.
+Anh thấy chị... xấu đi. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+vẫy tay chào, người như nẹp gỗ, nhờ Phiến
+nhặt mấy ống rơi dưới chân. Phiến không
+muốn nhìn thêm vào thảm tóc bị gậm nhá bừa bãi
+kia. Ngồi trên hai gót, Phiến gom chúng vào tay, đưa lên.
+Còn một, tít góc bàn trong. Đành phệt xuống. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bắp
+chân trái của chị chạy bên phải gờ má Phiến.
+Mặt vải sần, nhưng không thô, phủ khít đầu
+gối. Chiếc dép bị lùa vào góc bên này. Góc bên kia là cuộn
+tóc. Phiến thử luồn tay xuống chỗ trống giữa
+hai chân và lũng ghế: không đủ chiều dài. Đứng
+lên, định sang hướng bên kia. Đầu va vào mặt
+bàn dưới. Sức dội đẩy bật anh xéo vào
+trong. Để thăng bằng, Phiến víu lấy đòn
+chắn trước mắt. Mặt đòn êm, mềm, hút da
+tay như nhúm mousse ẩm. (Phiến nhớ báng vợt ping-pong
+của chị.)</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lớp
+vải sần bị vuột ngược. Bày ra cái núp
+dưới, trớt như miếng rau câu. Phiến chụp
+cánh tay còn lại vào đó. Tiếng ‘ối’ bên trên không
+được Phiến nghe rõ bằng con tim đang phóng lao
+của mình. Phiến mệt quá, cần tựa vào cái gì
+đó. Cái Phiến vừa vục mặt vào không xù xì như
+vải, không vô tính như vải, mà nặng, ấm. Phiến
+có lầm? Sao lại vậy chứ?: nó biết di động
+ư?: mùi Chanel số 5 hôm nào Phiến ngửi từ ót chị
+trong thang máy!</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chiếc
+thang không lên, không xuống, mà lượn nghiêng. Tóc Phiến
+bị xoắn hút vào rãnh thụt. Nó nâu, chảy, bó bện. Nhai
+nhấm dị thường. Cắt ngót. Sướt sượt
+da. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chắc
+chắn bàn tay nào đang xộc nhầu tóc Phiến. Xoắn
+thừng. Móng mèo cắp xuống. Đau buốt óc. Mùi
+nước hoa không nồng như lúc nãy: nó, như miệng
+lò sưởi, đang nhả hơi. Chiếc gối Phiến
+đang tựa đầu rung khẽ. Phối hợp với
+mấy ngón men giữa cằm Phiến, cả hai cùng kéo Phiến
+lên. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+nhìn Phiến, lắc đầu. Hai gò má dựng thẳng.
+Hai con ngươi sững đứng. Bức tường tuyết
+vô hồn bạt vía. Và từ trong, hai giọt nước
+văn vắt vo tròn. Khi Phiến bắt đầu nghe
+được sóng từ từ một bên vai sát cạnh của
+chị là lúc hai hột ngọc kia thun lại thành hình trái lê,
+hơi thắt eo ở giữa: y khuôn phần cơ thể
+lưng chừng của đàn bà.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Không
+được đâu!”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3
+chữ mà thằng bạn nói với anh. Phiến rúng động:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Không…
+được…C..hị... Sao...? Hội…”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Cậu
+còn học mấy năm nữa?”, giọng kềm đanh lại.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Yên
+lặng là cứu tinh. Phiến đang làm điều đó.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Mấy
+năm? Sao không trả lời? Nhớ này: càng lâu càng tốt.
+Chị không muốn...”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+càng mê muội. Người đàn bà này dư sức liệt
+hóa đầu óc và cảm giác của kẻ vô phúc bị dồn
+vào thế đối diện.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+đẩy anh ra:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Tôi
+không muốn hết người này đến người
+khác bỏ tôi mà đi. Tôi không muốn sau này nhớ lại
+mới biết lần gặp trước là lần cuối.
+Cậu nghe không? Sao còn đứng đó? Hội nó nói, dạo
+gần đây cậu đến lớp thất thường
+lắm. Không được đâu. Tôi... cấm đấy!
+Gì thì cũng phải học cho xong. Chớ ham viết lách nhiều.
+Sau hãy hay. Kiến thức trước đã!” </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+biện giải, ít ra nó phần nào giúp Phiến trang trải
+phí tổn ăn, ở, học. Chị ngắt, “Không là lý
+do.” Mím khẽ môi, đến ghế, ngồi xuống lại.
+Một số lon tóc đã bung. Chị tháo, lấy lược
+chải, tiếp tục công việc như lúc Phiến vào. Phiến
+không nhận ra chút ướt nào trên gò má quay nghiêng về
+phía, và rất gần Phiến, kia... </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị,
+muôn thuở vẫn ngang ngạo như đôi gò má, sừng
+sững cao sơn, thách thức cả những tay leo núi
+chuyên nghiệp. </span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">*</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phải
+thật lâu sau, Phiến mới dám ghé chị. Phiến không
+hiểu chị định ám chỉ gì trong lần vừa
+qua. Nhưng Phiến biết chắc một điều: những
+hôm Phiến bỏ lớp đã bị Hội báo cáo với
+chị. Chẳng ai thích học trò trốn trường. Hẳn
+nhiên rồi. Và (anh rợn người lên khi nghĩ),
+cũng không kém hẳn nhiên là chị phải có ‘dụng ý’
+gì chứ khi mà, đã quá bận bịu với cuộc sống,
+lại còn định săm soi đến việc làm của
+kẻ khác?</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Đến
+lượt thằng bạn siêng nhất lớp của Phiến
+biệt tăm. Nó vắng liền mấy ngày. Đây phải
+kể là chuyện lạ, khó hơn cả trúng số độc
+đắc. Tuy không cùng ngành chọn, nhưng, bởi hai trường
+gần kề, hai đứa vẫn ghé qua thăm nhau; và, với
+tin tức vẫn trao nhau hàng ngày - nhất là tin tức về
+chiến tranh - Phiến biết, nó chưa hề bỏ giờ
+lấy một lần. Trong bọn, Hội là đứa ý
+thức nhất về ranh giới khói sương giữa
+học đường và quân ngũ. Gần đây, dẫu
+say sưa trong tình yêu, với bản tính rất ‘khoa học’
+như cái nhãn của phân khoa mà nó theo, ái tình và bổn phận,
+thứ nào cũng đáng trọng vọng như nhau. Cùng kỳ
+lý, nếu buộc phải chọn lựa, giảng
+đường vẫn là nơi nên vãng lai hơn, với nó.
+Người yêu của nó mang mộng sư phạm. Hiền
+lành, kiên trì, yêu trẻ, rất cùng mẫu số với chất
+người, với đam mê. Nhưng, các đức hạnh
+này đôi khi bị đẩy quá đà, đến độ
+chúng biến thành đạo mạo, cứng nhắc, ‘bà-cụ-non’.
+Phiến không hợp với cô (có lần giữa cô và Phiến
+đã xảy ra trận đấu khẩu kịch liệt
+vì một đề tài về cuộc sống của giới
+trẻ), nên không nghĩ là sẽ hỏi thăm tin Hội,
+qua cô.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+còn... sợ chị lắm. (Vài lần buộc phải ‘cúp
+cua’ để viết cho xong 1 bài báo. Nhuận bút phải
+san đều cho các nhu cầu thường nhật. Tính
+toán chi ly đến phát bệnh.) Nhưng, hơn nửa
+tháng qua, Phiến đã đến lớp thường
+xuyên. Chắc chị cũng được phúc trình về
+việc này. Nó giúp Phiến an tâm một phần. Phần lớn
+hơn là Phiến không thể... nhịn được gặp
+chị. </span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">*</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chú
+bé mở cửa. Thấy Phiến, chú ôm chầm. Mắt chú
+đỏ hoe. Phiến bẹo má:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Mẹ
+mắng hả?”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chú
+chùi mặt vào vai Phiến:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Mẹ
+còn đánh cháu nữa kia.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Ai
+bảo cháu không ngoan?”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nó
+cãi:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Ai
+bảo cậu là cháu không ngoan? Chỉ tại cháu đòi...”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Thì
+đấy. Ai bảo cháu đòi mua đồ chơi hoài?
+Cháu đâu còn bé. Chẳng lẽ cháu không muốn lớn
+lên?”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Làm
+gì có. Cháu chỉ xin mẹ bộ đồ...”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+nhìn nó, yên lặng, khuyến khích.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Ngang
+qua tiệm bán đồ lính, cháu xin mẹ mua cho một bộ
+giống như bộ bố mặc ấy, mẹ...”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mắt
+nó long lanh. Nhưng chỉ dám tấm tức:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Có
+thế mà mẹ bắt về, không cho ăn kem. Còn phạt
+cháu quỳ gối úp mặt vào tường.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rồi
+nó thì thào:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Bố
+bảo mẹ không thích bố mặc lính. Cháu thì thấy bố
+mặc vào oai lắm. &nbsp;Còn cháu, mẹ vẫn bảo là “cứ
+học giỏi và ngoan thì muốn gì mẹ cũng chiều.”&nbsp;Thế
+sao mẹ vẫn cấm?”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Mẹ
+đâu?” Phiến hỏi nó, mắt sục nhanh qua khe cửa
+hở.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nó
+ngoắt ngón, mắt nháy nháy ra vẻ bí mật:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Mẹ
+đang xếp quần áo trong kia. Mẹ không cho cháu giúp, bảo
+ra ngoài chơi. Lâu lâu là. Mẹ tìm gì thế?”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nghe
+nó nói, Phiến bỏ ý định bước vào. Hai cậu
+cháu trò chuyện nãy giờ cũng được hơn
+mười phút. Căn phòng không lấy chi làm rộng. Ngồi
+trong, cửa đóng, còn rõ mồn một tiếng gió ngoài
+hành lang. Dầu chuyên tâm mấy vào công việc, chị không
+thể không nghe. Thế mà chị vẫn không bước
+ra. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+vỗ về, rồi từ từ cậu hỏi mẹ
+xem.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+không được dịp hỏi, và cũng không được
+dịp nói cho chú biết. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3
+ngày sau, Phiến đến tìm chị. Gõ mấy lần theo
+hồi hiệu rát cả khớp ngón. Cánh cửa vẫn
+trơ im. Nản, định bỏ về, thì mảnh giấy
+chữ nhật dán trên nắm đấm đã níu lại.
+Đọc, ‘Christine, vũ trường Harmonie, Tổng
+Đốc Phương, Chợ-Lớn.’ Tất cả
+đều phủ nhũ bạc, in rất công phu trên nền
+giấy sần màu ngà.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+kiên nhẫn gõ tiếp. Thắc thỏm, khó hy vọng. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Người
+đàn bà lạ mặt trắng phấn ló đầu ra nheo
+mắt hỏi có phải Phiến cần gặp cô Sen? Không
+đợi trả lời, chị buông gọn: cô ấy dọn
+đi rồi! Hôm thứ hai. Chỉ vào ngực, chị là
+‘vũ nữ bán-hoàn-lương’, ngoài công việc cũ (chỉ
+tấm danh thiếp trên cửa), chị còn đang là ‘phòng
+nhì’ của một thương gia khách trú. (cười váng
+lên khi tự giới thiệu - “có lẽ chị ta vừa nốc
+bia hay rượu” -, Phiến nghĩ.) Chị mới
+được ‘thăng thưởng’ từ ‘hạ tầng’
+lên ‘thượng tầng.’ Trước đây, chị thuê
+phía hốc sau building (lãnh thổ với đủ tiếng
+mèo gừ chuột tút và rác rưởi mà Phiến cứ
+nghĩ là phế tích của chung cư bên kia). Nó chỉ là
+kho xép nhỏ, giá rẻ. Bất tiện, nhưng cần gì,
+có chỗ ngủ là tốt rồi. Chị thêm, chị biết
+ông bà giáo (ông ta đàng hoàng như vậy, cả bà nữa,
+mà sao lại trôi nổi đến chốn này?), cậu con
+trai; và dạo gần đây, ‘ông-giáo-kiêm-sĩ-quan B… B… 2 mai
+vàng …’.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+hỏi chị có biết ‘mẹ con bà sĩ quan’ dọn
+đi đâu không? Chị đưa ngón tay trỏ sơn tím
+đen đâm thộc như làn sét vào đường trời
+xám mưa phía cuối lầu. Ở đó đó. Cậu là
+gì? Em trai? Thứ mấy? </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phiến
+cảm ơn chị, thất thểu xuống thang.&nbsp;&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lúc
+Phiến sắp kiệt sức vì mong nhớ thì Hội xuất
+hiện. Trời ngoài đã trét lọ nồi lên phố. Phiến
+nghĩ ai kia lộn nhà. Nó gầy rộc; đen xạm; tóc
+rễ tre; mắt đỏ đục. Vừa bước
+vào, đã nằm vật xuống chiếc ghế bố. Nó
+thở dồn như vừa thoát cuộc truy sát. Càng thở,
+mắt nó càng dại. Phiến sợ quá. Có thể nó sắp
+chết. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mang
+ra ly nước chanh nóng pha tí rượu mạnh, Phiến
+đỡ đầu bạn lên, giúp nó uống từng ngụm.
+Được phần ba. Nó tỉnh dần. Hơi thở
+đã dịu, nhưng vẫn nhọn sắc mấp mô như
+ván gãy. Phiến đắp mền tận ngực nó, bảo
+ngủ đi rồi sẽ mua thức ăn về cho. Nó
+nhìn Phiến, cười sằng sặc. (giống điệu
+cười man dại của cô gái trên lầu cao!)</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nó
+gọi tên Phiến. Lảm nhảm gọi tên Phiến. Khi đến
+tên chị Sen thì khóc rống. Và sau đó, trong những tru
+tréo giữa các hồi vật vã, ngoài tên chị, tên Phiến,
+hình như có tên một người nào nữa, âm không phải
+Việt Nam. (lúc này nó đã bất tỉnh.)</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Chị
+vẫn giận tao vì tao không chịu ngăn cản ông anh rể
+vào lính. Tao thì rất hiểu anh ấy. Việc không cần
+thì có thực. Chị Sen lại không hiểu, không thông cảm
+cho anh ấy. Việc cần thì lại không có thực. Chiến
+tranh, mày biết mà. Không hiểu mày nghĩ, mày băn
+khoăn đến độ nào về sự có mặt của
+nó, nhưng, tao, ngoài những ‘kinh nghiệm’ gia đình có
+tính cách ‘tiền đề’ chủ quan, có thể một phần
+vì ‘tác động’ khách quan từ trường hợp của
+anh Sủng, tao nằm mơ thấy nó nhiều lần. Phiến
+ơi, tuy cùng tuổi, nhưng tao hơn mày những chục
+tháng. Nếu gọi, nó sẽ gọi tao trước.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hội
+uống thêm hớp nước:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Từ
+khi vào Nam, đầu óc con nít của tao đã thấy chật
+chội rồi. Cái nóng nhớt trong này càng khiến tao nhiều
+khi muốn nổ tung ra. Tao nghĩ đến chiến
+tranh, đến sự phân ly mà nó mang lại, từ phim ảnh,
+gắn vào thực tế. Làm sao mà tao quên được,
+làm sao mà tao hiểu được; và mẹ, và hai chị của
+tao nữa, làm sao họ hiểu được, vào cái giây
+phút sinh tử chờ được gọi tên xuống tàu
+kia, ông chồng, ông bố, lại nằng nặc
+đòi&nbsp;“chạy ù về, chỉ mươi phút, nhà ngay
+đầu ngõ kia thôi, lấy quyển album ảnh để
+quên, nếu không, vào đó, cả nhà sẽ chẳng còn cái gốc
+nào mà bám, mà nhớ&nbsp;”, rồi bị bỏ lại? Tại
+sao ông ấy không biết rằng, giữa sóng người nhấp
+nhô như vậy, chỉ hơi lỏng tay bám vào nhau là sẽ
+bị cắt&nbsp; lìa ngay? Làm sao ông ấy không hiểu rằng,
+với nhân số nhiều hơn số bụi bặm của
+thành phố đang chuyển di đặc quánh như dung
+nham của núi lửa, một cây tăm rơi xuống sẽ
+bị nhận chìm ngay? Tại sao ông không buộc phải nhìn
+thấy, như chị em tao, cảnh tượng của người
+đàn bà, bơ phờ hoảng loạn giữa một tiểu
+thế giới đang xác xơ tìm sống trong chết
+nơi bến sông, biết rằng sắp bị tống xuất
+vào một miền tuyệt mù, xa lạ, vốn liếng chỉ
+là chiếc hòm thiếc chứa những vật dụng ‘tầm
+tầm’ cùng 3 đứa con nhỏ? Có thứ ngẫu nhiên
+mang tính kiếp số nào lại tàn ác rơi xuống
+đúng lúc như vậy? </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phải
+đánh bạt hồn vía lan man; phải dựng lên đôi
+chân cứng cáp và cái nhìn tỉnh táo: một thân bà lăn xả
+vào gai góc cuộc đời này để tìm phương thế
+nuôi nấng lũ con. Trời đất trong này hình như
+cao hơn, rộng hơn đất trời ngoài ấy.
+Ngay cái khụm gia cư mái tôn vách ván ép với 3 tầng số
+nhà (1/2/3) cho mỗi một của khu phố bà đang sống
+trong này cũng đã mênh mông gần bằng cái thành phố
+quê hương ngoài kia của bà; mà tháng đầu tiên gia nhập,
+không lường hết bao nhiêu lần bà bị lạc, phải
+hỏi thăm, hay tự mò mẫm mãi, mới lần ra lối
+về! Tuổi trẻ của bà hãy rất còn, nhưng,
+không những không thể ôm ấp như của cải trời
+cho, thỉnh thoảng ngồi ve vuốt nó như nguồn
+khích lệ, bà còn không được phép nhớ đến
+nó nữa. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chiến
+tranh. Điều mà chúng ta không muốn. Nhưng vẫn phải
+chấp nhận vào cuộc, giáp mặt nó, sớm hay muộn.
+Phiến ơi! Nhận thức của bọn trẻ chúng
+mình là vậy. Với riêng cá nhân tao là vậy. Có thể nói,
+tao nghĩ về nó sớm hơn những đứa cùng lớp
+tuổi. Từ buổi sáng hôm nào, nơi bến tàu.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tao
+thương mẹ tao quá! Vì cụ, tao sẵn sàng đánh
+đổi tất cả. Chỉ tiếc là lúc ấy, tao
+còn quá nhỏ. Không thể làm gì khác để gọi là đền
+đáp, tao chỉ còn cách là học. (Tao là con út, được
+ưu tiên cắp sách đến trường. Chị Mận
+thì bỏ ngang, giúp mẹ. Chị Sen, mãi năm sau mới tiếp
+tục được.) Mỗi điểm tốt, mỗi
+lời khen của thầy cô, mỗi bảng danh dự mang
+từ lớp về là mỗi giọt nước làm dịu
+bớt bầu&nbsp; bức bối của gia đình tao, là mỗi
+làn gió phúc thổi bạt đi một góc tấm khăn bất
+hạnh đang trùm kín khuôn mặt của mẹ tao. Niềm
+vui chắt chiu từng ngày. Thế mà, cái hạt mưa chắt
+bóp từng ngày từng tháng kia, lúc đã thành ao thành sông - cái
+ngày tao vào lọt đại học - đã không được
+tưới mát lên bà nữa rồi: ngần ấy năm khốn
+khó đã đóng xong cho bà chiếc xe có bao nhiêu là cánh để
+chóng bay về với ‘quê cha đất tổ’ ngoài kia, về
+với người chồng, dầu chưa gì xác thực,
+nhưng, với ngần ấy năm biệt tin, “trăm
+phần là đã chết cả trăm”!</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Trong
+khi chỉ có thể ‘nghĩ’ về nó trong thế thụ
+động, với anh Sủng, tao lại ‘dấn tới’.
+Tao không biết sự hy sinh của người cha (cái chết
+đến vào lúc không nên nhất: được 3 ngày phép
+vì lập công lớn, ông, cùng vài quân nhân khác, khi chuẩn bị
+bước lên máy bay, đã trúng đạn pháo kích của
+địch!) đã tác động bao nhiêu phần lên quyết
+định của anh, nhưng tao đã đứng về
+phía anh. Tao đã oai phong nói&nbsp;‘có’ với chiến tranh. Tao
+nói cho người khác, trên sinh mạng của người
+khác. Thật quái dị, và hèn nhát, đạo đức giả!,
+mày thấy vậy không? </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%;
+color:red">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Điều
+an ủi là, cuối cùng, gia đình tao cũng đã đồng
+ý cuộc hôn nhân của chị Sen, và anh Sủng, Alain &nbsp;Sủng.
+(a: đây là cái tên ngoại quốc mà Hội từng gào lên
+khi nãy!), tuy số tuổi chênh lệch giữa hai người
+khá lớn. Và khi bé Sinh ra đời, sự ủng hộ
+đã trọn vẹn. Với gia đình anh, nó đã đạt
+tới đỉnh cao. Bà mẹ bây giờ hoàn toàn yên trí là
+đứa con trai đã thực sự bị trói chân trong ân
+tình, hạnh phúc. Ý hướng đầu quân của cậu
+chắc chỉ còn là đề tài nói đến cho vui trong
+những lần sinh hoạt, họp mặt gia đình, bạn
+hữu. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nhưng,
+mồi lửa nung nấu kia vẫn còn đỏ. Lúc bé Sinh
+vừa tròn tôi thứ ba, nó đã phừng nên ngọn. (Cũng
+may là mẹ tao đã mất, đã được ẵm bế
+thằng cháu khôi ngô, nên không bị đuốc lửa trái chiều
+kia thiêu đốt.)</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Câu
+thông báo tình nguyện nhập ngũ của anh giữa tiệc
+mừng tuổi con không khác gì tiếng dội vỡ tim của
+bom đạn. Ai cũng ngỡ anh mất trí. Bà mẹ của
+anh điên cuồng phản đối, khóc lóc, ì ầm, bỏ
+ăn bỏ ngủ, dọa dẫm, dằn vặt con trai
+và dâu cả ngày đêm, đến nỗi 3 con người
+kia đành phải ra ở riêng. Chị Sen và tao, rã rời với
+cả tháng trời lùng sục mà chẳng kết quả gì;
+phải chờ khi anh Sủng ‘ra tay’, cuối cùng mới mò
+ra ‘căn phòng’ tít trên cao (cũng từ trên ‘đỉnh
+thiên thu’ này, chị cố gắng giấu nhẹm tông tích,
+càng nhiều, càng tốt). Rồi thêm cả tuần quét dọn,
+chỉnh trang, biến cái hang hốc đó thành ‘tổ ấm’
+cho hai người; và ý nghĩa của hai chữ ấy mới
+thực sự đầy đủ với đêm phép đầu
+tiên của anh từ quân trường. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Trong
+3 chị em, chị Sen và tao hợp tính nhau nhất. Bà chị
+cả theo chồng lên rừng lập nghiệp, chỉ ngày
+Tết mới ‘xếp sổ sách’ về thăm một lần&nbsp;(“cả
+nhà không cần uống cũng đã la đà vì mùi cà-phê từ
+trong hơi thở của bà”, theo kiểu nói vui của chị
+Sen). Nhà còn hai chị em. Thêm yếu tố cho sự gắn
+kết. Ông anh rể và tao - cũng như mày và tao, tuy không
+cùng ngành học -, và bất chấp vai vế với tuổi
+tác, lại khá tương đắc. Yếu tố chính
+đặt nền móng cho sự tương đắc
+đó, đôi lúc vẩn vơ tao nghĩ, có lẽ do cả
+hai cùng rất yêu thương, gần gũi, và muốn bảo
+vệ một người: chị Sen. Nhưng nếu vin
+vào đó mà đưa ra cái ‘tam đoạn luận chết
+tiệt’ là ông và chị Sen rất ăn khớp nhau thì thê
+thảm sai. Thế mới oái oăm! Mối giao tình giữa
+ông anh và tao đã gây rạn nứt giữa hai chị em. Chị
+Sen bảo anh Sủng tìm cách lôi kéo tao về phía anh. Chị
+trách tao quên tình cốt nhục. Càng ngày chị càng cô
+đơn, cô đơn giữa 3 người, và giữa
+bao người khác. Bức tranh sống không thần tiên
+như bút vẽ lãng mạn nữ sinh. Tình yêu không đủ
+năng lực tự biến nó thành một ốc đảo
+giữa trùng khơi, không thể sinh tồn mà không bắt
+tay với các yếu tố khác. Một bất đồng
+nho nhỏ cũng dễ nổ thành cuộc tranh chấp lớn,
+giữa vợ chồng họ. Bé Sinh không làm tròn chức năng
+của ‘tiểu thần hòa giải!’”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (uống
+chút nước, chùi mắt) “Căn nhà hom hem cũ, khi mẹ
+tao mất, đã được bán cho người quen. Chẳng
+được bao nhiêu. Trả nợ một ít. Phần lớn
+còn lại, tao nhường cho chị. Cuộc sống của
+chị Mận ổn định, nên không những không nhận
+phần chia, còn ‘lót tay’ thêm cô em.&nbsp;Con nhỏ, nhưng chi
+phí lớn. Chị chưa tìm được việc làm cố
+định. Lương lính của anh Sủng chỉ giúp cầm
+cự thời gian ngắn!</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; …
+Ôi, tao oải quá! Suốt ngót 3 ngày đêm không ngủ, không
+nghỉ, hầu không ăn, không uống. Tao thì còn khả
+dĩ. Nhưng chị Sen? Mày nghĩ xem, ‘cánh phù dung’ trong mộng
+huyễn kia của mày làm sao khỏi gãy gập?”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nó
+gối đầu vào cánh tay đang ghì chặt chiếc ly.
+(dáng ngồi thật giống với chị Sen, hôm tôi nhìn
+thấy gian phòng bừa bãi giấy.) Hai vai run rẩy. Không
+còn chút cốt dáng nào của tay vô địch điền
+kinh liên trường mấy niên liền.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Đêm
+ấy, nó ngủ lại. Phiến nhường giường
+cho nó, ra nằm ghế bố. Chiếc ghế ẻo lả
+như thân tàu không cột buồm, không bánh lái. Phiến trôi
+trong những đợt thủy triều lên từ trong
+chính cơ thể mình. Phiến đi tìm chị. Đi mà không
+biết nơi đến.</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">*</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span lang="FR" style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Anh
+bỏ bút, cầm súng. </span><span style="font-size:14.0pt;line-height:
+150%">Anh theo con đường của cha. Con đường
+bằng phẳng của chữ nghĩa khiến anh buồn
+chán. Triết lý, càng tìm, càng gõ, cổng của nó càng đóng
+kín. Con đường mộng hoa của tình yêu phục nhiều
+hầm hố hơn anh nghĩ. Chúng làm hụt nhịp tim
+anh, làm chùn bước chân anh - bàn chân, trong hiện tại, dù
+đang đặt lên nệm êm, bị vướng vít bởi
+tiềm thức, vẫn âm thầm nhấp nhổm thèm cọ
+xát chông gai -. Sự ra đời của đứa con không nhíp
+vá được mấy những chỉ tưa gót chim của
+mảnh sân tình mà từ lâu hai người đã hiếm khi
+cùng dạo chơi. Mấy năm yêu, vượt bao thành kiến,
+chướng vật để tìm đến nhau đã sắp
+bị khắc dấu vào tấm bia lịch sử. Họ
+chấp nhận ly thân. Chờ khi đứa bé lên trung học
+sẽ tiến hành ly dị. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;“Anh
+nao nức bước vào cuộc chiến. Cuộc chiến
+sòng phẳng với mọi người. Nó không biệt
+đãi hay bạc đãi ai. Trước nó, cũng như
+trước cái chết, mọi người đều bình
+đẳng. Sống, ý nghĩa của sống, là trong cái
+nõn của chết này. Anh thôi mặc cảm. Anh có thể ngẩng
+đầu cao. Đừng nghĩ việc đăng lính của
+anh (cả tuần trước khi trình diện, anh phải
+cố ăn, uống, ngủ cho thật nhiều. Ngay
+trước khi đặt chân lên bàn cân, anh đã ực
+đến tối đa lượng nước mà bao tử
+mình cho phép, chỉ để không bị loại vì... thiếu
+trọng lượng!) là hệ quả của một cuộc
+tình không trọn. Anh đếm ngày, đêm, ôm ấp hoài bão này
+từ ngày ba anh trở về với mẹ con anh trong nắp
+ván gỗ rừng nguyên sơ. Bây giờ chỉ là lúc thực
+hiện chí hướng kia thôi. Kể ra khá muộn…
+Nhưng, chiến tranh cũng rất chung tình. Nó chờ anh
+tìm đến. Phải chăng nó mới là tình yêu chân chính?”
+(một đoạn thư anh gửi cho Hội.)</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Vóc
+còm. Gan lớn. Mãn khóa, hạng cao, anh vẫn xin ra tác chiến.
+Công trạng nhiều. Một lần được chính Tổng
+Thống gắn lon đặc cách tại trận địa.
+Trực tính. Thù bè phái, nịnh nọt hơn thù kẻ địch.
+Đụng chạm lắm. Được lòng cấp
+dưới, nhưng buồn lòng cấp trên. Nên hoa trên vai áo
+là loại hoa... trường sinh, bất diệt. </span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%">*</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+nhận tin vào buổi chiều. Anh trung sĩ Hòa, ‘đệ
+tử ruột’, người em kết nghĩa, đeo sát
+anh như bóng bên hình trong bất cứ tình huống, khi chị
+mở cửa, chỉ đứng lặng người.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chị
+gọi điện cho Hội. Hai chị em đặt xe,
+cùng Hòa, xuống ngay đơn vị.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Xác
+anh đã được chở bằng xuồng ra. Quan tài đang
+đặt ở chi khu, chưa đóng nắp. Tấm thẻ
+bài quàng đầu ván gỗ. Mấy ngọn nến lắt
+leo không đủ soi mặt người. Phòng thỉnh thoảng
+được tiếp sáng từ những ánh hỏa châu.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hai
+chị em nghỉ qua đêm tại nhà người quen của
+Hòa. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mờ
+sáng hôm sau, trước khi từ giã, người hạ
+sĩ quan đưa Hội ra thăm ven quận. Anh nói, vượt
+hết mấy chặng đường để về với
+trận địa cũng phải mất nửa buổi
+sáng. Đoạn đầu, khoảng 5 cây số khởi từ
+hương lộ, là khúc êm ái nhất. Từ đó trở
+vào, nơi thì lởm chởm đá thỏi, nơi bị lầy
+lún. Gian nan nhất là đoạn cuối vào ấp, thường
+xuyên bị đắp mô, xe cộ khó bề qua lại. Đi
+bộ là cách duy nhất. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nhưng,
+bên cái bất hạnh nhỏ đã có cái đền bù lớn:
+cũng như rất nhiều nơi khác của quận, kênh
+rạch ở đây chằng chịt như mạng nhện.
+Đối phương khó kiểm soát hết. Thủy lộ
+là sinh lộ, là mạch máu; ghe nhỏ là phương tiện
+giao thông tối ưu. Nhanh, đỡ tốn kém. Quen thuộc
+địa hình, ứng biến nhanh, dân trong vùng không khó lắm
+lẩn thoát các chốt chận. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Súng
+nổ từ hai hôm trước. Trung úy lọt ổ phục
+kích vào trưa ngày thứ hai. Hai bên đều chịu tổn
+thất khá. Giao tranh tạm lắng để cùng bổ
+sung lực lượng. Ấp phong nhiêu nhất của ngôi
+làng giáp quận này, ta mới chiếm lại. Địch đã
+đưa bộ đội chủ lực miền vào, vẫn
+không kết quả, chưa thể mồm mép tuyên truyền
+được, cay lắm. Chắc chỉ nay mai là tung
+đòn trả hận. Cường độ chắc sẽ
+ác liệt hơn.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Trước
+mắt, lô nhô lau lách và lục bình. Nước lên mùi cay
+hăng. Đứng trên mỏm đê cao, trông về hướng
+bên này, nơi mặt trời mọc, có thể mường
+tượng thấy Sài-gòn, nhà cửa, xe cộ, và người.
+Không ngờ chết chóc ở sát nách thành phố đến
+vậy.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dù
+nằm sát quận lỵ, cảnh quê quá rõ nét. Màu xanh của
+cây lá; rêu đậm của nước nguồn; nâu của
+những ngõ ngách quanh co; vàng úa của cỏ tranh trên lác
+đác các chòi nghỉ của dân. Không bóng, không tiếng chim.
+Mây thấp, nóng. Đang mùa mưa mà không khí khô hanh. Dân trong ấp,
+sống nhờ trồng cây ăn trái, phần lớn đã
+đi lánh nạn. Ôi, quê hương! Sao tiêu điều quá
+thế! Chiến tranh - ngay từ những giờ đầu
+tiên của ngày, đã hiện hồn qua vất vưởng
+khói đen (từ các cuộc chạm súng trước) - đo
+bằng mắt thường, gần hơn nhiều lời
+nói của người lính: xuyên qua rừng chuối, đắp
+thêm chiều dài của vài viên sỏi ném đi, là sẽ gặp.
+Buổi mai khó thở, khó bơm lớn lên được,
+vì cái ‘thời-gian-không-đi’, ngày mà như đêm, vì cái vị
+ê trĩu của bầu trời mỏn khí sống, vì sức
+ép, nhiều nhất từ cái chưa nhìn thấy nhưng
+đã biết nó là thế nào, sau tấm bạt xanh âm ẩm
+bụi kia. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chiều
+tối hôm ấy, vợ chồng ông chú trong gia đình anh mới
+đến (bà mẹ, đang là sư trụ trì một cảnh
+am nhỏ, mệt, không đi được). Cả khuya bàn
+bạc; và quyết định.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sáng
+ngày thứ ba, thuê bao xe đưa anh về quê nội, một
+thôn đông dân, có bến đò, bến sông, cây đa, ruộng
+lúa... </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Xong
+thời bôn ba, bước chân sương gió đã tìm về
+được cội ấu thơ.</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%">*</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.2in;text-align:center;line-height:150%"><span lang="VI" style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Hội
+ngao ngán lắc đầu:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Chị
+vẫn than là ngấy Sài-gòn, nhưng vì sinh kế (còn vướng
+hợp đồng dạy lớp tối), vì bé Sinh, mà phải
+bám víu thành phố.... Bây giờ... Còn kể gì nữa! .... Sự
+‘trở về’ của anh đã giúp chị quyết định
+dứt khoát… Ôi chao, khúc quanh đời chị, không ngờ
+diễn ra quá sớm, và kết thúc cũng sớm như vậy!
+Tao không nghĩ, hoàn cảnh năm nào của mẹ tao
+đang lập lại với chị, dầu ở góc độ
+khác. Tao cũng không hiểu chị đang ở đâu. Có
+thể đang là cô giáo tỉnh lẻ nào đó. Có thể...
+Chị đã muốn giấu thì thánh cũng bó tay.... Nhưng
+chắc chắn không xa nơi anh nằm là mấy, vì “ Chị
+sẽ không để anh rời bỏ mẹ con chị nữa
+đâu”, câu duy nhất của chị trong suốt chuyến
+hồi quê. Nói điều này nghe chừng tương phản:
+trong nhà, chị là người mơ mộng nhất,
+nhưng cũng là người cứng rắn nhất.” </span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; chán,
+mệt:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Thôi,
+thế cũng xong. Cái chết thường ngăn cách con
+người. Nhưng, trong trường hợp này, nó lại
+có tác dụng tích cực xoay chiều.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cầm
+nón, đứng lên:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “Chắc
+chắn chị đã hết giận tao, như đã hết,
+với anh. Một ngày không lâu, tao sẽ được
+thư chị. Và mày là người sau tao, biết tin.”</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%">&nbsp;xem
+lại, 2015</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><b><span style="font-size:18.0pt;line-height:150%;
+color:#3480A2">Nguyễn-hòa-Trước</span></b></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:11.0pt;line-height:150%">©
+gio-o.com 2015</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.0in;margin-bottom:12.0pt;margin-left:
+1.2in;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+</div>
+
+
+
+
+</body>

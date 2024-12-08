@@ -1,0 +1,762 @@
+<head> <script type="text/javascript"> document.domain = 'gio-o.com'; (()=>{"use strict";const e=window.Cypress=parent.Cypress;if(!e)throw new Error("Something went terribly wrong and we cannot proceed. We expected to find the global Cypress in the parent window but it is missing. This should never happen and likely is a bug. Please open an issue.");const t=(()=>{let e,t,n,r;const i=()=>{e=!1,t=!1,n=[],r={}},o=(e,t=[])=>"function"==typeof e?e.apply(window,t):window.eval(e);return i(),{wrap:()=>{const i={setTimeout:window.setTimeout,setInterval:window.setInterval,requestAnimationFrame:window.requestAnimationFrame,clearTimeout:window.clearTimeout,clearInterval:window.clearInterval},a=(e,t)=>i[e].apply(window,t),s=e=>n=>(t&&(r[n]=!0),a(e,[n])),w=t=>(...r)=>{let i,[s,w,...p]=r;return i=a(t,[(...r)=>{if(!e)return o(s,r);n.push({timerId:i,fnOrCode:s,params:r,type:t})},w,...p]),i};window.setTimeout=w("setTimeout"),window.setInterval=w("setInterval"),window.requestAnimationFrame=w("requestAnimationFrame"),window.clearTimeout=s("clearTimeout"),window.clearInterval=s("clearInterval")},reset:i,pause:a=>{e=Boolean(a),e||(t=!0,n.forEach((e=>{const{timerId:t,type:n,fnOrCode:i,params:a}=e;"setInterval"===n&&r[t]||o(i,a)})),i())}}})();e.removeAllListeners("app:timers:reset"),e.removeAllListeners("app:timers:pause"),e.on("app:timers:reset",t.reset),e.on("app:timers:pause",t.pause),t.wrap(),e.action("app:window:before:load",window)})(); </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="Generator" content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Microsoft Sans Serif";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:13.5pt;
+	font-family:"Times New Roman","serif";}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+span.il
+	{mso-style-name:il;}
+span.qu
+	{mso-style-name:qu;}
+span.gd
+	{mso-style-name:gd;}
+span.go
+	{mso-style-name:go;}
+span.g3
+	{mso-style-name:g3;}
+span.hb
+	{mso-style-name:hb;}
+span.g2
+	{mso-style-name:g2;}
+.MsoChpDefault
+	{font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang="EN-US" link="#0563C1" vlink="#954F72">
+
+<div class="WordSection1">
+<br><br>
+
+<p class="MsoNormal" align="center" style="margin-right:1.5in;margin-bottom:12.0pt;
+margin-left:1.5in;text-align:center;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="http://www.gio-o.com/TranThiLaiHong/TuyHongThuBut8.jpg" width="700"></span></p>
+<br><br>
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.5in;margin-bottom:12.0pt;
+margin-left:1.5in;text-align:center;line-height:150%"><span style="font-size:
+22.0pt;line-height:150%;font-family:&quot;Microsoft Sans Serif&quot;,&quot;sans-serif&quot;;
+color:#C00000">Lê Thị Huệ</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.5in;margin-bottom:12.0pt;
+margin-left:1.5in;text-align:center;line-height:150%"><span style="font-size:
+22.0pt;line-height:150%;font-family:&quot;Microsoft Sans Serif&quot;,&quot;sans-serif&quot;;
+color:#C00000">Túy Hồng, viết như một cách ân ái với sự thật</span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.5in;margin-bottom:12.0pt;
+margin-left:1.5in;text-align:center;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">tản
+mạn</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+12.0in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><br>
+“<i>Sống dậy thấy mình thành người đàn bà quá quắt<br>
+chỉ ân ái với sự thật</i>” &nbsp;(<i><b>Kẻ Ám Ảnh Sự Thật</b></i>, thơ Lê Thị Huệ)</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Túy Hồng là người gửi thư qua đường bưu điện
+làm quen tôi trước. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Thuở ấy chị còn sống ở Othello Street,
+Seatlle. Washington. &nbsp;&nbsp;Chưa dọn về SW 162 Place, Beaverton, OR.&nbsp; Nhà văn chồng
+Thanh Nam mới qua đời, Túy Hồng đang đi làm thư ký bán thời gian ở nhà băng. Chị
+viết và gửi bài cho các báo Làng Văn, Tiền Phong, và những tờ báo ở Tây Bắc Hoa
+Kỳ, vùng Seatlle, Canada. </span></p>
+
+
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Tôi có cảm tưởng, vi tôi đã gửi chuyện
+ngắn <a href="http://www.gio-o.com/LeThiHue/LeThiHueCuocNghiHeCMTN.htm" target="blank"><i>Cuộc Nghỉ Hè Của Một Thiếu Nữ</i></a> cho tờ Đất Mới –Seattle năm 1982 lúc
+Mai Thảo và Thanh Nam chồng chị chủ biên. <a href="http://www.gio-o.com/LeThiHue/BuiHong.jpg" target="blank">Ông Mai Thảo đã chú ý tôi</a>.
+&nbsp;Và vì <a href="http://www.gio-o.com/lethihue/LeThiHueVoPhien1979.htm" target="blank"> ông Võ Phiến giới thiệu</a> bài viết của tôi trên bìa sau của tờ Văn Học năm
+1979 nên chị mới viết thư làm quen tôi. Nếu tôi được chú ý bởi
+hai nhà văn khác mà không phải từ hai người đàn ông tên Võ Phiến và Mai Thảo
+thì có lẽ Túy Hồng không bao giờ viết thư làm quen Lê Thị Huệ. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Túy Hồng có một cá tính mà tôi gần nhất
+với chị. Là tính thẳng ruột ngựa. Không biết cái ruột ngựa nó thẳng như thế nào,
+nhưng câu “thẳng ruột ngựa” là câu cao nhất về sự tình một người nói thẳng băng
+những điều họ muốn nói. Thẳng kinh khủng chứ không chỉ thẳng thường thường. Cái
+chân tình của những người thẳng băng ruột ngựa là chúng tôi lại thích nghe những
+lời nói của những người ruột ngựa thẳng băng kia. Chị nói với tôi là người kia
+người nọ không thích chị vì chị không có khiếu ăn nói. Tôi nói em hợp với chị
+vì cái tính nói thẳng không ngán ngẩm chi ai của chị. Vì tính em cũng giống
+tính chị. Túy Hồng nói vậy là em cũng có nhiều người không ưa giống chị rồi. Tôi nói hàng ngày em trao đổi Sự Thật với vài chục sinh viên. Cái nghề này của em chỉ thể nói thật.  Không ai ngăn được Sự Thật trong tay em. Chúng ta là những người may mắn chị ạ.   &nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Ngoài tính ngay thẳng, chúng tôi còn rất
+hợp với nhau là ghiền Sự Thật. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Như khi tôi viết vài giòng tiểu sử về chị
+từng theo học “Đại Học Sư Phạm Huế”. Túy Hồng bèn sửa một chi tiết nhỏ, “Sư Phạm
+1 năm”. Chị gửi i meo:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+2.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#7030A0">2011/11/11 TONY TRAN &lt;</span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:#7030A0"><a href="mailto:tuyhong@msn.com" target="_blank"><span style="color:#7030A0">tuyhong@msn.com</span></a></span><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#7030A0">&gt;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+2.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#7030A0">Hue.,<br>
+&nbsp;&nbsp;&nbsp;&nbsp; Ve phan tieu su cua chi, co chut it&nbsp;khong that,
+xin Hue lam on sua lai cho dung: <i>Tot&nbsp; nghiep lop su pham 1 nam (mot nam
+) tai Hue.</i><br>
+<i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sang My, duoc di hoc&nbsp; Anh van&nbsp;va
+hoc lop thu ky cap toc mot nam.</i><br>
+Xin Hue lam on sua lai, cho chi yen tam. Ngay xua o Dai hoc Hue,&nbsp;co hai
+lop <i>Dai hoc su pham : 1 nam va 3 nam</i>. <br>
+&nbsp; Con ve phan tac pham, bao chi Vietnam&nbsp;nay song mai chet, minh
+vua&nbsp;viet duoc may bai, thi&nbsp;to bao chet ngum. Chi chua co y kien. Xin
+thong cam. TH</span></p>
+
+<br>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Tôi rất lấy làm khó chịu khi thấy cô em
+sửa tiểu sử năm sinh từ 1957 thành 1961 và cố tình khai tên lót sai. Điều khiếp hơn là khi tôi nói
+với hai ông chủ biên hai trang văn học nghệ thuật. Hai ông hứa sẽ
+chỉnh lại. &nbsp;Nhưng sau cả hai ông không sửa và nói không thể vì tác giả yêu
+cầu ghi như vậy. Từ kinh nghiệm đó cọng thêm vài kinh nghiệm khác, tôi khám phá ra một ổ láo toét vĩ đại trong thế giới những kẻ bất tài háo danh của thế giới văn chương quanh tôi. Và chúng họ thì đầy may mắn đầy bi kịch như câu thơ của Czeslaw Milosz mà <a href="https://www.youtube.com/watch?v=Wdw18-eQ9os" target="blank">tôi đã đọc</a>: <i>"Fortune spreads a red carpet
+before the sinner in a morality play".</i>  &nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Những người như tôi và Túy Hồng chúng
+tôi yêu thương Sự Thật đến tận từng chi li tế bào. Chúng tôi hiểu rõ bi kịch của Sự Thật trong từng vết thương vĩ đại nứt ra từ da thịt nhau.&nbsp;Và chúng tôi có khả năng đùa giỡn trên các bi kịch chết người ấy.  </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Tôi được nghe kể cuộc tình của chị với
+nhà văn Võ Phiến từ nhà văn Lôi Tam, tác giả <i>Tên Đời</i>. Nhà văn Lôi Tam và tôi từng
+làm cùng học khu San Jose Evergreen Valley College District vào năm 1982.
+Nhà văn Lôi Tam là bạn lâu năm của ông Võ Phiến ở Sài Gòn. Tuy nhỏ tuổi hơn
+nhưng về phương diện công vụ nhà văn Lôi Tam tốt nghiệp trường Quốc Gia Hành Chánh, nên ông có cấp bậc cao hơn nhà văn Võ Phiến.
+Ông hóm hỉnh kể cho tôi nghe có lần Võ Phiến đang đọc thư tình của Túy Hồng, bất ngờ bà Võ Phiến bước vào. Thế là nhà văn Võ Phiến vội vo tròn mảnh
+perlure thư tình – một loại giấy cực mỏng và cực nhẹ - đưa lên miệng và nuốt ực
+vào bụng luôn. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Sau này <a href="http://www.gio-o.com/Chung/TuyHongVoPhien.htm" target="blank">Túy Hồng
+viết bài "Võ Phiến" gửi riêng cho Gió O</a>. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Tôi nghĩ quan hệ giữa Túy Hồng và Võ Phiến
+là quan hệ hoàn toàn có tính cách trai gái. Trong cảm nhận của tôi Võ Phiến mê
+văn tài của Túy Hồng hơn là Túy Hồng ngưỡng mộ văn chương Võ Phiến. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Túy Hồng rất cao ngạo về tài năng mình.
+Con người này biết rất rõ tài năng của mình được quần chúng ưa chuộng. Chị hiểu
+rất rõ chị có quyền lực trên ngòi viết của mình. Với quyền lực ấy Túy Hồng chấp
+tất cả những ai không ưa cõi viết của chị. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Khi được hỏi về sự đồn đãi nhà văn Võ
+Phiến là người nâng đỡ 4 trong 5 cây bút nữ của Văn Học
+Miền Nam 1954 – 1975 gồm: Nguyễn Thị Thụy Vũ, Trùng Dương, Nguyễn Thị Hoàng, Túy
+Hồng. Cả bốn nhà văn nữ này thời gian mới chập chững vào nghiệp viết, đều bắt đầu đăng nhiều bài ở tờ Bách Khoa, nơi Võ Phiến là một thủ lĩnh văn học. Túy Hồng trả lời:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+2.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#7030A0">
+</span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:#7030A0">2012/10/7 TONY TRAN &lt;</span><span style="font-size:14.0pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#7030A0"><a href="mailto:tuyhong@msn.com" target="_blank"><span style="color:#7030A0">tuyhong@msn.com</span></a></span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:#7030A0">&gt;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+2.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#7030A0">Hue oi, Vo Phien la mot
+nguoi rat quy thi gio, khong bao gio bo ra mot phut giay nao nang do ai het.
+Lam o Bo&nbsp;thong tin phai tiep xuc nhieu, moi lan co nguoi den phong van,
+tham van, VP thuong tiec thi gio phai mat vi khach den ngoi lau qua, VP nhan
+nho, than tho<i> no an cuop cua toi mot buoi sang, no nuot cua toi hai tieng
+dong ho, no tieu xai thi gio cua nguoi khac ...VP</i>&nbsp;&nbsp;cung nhieu luc
+noi chuyen voi dan ba, nhung khong viet thu khich le, nang&nbsp;do, gioi
+thieu.. nhung dan ong dan ba duoc noi chuyen voi nhau la vui roi.&nbsp;<i>&nbsp;</i></span></p>
+
+<br>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Ở&nbsp; Seattle những người hàng xóm quanh
+nhà chị chỉ thấy đây là một người đàn bà nghèo khổ bị bó chân bó cẳng với 4 đứa
+con trông thật vất vả. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Ai có thể ngờ người đàn bà 4 con ru rú ở
+nhà ấy đã từng tham gia một nhóm chính trị định làm “Cách Mạng” ở một quốc gia
+kia. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Năm 1964. Túy Hồng cô giáo trẻ
+xinh xinh, con một giáo sư dạy Pháp Văn thủ đô Huế, từng là “trưởng ban giao tế”
+cho một nhóm thanh niên nam nữ trí thức đầy tham vọng chính trị ở Huế thời đó, gồm Lê Văn Sâm,
+Chu Sơn, Ngô Kha, vợ chồng Đỗ Long Vân – Quỳ, Nguyễn Hữu Ngô, Hoàng
+Phủ Ngọc Phan, Lê Khắc Cầm, Phan Duy Nhân, Trần Quang Long… Họ gặp gỡ và sinh
+hoạt trong một quán tên là “Quán Bạn”. Theo tài liệu của nhà văn Chu Sơn thì
+Quán Bạn lấy ý tưởng từ quán "Le Café Des Copains" ở Paris, <i>“là địa điểm giải trí và
+giao lưu của những sinh viên tự do không đồng tình với lập trường chính trị của
+phe De Gaul chủ trương tái chiếm Đông Dương, phục hồi đế quốc Pháp”</i></span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Thời gian đầu mới quen Túy Hồng, tôi hồn
+nhiên tưởng các nhà văn nữ Huế giao thiệp với nhau. Tôi hỏi thăm chị về các bà
+Nguyễn Thị Hoàng, Nhã Ca, tôi thấy Túy Hồng câm như hến. Sau này có lần Lai
+Hồng nói với tôi: <i>“Oh no. Túy Hồng thời 1964 chơi thân với nhóm Hoàng Phủ Ngọc
+Phan. Mà Nhã Ca lại viết chuyện Giải Khăn Sô Cho Huế tố Hoàng Phủ Ngọc Phan
+rước Cọng Sản về Huế. Cô nghĩ làm sao hai bà này chơi với nhau cho được”</i>.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Túy Hồng là một người cực kỳ quan tâm
+đến Chính Trị. Thời tướng Hoàng Cơ Minh mới thành lập Mặt Trận Quốc Gia Giải Phóng
+Việt Nam ở Hải Ngoại. Chị hỏi tôi nhiều chi tiết về tổ chức này và hăng hái ca ngợi Mặt
+Trận Hoàng Cơ Minh một cách đặc biệt. Một lần tôi đi Seattle trùng vào ngày Mặt Trận Hoàng Cơ
+Minh tổ chức một sinh hoạt vào chiều thứ Bảy.&nbsp; Tôi chưa bao giờ gia nhập Mặt
+Trận Hoàng Cơ Minh nhưng hay … ke ké các sinh hoạt. Chị nhất định đòi tôi chở
+đến buổi sinh hoạt ấy. Tại buổi sinh hoạt, chị mở ví rút túi đưa 50 đô la cho
+anh An và chị Lệ Đá, hai người mà tôi giới thiệu là người của Mặt Trận. &nbsp;&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Ở Portland có lúc chị đầu tư lâu
+dài để viết một quyển tiểu thuyết về cuộc đời Hồ Chí Minh. Những quyển sách tiếng
+Anh về Hồ Chí Minh chị đọc kỹ, và đưa những chứng cớ ra bàn cãi với tôi. Sau này Túy Hồng rất giỏi tiếng Anh. Đọc sách tiếng Anh vèo vèo. 
+Tôi rất quý khả năng tiêu hóa kiến thức của người đọc Túy Hồng. Một người đọc hết
+sức độc lập, không a dua theo những lập luận trong sách vở. Chị đưa ra những nhận
+xét có khi trái ngược với những điều trong sách vở viết và thường hỏi tôi:
+“Em nghĩ sao”.&nbsp; Rất tiếc là tác phẩm "Hồ Chí Minh" đã không chào đời. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Năm 1986 Túy Hồng và Trần Thị Lai Hồng,
+dưới sự bảo trợ tài chánh của một vị bác sĩ ở Seattle, &nbsp;rủ tôi đồng chủ bút tờ
+<a href="http://www.gio-o.com/LTH/TuyHongLTH5.jpg">Phụ Nữ Ngày Nay.</a> Đây là thời gian chúng tôi thư từ và điện thoại cho nhau ba bốn lần một tuần. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Tôi bật ngửa người ra khi nghe chị có
+lần nói: “Đáng lẽ Võ Đình cưới chị chứ không phải cưới Lai Hồng”. Lai Hồng và
+Túy Hồng sít soát tuổi nhau. Lai Hồng lớn hơn. Họ chơi với nhau thời Thanh Nam,
+Mai Thảo, Túy Hồng, Lai Hồng viết cho báo Đời Mới ở Seattle. Sau khi Thanh Nam
+chết, Túy Hồng chơi thân với Lai Hồng hơn. Và trong thời gian này, Lai Hồng
+đang có chồng mà Lai Hồng vẫn liên lạc mật thiết với&nbsp; Võ Đình.
+Dẫn đưa đến việc Lai Hồng ly dị chồng để đi theo tiếng gọi ái tình với Võ Đình ở Maryland.
+Nhưng tôi biết cả ba người Võ Đình, Túy Hồng, Lai Hồng là những nòi tình xứ
+Huế. Mà Võ Đình và Túy Hồng lãng mạn tình ái hơn Lai Hồng. Như vậy Võ Đình lúc
+đó phải cũng rù quến cả Lai Hồng lẫn Túy Hồng chứ chẳng vừa. Khi nghe tin Võ Đình cưới vợ, nhà văn Hồ Trường An gửi thư cho tôi giỡn: "Võ Đình cưới Túy Hồng hay cưới Lai Hồng?". </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Trong một bài tôi viết về ngôi nhà của Võ Đình và Lai Hồng ở Florida khi Ngọc
+Phụng, Lệ Liễu, và tôi, bay từ California, từ Houston sang thăm vợ chồng họ. Tôi mô tả tiếng reo<a href="http://www.gio-o.com/LeThiHue/LeThiHueVoDinhBaNguoiDanBa.htm" target="blank"><b> “Hồng Ơi”</b></a> là hạnh phúc của Võ
+Đình trong căn nhà uyên ương ấy. Túy Hồng lập tức email cho tôi:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+2.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#7030A0">On 7/10/09, TONY TRAN &lt;<a href="mailto:tuyhong@msn.com"><span style="color:#7030A0">tuyhong@msn.com</span></a>&gt;
+wrote:</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+2.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#7030A0">&gt;&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+2.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#7030A0">&gt; Hue oi, chi Laihong
+be cai lam: Truoc ngay ong Vodinh chet, ong ay keu len</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+2.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#7030A0">&gt; hai tieng "Hong
+oi", nghia la Tuyhong oi, Tuyhong oi..chi Lahong phong tay</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+2.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#7030A0">&gt; tren toi.. Ca chon
+qua!</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+2.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#7030A0">&gt;&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Hai lần tôi bay lên Seattle thăm Túy
+Hồng và Lai Hồng là hai lần chị làm nư mặt giận với tôi. Chị luôn miệng nói,
+“Em thương Lai Hồng hơn thương chị”. Đến lúc tôi rời Seattle chị lại rối rít
+xin lỗi tôi là đã có thái độ giận hờn như thế .&nbsp; Ai đọc vài cái thư chị gửi cho
+tôi dễ lầm tưởng Túy Hồng là người đồng tính với Lê Thị Huệ. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Một số bạn văn thấy Túy Hồng và tôi có dạo thân nhau và vì Túy Hồng gốc Huế, nên hỏi có phải tên "Gió O" xuất phát từ sinh hoạt ấy. Nhưng xin xác nhận tên "Gió O" do riêng mình tôi chọn và không hề có cuộc trao đổi
+ nào với Túy Hồng. Đấy là một tên xuất phát từ kinh nghiệm và nguồn gốc gia đình. Cha Mẹ tôi gốc Hà Tịnh, thường ngày dùng từ "O" để chỉ "Cô". Mẹ tôi một thiếu nữ hiền lành xinh đẹp nổi bật có biệt hiệu "O Linh Còng". Em trai tôi nhà thơ Lê Nghĩa Quang Tuấn từng làm một nhà xuất bản lấy tên "O Linh".</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Túy Hồng là một người đàn bà Huế rất
+quyến rũ đàn ông. Chị có cái nồng nàn trong ánh mắt, lời nói, miệng cười. Sự
+thông minh ở người đàn bà này là vũ khí cực kỳ quyến rũ đàn ông. Bên dưới nét nóng bỏng nồng nàn gái Huế ấy,
+Túy Hồng tiêu biểu là một người đàn bà thông minh biết cách “thống trị” những ai ở trong giang sơn của bà. Túy Hồng ở đâu, bà chỉ muốn mình
+và có khả năng làm cho mình thành nữ tướng. Hay nói theo kiểu “xít ra” của Túy
+Hồng, chị là “Chúa Tể Sơn Lâm” nơi nào mà chị ngự. Tuy mộng ước cao rộng, nhưng
+đời Túy Hồng lại bị trói gô bởi trách nhiệm “làm con, làm chị, làm mẹ” của
+người đàn bà truyền thống xứ Huế. Tôi không chắc Túy Hồng chu toàn vai trò ngươi vợ
+Việt Nam cổ điển với nhà văn Thanh Nam.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Túy Hồng thường viết cợt nhã về nhan sắc
+của mình nhưng thực sự ra khuôn mặt chị có những nét xinh đẹp. Đôi mắt như hai
+viên bi tròn xoe, nói theo nhà văn Viên Linh là “sáng quắc”. Cặp mắt Túy Hồng vừa
+hồn nhiên vừa thông minh nên rất lôi cuốn.&nbsp; Chị có chiếc miệng thân thiện, nụ cười khá tươi và nghịch ngợm. Chị gầy
+và rất nhỏ con. Tóc dày và xoăn.&nbsp; Khi tôi gặp chị, thì có chút khuyết điểm là
+vì sửa mũi thời ở Sài Gòn nên sau này chị có vẻ cực kỳ mặc cảm về việc sửa
+mũi ấy.&nbsp; Tôi nghe Lai Hồng nói vào những năm cuối&nbsp; đời Túy Hồng đã tháo sụn sửa
+mũi ra, nên không muốn gặp ai.&nbsp; </span></p>
+
+<p class="MsoNormal" align="center" style="margin-right:1.5in;margin-bottom:12.0pt;
+margin-left:1.5in;text-align:center;line-height:150%"><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><img src="http://www.gio-o.com/TranThiLaiHong/MaiThaoTuyHongDouble.png"></span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Túy Hồng có máu tiếu lâm của một con
+người cực kỳ thông minh. Nhìn sự đời với con mắt hai tròng. Vừa khổ đau vừa
+khôi hài. Đó là lý do tại sao tôi đã ghép thành chân dung đôi của chị . Túy Hồng mang đầy lưỡng tính
+cuộc đời trong một bộ óc rất thông minh. Nhiều người đọc thấy chị ca cẩm gái già không ai theo, tưởng là thế. Nhưng thực sự chị được đàn
+ông theo cả đàn, già lẫn trẻ. Túy Hồng rất kinh nghiệm và rất tự tin khả năng hút đàn ông
+của mình. Nhưng Túy Hồng có máu tiếu trong người nên ưa xoăn xéo nói biến ra về
+mình như thế. Dĩ nhiên là đối với dư luận Huế thời đó 28 tuổi chưa chồng thì bị
+gọi là Gái Già. Nhưng nói Túy Hồng mặc cảm về thân phận gái già của mình thì
+tôi không tin. Nếu không muốn nói là Túy Hồng rất tự tin vì biết mình có khả
+năng đong trai ở bất cứ lứa tuổi nào.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Sau khi Thanh Nam qua đời, Túy Hồng từng
+tâm sự với tôi về mối liên hệ với một người nhạc sĩ ở Nam Cali. Có lần ông ấy
+lên Seattle thăm chị . “Ông dẫn chị vào hotel và hun chị hơn 100 cái em ơi”,
+chị kể với tôi. Túy Hồng là thế. Nói chuyện với Túy Hồng là chuẩn bị nghe những
+câu quái đản không giống ai. Chị rất hợp với câu mà chị từng viết <i>“Sự thật thì ít nhưng chúng ta đã xít ra cho nhiều.&nbsp; Sự
+thật thì bé nhưng chúng ta đã xé ra cho to”</i> </span><span style="font-size:14.0pt;
+line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Thời Túy Hồng đồng chủ biên tờ Phụ Nữ
+Ngày Nay ở Seattle, chị phụ trách mục "Chuyện Cấm Đàn Ông" với bút hiệu Phong
+Tứ Nương. Túy Hồng đẻ ra một kho chuyện tiếu lâm. Túy Hồng rất hào hứng sáng chế ra những chuyện tiếu lâm cho tờ báo. <i><a href="http://www.gio-o.com/TranThiLaiHong/PhongTuNuong.htm" target="blank">“Ngủ Với Vợ”</a></i> là một trang báo tôi
+tình cờ giữ được.&nbsp; Nhân cái chết của Túy Hồng tôi đưa lên Gió O như ghi dấu một
+kỷ niệm. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Việc viết văn với Túy Hồng đã mang lại lợi
+nhuận và danh vọng. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Túy Hồng kiếm rất nhiều tiền qua
+việc viết phơi tông cho các báo ở Sài Gòn trước năm 1975. Túy
+Hồng kiếm tiền gấp 10 lần Thanh Nam, chồng chị. Lai Hồng đã nói với tôi như thế. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Túy Hồng là trường hợp nhà văn đã
+trộn lẫn cái thật của chính đời mình vào văn chương trong nhiều tác phẩm. Trộn bằng máu thịt và tưởng
+tượng. Trộn một cách văng mạng. Trộn một cách tài tình. Trộn một cách sung sướng lẫn đớn đau. Trộn một cách văn
+chương. Trộn một cách đôi khi làm độc giả dội ngược vì sự thật ấy. </span></p>
+
+
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">“</span></i><i><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Sự thật thì ít
+nhưng chúng ta đã xít ra cho nhiều.&nbsp; Sự thật thì bé nhưng chúng ta đã xé
+ra cho to”</span></i><span style="font-size:14.0pt;line-height:150%;font-family:
+&quot;Times New Roman&quot;,&quot;serif&quot;;color:darkslategray"> </span><span style="font-size:
+14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">là một mệnh đề
+văn chương quan trọng trong sự nghiệp sáng tác của Túy Hồng.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Sau khi chị đăng chuyện ngắn <a href="http://www.gio-o.com/ANMZ/TuyHongVoDe.htm" target="Blank">Vô Đề</a>
+lên Gió O, Lai Hồng gọi cho tôi nói cái truyện đó Túy Hồng viết về "cô ... "
+đấy. Túy Hồng trả lời:</span></p>
+
+<table class="MsoNormalTable" border="0" cellpadding="0" style="margin-left:70.5pt">
+ <tbody><tr>
+  <td style="padding:0in 0in 0in 0in">
+
+   
+      <p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;
+      margin-left:1.5in;line-height:150%"><b><span style="font-size:14.0pt;
+      line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#7030A0">TONY
+      TRAN &lt;tuyhong@msn.com&gt; </span></b><span style="font-size:14.0pt;
+      line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#7030A0">Mar
+      17, 2009, 6:28 PM</span></p>
+    
+  
+  
+
+
+
+
+  <p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+  1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#7030A0">To LeThiHue…</span></p>
+  <p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+  1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#7030A0">Hue oi, tu nay se khong
+  viet loai bai nay nua: vi, tinh cua Tu va minh khac nhau, tinh cua Tu
+  chi&nbsp;thich hop voi Bich Ha thôi va chi thân voi BH thôi. Giu kin.&nbsp;</span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Khi Túy Hồng gửi cho tôi bài <a href="http://www.gio-o.com/TranThiLaiHong/TuyHongChongCong.htm" target="blank">“Chống Cọng”</a>,
+chị đã viết về vụ "Lai Hồng Chống Cọng". Thế là Trần Thị Lai Hồng nổi đình nổi
+đám đòi kiểm duyệt. </span></p>
+
+<table class="MsoNormalTable" border="0" cellpadding="0" style="margin-left:70.5pt">
+ <tbody><tr>
+  <td style="padding:0in 0in 0in 0in">
+  <table class="MsoNormalTable" border="0" cellpadding="0">
+   <tbody><tr>
+    <td width="1320" style="width:13.75in;padding:0in 0in 0in 0in">
+    <h3 style="margin-top:5.0pt;margin-right:1.5in;margin-bottom:12.0pt;
+    margin-left:1.5in;line-height:150%"><span class="gd"><span style="font-size:
+    14.0pt;line-height:150%;color:#7030A0">Laihong Tran</span></span><span class="qu"><span style="font-size:14.0pt;line-height:150%;color:#7030A0"> </span></span><span class="go"><span style="font-size:14.0pt;line-height:150%;color:#7030A0">artonsilk...@gmail.com
+    </span></span></h3>
+    <h3 style="margin-top:5.0pt;margin-right:1.5in;margin-bottom:12.0pt;
+    margin-left:1.5in;line-height:150%"><span class="go"><span style="font-size:
+    14.0pt;line-height:150%;color:#7030A0">Jan 13, 2013, 7:44PM</span></span></h3>
+    </td>
+   </tr>
+  </tbody></table>
+  </td>
+  <td style="padding:0in 0in 0in 0in"></td>
+ </tr>
+</tbody></table>
+
+
+
+
+
+<table class="MsoNormalTable" border="0" cellpadding="0" width="1843" style="width:
+ 1382.25pt;margin-left:70.5pt">
+ <tbody><tr>
+  <td style="padding:0in 0in 0in 0in">
+  <p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+  1.5in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#7030A0">Cảm ơn LêthịHuệ đã
+  forward bài viết của chị TúyHồng có nhắc đến phó thường dân này. <br>
+  Mời đọc vài cái mails tui gửi chị TúyHồng, để thấy là tui mô có gửi mails cho
+  cả 300 người !!!!!&nbsp; Nhận thì cả ngàn nhưng tui chỉ lọc lại kể cả edited
+  chính tả và typo, và gửi đi chừng 10 tin là nhiều,và mỗi mail cũng khoảng nhiều
+  lắm là 30 mống thôi và toàn là chọn lọc,(và rất ít khi gửi TúyHồng) và không
+  có chuyện mấy chục cái dấu !!!!!!!!!!!! trừ vài slogan hô hào chống cộng.&nbsp;
+  Đúng, tui chống cộng nhưng với phong cách riêng, không ồn ào chửi mắng ..Tui
+  deleted gần hết mails nên chỉ nhặt được một số này thôi, xin mời đọc.&nbsp; Cảm
+  ơn chịu khó ...<br>
+  Xin chị Túy Hồng từ nay không nhắc đến tên LaiHồng này trong bài viết của chị,
+  dù biết là chị rất "ưu ái" đối với tui, nhưng tui thấy không nên
+  như vậy.&nbsp; </span></i></p>
+  </td>
+ </tr>
+</tbody></table>
+<br>
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Tôi đưa lá thư này ra để thấy nhà văn Trần
+Thị Lai Hồng không đồng ý tản mạn ấy của Túy Hồng và làm áp lực bắt Túy Hồng
+cắt bỏ đoạn ấy. Nhưng tôi là bạn của cả hai, tôi “chấp nhận” được “giọng văn
+chương” của Túy Hồng mô tả cảnh "Lai Hồng Chống Cọng" vào giai đoạn ấy.&nbsp; Cường điệu văn chương của Túy Hồng
+ở đây có cơ sở. &nbsp;Chính tôi là người chuyển bài cho Lai Hồng đọc và tôi đã cắt bỏ đoạn ấy theo lời yêu cầu của Lai Hồng khi đưa lên Gió O lần đầu. Nay sau khi Túy Hồng qua đời tôi đưa
+lên lại nguyên thủy bài "Chống Cọng" của nhà văn Túy Hồng. &nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Tôi tin là nhiều trang viết, Túy Hồng đã
+lôi đời thật của nhiều người người chung quanh vào văn chương. Mai Thảo có lần nhỏ
+nhẹ nói với tôi: “<i>Tôi từng bảo cô ấy (Túy Hồng) bỏ cái thói lôi các bạn của
+chồng vào trong truyện đi”</i> </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Trong đời thường có thể chị có cách nhịn
+nhục những người đàn ông, những chế độ phu-phụ của Khổng Tử . Có thể chị thấy
+mình bất lực vì con cái không còn là người Việt yêu tiếng Mẹ Viêt Nam của chị.
+Và khi viết chị tuôn ra những giòng chữ như những chiếc búa nện vào thảm chữ.
+Chị tung hê như bóc từng tế bào văn chương trong người vứt vào tác phẩm. Và kệ
+chúng ra sao thì ra. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Tôi gọi đấy là văn chương văng mạng của
+Túy Hồng. Nhưng chị có độc giả . Đấy là tài năng của Túy Hồng. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Trong 5 nhà văn nữ đồng thời với chị thì
+Túy Hồng là nhà văn nổi bật nhất với một giọng văn đa chữ đa ảnh đa so sánh. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Giọng văn chính là tài sản của Túy Hồng.
+Độc giả yêu Túy Hồng vì giọng văn. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;<a href="http://www.gio-o.com/TranThiLaiHong/TuyHongHoiThoRuon.htm" target="blank">“<i>Hơi Thở Rướn Cong</i>”</a> là cái tựa rất văn dâm thị Túy Hồng. Dâm tính trong các tác phẩm của
+Túy Hồng rất sáng tạo rất văn chương.&nbsp; Đạt được điều mà chúng ta gọi là “fine
+art”. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Văn Túy Hồng là dâm thân nhập dâm chữ và
+nhảy lan man như khiêu vũ trên trang sách. Muốn hiểu mức độ yêu dâm, thăng hoa
+dâm, và chán ngán dâm của thế giới phụ nữ nên tìm thưởng ngoạn văn dâm thị Túy
+Hồng. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Túy Hồng rất nữ quyền trong giọng văn
+dâm. Loại dâm lan man toàn thân. Cái sướng của văn dâm thị Túy Hồng là nó lan
+man trong cơ thể phụ nữ và nhấm nháp lên từng cơn động cỡn của chữ. &nbsp;Túy Hồng
+viết dâm rất đàn bà. Muốn hiểu dâm của phái nữ nên nghiên cứu món văn dâm thị
+Túy Hồng. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Đấy là thành công vĩ đại của Túy Hồng.
+Một giọng văn đầy lõa lồ hô hê thân xác phụ nữ. Nói Túy Hồng viết văn dâm
+mạnh bạo thì có. Mà nói Túy Hồng viết dâm sống sượng thô tục hạ giá cơ thể phụ nữ thì không.
+Đấy là nghệ thuật dâm siêu sao rất đàn bà Việt Nam của Túy Hồng.&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Nhưng vì mải mê chinh chiến với giọng
+văn quá nên các tác phẩm Túy Hồng xuất sắc về giọng văn, lại thiếu chiều vĩ đại
+và sâu thẳm suy tưởng cho nội dung môt tác phẩm văn chương rộng lớn. </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Là một nữ tác giả lẫy lừng của văn học Miền
+Nam Việt Nam như Túy Hồng. Và tôi là một người em văn chương hiếm hoi chị rút ruột tâm sự nhiều
+chuyện với. Vậy mà ngày chị qua đời, tôi không được nghe ai báo tin một
+lời. Không hề thấy mẫu ai tín mẫu phân ưu nào trên các tờ báo lớn ở Hải Ngoại. Tôi nỗ lực tìm cách liên lạc với người nhà chị từ hải ngoại cho đến trong
+nước, nhưng không nhận được một hồi âm từ ai cả. Năm năm cuối đời Túy Hồng, tôi
+không còn liên lạc được với chị. Điện thọai và email không trả lời. &nbsp;Mấy năm qua tôi
+lại làm nhiều chuyến du lịch dài ngày ở ngoài nước Mỹ nên chưa có dịp bay lên Portland thăm chị.</span></p>
+
+
+
+
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Tôi muốn gửi đến Túy Hồng một chùm hoa tang
+hồng thắm đầy nhớ nhung và yêu thương.&nbsp; Nhưng không biết gửi về đâu!</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Viết những giòng này cho chị, mà ngậm
+ngùi!</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"></span></i></p><i>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">“Thấy người nằm đó biết sau thế nào</span></i></p><i>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+<b>&nbsp;&nbsp;&nbsp;. . .</b></span></i></p><i>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+Trông ra ngọn cỏ gió cây</span></i></p><i>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><i><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Thấy hiu hiu gió thì hay chị về" ... </span></i>
+
+<span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">
+(thơ Nguyễn Du)</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><b><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#7030A0">Lê Thị Huệ</span></b><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+color:#7030A0"> </span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">Tháng 7. 2020</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:13.5pt;line-height:150%;
+font-family:&quot;Times New Roman&quot;,&quot;serif&quot;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:16.0pt;line-height:150%">Tài liệu
+tham khảo:</span></p>
+
+
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:150%"><a href="https://tvtsonline.com.au/vi/chuyen-nganh-vi/lich-su-chinh-tri-ton-giao-van-hoa/cuu-thieu-ta-canh-sat-lien-thanh-trinh-cong-son-va-nhung-hoat-dong-nam-vung-4/">https://tvtsonline.com.au/vi/chuyen-nganh-vi/lich-su-chinh-tri-ton-giao-van-hoa/cuu-thieu-ta-canh-sat-lien-thanh-trinh-cong-son-va-nhung-hoat-dong-nam-vung-4/</a></span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><a href="http://tapchisonghuong.com.vn/tin-tuc/p4/c17/n24924/Nhan-ngay-gio-dau-cua-Dinh-Cuong-nho-Do-Long-Van-va-cat-bui-que-nha.html"><span style="font-size:14.0pt;line-height:150%">http://tapchisonghuong.com.vn/tin-tuc/p4/c17/n24924/Nhan-ngay-gio-dau-cua-Dinh-Cuong-nho-Do-Long-Van-va-cat-bui-que-nha.html</span></a></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><a href="https://groups.google.com/forum/#!topic/soc.culture.vietnamese/GNpVtK7LORg"><span style="font-size:14.0pt;line-height:150%">https://groups.google.com/forum/#!topic/soc.culture.vietnamese/GNpVtK7LORg</span></a></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><a href="http://tapchisonghuong.com.vn/tin-tuc/p4/c17/n8998/Tran-Quang-Long-va-Quan-Ban.html"><span style="font-size:14.0pt;line-height:150%">http://tapchisonghuong.com.vn/tin-tuc/p4/c17/n8998/Tran-Quang-Long-va-Quan-Ban.html</span></a></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:16.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-bottom:12.0pt;margin-left:
+1.5in;line-height:150%"><span style="font-size:16.0pt;line-height:150%">&nbsp;</span></p>
+
+</i></i></i></i></div><i><i>
+
+
+
+
+</i></i></body>

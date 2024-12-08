@@ -1,0 +1,962 @@
+<head> <script type="text/javascript"> document.domain = 'gio-o.com'; (()=>{"use strict";const e=window.Cypress=parent.Cypress;if(!e)throw new Error("Something went terribly wrong and we cannot proceed. We expected to find the global Cypress in the parent window but it is missing. This should never happen and likely is a bug. Please open an issue.");const t=(()=>{let e,t,n,r;const i=()=>{e=!1,t=!1,n=[],r={}},o=(e,t=[])=>"function"==typeof e?e.apply(window,t):window.eval(e);return i(),{wrap:()=>{const i={setTimeout:window.setTimeout,setInterval:window.setInterval,requestAnimationFrame:window.requestAnimationFrame,clearTimeout:window.clearTimeout,clearInterval:window.clearInterval},a=(e,t)=>i[e].apply(window,t),s=e=>n=>(t&&(r[n]=!0),a(e,[n])),w=t=>(...r)=>{let i,[s,w,...p]=r;return i=a(t,[(...r)=>{if(!e)return o(s,r);n.push({timerId:i,fnOrCode:s,params:r,type:t})},w,...p]),i};window.setTimeout=w("setTimeout"),window.setInterval=w("setInterval"),window.requestAnimationFrame=w("requestAnimationFrame"),window.clearTimeout=s("clearTimeout"),window.clearInterval=s("clearInterval")},reset:i,pause:a=>{e=Boolean(a),e||(t=!0,n.forEach((e=>{const{timerId:t,type:n,fnOrCode:i,params:a}=e;"setInterval"===n&&r[t]||o(i,a)})),i())}}})();e.removeAllListeners("app:timers:reset"),e.removeAllListeners("app:timers:pause"),e.on("app:timers:reset",t.reset),e.on("app:timers:pause",t.pause),t.wrap(),e.action("app:window:before:load",window)})(); </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="Generator" content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"\@MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.d2edcug0
+	{mso-style-name:d2edcug0;}
+span.hgkelc
+	{mso-style-name:hgkelc;}
+.MsoChpDefault
+	{font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang="EN-US" link="#0563C1" vlink="#954F72">
+
+<div class="WordSection1">
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:8.0pt;margin-left:1.5in;text-align:center"><span style="font-size:16.0pt;line-height:107%">&nbsp;</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:8.0pt;margin-left:1.5in;text-align:center"><span style="font-size:12.0pt;line-height:107%">
+<img src="http://www.gio-o.com/LTH/HueTDNho20001.jpg"><br>photo: Lê Phúc</span></p><br>
+
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:8.0pt;margin-left:1.5in;text-align:center"><span style="font-size:24.0pt;line-height:107%;color:#2F5496"><br>Lê Thị Huệ</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:8.0pt;margin-left:1.5in;text-align:center"><span style="font-size:24.0pt;line-height:107%;color:#2F5496">Nhạc Ở Thơ Chữ</span></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:8.0pt;margin-left:1.5in;text-align:center"><i><span style="font-size:16.0pt;line-height:107%">tản mạn văn học</span></i></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:8.0pt;margin-left:1.5in;text-align:center"><span style="font-size:16.0pt;line-height:107%">&nbsp;</span></p>
+
+
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Thuở ban sơ, khi chữ viết, kỹ nghệ in ấn, và màn ảnh com (computer) chưa xuất
+hiện; thơ vốn là lời xuất phát từ cửa miệng loài người. Chữ viết xuất hiện sau (1)</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Người Việt có thành ngữ:&nbsp; “Xuất khẩu thành thơ” . Nghĩa là thơ bắt đầu
+khi cửa miệng thi nhân Việt phát âm ra những câu thơ làm công việc phục vụ lỗ
+tai tác giả và vành tai tha nhân.&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Họ cũng thường nói “Lời Thơ” như một cách ám chỉ Thơ là Lời (nói). Chưa
+nghe người Việt âu yếm một lần gọi: “Chữ Thơ”.&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Ông Nguyễn Công Trứ (1778- 1858) sáng tác thơ xong, cùng các thi hữu tìm
+đến tụ điểm có các ca nương để yêu cầu các cô đào hát thơ của họ thành nhạc. Gọi
+là Hát Ả Đào. Đấy là cái thú vui nho nhã thơ của một tác giả phải được đọc lên
+cho nhiều người nghe, mới gọi là thoát ra hết cái thú vị của thi ca . </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Ngày xưa lời thơ đọc lên nghe trơn tru hào hoa âm điệu thì mới lên hàng
+thơ hay. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in"><i><span style="font-size:14.0pt;line-height:107%">Dập dìu
+tài tử giai nhân</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in"><i><span style="font-size:14.0pt;line-height:107%">Ngựa xe
+như nước áo quần như nêm</span></i><span style="font-size:14.0pt;line-height:
+107%"> </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in"><span style="font-size:14.0pt;line-height:107%">(<b><i>Đoạn
+Trường Tân Thanh</i></b>, thơ Nguyễn Du)</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Đoạn Trường Tân Thanh hay phần lớn nó là bản hợp âm tuyệt vời của lời Việt.
+Trong hai câu thơ trên, “<i>Giai nhân</i>”của câu sáu trước hợp âm với “ <i>áo
+quần</i>” của câu tám phía sau. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Những câu thơ của Đoạn Trường Tân Thanh hay nhất là khi chúng được “lời
+hóa”. Tức là được đọc lên thành tiếng hoặc được ngâm nga ê a lên, &nbsp;mới thấy cái
+hay của sự hợp âm của câu thơ. Người thưởng ngoạn đã tìm được hương ấm đầu lưỡi
+và nghe tiếng thích hợp trong vành tai một nhạc điệu trong những câu thơ ấy.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in"><span style="font-size:14.0pt;line-height:107%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Thơ đọc lên phục vụ tai nghe, tôi gọi là “Thơ Lời”. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Thơ Lời cậy vào âm điệu của tiếng để tạo ra tính chất thơ. Thơ lời là thơ
+biểu thị các ứng xử phục vụ ngoại quan. Thơ lời là thơ miệng đọc thơ lên thành
+lời để tai nghe trơn tru gọn gàng. Thơ lời phát ra khi miệng và tai đòi mong bản
+hợp âm của ngôn ngữ dội ra hẳn bên ngoài cơ thể. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Còn thơ viết bởi các ngón tay ngoáy xuống một mặt phẳng tạo ra được giống
+chữ, tôi gọi là “Thơ Chữ”.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Vì thơ chữ là viết ra trên giấy hay trên màn com, chúng ta “nhìn chữ” hay
+chính xác hơn là mối thưởng ngoạn thị giác là mối thưởng ngoại đầu tiên khi
+chúng ta nhìn thơ chữ.&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Hai phần cơ thể đầu tiên tạo ra thơ chữ là những ngón tay và mắt nhìn.
+Trong phần đầu tiên cấu tạo thơ ấy, “Thơ Chữ” vắng mất cái cửa khẩu đọc và tai
+nghe âm điệu như “Thơ Lời” .</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in"><span style="font-size:14.0pt;line-height:107%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Sự nhìn nẩy sinh ra những năng lượng thẩm mỹ riêng cho sự nhìn (vision).
+Ví dụ nhìn thơ thì các ký tự chữ có thể tạo ra vai trò thẩm mỹ thị giác. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Xếp chữ thành thơ là như cho hoa nở ra từ những xác chữ. Chữ thơ toát ra
+được thẩm mỹ như một đóa hoa tỏa ra màu tím đỏ vàng hồng … Thẩm mỹ mắt đóng vai
+trò xúc tác cho sự&nbsp; nhìn thơ . Các năng lượng mỹ thuật như phông chữ, màu chữ,
+kiểu chữ, vắt giòng, tạo thành xác hoa của chữ.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Nhìn thơ trên giấy , có giấy đẹp, in đẹp , xếp đặt đẹp, sẽ thỏa mãn thẩm
+mỹ mắt. Gây hưng phấn thị giác cho người nghía thơ. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Xét về phương diện này, các con chữ A, B, C, các dấu chấm, phẩy, các
+phông chữ, các khoảng cách lên hàng xuống hàng đóng vai trò gia tăng hay giảm
+giải cảm xúc dành cho một bài thơ . Hình thức trình bày sắp xếp bài thơ, đóng một
+vai trò khích thích thị giác của người đọc và có thể tạo nên cảm xúc của một
+bài thơ . Các cảm xúc này của thơ chữ không được ưu thế như các bài thơ lời. Vì
+nếu một bài thơ lời hay, thì người ta có thể đọc bằng miệng bất cứ ở đâu vẫn thấy
+hay . Còn một bài thơ chữ khi nhờ cảm xúc yêu thích của cách trình bày sắp xếp
+bài thơ trên giấy hay trên màn hình, khi chuyển tải qua một một màn hình hay
+nơi chốn trang giấy khác, thì cảm xúc có thể bị giảm. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Nhưng thơ không chỉ ở xác chữ. Mạch sống chính của thơ là hồn, hồn chữ. &nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Hồn “Thơ Lời” là phần âm vang của giọng đọc ra ngoài. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Hồn “Thơ Chữ” là âm vang của sự nhìn chữ, &nbsp;là “sự cuốn-âm-của bầy-chữ-nhìn-bằng-mắt-ấy-lượn-trở
+lại-trong-đầu”. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Cả thơ lời và thơ chữ đều tạo âm nhạc vang vang </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Âm vang của thơ lời là sự vọng âm thoát ra khỏi thân xác. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Thơ chữ là sự vọng âm vào trong thân thể . Thơ chữ nằm chỗ mắt nhìn, tai thẩm
+âm một cách câm nín, và cái đầu suy nghĩ tổng kết hai giác quan thị giác và
+thính giác tìm hồn tìm nhạc tìm đủ thứ cho thơ chữ.&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in"><span style="font-size:14.0pt;line-height:107%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Thơ lời dễ đạt được nhạc hơn. Vì nó là sinh hoạt trực tiếp. Khi nghe đọc
+lên một bài thơ là con người đi tìm nhạc cho thơ tại trận được ngay.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">&nbsp;Thơ chữ khó đạt được nhạc chữ vì tính liên hoàn của 3 chức năng trong
+thân thể, mắt, tai, và cái đầu. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Khó không phải là không có. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Thơ chữ cũng có nhu cầu hợp âm của chữ. Thơ chữ cũng có nhu cầu nhạc .
+Tôi gọi là “Nhạc Ở Thơ Chữ”. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Đi tìm nhạc cho thơ chữ là đi tìm sự cuộn cuốn âm vào bên trong của thơ
+chữ. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">“Sự Cuốn Âm” là âm vang tạo ra từ mắt nhìn chữ . Từ mắt nhìn thơ ấy chúng
+quay cuốn trở&nbsp; lại trong đầu và tạo ra một nhu cầu âm thanh, nhu cầu nhạc thơ
+trong đường trở lại ấy. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Nhạc của thơ chữ ở bên trong đầu. Tuy ít thua thơ lời, nhưng âm thanh của
+chữ vẫn hiện diện trong cấu trúc của nhạc chữ.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Thưởng ngoạn thơ chữ nặng phần suy nghĩ hơn thưởng ngoạn thơ lời. Thưởng
+ngoạn thơ chữ là thưởng ngoạn bên trong cái đầu, bên trong hồn người. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in"><span style="font-size:14.0pt;line-height:107%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Điều rốt ráo vĩnh cửu trong thơ vẫn là nhu cầu phải hiện hữu nhạc. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Bởi vì tuy viết xuống giấy nhưng trong công việc sáng tác thơ, tác giả vẫn
+phải “đọc thầm” bài thơ. Không “xuất khẩu” ra âm thanh như “thơ lời”, nhưng
+“thơ chữ” vẫn chuyển chở âm đọc vào trong đầu. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Trong sự vắng mặt của sự tạo tiếng ở cửa miệng, thơ chữ vẫn tạo “echo”
+trong đầu trong vành tai, trong tim, trong lục phủ ngũ tạng . Như thế âm thanh
+của thơ chữ vẫn hiện diện . Nhưng đấy là một sự hiện diện câm tiếng động của âm
+thanh,&nbsp; nghĩa là không phát âm.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Sự “đọc thầm, đọc bên trong” của thơ chữ chính là nơi thẩm âm ra một suối
+nguồn âm nhạc cho thơ chữ .</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Với tôi trong nguyên thủy DNA của thơ đã có nhạc. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Vì khởi thủy “Lời” là tổ sinh ra ngôn ngữ. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Mà vì “Lời” là phải phát ra âm. Âm đòi nhạc điệu. Thơ ngày xưa phục vụ lời.
+Nên thơ phục vụ âm nhạc. Nhạc là một mô típ mạnh mẽ trong huyết quản bản đồ
+ngôn ngữ.&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Chữ phát sinh sau lời . Chữ là ký hiệu chuyên chở âm thanh và ý tưởng viết
+lên một mặt bằng. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Chữ chạy trên giấy cũng phải tạo nên chùm nhạc dễ chịu nào đó trong trí
+não trong máu huyết của chúng ta, kẻ yêu thơ. Nhưng vì sự câm nín của “Âm”
+trong Thơ Chữ . Chúng dồn vào Cảm Xúc thầm lặng trong ngôn ngữ bên trong cơ thể
+và tâm hồn của chúng ta . </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Nhạc là một sức sống mạnh mẽ trong huyết quản của ngôn ngữ. Nên dù thơ chữ,
+chúng ta vẫn truy tìm một loại nhạc làm khích khích, làm vừa lòng, làm mãn nhãn
+nhu cầu này trong chúng ta. Tại sao đã không phát thành âm. Tại sao chỉ là những
+con chữ nằm trong huyệt mộ lòng giấy, mà chúng ta vẫn có nhu cầu tìm nhạc cho
+chữ. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Tại sao nhạc là một bất khả phân ly với thơ ?</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Là vì ngôn ngữ khởi thủy từ “Tiếng Nói”. Ngôn ngữ được tạo thành bởi sự
+“Nói” . “Nói” đi trước “Viết”. “Nói” đi trước “Chính Tả”. &nbsp;Nên chữ “Âm” đã xâm
+lấn số mệnh của ngôn ngữ. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">“Âm” đóng vai trò huyết thanh trong cơ thể tinh thần của nhân loại . Khởi
+thủy tôn giáo với những ê a nhạc điệu của kinh kệ đã chế ngự đời sống của tâm
+linh con người . Con người không hiểu gì về lời kinh Phật kinh Chúa . Nhưng những
+âm thanh vô nghĩa của kinh kệ đã là nguồn sống tinh thần, đã là lời hướng đạo
+cho cả nhân loại phó thác trần gian này theo những lời kinh kệ ê a vô nghĩa.
+Trong tất cả các bộ môn, âm nhạc là bộ môn ê a không cần hiểu, mà các dân tộc
+khác ngôn ngữ vẫn có thể để cho âm nhạc của ngoại quốc xâm nhập vào hồn mình dễ
+dàng . Người Việt chả cần hiểu bài “Hotel California” nhưng vẫn khoái nghe, vẫn
+ê a hát theo với tất cả say đắm. Âm thanh là chất khích động mạnh mẽ trên đời sống
+tinh thần của nhân loại, mà âm nhạc là DNA khích động ngôn ngữ tinh tế nhất . </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><span style="font-size:14.0pt">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Nhạc của thơ chữ là sự nhìn mặt thơ. Là sự đọc âm thầm, câm nín, nhưng có
+tiếng lần khân của nhạc chạy thông trong máu huyết và trong trí não. Hãy đi tìm
+tiếng nhạc lòng. Tiếng của nhạc phát ra từ thơ chữ tạo nên một nhịp điệu nào đó
+từ bên trong. Khó đấy. Nhưng nó có đấy. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Nhạc chữ là cảm mạo thương chữ. Là cảm xúc được nhạc chảy ra trong người
+khi nhìn chữ thơ. Là khi giao tiếp với chữ thơ thì thấy nhạc lâng lâng trong hồn.
+Là một nguồn nhạc tự nhiên bốc xuyên suốt luân lưu trong máu chạy lên trí não .
+Cảm nhận nhạc chữ là thứ cảm nhận không lời bên trong cơ thể, tâm hồn, và trí
+nã.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Nhạc trong những câu thơ chữ là sự thúc đẩy từ một cái nền im âm của chữ
+nhưng lại bật lên một loại nhạc hài hòa trong lối suy nghĩ. “Trái tim” đi với
+“hang ổ” mà hang ổ bóng tối trong trái tim là một sự thuận lý vì chúng ta chả
+bao giờ nhìn thấy trái tim của mình. Suy nghĩ là tài sản của trí tuệ. Thơ trí
+tuệ buộc phải suy nghĩ, nhưng “suy nghĩ dễ chịu” là một tiếng nhạc tạo ra từ một
+bài thơ chữ trí tuệ. Nghệ thuật của thơ chữ chính là tiếng nhạc dễ chịu của bài
+thơ phục vụ trí óc. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Nội lực của “Thơ Chữ” chạy trong đầu trong hồn trong tim trong người.&nbsp; Rồi
+tác giả lặng lờ dùng những ngón tay “viết thành chữ” trên giấy, trên lá, trên
+computer. Thơ chữ là tổng hợp thơ tuôn ra từ lục phủ ngũ tạng tràn ra trên những
+ngón tay và được viết xuống trên các phẩm vật trước mặt như tờ giấy, như chiếc
+lá, như màn ảnh computer.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Bởi vì diễn tiến sáng tác thơ chữ là một sự học chữ, viết chữ, suy nghĩ
+chữ trong trí óc, nặn ra chữ thành câu thơ, rồi mới rắp láp thành bài thơ . Rõ
+ràng chu kỳ hoàn thành thơ chữ đi qua các giai đoạn sàn lọc và thông suốt chữ
+đi vào tay đi vào tim và đi vào não.&nbsp; Rồi đi trở lại tay đi xuống giấy đi lên
+màn hình computer. Chu kỳ vận hành của thơ chữ là máu chạy qua tay qua tim lên
+não rồi máu từ não đi trở lại xuống tim xuống tay nắn nót lại trên trang giấy
+trên màn hình com . Máu và trí não nhào luyện nên bài thơ đòi hỏi nhã nhạc cho
+thơ. Bổn phận của người thi sĩ là phải nghe, nhận, và phát ra được nhạc của thơ
+chữ khiêu vũ trong giòng máu của cơ thể. Để ghi lại được một bài thơ chữ mang
+hơi hướm nhạc của chính nó.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Nghệ thuật thơ chữ là nhạc máu, nhạc cảm, nhạc trí, nhạc suốt body. Điều
+này thách đố chúng ta đi tìm ra được nghệ thuật nhạc chữ.&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Vì thơ chữ không phục vụ cái tai nghe của chúng ta như thơ lời thường phục
+vụ, nên nếu dùng tiêu chuẩn thơ lời là thơ phải đọc lên thành lời cho trơn tru,
+vần vèo, “nghe lọt lỗ tai” như một tiêu chuẩn thơ lời cổ điển, thì là không
+công bằng cho thơ chữ. Giống như một bên là thưởng thức ly chanh đường . Một
+bên là thưởng thức ly rượu vang. Hai vị nên khác nhau. Thơ lời và thơ chữ có
+hai thi vị khác nhau. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Vì thơ lời đã có một lịch sử được bảo chứng bới tai nghe và vần nhạc bằng
+bề dày của lịch sử nhân loại . Lỗ tai con người đã được chọn làm đại diện để bứng
+thơ bừng thơ và nuôi thơ nhân loại như dấu khắc văn hóa loài người. Giờ thơ chữ
+đi tìm cho mình một bản mệnh nuôi dưỡng bên trong tâm hồn, trí tuệ, và thân xác
+của con người như tôi mô tả, nó là một thách thức. Nhưng tôi tin nó hiện diện,
+hình thành, và khắc sâu. Vì nếu có hồn người thì có hồn thơ. Thơ chữ cưu mang hồn
+thơ như thân xác cưu mang linh hồn con người. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Cảm nhận nhạc chữ tinh vi, vì tự cá nhân ấy đào mả các cung bậc nhạc
+trong người và nhận ra thế. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Trong khi nhạc lời thì được khích thích và hưng phấn bằng âm thanh tạo
+nên từ bên ngoài . Ngâm thơ nói lên lên được sự diễm tuyệt của thơ lời . Tức là
+sự sung sướng vì được nghe bài thơ xướng lên dàn âm thanh bên ngoài cơ thể . Sự
+khích động từ ở bên ngoài. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Thơ Lời đã có một lịch sử già như trái đất . Sự mặc khải của cái hay
+trong thơ lời khởi đi bằng âm nhạc. Điều này quá hiển hiện khi chúng ta thấy
+các kinh kệ trong tôn giáo là sự khai thác chuỗi âm nhạc. Các tín đồ khắp thế
+giới mê âm thanh của các câu kinh mà không cần hiểu . Sự mê mẩn chuỗi âm thanh
+kinh kệ của tôn giáo đã tạo nên tôn giáo . Sức mạnh của âm nhạc trong ngôn ngữ
+kinh kệ trong lời thơ thật là vô đối. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Thơ chữ đến sau thơ lời. Thơ lời có âm nhạc của vần điệu phù hộ. Còn thơ
+chữ cần phóng ra những con đường giao lưu của tâm hồn thơ và nghệ thuật thưởng
+ngoạn thơ chữ. Tôi hi vọng lâu ngày chúng ta sẽ hình thành được loại âm nhạc ở
+thơ chữ.&nbsp; Để chúng ta có thể đọc lên một bài thơ chữ và mà đồng điệu độc giả
+cùng cảm ngộ ra được cái hay của bài thơ. Như thơ lời đã nhất quán về vần điệu
+cho thơ chúng và được những tập thể đồng lòng đồng ý và ngợi ca. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Thơ lời có âm điệu làm thành trì chống đỡ để phát lên nhạc . Còn thơ chữ
+là sự lặng thinh của những con chữ ứa ra máu nhạc thành dòng cảm nhạc. Sự lặng
+thinh ấy phản ảnh được cái đẹp của triết lý suy tưởng của óc, cái cô đọng tinh
+túy trang đài của chữ nghĩa còn lại, cái lung linh của hồn thơ dày dặn kiến thức
+và rung động. Nhạc cất lên từ những con chữ vô âm của "một-bài-thơ-chữ-tinh-túy-chắt-lọc" và thách đố
+đến thế. Cho nên một bản nhạc chữ nên thơ, không bao giờ là một sự dễ tính. Không trách gì có nhiều độc giả khó tính chê các bài thơ chữ của các
+tác giả viết thả rông cảm xúc, thiếu thốn nhạc lòng, nghèo nàn nhạc chữ, ngắt giòng lung tung, rồi gọi chúng là thơ. </span></p>
+
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in"><span style="font-size:14.0pt;line-height:107%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Đây là hai bài thơ tôi từng lắng nghe được tiếng nhạc của chữ chạy lần
+khân trong cơ thể:</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><span style="font-size:14.0pt"><br>
+<i>Những bà già ngồi nhai quá khứ<br>
+Những ông già ngồi ngáp thời gian<br>
+Họ đẩy tôi ra ngòai quyển tiểu thuyết đời sự<br>
+Tôi con chữ xiu xiu nhiệm mầu xinh tươi<br>
+giỏi lướt lươn lượn cánh kén vòng trở lại<br>
+nằm trái chùm ruột xanh trong câu chuyện lòng vòng<br>
+một vòm trời đen kịt&nbsp; và ôi các vì sao xa<br>
+tôi yêu những viên đá cuội xanh và đỏ<br>
+nằm yên nghe câu chuyện họ cổ tích</i></span></p>
+
+
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%">(<b><i>Chỗ Huyệt Gió</i></b>, thơ Lê
+Thị Huệ) </span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><span style="font-size:14.0pt">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-left:1.5in;line-height:
+normal"><i><span style="font-size:14.0pt">Như tiếng gió lướt ngàn dặm cửa<br>
+Như giòng điện bay ngang lóng xương sườn<br>
+Nhạc nghiêng một bên lệch bãi tâm hồn<br>
+Cả hải dương đổ tràn một bên bờ linh hựu&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-left:1.5in;line-height:
+normal"><i><span style="font-size:14.0pt">Nghiêng bên giòng nhạc chảy<br>
+Đổ xuống hồn sâu những đắm đuối ân tình<br>
+Những nỗi buồn bay lên lộ gió trướng<br>
+Khoan sâu đường tai rêm rần quá <br>
+Đổ xuống em và anh nằm nhau trong bóng tối<br>
+Tiếng đàn ương đường xa<br>
+Không còn thẫm ca nghe nhau khóc<br>
+không còn danh ca ôm nhau hôn<br>
+Không còn tình ca rủ nhau ngủ<br>
+Chỉ còn em và anh<br>
+Ôm nhau hát buốt xương da</span></i></p>
+
+<p class="MsoNormal" style="margin-right:1.5in;margin-left:1.5in;line-height:
+normal"><span style="font-size:14.0pt">(<b><i>Nhạc</i></b>, thơ Lê Thị Huệ)</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Thơ chữ có một điểm mạnh bất ngờ, xóc lên óc trí tuệ của thơ . Nghĩa là
+thơ chữ có tiềm năng thỏa mãn được nhu cầu trí tuệ, nhu cầu sinh hoạt não bộ .
+Vì thơ chữ lặn vào trong người . Vì lặn vào trong nên nó tự động tìm đường luân
+lưu .&nbsp; Thế là nó chạy xuyên suốt trong cơ thể và máu chạy lên óc. Nên thơ chữ gần
+gũi đến nét thẩm mỹ của ngôn ngữ phía trong da thịt ngôn ngữ nuôi thức ăn cho
+trí não. Đứng về phương diện này, có những bài thơ chữ để cho trí não đọc lên
+thì thấy đã. Nhưng khi “phát ra ngoài cơ thể nghe thành lời” theo cảch cổ điển
+thì có thể “nghe không lọt lỗ tai” lắm. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in"><span style="font-size:14.0pt;line-height:107%">Ví dụ bài
+thơ của Nguyễn Đức Nhân</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">những trái tim nhút nhát<br>
+hang ổ của bóng tối </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">sợ hãi sự rỗng không trước mặt và sau lưng</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">nhớn nhác tìm nơi trú ẩn</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">kỳ vọng </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">Thần Linh </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">nơi nương nhờ bí nhiệm</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">từ đó </span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">không lối thoát - hai bàn tay cố giữ</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">cánh cửa nô lệ</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><span style="font-size:14.0pt">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><span style="font-size:14.0pt">(<b><i>Một Sự Thật Khác</i></b>, thơ Nguyễn Đức Nhân)</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in"><span style="font-size:14.0pt;line-height:107%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Nhạc đã chảy ra từ âm chữ “Nhút Nhát”. Tiếp theo là tiếng chuông chữ ngắn
+gọn boong, boong “nhớn nhác”&nbsp; “kỳ vọng” “Thần Linh”.&nbsp; Hai chữ thôi . Rất cô đọng
+thơ. Rất mệnh đề tuyên xưng của thơ. Sự dối trá của nhân loại nép mình vào tôn
+giáo. Từ chùm âm nhạc của hai chữ “Nhút Nhát” tác giả bùa chú phù phép một hơi
+thở thơ vào cuộc cách mạng thần linh . Để Sự nô lệ của con người vào tôn giáo bằng
+tiếng nhạc chữ eo sèo “Nhớn Nhác”. Hãy cho bài thơ này một tiếng nhạc bởi sự
+“Hai Chữ”: “Nhút Nhát, Nhớn Nhác, Kỳ Vọng Thần Linh”. Bài thơ tạo ra được nhạc
+điệu ngắn của sự “Hai Chữ” để nói lên được sự yếu đuối của hồn người nô lệ vào
+tôn giáo vào thần linh như một sự nô lệ tăm tối.&nbsp; Một bài thơ mạnh mẽ bởi tiếng
+nhạc boong boong tả lại tình trạng nô lệ của nhân loại vào tôn giáo. Các chữ
+trong bài thơ không vần điệu. Nhưng tôi vẫn nghe ra được một tiếng nhạc chảy ra
+từ cái đẹp của suy tưởng.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Một bài thơ ngắn thả nhạc từ chữ của trí tuệ, của suy tư, của chiều sâu rộng
+trí não; hàm chứa một thứ triết lý vĩ đại về sự tăm tối của linh hồn và đức tin
+của nhân loại.&nbsp; Bài thơ mô tả thân xác với trái tim và hai bàn tay đã ghì chặt
+sự nô lệ của đức tin của con người. Bài thơ khích thích rằng chính bản chất nô
+lệ đã tròng con người vào vào các đức tin tôn giáo.&nbsp; Được biết thi sĩ Nguyễn Đức
+Nhân là một tu sĩ Phật Giáo mấy chục năm. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Với tôi đây là một bài thơ chữ hoàn tất vai trò “thi ca là là chỗ chà triết
+lý sáng nhất”. Tôi rất thích vì nó có bề sâu của trí não suy sự. Ngoài ra bài
+thơ tuyệt vời ở điểm là dài không thừa chữ, ngắn thiếu chữ.&nbsp; Chữ nghĩa phong
+phú và cách xếp đặt bài thơ của nhà thơ Nguyễn Đức Nhân tôi gọi là một tay thi
+sĩ mát chữ. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%">Ở cuộc đối thoại tay ba giữa tác giả
+Đoàn Minh Đạo, nhà thơ Vũ Hoàng Thư và tôi, Lê Thị Huệ, trên Facebook(3) vào năm
+2021. Tôi đã chất vấn tác giả về nhạc chữ của chữ “thì” hay “thĩ” trong câu “<i>Bằng
+lòng thầm thĩ sương mù</i>” tôi nói ông dùng “thầm thì” hay gõ lộn thành “thầm
+thĩ” vậy. Câu trả lời của nhà thơ Đoàn Minh Đạo: </span><span class="d2edcug0"><span style="font-size:14.0pt;line-height:150%">&nbsp;“<i>Đ</i></span></span><span class="d2edcug0"><i><span lang="VI" style="font-size:14.0pt;line-height:150%">úng
+ra cũng muốn viết là "thầm thì" nhưng vì tính chất ngữ âm trong câu
+nên đổi ra "thầm thĩ" cũng như ta nói "hai mươi" thay vì
+"hai mười" cô hỉ ? Tra</span></i></span><span class="d2edcug0"><i><span style="font-size:14.0pt;line-height:150%"> tự điển Đại Nam Quấc Âm Tự Vị</span></i></span><span class="d2edcug0"><i><span lang="VI" style="font-size:14.0pt;line-height:150%"> của
+Paulus Của trang 1005 định nghĩa "Thầm thĩ" là "nói lầm thầm,
+nói trong miệng</span></i></span><span class="d2edcug0"><span lang="VI" style="font-size:14.0pt;line-height:150%">". </span></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span class="d2edcug0"><span style="font-size:14.0pt;line-height:150%">&nbsp; </span></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%">Đây là một bài thơ như kinh tụng. Bài
+thơ xử dụng các dấu tích của cổ ngữ tôn giáo đã lôi kéo kẻ thưởng ngoạn xử dụng
+kho hiểu biết của trí não để đến với bài thơ. Phải là những người đọc có kiến
+thức về tôn giáo về triết học Tây Phương mới vỡ bài thơ của Đoàn Minh Đạo ra
+được. Và ngữ âm bài thơ qua nền trí thức vạn hoa của nhà thơ đã giao hưởng được
+một thứ nhạc chữ của một bài thơ trí tuệ, đài các, giỏi chữ. Và may mắn thay
+chúng tôi đạp ra trên xác lá của những giòng chữ của bài thơ , hốt hoảng chạy
+theo giòng nhạc điện máu mà Vũ Hoàng Thư gọi là “<i>dẫn những luống máu về thần
+trí</i> “. Như trong sự bén nhạy của nhạc chữ “THĨ” mà không “THÌ”. Tôi đoan
+chắc nếu là thơ lời thì thiên hạ sẽ chuông âm “THÌ” hơn. Và thiên hạ sẽ nói chỉ
+có bọn chữ nghĩa rắc rối và lắc léo, mới chuộng chữ “THĨ” . Mà đúng vậy. Chỉ có
+dân đọc chữ, chạy theo nhạc chữ, mới cảm ra được cái hay của chữ “THĨ” . Âm nó
+nghẹo ngọng cả lưỡi nhưng thích là vì cái tính cầu kỳ rắc rối mang theo cả một
+lịch sử chữ nghĩa mà tác giả phải vận dụng và lôi tự điển Paulus Của nói ra cái
+hay của chữ “THĨ” . Thế đấy.&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in"><span class="d2edcug0"><span style="font-size:14.0pt;
+line-height:107%">&nbsp;</span></span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><span class="d2edcug0"><span style="font-size:14.0pt">“</span></span><i><span style="font-size:14.0pt">Ta đã nhiều lần đánh đổi dấu tích<br>
+Vết bay của bầy chim vạch trên mặt biển thời gian<br>
+Nứt rạn khung kính mưa<br>
+Bằng lòng thầm thĩ sương mù <br>
+Nhàu nát mặt tấm vải xô</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">Những toa tàu kín cửa suốt hành trình vô định</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">Sân ga cuối là lời tiên tri rỉ ra từ pho sách cổ</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">Tràn những bông phong lữ thảo trên phố mặt trời</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">Một bờ tường kí ức xóa trắng</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">Một bản Kinh Tanakh dở dang</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">Làm sao ta biết đặng sức nặng của khôn ngoan</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">Nơi cánh chung chính là Tau Người chờ đợi</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">Người được chúc tụng đã đúc kết một hành trình bất tận</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">Khi con người vẫn lang thang nhập thể</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">Khi tiếng gõ ứ rì rào trong đêm bất hạnh</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">Chúng dò dẫm bước đi bằng cây gậy của mình</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">Làm sao ta biết đặng sức nặng của cô đơn</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">Có nơi nào trú ẩn cho loài chim biển</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">Nơi cánh cửa rình rập một chân dung</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">Bài ca cũng trừu tượng như con đường</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">Giữa những ngân hà vô định</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">Không thể chối cãi rất hoang mang</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">Làm sao ta biết đặng sức nặng của trái tim.”</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><i><span style="font-size:14.0pt">&nbsp;</span></i></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><span style="font-size:14.0pt">(<b><i>Tiếng Gõ</i></b>, thơ Đoàn Minh Đạo)</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:normal"><span style="font-size:14.0pt">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;“</span><span class="d2edcug0"><i><span lang="VI" style="font-size:14.0pt;line-height:150%">Một bài thơ tinh khiết chữ dẫn
+những luống máu về thần trí</span></i></span><span class="d2edcug0"><span lang="VI" style="font-size:14.0pt;line-height:150%">"</span></span><span class="d2edcug0"><span style="font-size:14.0pt;line-height:150%">. Đấy là lời
+phát biểu đầy cảm nhạc của nhà thơ Vũ Hoàng Thư về bài thơ “<i>Tiếng Gõ</i>” của
+nhà thơ Đoàn Minh Đạo. Đúng là một cảm xúc về nhạc chữ chảy như máu về trí não
+giao thoa thành thần trí. Thơ chữ phải tạo ra loại nhạc chữ như thế thì tự dưng
+kẻ thưởng ngoạn mới bật ra được một nhận xét rung rinh thần trí như thế. </span></span><span style="font-size:14.0pt;line-height:150%">Vũ Hoàng Thư đã mô tả bùa phép của
+nhạc chữ trong thơ “Tiếng Gõ” của Đoàn Minh Đạo một cách tuyệt vời! Tôi vốn
+thích thơ kiểu cách trang đài chữ nghĩa, phổ ra nhạc chữ như thơ của Thi Vũ.
+Nay thêm thơ Đoàn Minh Đạo và thơ Vũ Hoàng Thư trên Gió O.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%">Cả bài thơ của Đoàn Minh Đạo nổi bật
+với hai chữ “thầm thĩ”. Như một nốt nhạc chủ đạo của bài thơ dẫn đầu cho loại
+nhạc róc rách quẫy đạp thần trí bài thơ.&nbsp; “Thầm thĩ”, một chữ đắc địa diễn tả
+đường nhạc của bài thơ chữ này. Trước hết chữ “thĩ” trong “thầm thĩ” phát âm
+mạnh hơn “thì” trong “thầm thì”. “Thĩ” ngoài nghĩa “tiếng thầm”, còn có thêm
+nghĩa “cắn nuốt” và “phè phỡn” (2). Thầm thì thì chỉ là âm thanh nhẹ nhàng .
+Nhưng thầm thĩ là loại âm, loại nhạc có nội lực róc rách quẫy đạp kích động tâm
+trí hơn . Nếu thầm thì là nhạc soft rock thì thầm thĩ là tiếng của rock n roll &nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;line-height:150%"><span style="font-size:14.0pt;line-height:150%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Tôi thích chọn thơ cho Gió O là chữ nghĩa bài thơ vang vang trong thân
+xác tôi một loại tiếng nhạc thầm thĩ . Chúng thầm thĩ trong đầu trong ngực và
+nhất là trong máu . Không cần phải đọc lên thành lời trên cửa miệng . Không cần
+thoát ra tiếng vang ra ngoài . Mà âm thanh của thơ chữ chạy lòng vòng trong người
+tôi . Ủ kín trong linh hồn . Róc rách trong cơ thể . Vang dội trong trí não</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Thơ là tinh hoa của ngôn ngữ . Nên thơ phải chạy theo phù phép ma trận của
+âm và nhạc trong ngôn ngữ. Nhạc là cây đũa thần của ngôn ngữ . Nhân loại đã khuất
+phục nó như tôi đã nhận xét về sự ê a&nbsp; của nhạc kinh đã&nbsp; đẻ ra tôn giáo và là
+nguồn sống tâm linh của nhân loại phía trên . </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Tìm cho ra nhạc chữ là một bất ngờ đầy trí lực. Đây là một thách thức của
+thơ chữ. Một năng lượng riêng mà thơ chữ chảy ra trong hồn trong xác mình. </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Khi đòi hỏi thơ chữ phải tìm cho ra tiếng nhạc chữ, thì xem như thơ chữ
+đã phải khuất phục chiếc đũa thần nhạc chỉ huy mặt trận ngôn ngữ thơ.&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in;line-height:150%"><span style="font-size:14.0pt;line-height:
+150%">Hai mươi bài thơ kỷ niệm hai mươi năm sinh hoạt của Gió O như một thử
+nghiệm chọn lựa những bài thơ chữ xuất sắc. Tôi đọc chúng bằng mắt . Và tôi đã
+nhìn và nghe ra được nhạc chữ của chúng chảy ra trước mắt và trong trí não của
+tôi. <br>
+<br>
+</span></p>
+
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in"><b><span style="font-size:18.0pt;line-height:107%">------------</span></b></p>
+
+<p class="MsoListParagraph" style="margin-top:0in;margin-right:1.5in;margin-bottom:
+8.0pt;margin-left:1.75in;text-indent:-.25in"><span style="font-size:14.0pt;
+line-height:107%">(1)<span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><span style="font-size:14.0pt;line-height:107%">https://www.bl.uk/history-of-writing/articles/where-did-writing-begin</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in"><span style="font-size:14.0pt;line-height:107%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Theo
+tài liệu của Thư Viện Anh Quốc dấu vết văn tự đầu tiên tìm thấy ở vùng Trung
+Đông - Mesopotamia (Iraq) khoảng 3400 năm trước Thiên Chúa Giáng sinh.</span></p>
+
+<p class="MsoListParagraph" style="margin-top:0in;margin-right:1.5in;margin-bottom:
+8.0pt;margin-left:1.75in;text-indent:-.25in"><span style="font-size:14.0pt;
+line-height:107%">(2)<span style="font:7.0pt &quot;Times New Roman&quot;"> </span></span><a href="https://hvdic.thivien.net/"><span style="font-size:14.0pt;
+line-height:107%">https://hvdic.thivien.net/</span></a><span style="font-size:14.0pt;line-height:107%">&nbsp;&nbsp;&nbsp; <br><br>
+Chữ “thĩ” viết ra 2 kiểu 呩, 噬 chữ Nôm và có 3 nghĩa như sau: <br>
+</span><span style="font-size:20.0pt;line-height:107%">呩</span><span style="font-size:14.0pt;line-height:107%">: Thĩ theo tự điển Nguyễn Văn Kiệm
+nghĩa là “nói khẽ”. </span><span style="font-size:20.0pt;line-height:107%">噬</span><b><span style="font-size:14.0pt;line-height:107%;font-family:&quot;MS Gothic&quot;"> </span></b><span style="font-size:14.0pt;line-height:107%">Có 3 cách phát âm . Âm “thĩ” có nghĩa
+là “nói khẽ”. Âm “phệ” có nghĩa “cắn nuốt”, “nuốt chửng”. Âm “phè” có nghĩa là
+“phè phỡn”</span></p><br>
+
+<p class="MsoNormal" style="margin-right:1.6in;margin-left:1.6in;line-height:
+150%;background:white;vertical-align:middle"><span class="xt0psk2"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black">(3). Cuộc trao đổi giữa nhà thơ Đoàn Minh Đạo (Vinh Doan) và các thân hữu trên trang Facebook của ông, <a href="https://www.facebook.com/vinh.doan.319247">(https://www.facebook.com/vinh.doan.319247)</a> vào ngày 1 tháng 9 năm 2021 (Sept 1, 2021):<br>
+  <b><span style="color:black;text-decoration:none">Vũ Hoàng Thư</span></b></span></span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black">: Trong cùng cực vô định và cô đơn, Aleph trầm âm một tiếng Om trở
+về nhất thể uyên nguyên. Một bài thơ tinh khiết chữ dẫn những luống máu về thần trí. Cám ơn bác Đoàn luôn là nhà thơ
+minh triết.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.6in;margin-left:1.6in;line-height:
+150%;background:white;vertical-align:middle"><span class="xt0psk2"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black"><b><span style="color:black;text-decoration:none">Vinh Doan</span></b></span></span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black">: Cám ơn Vũ thi hữu cảm nhận sự thuần khiết của ngôn ngữ thơ như
+một lời kinh đối với chúng ta. Người làm thơ ngoài rọi tìm sự thật còn coi thơ
+như lời chú qua hoạn nạn phải không bác? TAYATHA OM BHEKHADZE BHEKHADZE.....</span></p>
+
+<p class="MsoNormal" style="margin-right:1.6in;margin-left:1.6in;line-height:
+150%;background:white;vertical-align:middle"><span class="xt0psk2"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black">  <b><span style="color:black;text-decoration:none">Vũ Hoàng Thư</span></b></span></span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black">: Cám ơn bác Đoàn. Câu thần chú thật phù hợp cho mùa đại dịch
+đương thời:&nbsp; Nguyện cầu cho tất cả đang đau khổ, thân khẩu ý đều được thoát
+khổ!</span></p>
+
+<p class="MsoNormal" style="margin-right:1.6in;margin-left:1.6in;line-height:
+150%;background:white;vertical-align:middle"><span class="xt0psk2"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black">  <b><span style="color:black;text-decoration:none">Gió-O Hải Ngoại</span></b></span></span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black">: Vũ Hoàng Thư viết: "<i>Một bài thơ tinh khiết chữ dẫn những
+luống máu về thần trí",</i> ui trời, tui đang viết theme này cho thơ . Sẽ
+ngôn ngồm ngoàm ở Berkeley vào Ngày Kỷ Niệm 20 Năm Gió O&nbsp;<img border="0" width="16" height="16" src="TiengGoC_files/image001.gif" alt="🙂">&nbsp;(lth)</span></p>
+
+<p class="MsoNormal" style="margin-right:1.6in;margin-left:1.6in;line-height:
+150%;background:white;vertical-align:middle"><span class="xt0psk2"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black"><b><span style="color:black;text-decoration:none">Gió-O Hải Ngoại</span></b></span></span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black">: "Tiếng Gõ" của Đoàn Minh Đạo là một trong 2 bài
+finalists của tác giả, đang vào tuyển thơ của Gió O phát hành ngày Gió O ở
+Berkeley 19/12/2021 (lth)</span></p>
+
+<p class="MsoNormal" style="margin-right:1.6in;margin-left:1.6in;line-height:
+150%;background:white;vertical-align:middle"><span class="xt0psk2"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black"><b><span style="color:black;text-decoration:none">Vinh Doan</span></b></span></span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black">: Cảm ơn cái duyên văn chương O tạo dịp rất nhiều.</span></p>
+
+<p class="MsoNormal" style="margin-right:1.6in;margin-left:1.6in;line-height:
+150%;background:white;vertical-align:middle"><span class="xt0psk2"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black"><b><span style="color:black;text-decoration:none">Vũ Hoàng Thư</span></b></span>: </span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black">Nôn nao chờ đợi….</span></p>
+
+<p class="MsoNormal" style="margin-right:1.6in;margin-left:1.6in;text-indent:
+-.25in;line-height:150%;background:white;vertical-align:middle"><span style="font-size:10.0pt;line-height:150%;font-family:Symbol;color:black"><span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class="x193iq5wxeuuglix13faqbex1vvkbsx1xmvt09x1lliihqx1s928wvxhkezsox1gmr53xx1cpjm7ix1fgartyx1943h6xx4zkp8ex676frbx1pg5gkex1sibtaax1s688fxzsf02u"><b><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black">Dza Uyen</span></b></span><span style="font-size:14.0pt;
+line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:black">: Bài thơ thật
+sâu sắc, Thanks tác giả .</span></p>
+
+<p class="MsoNormal" style="margin-right:1.6in;margin-left:1.6in;line-height:
+150%;background:white;vertical-align:middle"><span class="xt0psk2"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black"><b><span style="color:black;text-decoration:none">Người Nghiệp Tử</span></b></span>:</span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black"><br>
+Chào buổi sáng, mỉm môi cười thanh thản<br>
+Những ưu phiền … khuất dạng với đêm qua<br>
+Chào nắng sớm chiếu soi, hồn sáng lạn<br>
+Kìa ... bình minh ưu ái lại trao quà</span></p>
+
+<p class="MsoNormal" style="margin-right:1.6in;margin-left:1.6in;line-height:
+150%;background:white;vertical-align:middle"><span class="xt0psk2"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black"><b><span style="color:black;text-decoration:none">Gió-O Hải Ngoại</span></b></span></span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black">: "thầm thĩ " hay "thầm thì " ? Ông thầy ?
+(lth)</span></p>
+
+<p class="MsoNormal" style="margin-right:1.6in;margin-left:1.6in;line-height:
+150%;background:white;vertical-align:middle"><span class="xt0psk2"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black"><b><span style="color:black;text-decoration:none">Vinh Doan</span></b></span></span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black">: Đúng ra cũng muốn viết là "thầm thì" nhưng vì tính
+chất ngữ âm trong câu nên đổi ra "thầm thĩ" cũng như ta nói "hai
+mươi" thay vì "hai mười" cô hỉ ? Tra ĐNQATV của Paulus Của trang
+1005 định nghĩa "Thầm thĩ" là "nói lầm thầm, nói trong
+miệng".</span></p>
+
+<p class="MsoNormal" style="margin-right:1.6in;margin-left:1.6in;line-height:
+150%;background:white;vertical-align:middle"><span class="xt0psk2"><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black"><b><span style="color:black;text-decoration:none">Gió-O Hải Ngoại</span></b></span></span><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black">: </span><span lang="EN" style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:black">I'm glad I double checked&nbsp;<img border="0" width="16" height="16" src="TiengGoC_files/image001.gif" alt="🙂">&nbsp;Love
+it&nbsp;<img border="0" width="16" height="16" src="TiengGoC_files/image002.gif" alt="🌹">&nbsp;(lth)</span></p>
+
+<p class="MsoNormal" style="margin-right:1.6in;margin-left:1.6in;line-height:
+150%;background:white;vertical-align:middle"><span class="xt0psk2"><b><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black"><span style="color:black;text-decoration:none">Hoang Mạnh Tùng</span></span></b></span><b><span style="font-size:14.0pt;line-height:150%;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;
+color:black">: T</span></b><span style="font-size:14.0pt;line-height:150%;
+font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;color:black">rời sinh làm người hãy người
+thôi , Đừng có bận tâm chuyện xa vời ,Thích gì làm lấy lòng thanh thản , Niết
+bàn Bồ tát cũng thế thôi ( phải không bác nhỉ)</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in"><b><span style="font-size:18.0pt;line-height:107%">&nbsp;</span></b></p>
+
+<p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:8.0pt;margin-left:1.5in;text-align:center"><span style="font-size:24.0pt;line-height:107%;color:#2F5496"><a href="http://www.gio-o.com/GioO10Nam/20NamNanNetThoTuyen.pdf"><img src="http://www.gio-o.com/GioO10Nam/20Tho0.png" width="480"><br>GIÓ O
+20
+</a></span></p><a href="http://www.gio-o.com/GioO10Nam/20NamNanNetThoTuyen.pdf">
+
+</a><p class="MsoNormal" align="center" style="margin-top:0in;margin-right:1.5in;
+margin-bottom:8.0pt;margin-left:1.5in;text-align:center"><a href="http://www.gio-o.com/GioO10Nam/20NamNanNetThoTuyen.pdf"><span style="font-size:16.0pt;line-height:107%;color:#2F5496">tuyển thơ
+Gió O, phát hành nhân dịp kỷ niệm 20 Gió O sinh hoạt </span></a></p>
+
+
+
+
+
+
+
+
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in"><b><span style="font-size:18.0pt;line-height:107%;
+color:#2F5496">Lê Thị Huệ</span></b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in"><span style="font-size:14.0pt;line-height:107%">2023</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in"><b><span style="font-size:18.0pt;line-height:107%">&nbsp;</span></b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in"><span style="font-size:14.0pt;line-height:107%">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:1.5in;margin-bottom:8.0pt;
+margin-left:1.5in"><span style="font-size:16.0pt;line-height:107%">&nbsp;</span></p>
+
+</div>
+
+
+
+
+</body>
